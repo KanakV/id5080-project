@@ -1,0 +1,26 @@
+
+================= bengaluru_city_bengaluru_drive — expansion & bottlenecks =================
+Largest component: n = 155,779 nodes, m = 205,064 undirected edges, d_avg = 2.633
+
+--- Spectral expansion ---
+lambda_2 (normalized Laplacian)        : 8.440e-06
+lambda_max                             : 1.9985   (2.0 would mean bipartite)
+Cheeger bounds:  4.220e-06  <=  h(G)  <=  4.109e-03
+Best sweep-cut conductance phi         : 6.202e-04  (certified h(G) <= this)
+Balanced bottleneck (>=10% vol side)   : phi = 6.202e-04, 76 edges cut,
+                                         small side = 49,351 nodes
+--- Expander / Ramanujan verdict ---
+An expander family needs lambda_2 bounded away from 0; a (d_avg-)regular Ramanujan
+graph would need mu_2 = 1 - lambda_2 <= 2*sqrt(d-1)/d.
+  mu_2            = 0.999992
+  Ramanujan bound = 0.970689
+  -> mu_2 exceeds the bound by a factor 1.0302; lambda_2 ~ 8.4e-06 vs the
+     ~0.029 an expander of this degree would need: a gap of ~3,473x.
+VERDICT: decisively NOT an expander and far from Ramanujan — as expected for a
+near-planar graph (O(sqrt n) separators), random-walk mixing is ~1/lambda_2 ~ 118,482 steps.
+
+--- Max-flow / min-cut bottlenecks (unit capacity per street segment) ---
+North <-> South: cutting just 29 road segments disconnects the top-10% latitude
+                 band from the bottom-10% band.
+East  <-> West : cutting 24 segments disconnects east from west.
+(sqrt(n) = 395 — Lipton–Tarjan-scale separators, tiny vs m = 205,064.)

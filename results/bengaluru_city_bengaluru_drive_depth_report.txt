@@ -1,0 +1,9 @@
+================ bengaluru_city_bengaluru_drive — depth / diameter / gamma ================
+Degree exponent check vs AB model:
+  degrees span only 1..6 (physical limit of road junctions)
+  discrete MLE gamma_hat = 1.64 (d_min=1), 5.27 (d_min=3)
+  AB predicts gamma = 3 over an unbounded tail -> NOT applicable: the empirical
+  distribution is narrow/exponential-bounded, not scale-free.
+Eccentricity (hops): min=156 (graph center), median=204, max=283
+Diameter lower bound: 283 hops
+EXACT diameter = 283 hops  [1502s]

@@ -1,0 +1,31 @@
+
+================= bengaluru_city_bengaluru_drive =================
+Nodes (intersections/dead-ends) : 155,779
+Edges (street segments, undir.) : 205,640
+Connected components            : 1
+Total street length             : 13,000.7 km
+
+--- Betweenness centrality (approx, k=300, length-weighted, on largest SCC) ---
+mean = 0.00138   max = 0.07842   (normalized)
+Gini-like concentration: top 1% of nodes hold 20.1% of total betweenness
+Top 10 intersections:
+   1. bc=0.07842  (12.96622, 77.60672)  Brigade Road; Hosur Road; Richmond Road
+   2. bc=0.07268  (12.96624, 77.60682)  Brigade Road; Hosur Road; Richmond Road
+   3. bc=0.06220  (12.98186, 77.59478)  Doctor B R Ambedkar Veedhi; Raj Bhavan Road
+   4. bc=0.06208  (12.99214, 77.60418)  Cockburn Road; Netaji Road
+   5. bc=0.06041  (12.97193, 77.60704)  Brigade Road; Residency Road
+   6. bc=0.05943  (12.99184, 77.59992)  Hazrat Kambal Posh Road; Queen's Road
+   7. bc=0.05779  (12.96408, 77.57683)  Krishna Rajendra Road; NR Road
+   8. bc=0.05713  (12.96413, 77.56982)  Cottonpete Main Road
+   9. bc=0.05593  (12.97090, 77.60481)  Museum Road; Residency Road
+  10. bc=0.05531  (12.99056, 77.61391)  Kamaraj Road; Saint John's Church Road; Wheeler Road
+
+--- Cyclic structure (undirected) ---
+Cyclomatic number mu = m - n + c       : 49,862   (independent cycles)
+alpha index  mu/(2n-5)                 : 0.160
+beta  index  m/n                       : 1.320
+gamma index  m/3(n-2)                  : 0.440
+Bridge edges (on NO cycle)             : 45,078 (21.9% of edges, 2,708.0 km = 20.8% of length)
+Edges on >=1 cycle                     : 160,562 (10,292.7 km = 79.2% of length)
+2-core (cyclic skeleton) nodes         : 111,309 (71.5% of nodes)
+Biconnected blocks (>2 nodes)          : 367, largest spans 108,266 nodes (69.5%)

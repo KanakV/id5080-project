@@ -1,0 +1,15 @@
+================ bengaluru_city_bengaluru_drive — robustness / site percolation ================
+Giant-component collapse threshold q_c (first q with S < 1% of n):
+  random                : q_c = 0.331
+  degree (static)       : q_c = 0.231
+  betweenness (static)  : q_c = 0.226
+  degree (adaptive)     : q_c = 0.183
+(random vs targeted gap = classic robust-yet-fragile signature)
+--- percolation comparison vs models (q_c = first q with S < 1%) ---
+  Bengaluru: random q_c = 0.331   adaptive-degree q_c = 0.183
+  ER       : random q_c = 0.622   adaptive-degree q_c = 0.172
+  WS       : random q_c = 0.510   adaptive-degree q_c = 0.278
+--- percolation comparison vs models (q_c = first q with S < 1%) ---
+  Bengaluru: random q_c = 0.331   adaptive-degree q_c = 0.183
+  ER       : random q_c = 0.622   adaptive-degree q_c = 0.172
+  WS       : random q_c = 0.510   adaptive-degree q_c = 0.278

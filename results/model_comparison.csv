@@ -1,0 +1,4 @@
+graph,n_gcc,m_gcc,gcc_frac,d_avg,d_max,assortativity,clustering_approx,mean_path_hops,diameter_lb,lambda2,bridge_frac,cyclomatic_mu,alpha_index
+Bengaluru,155779,205064,1.0,2.633,6,-0.0147,0.0201,100.56,260,8.440e-06,0.2203,49286,0.1582
+ER,141562,203352,0.9087,2.873,11,-0.0181,0.0,12.03,23,1.024e-02,0.1687,61791,0.2183
+WS,155779,311558,1.0,4.0,8,-0.0232,0.3735,16.82,29,7.018e-03,0.0,155780,0.5

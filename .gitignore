@@ -1,0 +1,15 @@
+# environments & caches
+.venv/
+__pycache__/
+*.pyc
+
+# heavy data — regenerate with fetch_namma.py (Overpass responses cache locally)
+data/
+cache/
+
+# hand-off bundle — rebuild with export_share_data.py
+share/
+*.zip
+
+# course handouts
+*.pdf
