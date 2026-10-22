@@ -13,3 +13,7 @@ Giant-component collapse threshold q_c (first q with S < 1% of n):
   Bengaluru: random q_c = 0.331   adaptive-degree q_c = 0.183
   ER       : random q_c = 0.622   adaptive-degree q_c = 0.172
   WS       : random q_c = 0.510   adaptive-degree q_c = 0.278
+--- percolation comparison vs models (q_c = first q with S < 1%) ---
+  Bengaluru: random q_c = 0.331   adaptive-degree q_c = 0.183
+  ER       : random q_c = 0.622   adaptive-degree q_c = 0.172
+  WS       : random q_c = 0.510   adaptive-degree q_c = 0.278

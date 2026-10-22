@@ -1,85 +1,89 @@
 # Namma Graph — street network analysis (ID5080 term project)
 
-Complex-networks analysis of city street networks from OpenStreetMap.
-This repo contains the **Bengaluru** analysis end-to-end; every script is
-city-agnostic (it takes a GraphML path), so the same pipeline runs unchanged
-for **Chennai** — see [Running it for Chennai](#running-it-for-chennai).
+Complex-networks analysis of city street networks. This repo contains the
+**Bengaluru** analysis end-to-end; every script is city-agnostic, so the same
+pipeline runs unchanged for **Chennai** (or any city OSM knows).
 
-Results write-up with all figures: **[ANALYSIS.md](ANALYSIS.md)**.
+- Results write-up with all figures: **[ANALYSIS.md](ANALYSIS.md)**
+- How to add a city or a new metric: **[CONTRIBUTIONS.md](CONTRIBUTIONS.md)**
 
-## Setup
+## Where the data comes from
+
+All networks are from **OpenStreetMap** (© OpenStreetMap contributors, ODbL —
+keep this credit on anything published). `fetch_namma.py` uses **osmnx 2.x**,
+which geocodes the municipal boundary polygon through **Nominatim** (e.g.
+"Bengaluru, Karnataka, India") and downloads the drivable street network inside
+it from the **Overpass API** (`network_type="drive"`, topologically simplified:
+nodes = intersections/dead-ends, edges = street segments with length in metres).
+
+To download (one-time internet need; responses are cached in `cache/`, so
+re-runs are offline and free):
+
+```bash
+.venv/bin/python fetch_namma.py bengaluru city     # or: chennai
+# -> data/bengaluru_city_bengaluru_drive.graphml  (~145 MB, 5–15 min; cache/ ~44 MB)
+```
+
+Heads-up: OSM is live data — a fetch today differs slightly from a fetch last
+month. The team should analyse **one shared graphml per city** (the Bengaluru
+one here was fetched 2026-10-05); don't re-fetch mid-analysis. `data/` and
+`cache/` are git-ignored, so pass the graphml around directly if you want
+bit-identical inputs.
+
+## Quick start (plug and play)
 
 ```bash
 python3 -m venv .venv
-.venv/bin/pip install -r requirements.txt    # osmnx 2.x, networkx, scipy, matplotlib
+.venv/bin/pip install -r requirements.txt     # osmnx 2.x, networkx, scipy, matplotlib
+
+.venv/bin/python run_all.py chennai           # fetch (if needed) + every analysis step
+.venv/bin/python run_all.py chennai --steps core,maps   # just some steps
+.venv/bin/python run_all.py --list            # what the steps are
 ```
 
-## Pipeline
+All outputs are prefixed with the graph's tag (`chennai_city_chennai_drive_...`),
+so cities never overwrite each other. Expect ~45–60 min total for a 150k-node
+city; the slow parts are betweenness (~12 min) and the exact-diameter
+confirmation (~25 min, runs last in the `depth` step).
 
-Step 0 downloads the network (needs internet; Overpass responses are cached in
-`cache/`, so re-runs are free). Everything after runs offline on the saved graph.
+## The steps (also runnable by hand)
 
-| # | Command | What it does | Outputs |
+| Step | Script | What it computes | Needs |
 |---|---|---|---|
-| 0 | `python fetch_namma.py <city> city` | Fetch drivable network inside the municipal boundary | `data/<tag>.graphml` |
-| 1 | `python analyze_bengaluru.py data/<tag>.graphml 300` | Betweenness centrality (length-weighted, 300 sampled sources) + cyclic structure: cyclomatic number, α/β/γ, bridges, 2-core, biconnected blocks | report, top-20 CSV, 2 maps |
-| 2 | `python expander_bottleneck.py data/<tag>.graphml` | Spectral gap λ₂, Cheeger bounds, Ramanujan/expander verdict, Fiedler sweep cut, N–S and E–W max-flow min-cuts | report, 3 dark maps |
-| 3 | `python model_comparison.py data/<tag>.graphml` | Same-size ER G(n,m) and WS (k=4, p=0.1) null models: clustering, paths, λ₂, assortativity, bridges | `results/model_comparison.csv`, degree histograms, metric panels |
-| 4 | `python depth_diameter.py data/<tag>.graphml` | Eccentricity of every node (64-landmark BFS), exact diameter (extrema bounding — the slow last step, ~25 min), power-law γ check | report, eccentricity map + npz |
-| 5 | `python percolation.py data/<tag>.graphml` | Robustness: S(q) under random failure vs degree/betweenness attacks (exact curves via reverse union–find) | report, npz, chart |
-| 6 | `python percolation_models.py` | Percolation curves vs ER and WS (random failure) | dark chart |
-| 7 | `python degree_distribution.py` | Degree histograms, raw + normalized (from step 3's cache) | dark chart |
-| 8 | `python betweenness_edges.py data/<tag>.graphml` | Edge-painted betweenness map (light theme) | map |
-| 9 | `python render_dark_maps.py data/<tag>.graphml` | Dark-theme betweenness / cycles / eccentricity maps | 3 maps |
-| 10 | `python export_share_data.py` | Export everything as plain CSVs + README and zip it | `share/`, zip |
+| `core` | `analyze_network.py <graphml> 300` | Betweenness centrality (length-weighted, 300 sampled sources) + cyclic structure: cyclomatic number, α/β/γ, bridges, 2-core, biconnected blocks | — |
+| `expander` | `expander_bottleneck.py` | Spectral gap λ₂, Cheeger bounds, Ramanujan/expander verdict, Fiedler sweep cut, N–S and E–W max-flow min-cuts | — |
+| `models` | `model_comparison.py` | Same-size ER G(n,m) and WS (k=4, p=0.1) null models: clustering, paths, λ₂, assortativity, bridges | — |
+| `depth` | `depth_diameter.py` | Per-node eccentricity (64-landmark BFS), exact diameter, power-law γ check | — |
+| `percolation` | `percolation.py` | Robustness S(q): random failure vs degree/betweenness attacks (exact reverse union–find curves) | core |
+| `perc-models` | `percolation_models.py` | Percolation vs ER and WS, dark chart | models, percolation |
+| `degrees` | `degree_distribution.py` | Degree histograms (raw + normalized), dark chart | models |
+| `maps` | `render_dark_maps.py` | Dark-theme betweenness / cycles / eccentricity maps | core, depth |
+| `edges-map` | `betweenness_edges.py` | Light-theme edge-painted betweenness map | core |
+| `export` | `export_share_data.py` | Plain-CSV hand-off bundle (`share_<city>/` + zip) for non-Python teammates | all |
 
-Notes on order: 1 must run before 5, 8, 9 (they reuse the cached betweenness
-`results/<tag>_node_bc.npz`); 4 before 9 (eccentricity cache); 3 before 6 and 7.
-Scripts 6, 7, 10 have Bengaluru names/sizes hardcoded near the top — edit the
-constants for Chennai.
-
-Timings on a 155k-node city (i7-class machine): step 0 ~5–15 min (Overpass),
-step 1 ~12 min (betweenness is the slow part), step 2 ~3 min, step 4 ~5 min +
-~25 min for the exact-diameter confirmation, the rest seconds-to-a-couple-minutes.
-
-## Running it for Chennai
-
-```bash
-.venv/bin/python fetch_namma.py chennai city
-.venv/bin/python analyze_bengaluru.py data/chennai_city_chennai_drive.graphml 300
-# ...then steps 2, 4, 5, 8, 9 with that same path; edit constants in 6, 7, 10
-```
+Every script takes the graphml path as its first argument and caches expensive
+arrays in `results/*.npz`, so re-rendering figures costs seconds, not minutes.
 
 ## Gotchas we already hit (so you don't)
 
 - **Nominatim neighbourhood queries fail** for some places ("did not geocode to
-  (Multi)Polygon") — those OSM entries are points. Use
-  `ox.graph_from_address(..., dist=...)` instead of `graph_from_place` for
-  neighbourhood-scale graphs.
-- **Self-loops**: city graphs contain them and `nx.k_core`/`nx.bridges` choke —
-  strip with `G.remove_edges_from(nx.selfloop_edges(G))` on the simple graph
-  (already handled in the scripts).
+  (Multi)Polygon") — those OSM entries are points, not polygons. Use
+  `ox.graph_from_address(..., dist=...)` for neighbourhood-scale graphs.
+- **Self-loops**: real city graphs have them and `nx.k_core` / `nx.bridges`
+  refuse them — strip with `G.remove_edges_from(nx.selfloop_edges(G))` on the
+  simple graph (already handled in these scripts).
 - **Betweenness is approximate** (k=300 sampled sources, seed 42): rankings are
-  stable, exact values are not. For exact numbers use python-igraph (~50–100×
-  faster than networkx).
-- **WS density**: Watts–Strogatz needs an even integer k, so k=4 makes it ~52%
-  denser than the street network (d̄ ≈ 2.6) — flagged wherever it matters.
-- **λ₂ computation**: shift-invert Lanczos works great on near-planar graphs
-  (cheap LU); for the random models use Lanczos on 2I − L instead (no
-  factorization) — `expander_bottleneck.py`/`model_comparison.py` show both.
-- **Charts/maps**: maps are dark-themed by preference; the colors come from a
-  CVD-validated palette — keep series colors/orders as in the scripts.
+  stable, exact values are not. For exact numbers use python-igraph
+  (~50–100× faster than networkx).
+- **WS density**: Watts–Strogatz needs an even integer k, so k=4 is ~52% denser
+  than a street network (d̄ ≈ 2.6) — flagged wherever it matters.
+- **λ₂**: shift-invert Lanczos is cheap on near-planar graphs; for random
+  models use Lanczos on 2I − L instead (no factorization). Both patterns are in
+  `expander_bottleneck.py` / `model_comparison.py`.
 
 ## Repo layout
 
-- `data/`, `cache/` — git-ignored (the Bengaluru graphml is 145 MB; regenerate
-  with step 0, Overpass responses cache locally).
-- `results/` — committed: reports (txt), tables (csv) and small npz caches,
-  including node betweenness so you can re-render maps without the 7-min recompute.
-- `figures/` — committed: all rendered maps and charts (`*_dark` = dark theme).
-- `share/`, `*.zip` — git-ignored; `export_share_data.py` rebuilds the
-  plain-CSV hand-off bundle in ~1 min.
-
-## Attribution
-
-Map data © OpenStreetMap contributors (ODbL) — keep this credit on anything published.
+- `data/`, `cache/` — git-ignored (graphml ~145 MB; regenerate via fetch, see above)
+- `results/` — committed: reports (txt), tables (csv), small npz caches
+- `figures/` — committed: rendered maps and charts (`*_dark` = dark theme)
+- `share_*/`, `*.zip` — git-ignored hand-off bundles (`export` step rebuilds them)

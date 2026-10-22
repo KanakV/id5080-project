@@ -1,26 +1,35 @@
 """
-Percolation comparison: Bengaluru vs ER and WS (dark-theme chart).
+Percolation comparison: the city vs ER and WS (dark-theme chart).
 
-Bengaluru curves are reused from results/<tag>_percolation.npz (percolation.py).
+City curves are reused from results/<tag>_percolation.npz (percolation.py);
+n and m come from results/<tag>_model_comparison.csv (model_comparison.py),
+so run percolation.py and model_comparison.py first.
 ER G(n,m) and WS(k=4, p=0.1) are generated with the same n (and m for ER) and
 seed as model_comparison.py, then run through the same reverse Newman-Ziff sweep
 for two strategies: random failure (5-seed average) and adaptive degree attack.
 NOTE: WS is ~52% denser (k must be an even integer), which inflates its robustness.
 
-Usage:  python percolation_models.py
-Writes figures/percolation_model_comparison_dark.png and appends q_c values to
+Usage:  python percolation_models.py [path/to/graph.graphml]
+Writes figures/<tag>_percolation_vs_models_dark.png and appends q_c values to
 results/<tag>_percolation_report.txt.
 """
+import csv
 import gc
 import heapq
 import os
 import time
 
+import sys
+
 import networkx as nx
 import numpy as np
 
-TAG = "bengaluru_city_bengaluru_drive"
-N_TARGET, M_TARGET = 155_779, 205_064      # Bengaluru GCC (simple graph)
+GRAPH = sys.argv[1] if len(sys.argv) > 1 else "data/bengaluru_city_bengaluru_drive.graphml"
+TAG = os.path.splitext(os.path.basename(GRAPH))[0]
+CITY = TAG.split("_")[0].capitalize()
+with open(f"results/{TAG}_model_comparison.csv") as f:   # city GCC size from step 3
+    row = next(r for r in csv.DictReader(f) if r["graph"] == CITY)
+N_TARGET, M_TARGET = int(row["n_gcc"]), int(row["m_gcc"])
 SEED = 42
 N_RANDOM_SEEDS = 5
 os.makedirs("figures", exist_ok=True)
@@ -104,9 +113,9 @@ def qc(q, c):
 
 
 # ---------------------------------------------------------------- data
-log("loading cached Bengaluru percolation curves ...")
+log(f"loading cached {CITY} percolation curves (n={N_TARGET:,}, m={M_TARGET:,}) ...")
 z = np.load(f"results/{TAG}_percolation.npz")
-data = {"Bengaluru": {"q": z["q"],
+data = {CITY: {"q": z["q"],
                       "random": z["random"],
                       "degree (adaptive)": z["degree_(adaptive)"]}}
 
@@ -121,7 +130,7 @@ data["WS"] = {"q": np.arange(n + 1) / n, **curves_for(ip, ix, n, "WS")}
 del ip, ix; gc.collect()
 
 lines = ["--- percolation comparison vs models (q_c = first q with S < 1%) ---"]
-for g in ("Bengaluru", "ER", "WS"):
+for g in (CITY, "ER", "WS"):
     lines.append(f"  {g:9s}: random q_c = {qc(data[g]['q'], data[g]['random']):.3f}   "
                  f"adaptive-degree q_c = {qc(data[g]['q'], data[g]['degree (adaptive)']):.3f}")
 report = "\n".join(lines) + "\n"
@@ -133,18 +142,18 @@ with open(f"results/{TAG}_percolation_report.txt", "a") as f:
 import matplotlib.pyplot as plt
 
 SURFACE, INKD, SUBD, GRID, SPINE = "#1a1a19", "#f0efec", "#c3c2b7", "#33332f", "#44443f"
-COLORS = {"Bengaluru": "#3987e5", "ER": "#d95926", "WS": "#199e70"}   # dark-mode steps
-MARKERS = {"Bengaluru": "o", "ER": "s", "WS": "^"}
+COLORS = {CITY: "#3987e5", "ER": "#d95926", "WS": "#199e70"}   # dark-mode steps
+MARKERS = {CITY: "o", "ER": "s", "WS": "^"}
 
 fig, ax = plt.subplots(figsize=(8, 6), dpi=200)
 fig.patch.set_facecolor(SURFACE)
 ax.set_facecolor(SURFACE)
-for g in ("Bengaluru", "ER", "WS"):
+for g in (CITY, "ER", "WS"):
     q, c = data[g]["q"], data[g]["random"]
     step = max(1, len(q) // 500)
     ax.plot(q[::step], c[::step], color=COLORS[g], lw=1.8,
             marker=MARKERS[g], ms=4.5, markevery=30, label=g)
-ax.set_title("Site percolation, random failure: Bengaluru vs ER and WS\n(WS is ~52% denser: k=4)",
+ax.set_title(f"Site percolation, random failure: {CITY} vs ER and WS\n(WS is ~52% denser: k=4)",
              color=INKD, fontsize=12)
 ax.set_xlabel("fraction of nodes removed  q", color=SUBD)
 ax.set_ylabel("giant component share  S(q)", color=SUBD)
@@ -157,7 +166,7 @@ for s_ in ax.spines.values():
     s_.set_color(SPINE)
 ax.legend(frameon=False, labelcolor=INKD, fontsize=10)
 fig.tight_layout()
-fig.savefig("figures/percolation_model_comparison_dark.png",
+fig.savefig(f"figures/{TAG}_percolation_vs_models_dark.png",
             bbox_inches="tight", facecolor=SURFACE)
 plt.close(fig)
-log("done: figures/percolation_model_comparison_dark.png")
+log(f"done: figures/{TAG}_percolation_vs_models_dark.png")

@@ -1,5 +1,5 @@
 """
-Compare the Bengaluru street network against four canonical random-graph models,
+Compare a city street network against four canonical random-graph models,
 each generated at the same number of nodes (matching edges where the model's
 integer parameters allow):
 
@@ -11,7 +11,7 @@ Metrics: degree distribution (CCDF), max degree, assortativity, clustering
 lambda_2 (expansion), bridges share, cyclomatic number / alpha index.
 
 Usage:  python model_comparison.py [path/to/graph.graphml]
-Writes results/model_comparison.csv, results/model_degrees.npz, 2 figures.
+Writes results/<tag>_model_comparison.csv, results/<tag>_model_degrees.npz + figure.
 """
 import csv
 import gc
@@ -28,15 +28,17 @@ from networkx.algorithms.approximation import average_clustering as approx_clust
 from scipy.sparse import csgraph
 
 GRAPH = sys.argv[1] if len(sys.argv) > 1 else "data/bengaluru_city_bengaluru_drive.graphml"
+tag = os.path.splitext(os.path.basename(GRAPH))[0]
+CITY = tag.split("_")[0].capitalize()      # series label for the real network
 SEED = 42
 N_BFS = 48            # sampled BFS sources for path lengths
 CL_TRIALS = 20000     # triangle-sampling trials for approximate clustering
 os.makedirs("figures", exist_ok=True)
 os.makedirs("results", exist_ok=True)
 
-COLORS = {"Bengaluru": "#2a78d6", "ER": "#eb6834", "WS": "#1baf7a",
+COLORS = {CITY: "#2a78d6", "ER": "#eb6834", "WS": "#1baf7a",
           "AB": "#eda100", "HK": "#e87ba4"}
-MARKERS = {"Bengaluru": "o", "ER": "s", "WS": "^", "AB": "D", "HK": "v"}
+MARKERS = {CITY: "o", "ER": "s", "WS": "^", "AB": "D", "HK": "v"}
 
 
 def log(msg):
@@ -110,10 +112,10 @@ rows, deg_hists = [], {}
 def record(row, hist, name):
     rows.append(row)
     deg_hists[name] = hist
-    with open("results/model_comparison.csv", "w", newline="") as f:
+    with open(f"results/{tag}_model_comparison.csv", "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
         w.writeheader(); w.writerows(rows)
-    np.savez_compressed("results/model_degrees.npz",
+    np.savez_compressed(f"results/{tag}_model_degrees.npz",
                         **{k: v for k, v in deg_hists.items()})
 
 
@@ -125,8 +127,8 @@ S.add_nodes_from(G.nodes)
 S.add_edges_from((u, v) for u, v, _ in G.edges(keys=True) if u != v)
 del G; gc.collect()
 n_target, m_target = S.number_of_nodes(), S.number_of_edges()
-row, hist = measure(S, "Bengaluru", planar_like=True)
-record(row, hist, "Bengaluru")
+row, hist = measure(S, CITY, planar_like=True)
+record(row, hist, CITY)
 del S; gc.collect()
 
 # ---------------------------------------------------------------- models
@@ -145,7 +147,7 @@ del M; gc.collect()
 # ---------------------------------------------------------------- figures
 import matplotlib.pyplot as plt
 
-ORDER = ["Bengaluru", "ER", "WS"]
+ORDER = [CITY, "ER", "WS"]
 INK, SUB = "#1a1a19", "#5f5e56"
 
 # degree distribution (grouped bars, counts + normalized) is rendered by
@@ -180,11 +182,11 @@ for ax, (key, title, scale) in zip(axes.ravel(), PANELS):
     ax.tick_params(colors=SUB)
     for s_ in ax.spines.values():
         s_.set_color("#d4d3c9")
-fig.suptitle("Bengaluru street network vs canonical models (same n; m matched where integer params allow)",
+fig.suptitle(f"{CITY} street network vs canonical models (same n; m matched where integer params allow)",
              color=INK, fontsize=13)
 fig.tight_layout()
-fig.savefig("figures/model_metric_panels.png", bbox_inches="tight", facecolor="white")
+fig.savefig(f"figures/{tag}_model_metric_panels.png", bbox_inches="tight", facecolor="white")
 plt.close(fig)
 
-log("done: results/model_comparison.csv, results/model_degrees.npz, "
-    "figures/model_degree_ccdf.png, figures/model_metric_panels.png")
+log(f"done: results/{tag}_model_comparison.csv, results/{tag}_model_degrees.npz, "
+    f"figures/{tag}_model_metric_panels.png")
