@@ -1,0 +1,16 @@
+================= Degree correlations: bengaluru_city_bengaluru_drive =================
+Nodes / edges (simple, undirected, giant component) : 155,779 / 205,064
+<k> = 2.633   <k^2>/<k> = 3.011   k_max = 6
+Assortativity r (Newman eq. 7.82)    : -0.0147
+Slope of neighbour degree vs degree  : -0.0703
+k_nn(k):  k=1: 3.22  k=2: 2.61  k=3: 2.95  k=4: 3.14  k=5: 3.26  k=6: 3.20
+
+Important nodes (top betweenness) — degree, mean neighbour degree, local assortativity:
+  1. Brigade Road; Hosur Road; Richmond Road            k=4  k_nn=3.25  rho=+1.19e-05  bc=0.0784
+  2. Doctor B R Ambedkar Veedhi; Raj Bhavan Road        k=4  k_nn=3.50  rho=+2.43e-05  bc=0.0622
+  3. Cockburn Road; Netaji Road                         k=4  k_nn=3.25  rho=+1.19e-05  bc=0.0621
+  4. Brigade Road; Residency Road                       k=4  k_nn=3.00  rho=-5.35e-07  bc=0.0604
+  5. Hazrat Kambal Posh Road; Queen's Road              k=4  k_nn=3.00  rho=-5.35e-07  bc=0.0594
+  6. Krishna Rajendra Road; NR Road                     k=4  k_nn=3.25  rho=+1.19e-05  bc=0.0578
+  7. Cottonpete Main Road                               k=4  k_nn=3.50  rho=+2.43e-05  bc=0.0571
+  8. Museum Road; Residency Road                        k=4  k_nn=3.00  rho=-5.35e-07  bc=0.0559
