@@ -29,3 +29,71 @@ National / state highway                1,440   +0.7203 [ +0.6294, +0.8075]   3.
 Central (< 3 km of CBD)                 5,836   +0.4736 [ +0.4255, +0.5147]   2.87
 Outskirts (> 12 km)                    42,908   -0.3362 [ -0.3539, -0.3203]   2.51
 Important nodes (top betweenness)           8   +1.6103 [ +0.5154, +2.5781]   4.00
+
+================ Most DISassortative nodes (lowest rho*N) ================
+(rho_v = q_v * sum_nbrs(q_w - mu) / (2M sigma^2); negative = hub-like node whose neighbours are low-degree)
+  rho*N=-11.697  k=4  nbr degrees=[1, 1, 1, 3]  (13.0276, 77.6187)   6.3 km from CBD  (unnamed)
+  rho*N=-11.697  k=4  nbr degrees=[1, 1, 1, 3]  (12.9334, 77.4839)  13.0 km from CBD  (unnamed)
+  rho*N=-11.697  k=4  nbr degrees=[1, 1, 1, 3]  (13.0631, 77.5571)  10.6 km from CBD  (unnamed)
+  rho*N=-11.697  k=4  nbr degrees=[1, 1, 1, 3]  (12.8917, 77.6358)  10.3 km from CBD  (unnamed)
+  rho*N=-11.697  k=4  nbr degrees=[1, 1, 1, 3]  (12.9467, 77.5373)   7.1 km from CBD  1st Cross Road
+  rho*N=-11.697  k=4  nbr degrees=[1, 1, 1, 3]  (12.8701, 77.6178)  12.0 km from CBD  (unnamed)
+  rho*N=-11.697  k=4  nbr degrees=[1, 1, 1, 3]  (13.0016, 77.7127)  13.0 km from CBD  Gangothri Lane
+  rho*N=-11.697  k=4  nbr degrees=[1, 1, 1, 3]  (12.8511, 77.5674)  14.1 km from CBD  (unnamed)
+  rho*N=-11.697  k=4  nbr degrees=[1, 1, 1, 3]  (13.0592, 77.5666)   9.8 km from CBD  (unnamed)
+  rho*N=-11.697  k=4  nbr degrees=[1, 1, 1, 3]  (13.0367, 77.6436)   8.6 km from CBD  5th Cross Road
+  rho*N=-11.697  k=4  nbr degrees=[1, 1, 1, 3]  (12.8944, 77.5883)   9.0 km from CBD  (unnamed)
+  rho*N=-11.697  k=4  nbr degrees=[1, 1, 1, 3]  (12.9142, 77.5478)   8.5 km from CBD  (unnamed)
+  rho*N=-11.697  k=4  nbr degrees=[1, 1, 1, 3]  (12.8646, 77.5363)  13.9 km from CBD  (unnamed)
+  rho*N=-11.697  k=4  nbr degrees=[1, 1, 1, 3]  (13.0606, 77.5963)   9.5 km from CBD  (unnamed)
+  rho*N=-11.697  k=4  nbr degrees=[1, 1, 1, 3]  (12.8895, 77.5762)   9.8 km from CBD  1st Main Road
+
+Nodes with rho*N < -0.5: 32,876 (21.1%);  of these, 95% touch a dead end (k=1), degree mix {2: 920, 3: 27019, 4: 4921, 5: 14, 6: 2}
+Mean distance from CBD: disassortative 10.3 km vs all nodes 9.5 km
+
+================ Most DISassortative edges (hub linked to low-degree node) ================
+  c*M=-10.210  degrees 1-6  (12.8993, 77.5566)   9.4 km  8th Cross Road | 8th Cross Road
+  c*M=-6.795  degrees 5-1  (12.9572, 77.7184)  13.5 km  12th Main Road | 7th Cross Road
+  c*M=-6.795  degrees 5-1  (13.0362, 77.6317)   7.8 km  Hennur Road | (unnamed)
+  c*M=-6.795  degrees 5-1  (12.8829, 77.6230)  10.7 km  Devarachikkana Halli Main Road | (unnamed)
+  c*M=-6.795  degrees 5-1  (12.8828, 77.6233)  10.7 km  Devarachikkana Halli Main Road | (unnamed)
+  c*M=-6.795  degrees 5-1  (12.9974, 77.5450)   6.0 km  Modi Hospital Main Road | (unnamed)
+  c*M=-6.795  degrees 5-1  (12.9135, 77.5597)   7.9 km  Subramanyapura Main Road | (unnamed)
+  c*M=-6.795  degrees 5-1  (12.9520, 77.6155)   3.4 km  (unnamed) | (unnamed)
+  c*M=-6.795  degrees 5-1  (12.9941, 77.5892)   2.2 km  Palace Road | (unnamed)
+  c*M=-6.795  degrees 5-1  (12.9317, 77.5536)   6.7 km  5th Main Road | (unnamed)
+  c*M=-6.795  degrees 1-5  (12.9425, 77.5071)  10.3 km  (unnamed) | University Road
+  c*M=-6.795  degrees 5-1  (12.8782, 77.6256)  11.3 km  Begur Road | (unnamed)
+  c*M=-6.795  degrees 5-1  (12.9540, 77.5504)   5.4 km  Pipeline Road | (unnamed)
+  c*M=-6.795  degrees 5-1  (13.0639, 77.6502)  11.5 km  Hennur Bagalur Road | Hennur Bagalur Road
+  c*M=-6.795  degrees 5-1  (12.9775, 77.7281)  14.4 km  6th Road | 6th Road
+
+Total contribution to r by edge type (deg_a, deg_b), most negative / most positive:
+  neg: (1, 4):-0.1381  (3, 4):-0.0040  (2, 4):-0.0020  (1, 5):-0.0007  (2, 5):-0.0001  (3, 5):-0.0001
+  pos: (4, 4):+0.1145  (1, 3):+0.0053  (2, 2):+0.0043  (4, 5):+0.0030  (1, 2):+0.0026  (4, 6):+0.0001
+
+Radial profile (distance from CBD): mean rho*N, share of nodes with k>=3, mean k
+   0- 2 km: n= 2,300  rho*N=+0.604  k>=3: 86%  <k>=2.91
+   2- 4 km: n= 9,625  rho*N=+0.505  k>=3: 83%  <k>=2.84
+   4- 6 km: n=18,151  rho*N=+0.663  k>=3: 83%  <k>=2.86
+   6- 8 km: n=24,856  rho*N=+0.332  k>=3: 81%  <k>=2.79
+   8-10 km: n=29,151  rho*N=-0.216  k>=3: 71%  <k>=2.55
+  10-12 km: n=28,788  rho*N=-0.281  k>=3: 70%  <k>=2.53
+  12-15 km: n=35,527  rho*N=-0.274  k>=3: 71%  <k>=2.54
+  15-20 km: n= 7,381  rho*N=-0.636  k>=3: 63%  <k>=2.37
+
+================ Boundary clusters of high assortativity ================
+(nodes > 10 km from CBD with rho*N >= 1.85 (city 90th pct), linked within 150 m, >= 40 nodes)
+Outskirts baseline: k>=3 share 70%, k=4 share 11%, mean rho*N -0.314
+  # 1   117 nodes  12.4 km NW  (13.0485, 77.5086)  <k>=3.64  k=4: 64%  all-nbrs-junctions: 98%  local-class: 52%  streets: Minchu Technologies Road, 6th A Cross Road, 8th Main Road
+  # 2   108 nodes  10.6 km NW  (13.0127, 77.5060)  <k>=3.75  k=4: 75%  all-nbrs-junctions: 97%  local-class: 91%  streets: 6th Main Road, Rajagopala Nagara Road, Peenya Second Stage Bus Stop Road
+  # 3   107 nodes  13.5 km SW  (12.9217, 77.4842)  <k>=3.66  k=4: 66%  all-nbrs-junctions: 99%  local-class: 62%  streets: 7th Cross Road, Kengeri Main Road, 1st D Main Road
+  # 4   103 nodes  14.0 km N  (13.0980, 77.6266)  <k>=3.81  k=4: 81%  all-nbrs-junctions: 90%  local-class: 96%  streets: 12th Cross Road, 10th Cross Road, 13th Cross Road
+  # 5    87 nodes  14.1 km SW  (12.8784, 77.5112)  <k>=3.55  k=4: 55%  all-nbrs-junctions: 100%  local-class: 52%  streets: Freedom Street, 100 Feet Road, Sharavathi Road
+  # 6    75 nodes  14.3 km N  (13.1016, 77.5694)  <k>=3.75  k=4: 75%  all-nbrs-junctions: 97%  local-class: 84%  streets: 4th Cross Road, 2nd Cross Road, 1st Cross Road
+  # 7    61 nodes  10.5 km SW  (12.9135, 77.5226)  <k>=3.56  k=4: 56%  all-nbrs-junctions: 100%  local-class: 69%  streets: Jawaharlal Nehru Road, 60 Feet Road, 4th Main Road
+  # 8    55 nodes  12.2 km W  (13.0003, 77.4863)  <k>=3.62  k=4: 62%  all-nbrs-junctions: 100%  local-class: 49%  streets: 60 Feet Road, Herohalli Main Road
+  # 9    51 nodes  10.7 km E  (13.0097, 77.6879)  <k>=3.61  k=4: 61%  all-nbrs-junctions: 100%  local-class: 92%  streets: Ramamurthinagar Main Road, TC Palaya Road
+  #10    43 nodes  13.4 km SE  (12.8706, 77.6566)  <k>=3.58  k=4: 58%  all-nbrs-junctions: 93%  local-class: 12%  streets: Hosa Road, Hosur Road, 14th Main Road
+  #11    41 nodes  14.4 km SW  (12.8825, 77.5033)  <k>=3.61  k=4: 56%  all-nbrs-junctions: 100%  local-class: 34%  streets: 100 Feet Road, Hemmigepura Main Road, Underpass
+  #12    40 nodes  11.1 km W  (12.9956, 77.4955)  <k>=3.62  k=4: 62%  all-nbrs-junctions: 92%  local-class: 70%  streets: KSRTC Main Road, 6th Cross Road, 1st Main Road

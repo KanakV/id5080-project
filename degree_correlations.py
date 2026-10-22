@@ -14,6 +14,7 @@ Writes figures/bengaluru_degree_correlations_dark.png and
 results/bengaluru_degree_correlations_report.txt
 """
 import csv
+from collections import Counter
 import gc
 import os
 import sys
@@ -52,7 +53,7 @@ xy_all = {n: (d["x"], d["y"]) for n, d in G.nodes(data=True)}
 # road attributes per node, from all incident edges (OSM highway tag, bridge, name, ref)
 CLASS_RANK = {"motorway": 5, "trunk": 5, "primary": 4, "secondary": 3, "tertiary": 2}
 CLASS_NAMES = {5: "Expressway / trunk", 4: "Primary", 3: "Secondary", 2: "Tertiary", 1: "Local street"}
-node_rank, node_flags = {}, {}
+node_rank, node_flags, node_names = {}, {}, {}
 
 
 def as_list(v):
@@ -73,6 +74,9 @@ for u, v, d in G.edges(data=True):
         fl.add("National / state highway")
     for n in (u, v):
         node_rank[n] = max(node_rank.get(n, 1), rk)
+        for nm in as_list(d.get('name', [])):
+            if nm:
+                node_names.setdefault(n, Counter())[nm] += 1
         node_flags.setdefault(n, set()).update(fl)
 del G
 gc.collect()
@@ -369,3 +373,154 @@ for s_ in ax.spines.values():
 fig.savefig("figures/bengaluru_assortativity_by_road_type_dark.png", bbox_inches="tight", facecolor=SURFACE)
 log("done: figures/bengaluru_degree_correlations_dark.png, _local_assortativity_map_dark.png, "
     "_local_assortativity_cbd_dark.png, _assortativity_by_road_type_dark.png")
+
+
+# ================================================================ extremes: disassortative + outlier clusters
+from collections import Counter
+
+from scipy.sparse import coo_matrix
+from scipy.sparse.csgraph import connected_components
+from scipy.spatial import cKDTree
+
+log("extremes: disassortative nodes/edges, boundary clusters ...")
+
+
+def top_name(i, n=2):
+    c = node_names.get(nodes[i])
+    return "; ".join(nm for nm, _ in c.most_common(n)) if c else "(unnamed)"
+
+
+def compass(dx, dy):
+    return ["E", "NE", "N", "NW", "W", "SW", "S", "SE"][int(((np.degrees(np.arctan2(dy, dx)) + 22.5) % 360) // 45)]
+
+
+ext = "\n================ Most DISassortative nodes (lowest rho*N) ================\n"
+ext += "(rho_v = q_v * sum_nbrs(q_w - mu) / (2M sigma^2); negative = hub-like node whose neighbours are low-degree)\n"
+for j in np.argsort(rho_n)[:15]:
+    nb = sorted(int(deg[idx[w]]) for w in S[nodes[j]])
+    ext += (f"  rho*N={rho_n[j]:+.3f}  k={deg[j]}  nbr degrees={nb}  "
+            f"({xy[j, 1]:.4f}, {xy[j, 0]:.4f})  {dist_km[j]:4.1f} km from CBD  {top_name(j)[:55]}\n")
+low = rho_n < -0.5
+ext += (f"\nNodes with rho*N < -0.5: {low.sum():,} ({low.mean():.1%});  of these, "
+        f"{np.mean([any(deg[idx[w]] == 1 for w in S[nodes[j]]) for j in np.where(low)[0]]):.0%} touch a dead end (k=1), "
+        f"degree mix {dict(sorted(Counter(deg[low].tolist()).items()))}\n")
+ext += f"Mean distance from CBD: disassortative {dist_km[low].mean():.1f} km vs all nodes {dist_km.mean():.1f} km\n"
+
+# edge-level contribution: c_e = (q_i - mu)(q_j - mu) / (M sigma^2); sum_e c_e = r
+ce = (q[edges[:, 0]] - mu_q) * (q[edges[:, 1]] - mu_q) / (M * var_q)
+assert abs(ce.sum() - r) < 1e-6, (ce.sum(), r)
+ce_n = ce * M                                      # mean over edges = r
+ext += "\n================ Most DISassortative edges (hub linked to low-degree node) ================\n"
+for e in np.argsort(ce_n)[:15]:
+    a_, b_ = edges[e]
+    mid = (xy[a_] + xy[b_]) / 2
+    ext += (f"  c*M={ce_n[e]:+.3f}  degrees {deg[a_]}-{deg[b_]}  ({mid[1]:.4f}, {mid[0]:.4f})  "
+            f"{np.hypot((mid[0]-cbd[0])*np.cos(np.radians(cbd[1])), mid[1]-cbd[1])*111.2:4.1f} km  "
+            f"{top_name(a_, 1)[:30]} | {top_name(b_, 1)[:30]}\n")
+pair = Counter()
+for e in range(M):
+    pair[tuple(sorted((int(deg[edges[e, 0]]), int(deg[edges[e, 1]]))))] += ce[e]
+ext += "\nTotal contribution to r by edge type (deg_a, deg_b), most negative / most positive:\n"
+srt = sorted(pair.items(), key=lambda kv: kv[1])
+ext += "  neg: " + "  ".join(f"{k}:{v:+.4f}" for k, v in srt[:6]) + "\n"
+ext += "  pos: " + "  ".join(f"{k}:{v:+.4f}" for k, v in srt[::-1][:6]) + "\n"
+
+# radial trend (the "centre is higher" pattern)
+bins = [0, 2, 4, 6, 8, 10, 12, 15, 20, 40]
+radial = []
+ext += "\nRadial profile (distance from CBD): mean rho*N, share of nodes with k>=3, mean k\n"
+for lo_, hi_ in zip(bins[:-1], bins[1:]):
+    m_ = (dist_km >= lo_) & (dist_km < hi_)
+    if m_.sum():
+        radial.append(((lo_ + hi_) / 2, rho_n[m_].mean(), rho_n[m_].std() / np.sqrt(m_.sum())))
+        ext += f"  {lo_:2d}-{hi_:2d} km: n={m_.sum():6,d}  rho*N={rho_n[m_].mean():+.3f}  k>=3: {(deg[m_] >= 3).mean():.0%}  <k>={deg[m_].mean():.2f}\n"
+
+# boundary clusters of high assortativity
+OUTER_KM, LINK_KM = 10.0, 0.15
+thr = np.percentile(rho_n, 90)
+hi_nodes = np.where((rho_n >= thr) & (dist_km > OUTER_KM))[0]
+X = (xy - cbd) * np.array([111.2 * np.cos(np.radians(cbd[1])), 111.2])
+tree = cKDTree(X[hi_nodes])
+pairs = tree.query_pairs(LINK_KM, output_type="ndarray")
+g = coo_matrix((np.ones(len(pairs)), (pairs[:, 0], pairs[:, 1])), shape=(len(hi_nodes),) * 2)
+_, lab = connected_components(g, directed=False)
+clusters = [hi_nodes[lab == c] for c in range(lab.max() + 1) if (lab == c).sum() >= 40]
+clusters.sort(key=len, reverse=True)
+outer = dist_km > OUTER_KM
+ext += (f"\n================ Boundary clusters of high assortativity ================\n"
+        f"(nodes > {OUTER_KM:.0f} km from CBD with rho*N >= {thr:.2f} (city 90th pct), linked within {LINK_KM*1000:.0f} m, >= 40 nodes)\n"
+        f"Outskirts baseline: k>=3 share {(deg[outer] >= 3).mean():.0%}, k=4 share {(deg[outer] == 4).mean():.0%}, "
+        f"mean rho*N {rho_n[outer].mean():+.3f}\n")
+cl_rows = []
+for ci, cl in enumerate(clusters[:12], 1):
+    c_xy = X[cl].mean(0)
+    hw = Counter(rank[cl])
+    names = Counter()
+    for j in cl:
+        for nm, cnt_ in node_names.get(nodes[j], Counter()).items():
+            names[nm] += cnt_
+    ll = xy[cl].mean(0)
+    # grid-likeness: share of cluster nodes whose neighbours are all junctions (k>=3)
+    allj = np.mean([all(deg[idx[w]] >= 3 for w in S[nodes[j]]) for j in cl])
+    cl_rows.append((ci, ll, len(cl)))
+    ext += (f"  #{ci:2d} {len(cl):5,d} nodes  {np.hypot(*c_xy):4.1f} km {compass(*c_xy)}  ({ll[1]:.4f}, {ll[0]:.4f})  "
+            f"<k>={deg[cl].mean():.2f}  k=4: {(deg[cl] == 4).mean():.0%}  all-nbrs-junctions: {allj:.0%}  "
+            f"local-class: {hw.get(1, 0) / len(cl):.0%}  streets: {', '.join(n for n, _ in names.most_common(3)) or '(unnamed)'}\n")
+print(ext)
+with open("results/bengaluru_degree_correlations_report.txt", "a", encoding="utf-8") as f:
+    f.write(ext)
+
+# figure
+fig = plt.figure(figsize=(20, 9), dpi=200)
+fig.patch.set_facecolor(SURFACE)
+gs = fig.add_gridspec(1, 3, width_ratios=[0.7, 1.15, 1.15], wspace=0.12)
+
+ax = fig.add_subplot(gs[0])
+style(ax)
+rx, ry, re = zip(*radial)
+ax.errorbar(rx, ry, yerr=re, fmt="o-", color=BLUE, ecolor=SUBD, capsize=3, ms=6)
+ax.axhline(r, color=SUBD, ls="--", lw=1)
+ax.set_xlabel("distance from centre of CBD (km)", color=SUBD)
+ax.set_ylabel("mean local assortativity  ρ·N", color=SUBD)
+ax.set_title("Centre vs boundary", color=INKD, fontsize=12)
+ax.grid(True, color=GRID, lw=0.6)
+
+ax = fig.add_subplot(gs[1])
+ax.set_facecolor(SURFACE)
+ax.add_collection(LineCollection(segs, colors="#2f2f2c", linewidths=0.2, zorder=1))
+ax.scatter(xy[:, 0], xy[:, 1], s=0.5, c="#4a4a45", linewidths=0, zorder=2)
+for ci, cl in enumerate(clusters[:12], 1):
+    ax.scatter(xy[cl, 0], xy[cl, 1], s=4, color="#ff5a5a", linewidths=0, zorder=3)
+    cx, cy = xy[cl].mean(0)
+    ax.annotate(str(ci), (cx, cy), xytext=(6, 6), textcoords="offset points", color="#ffd0d0",
+                fontsize=11, fontweight="bold", zorder=6, path_effects=halo)
+th = plt.Circle((cbd[0], cbd[1]), OUTER_KM / (111.2 * np.cos(np.radians(cbd[1]))), fill=False,
+                ec=ORANGE, ls="--", lw=1)
+ax.add_patch(th)
+ax.set_aspect(ASPECT)
+ax.set_xlim(xy[:, 0].min(), xy[:, 0].max())
+ax.set_ylim(xy[:, 1].min(), xy[:, 1].max())
+ax.set_xticks([])
+ax.set_yticks([])
+ax.set_title(f"High-assortativity clusters beyond {OUTER_KM:.0f} km (dashed ring)", color=INKD, fontsize=12)
+for s_ in ax.spines.values():
+    s_.set_color(SPINE)
+
+ax = fig.add_subplot(gs[2])
+ax.set_facecolor(SURFACE)
+ax.add_collection(LineCollection(segs, colors="#2f2f2c", linewidths=0.2, zorder=1))
+ax.scatter(xy[:, 0], xy[:, 1], s=0.5, c="#4a4a45", linewidths=0, zorder=2)
+worst_e = np.argsort(ce_n)[:300]
+ax.add_collection(LineCollection(segs[worst_e], colors=BLUE, linewidths=2.2, zorder=3))
+worst_n = np.argsort(rho_n)[:300]
+ax.scatter(xy[worst_n, 0], xy[worst_n, 1], s=10, color="#6cb0ff", linewidths=0, zorder=4)
+ax.set_aspect(ASPECT)
+ax.set_xlim(xy[:, 0].min(), xy[:, 0].max())
+ax.set_ylim(xy[:, 1].min(), xy[:, 1].max())
+ax.set_xticks([])
+ax.set_yticks([])
+ax.set_title("Most disassortative: 300 edges (lines) and 300 nodes (dots)", color=INKD, fontsize=12)
+for s_ in ax.spines.values():
+    s_.set_color(SPINE)
+fig.savefig("figures/bengaluru_assortativity_extremes_dark.png", bbox_inches="tight", facecolor=SURFACE)
+log("done: figures/bengaluru_assortativity_extremes_dark.png")
