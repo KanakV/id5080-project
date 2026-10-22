@@ -14,3 +14,18 @@ Important nodes (top betweenness) — degree, mean neighbour degree, local assorta
   6. Krishna Rajendra Road; NR Road                     k=4  k_nn=3.25  rho=+1.19e-05  bc=0.0578
   7. Cottonpete Main Road                               k=4  k_nn=3.50  rho=+2.43e-05  bc=0.0571
   8. Museum Road; Residency Road                        k=4  k_nn=3.00  rho=-5.35e-07  bc=0.0559
+
+Local assortativity by road category (rho x N, so the mean over all nodes = r = -0.0147):
+category                                nodes      mean               95% CI    <k>
+Expressway / trunk                      1,399   +0.6623 [ +0.5768, +0.7532]   3.11
+Primary                                 3,944   +0.9588 [ +0.9018, +1.0244]   3.21
+Secondary                               8,702   +0.8891 [ +0.8452, +0.9355]   3.22
+Tertiary                               19,417   +0.2751 [ +0.2439, +0.3017]   3.16
+Local street                          122,317   -0.1641 [ -0.1745, -0.1533]   2.48
+Flyover / viaduct                       2,449   +0.2882 [ +0.2143, +0.3567]   3.10
+Ring road                                 674   +0.7894 [ +0.6609, +0.9191]   3.15
+Outer Ring Road                           516   +0.8774 [ +0.7669, +0.9858]   3.15
+National / state highway                1,440   +0.7203 [ +0.6294, +0.8075]   3.18
+Central (< 3 km of CBD)                 5,836   +0.4736 [ +0.4255, +0.5147]   2.87
+Outskirts (> 12 km)                    42,908   -0.3362 [ -0.3539, -0.3203]   2.51
+Important nodes (top betweenness)           8   +1.6103 [ +0.5154, +2.5781]   4.00

@@ -48,6 +48,32 @@ S = nx.Graph()                                   # same simplification as model_
 S.add_nodes_from(G.nodes)
 S.add_edges_from((u, v) for u, v, _ in G.edges(keys=True) if u != v)
 xy_all = {n: (d["x"], d["y"]) for n, d in G.nodes(data=True)}
+
+# road attributes per node, from all incident edges (OSM highway tag, bridge, name, ref)
+CLASS_RANK = {"motorway": 5, "trunk": 5, "primary": 4, "secondary": 3, "tertiary": 2}
+CLASS_NAMES = {5: "Expressway / trunk", 4: "Primary", 3: "Secondary", 2: "Tertiary", 1: "Local street"}
+node_rank, node_flags = {}, {}
+
+
+def as_list(v):
+    return v if isinstance(v, list) else [v]
+
+
+for u, v, d in G.edges(data=True):
+    rk = max(CLASS_RANK.get(h.replace("_link", ""), 1) for h in as_list(d["highway"]))
+    names = " ".join(str(x) for x in as_list(d.get("name", "")))
+    fl = set()
+    if d.get("bridge") not in (None, "no"):
+        fl.add("Flyover / viaduct")
+    if "Ring Road" in names:
+        fl.add("Ring road")
+    if "Outer Ring Road" in names:
+        fl.add("Outer Ring Road")
+    if any(str(x).startswith(("NH", "SH")) for x in as_list(d.get("ref", ""))):
+        fl.add("National / state highway")
+    for n in (u, v):
+        node_rank[n] = max(node_rank.get(n, 1), rk)
+        node_flags.setdefault(n, set()).update(fl)
 del G
 gc.collect()
 S = S.subgraph(max(nx.connected_components(S), key=len)).copy()
@@ -55,6 +81,8 @@ nodes = list(S.nodes)
 idx = {n: i for i, n in enumerate(nodes)}
 xy = np.array([xy_all[n] for n in nodes])
 deg = np.array([S.degree(n) for n in nodes])
+rank = np.array([node_rank[n] for n in nodes])
+flags = [node_flags.get(n, set()) for n in nodes]
 edges = np.array([(idx[u], idx[v]) for u, v in S.edges])
 M = len(edges)
 log(f"giant component: {len(nodes):,} nodes, {M:,} edges")
@@ -151,9 +179,9 @@ def tag_pts(ax, xs, ys):
                     path_effects=[mpl.patheffects.withStroke(linewidth=2.5, foreground=SURFACE)])
 
 
-fig = plt.figure(figsize=(19, 6.5), dpi=200)
+fig = plt.figure(figsize=(13, 6.5), dpi=200)
 fig.patch.set_facecolor(SURFACE)
-gs = fig.add_gridspec(1, 3, width_ratios=[1, 1, 1.25], wspace=0.28)
+gs = fig.add_gridspec(1, 2, wspace=0.3)
 
 # panel 1: e_jk
 ax = fig.add_subplot(gs[0])
@@ -188,55 +216,156 @@ ax.set_axisbelow(True)
 ax.legend(frameon=False, labelcolor=INKD, fontsize=9, loc="lower right")
 tag_pts(ax, deg[imp_idx], nbr_mean[imp_idx])
 
-# panel 3: map coloured by local assortativity
-ax = fig.add_subplot(gs[2])
-style(ax)
-segs = np.stack([xy[edges[:, 0]], xy[edges[:, 1]]], axis=1)
-ax.add_collection(LineCollection(segs, colors=BASE, linewidths=0.25, zorder=1))
+legend = "Important nodes (top betweenness)\n" + "\n".join(
+    f"{i}. {name[:34]}   (k={deg[ix]})" for i, ((_, name, _), ix) in enumerate(zip(important, imp_idx), 1))
+fig.text(0.04, 0.015, legend, color=INKD, fontsize=9, va="bottom", family="monospace")
+fig.suptitle("Degree correlations — Bengaluru road network (important nodes numbered)", color=INKD, fontsize=14, y=0.99)
+fig.subplots_adjust(bottom=0.30, top=0.9, left=0.06, right=0.98)
+fig.savefig("figures/bengaluru_degree_correlations_dark.png", facecolor=SURFACE)
+plt.close(fig)
+
+
+# ================================================================ local assortativity maps
+DIV = mpl.colors.LinearSegmentedColormap.from_list("div", [BLUE, "#2b2b29", "#ff5a5a"])
 lim = np.percentile(np.abs(rho), 99.5)
-order = np.argsort(np.abs(rho))                    # strongest contributors drawn on top
-sc = ax.scatter(xy[order, 0], xy[order, 1], c=rho[order], s=1.2, zorder=2,
-                cmap=mpl.colors.LinearSegmentedColormap.from_list(
-                    "div", [BLUE, "#2b2b29", "#ff5a5a"]),
-                norm=mpl.colors.TwoSlopeNorm(0, -lim, lim), linewidths=0)
-ax.set_aspect(1 / np.cos(np.radians(xy[:, 1].mean())))
+DNORM = mpl.colors.TwoSlopeNorm(0, -lim, lim)
+segs = np.stack([xy[edges[:, 0]], xy[edges[:, 1]]], axis=1)
+ASPECT = 1 / np.cos(np.radians(xy[:, 1].mean()))
+px, py = xy[imp_idx, 0], xy[imp_idx, 1]
+halo = [mpl.patheffects.withStroke(linewidth=2.5, foreground=SURFACE)]
+
+
+def rho_map(ax, mask, size, base_lw, base_color, number_size):
+    ax.set_facecolor(SURFACE)
+    ax.add_collection(LineCollection(segs, colors=base_color, linewidths=base_lw, zorder=1))
+    sel = np.where(mask)[0]
+    sel = sel[np.argsort(np.abs(rho[sel]))]            # strongest contributors on top
+    sc = ax.scatter(xy[sel, 0], xy[sel, 1], c=rho[sel], s=size, zorder=2, cmap=DIV, norm=DNORM,
+                    linewidths=0)
+    ax.set_aspect(ASPECT)
+    ax.set_xticks([])
+    ax.set_yticks([])
+    for s_ in ax.spines.values():
+        s_.set_color(SPINE)
+    for i, (x, y) in enumerate(zip(px, py), 1):
+        ax.scatter([x], [y], s=number_size * 8, facecolors="none", edgecolors=ORANGE,
+                   linewidths=1.3, zorder=5)
+        ax.annotate(str(i), (x, y), xytext=(7, 7), textcoords="offset points", color=ORANGE,
+                    fontsize=number_size, fontweight="bold", zorder=6, path_effects=halo)
+    return sc
+
+
+def add_cb(fig, ax, sc):
+    cb = fig.colorbar(sc, ax=ax, shrink=0.55, pad=0.01)
+    cb.set_label("node contribution to r  (sums to r)", color=SUBD)
+    cb.ax.tick_params(colors=SUBD, labelsize=8)
+    cb.formatter.set_powerlimits((0, 0))
+    cb.update_ticks()
+    cb.ax.yaxis.offsetText.set_color(SUBD)
+
+
+# full-city map, nothing covering it
+log("plotting local assortativity map ...")
+fig, ax = plt.subplots(figsize=(12, 11), dpi=200)
+fig.patch.set_facecolor(SURFACE)
+sc = rho_map(ax, np.ones(len(nodes), bool), 1.6, 0.2, "#33332f", 10)
+ax.set_xlim(xy[:, 0].min(), xy[:, 0].max())
+ax.set_ylim(xy[:, 1].min(), xy[:, 1].max())
+add_cb(fig, ax, sc)
+ax.set_title("Local assortativity of Bengaluru intersections\n"
+             "red: links to higher-degree nodes than average (assortative) · blue: disassortative",
+             color=INKD, fontsize=12)
+fig.savefig("figures/bengaluru_local_assortativity_map_dark.png", bbox_inches="tight", facecolor=SURFACE)
+plt.close(fig)
+
+# zoom on the central business district, separate figure
+fig, ax = plt.subplots(figsize=(10, 9), dpi=200)
+fig.patch.set_facecolor(SURFACE)
+x0, x1 = px.min() - 0.012, px.max() + 0.012
+y0, y1 = py.min() - 0.010, py.max() + 0.010
+inb = (xy[:, 0] > x0) & (xy[:, 0] < x1) & (xy[:, 1] > y0) & (xy[:, 1] < y1)
+sc = rho_map(ax, inb, 9, 0.5, "#55554f", 12)
+ax.set_xlim(x0, x1)
+ax.set_ylim(y0, y1)
+add_cb(fig, ax, sc)
+ax.set_title("Local assortativity — central business district", color=INKD, fontsize=12)
+fig.savefig("figures/bengaluru_local_assortativity_cbd_dark.png", bbox_inches="tight", facecolor=SURFACE)
+plt.close(fig)
+
+# ================================================================ by road category
+log("categorising nodes by road type ...")
+cbd = np.array([px.mean(), py.mean()])                  # centroid of the top-betweenness junctions
+dist_km = np.hypot((xy[:, 0] - cbd[0]) * np.cos(np.radians(cbd[1])), xy[:, 1] - cbd[1]) * 111.2
+cats = {}                                               # name -> boolean mask
+for r_ in (5, 4, 3, 2, 1):
+    cats[CLASS_NAMES[r_]] = rank == r_                  # exclusive: highest class at the node
+for fl in ("Flyover / viaduct", "Ring road", "Outer Ring Road", "National / state highway"):
+    cats[fl] = np.array([fl in f_ for f_ in flags])     # overlapping flags
+cats["Central (< 3 km of CBD)"] = dist_km < 3
+cats["Outskirts (> 12 km)"] = dist_km > 12
+cats["Important nodes (top betweenness)"] = np.isin(np.arange(len(nodes)), imp_idx)
+rho_n = rho * len(nodes)                                # rescale so the mean over all nodes = r
+rng = np.random.default_rng(0)
+rows = []
+for name, m_ in cats.items():
+    v = rho_n[m_]
+    boot = [rng.choice(v, len(v)).mean() for _ in range(300)] if len(v) > 1 else [v.mean()]
+    rows.append((name, m_.sum(), v.mean(), np.percentile(boot, 2.5), np.percentile(boot, 97.5),
+                 deg[m_].mean(), (rho_n < v.mean()).mean()))
+
+cat_report = f"\nLocal assortativity by road category (rho x N, so the mean over all nodes = r = {r:+.4f}):\n"
+cat_report += f"{'category':36s} {'nodes':>8s} {'mean':>9s} {'95% CI':>20s} {'<k>':>6s}\n"
+for name, n_, mu, lo, hi, kmean, _ in rows:
+    cat_report += f"{name:36s} {n_:8,d} {mu:+9.4f} [{lo:+8.4f},{hi:+8.4f}] {kmean:6.2f}\n"
+print(cat_report)
+with open("results/bengaluru_degree_correlations_report.txt", "a", encoding="utf-8") as f:
+    f.write(cat_report)
+
+fig = plt.figure(figsize=(19, 8.5), dpi=200)
+fig.patch.set_facecolor(SURFACE)
+gs = fig.add_gridspec(1, 2, width_ratios=[1, 1.15], wspace=0.08)
+ax = fig.add_subplot(gs[0])
+ax.set_facecolor(SURFACE)
+ypos = np.arange(len(rows))[::-1]
+for y_, (name, n_, mu, lo, hi, kmean, _) in zip(ypos, rows):
+    ax.errorbar(mu, y_, xerr=[[mu - lo], [hi - mu]], fmt="o", color=ORANGE if mu > r else BLUE,
+                ecolor=SUBD, capsize=4, ms=8)
+ax.axvline(r, color=SUBD, ls="--", lw=1.2)
+ax.text(r, -0.75, f" r = {r:+.3f} (whole city)", color=SUBD, fontsize=9, va="bottom")
+ax.set_yticks(ypos)
+ax.set_yticklabels([f"{r_[0]}\n(n={r_[1]:,}, <k>={r_[5]:.2f})" for r_ in rows], color=INKD, fontsize=9)
+ax.axhline(ypos[4] - 0.5, color=SPINE, lw=0.8)         # class | flags
+ax.axhline(ypos[8] - 0.5, color=SPINE, lw=0.8)         # flags | location
+ax.set_xlabel("mean local assortativity  ρ·N   (95% bootstrap CI)", color=SUBD)
+ax.set_title("Where each road type sits  (orange: above city average, blue: below)", color=INKD, fontsize=12)
+ax.tick_params(colors=SUBD)
+ax.grid(True, axis="x", color=GRID, lw=0.6)
+ax.set_axisbelow(True)
+for s_ in ax.spines.values():
+    s_.set_color(SPINE)
+
+ax = fig.add_subplot(gs[1])
+ax.set_facecolor(SURFACE)
+ax.add_collection(LineCollection(segs, colors="#2a2a28", linewidths=0.15, zorder=1))
+LAYERS = [("Local street", "#6e6e68", 0.3, "local streets"),
+          ("Primary", "#f2c14e", 1.2, "primary"),
+          ("Expressway / trunk", "#ff5a5a", 3.0, "expressway / trunk"),
+          ("Flyover / viaduct", "#3ddc97", 3.0, "flyovers"),
+          ("Outer Ring Road", "#c77dff", 3.0, "Outer Ring Road")]
+handles = []
+for name, col, size, lab in LAYERS:
+    m_ = cats[name]
+    ax.scatter(xy[m_, 0], xy[m_, 1], s=size, color=col, linewidths=0, zorder=2, alpha=0.9 if size > 1 else 0.35)
+    handles.append(plt.Line2D([], [], marker="o", ls="", color=col, ms=7, label=f"{lab}  ({m_.sum():,})"))
+ax.legend(handles=handles, loc="upper right", frameon=False, labelcolor=INKD, fontsize=9)
+ax.set_aspect(ASPECT)
 ax.set_xlim(xy[:, 0].min(), xy[:, 0].max())
 ax.set_ylim(xy[:, 1].min(), xy[:, 1].max())
 ax.set_xticks([])
 ax.set_yticks([])
-ax.set_title("Local assortativity  (blue: disassortative, red: assortative)", color=INKD, fontsize=12)
-cb = fig.colorbar(sc, ax=ax, shrink=0.6, pad=0.01)
-cb.set_label("node contribution to r", color=SUBD)
-cb.ax.tick_params(colors=SUBD, labelsize=7)
-px, py = xy[imp_idx, 0], xy[imp_idx, 1]
-ax.scatter(px, py, s=60, facecolors="none", edgecolors=ORANGE, linewidths=1.2, zorder=5)
-padx, pady = 0.012, 0.010
-x0, x1, y0, y1 = px.min() - padx, px.max() + padx, py.min() - pady, py.max() + pady
-ax.add_patch(plt.Rectangle((x0, y0), x1 - x0, y1 - y0, fill=False, ec=ORANGE, lw=0.8, zorder=4))
-ins = ax.inset_axes([0.0, 0.0, 0.52, 0.52])          # zoom on the central business district
-ins.set_facecolor(SURFACE)
-ins.add_collection(LineCollection(segs, colors="#55554f", linewidths=0.5, zorder=1))
-inb = (xy[:, 0] > x0) & (xy[:, 0] < x1) & (xy[:, 1] > y0) & (xy[:, 1] < y1)
-ins.scatter(xy[inb, 0], xy[inb, 1], c=rho[inb], s=6, zorder=2, linewidths=0,
-            cmap=sc.get_cmap(), norm=sc.norm)
-ins.scatter(px, py, s=110, facecolors="none", edgecolors=ORANGE, linewidths=1.6, zorder=5)
-for i, (x, y) in enumerate(zip(px, py), 1):
-    ins.annotate(str(i), (x, y), xytext=(7, 7), textcoords="offset points", color=ORANGE,
-                 fontsize=10, fontweight="bold", zorder=6,
-                 path_effects=[mpl.patheffects.withStroke(linewidth=2.5, foreground=SURFACE)])
-ins.set_xlim(x0, x1)
-ins.set_ylim(y0, y1)
-ins.set_aspect(1 / np.cos(np.radians(xy[:, 1].mean())))
-ins.set_xticks([])
-ins.set_yticks([])
-for s_ in ins.spines.values():
-    s_.set_color(ORANGE)
-
-legend = "Important nodes (top betweenness)\n" + "\n".join(
-    f"{i}. {name[:34]}   (k={deg[ix]})" for i, ((_, name, _), ix) in enumerate(zip(important, imp_idx), 1))
-fig.text(0.015, 0.015, legend, color=INKD, fontsize=9, va="bottom", family="monospace")
-fig.suptitle("Degree correlations — Bengaluru road network", color=INKD, fontsize=14, y=0.99)
-fig.subplots_adjust(bottom=0.30, top=0.9, left=0.05, right=0.98)
-fig.savefig("figures/bengaluru_degree_correlations_dark.png", facecolor=SURFACE)
-log("done: figures/bengaluru_degree_correlations_dark.png, "
-    "results/bengaluru_degree_correlations_report.txt")
+ax.set_title("Where those road types are in the city", color=INKD, fontsize=12)
+for s_ in ax.spines.values():
+    s_.set_color(SPINE)
+fig.savefig("figures/bengaluru_assortativity_by_road_type_dark.png", bbox_inches="tight", facecolor=SURFACE)
+log("done: figures/bengaluru_degree_correlations_dark.png, _local_assortativity_map_dark.png, "
+    "_local_assortativity_cbd_dark.png, _assortativity_by_road_type_dark.png")
