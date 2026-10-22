@@ -5,7 +5,7 @@
 | Area | Person |
 |---|---|
 | Bengaluru analysis, pipeline scripts, write-up (ANALYSIS.md) | Kanak Varma |
-| Chennai analysis | *(add yourself here)* |
+| Chennai and Bangalore, Pagerank Centrality, Detour Index comparison (WIP)| S.Sathyanand |
 | Growth-over-time modeling | *(open)* |
 
 Add a row (or extend one) in the same PR/commit as your work.
