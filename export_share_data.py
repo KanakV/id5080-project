@@ -12,7 +12,7 @@ Produces share/ with:
   README.md                what each file is, methods, provenance
 Then zips everything to bengaluru_network_analysis.zip.
 
-Usage:  python export_share_data.py
+Usage:  python export_share_data.py [path/to/graph.graphml]
 """
 import csv
 import gc
@@ -25,9 +25,12 @@ import networkx as nx
 import numpy as np
 import osmnx as ox
 
-GRAPH = "data/bengaluru_city_bengaluru_drive.graphml"
-TAG = "bengaluru_city_bengaluru_drive"
-OUT = "share"
+import sys  # noqa: E402
+
+GRAPH = sys.argv[1] if len(sys.argv) > 1 else "data/bengaluru_city_bengaluru_drive.graphml"
+TAG = os.path.splitext(os.path.basename(GRAPH))[0]
+CITY = TAG.split("_")[0]
+OUT = f"share_{CITY}"
 os.makedirs(f"{OUT}/reports", exist_ok=True)
 
 
@@ -89,7 +92,7 @@ with open(f"{OUT}/percolation_curves.csv", "w", newline="") as f:
 
 # ---------------------------------------------------------------- degree hists
 log("writing degree_distributions.csv ...")
-z = np.load("results/model_degrees.npz")
+z = np.load(f"results/{TAG}_model_degrees.npz")
 names = list(z.files)
 dmax = max(len(z[g]) for g in names) - 1
 with open(f"{OUT}/degree_distributions.csv", "w", newline="") as f:
@@ -100,21 +103,20 @@ with open(f"{OUT}/degree_distributions.csv", "w", newline="") as f:
 
 # ---------------------------------------------------------------- copies
 log("copying tables and reports ...")
-shutil.copy("results/model_comparison.csv", f"{OUT}/model_comparison.csv")
+shutil.copy(f"results/{TAG}_model_comparison.csv", f"{OUT}/model_comparison.csv")
 shutil.copy(f"results/{TAG}_top_betweenness.csv", f"{OUT}/top_betweenness.csv")
 for fn in os.listdir("results"):
-    if fn.endswith(".txt"):
+    if fn.endswith(".txt") and fn.startswith(TAG):
         shutil.copy(f"results/{fn}", f"{OUT}/reports/{fn}")
 shutil.copy("ANALYSIS.md", f"{OUT}/ANALYSIS.md")
 
 # ---------------------------------------------------------------- README
 with open(f"{OUT}/README.md", "w") as f:
-    f.write("""# Bengaluru road network — analysis data (ID5080 term project)
+    f.write(f"""# {CITY.capitalize()} road network — analysis data (ID5080 term project)
 
-Network: OpenStreetMap drivable streets, BBMP boundary, fetched 2026-10-05 with
-osmnx 2.0.7 (`fetch_namma.py bengaluru city`). 155,779 nodes / 205,640 undirected
-segments / 13,001 km. The 145 MB graphml itself is NOT in this bundle — regenerate
-it with the script (OSM data is cached) or ask Kanak.
+Network: OpenStreetMap drivable streets inside the municipal boundary, fetched
+with osmnx 2.x (`fetch_namma.py {CITY} city`). The graphml itself is NOT in this
+bundle — regenerate it with the script (OSM responses are cached) or ask the owner.
 
 ## Files
 - **nodes_metrics.csv** — one row per intersection/dead-end. `degree` is the simple
@@ -152,7 +154,7 @@ it with the script (OSM data is cached) or ask Kanak.
 
 # ---------------------------------------------------------------- zip
 log("zipping ...")
-zpath = "bengaluru_network_analysis.zip"
+zpath = f"{CITY}_network_analysis.zip"
 with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED) as zf:
     for root, _, files in os.walk(OUT):
         for fn in files:

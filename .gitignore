@@ -8,7 +8,7 @@ data/
 cache/
 
 # hand-off bundle — rebuild with export_share_data.py
-share/
+share*/
 *.zip
 
 # course handouts

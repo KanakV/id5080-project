@@ -86,8 +86,8 @@ Reading: Bengaluru has ER-like (near-zero) clustering but paths ~8× longer than
 
 Degree make-up: Bengaluru is 61% degree-3 (T-junctions) and 25% degree-1 (dead ends), with almost no degree-2 nodes (interstitial points are merged by osmnx simplification) and nothing above 6. ER spreads Poisson-style over 1–11; WS concentrates on its ring degree 4.
 
-![Degree distribution: counts and normalized](figures/model_degree_distribution_dark.png)
-![Metric panels](figures/model_metric_panels.png)
+![Degree distribution: counts and normalized](figures/bengaluru_city_bengaluru_drive_degree_distribution_dark.png)
+![Metric panels](figures/bengaluru_city_bengaluru_drive_model_metric_panels.png)
 
 ## 7. Degree exponent γ vs the AB model
 
@@ -120,7 +120,7 @@ Reading: with no hubs to exploit (max degree 6), targeted attacks gain less here
 
 Under *random failure* Bengaluru is by far the most fragile — it collapses at half the removal fraction ER survives, because its sparse lattice structure has no long-range shortcuts to reroute through. Under a *targeted attack* the three graphs converge (q_c 0.17–0.28): with no hubs anywhere, an attacker gains little extra leverage over the models — but note Bengaluru loses most of its connectivity far earlier in the attack (S(q) is near zero by q ≈ 0.12).
 
-![Percolation vs models, random failure (dark)](figures/percolation_model_comparison_dark.png)
+![Percolation vs models, random failure (dark)](figures/bengaluru_city_bengaluru_drive_percolation_vs_models_dark.png)
 
 ## 9. Road-network growth over time — dataset options
 
@@ -138,7 +138,7 @@ Modeling framework suggestion: Strano et al. (2012) / Barthélemy–Flammini **d
 - Env: `python3 -m venv .venv && .venv/bin/pip install -r requirements.txt` (osmnx 2.0.7, networkx 3.4.2, scipy, matplotlib).
 - Scripts (run with `.venv/bin/python <script> data/bengaluru_city_bengaluru_drive.graphml`):
   - `fetch_namma.py bengaluru city` — data download (cached in `cache/`)
-  - `analyze_bengaluru.py` — betweenness + cyclic structure (+ light-theme maps)
+  - `analyze_network.py` — betweenness + cyclic structure (+ light-theme maps)
   - `betweenness_edges.py` — edge-painted betweenness map (uses cached bc)
   - `expander_bottleneck.py` — λ₂/Cheeger/Ramanujan, Fiedler cut, min cuts (dark maps)
   - `model_comparison.py` — ER/WS comparison table + charts

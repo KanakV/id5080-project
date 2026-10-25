@@ -8,7 +8,7 @@ Basic structural analysis of a city street network (GraphML from fetch_namma.py)
      indices, bridge share, 2-core, biconnected components.
 
 Usage:
-    python analyze_bengaluru.py [path/to/graph.graphml] [k_samples]
+    python analyze_network.py [path/to/graph.graphml] [k_samples]
 
 Writes figures to ./figures/ and a top-nodes CSV to ./results/.
 """
