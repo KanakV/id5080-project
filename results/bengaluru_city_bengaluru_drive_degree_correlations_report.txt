@@ -5,7 +5,7 @@ Assortativity r (Newman eq. 7.82)    : -0.0147
 Slope of neighbour degree vs degree  : -0.0703
 k_nn(k):  k=1: 3.22  k=2: 2.61  k=3: 2.95  k=4: 3.14  k=5: 3.26  k=6: 3.20
 
-Important nodes (top betweenness) — degree, mean neighbour degree, local assortativity:
+Important nodes (top betweenness) â€” degree, mean neighbour degree, local assortativity:
   1. Brigade Road; Hosur Road; Richmond Road            k=4  k_nn=3.25  rho=+1.19e-05  bc=0.0784
   2. Doctor B R Ambedkar Veedhi; Raj Bhavan Road        k=4  k_nn=3.50  rho=+2.43e-05  bc=0.0622
   3. Cockburn Road; Netaji Road                         k=4  k_nn=3.25  rho=+1.19e-05  bc=0.0621

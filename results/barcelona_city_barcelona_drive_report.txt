@@ -1,0 +1,31 @@
+
+================= barcelona_city_barcelona_drive =================
+Nodes (intersections/dead-ends) : 9,007
+Edges (street segments, undir.) : 14,167
+Connected components            : 1
+Total street length             : 1,398.0 km
+
+--- Betweenness centrality (approx, k=300, length-weighted, on largest SCC) ---
+mean = 0.00730   max = 0.10544   (normalized)
+Gini-like concentration: top 1% of nodes hold 7.9% of total betweenness
+Top 10 intersections:
+   1. bc=0.10544  (41.39702, 2.16143)  Avinguda Diagonal; Carrer de Pau Claris
+   2. bc=0.09574  (41.39735, 2.16271)  Avinguda Diagonal; Carrer del Rosselló
+   3. bc=0.07655  (41.39556, 2.15566)  Avinguda Diagonal; Via Augusta
+   4. bc=0.07601  (41.39677, 2.16043)  Avinguda Diagonal
+   5. bc=0.07532  (41.39532, 2.15471)  Avinguda Diagonal; Carrer de Balmes
+   6. bc=0.07487  (41.39777, 2.13277)  Ronda del General Mitre; Via Augusta
+   7. bc=0.07398  (41.42379, 2.17763)  Carrer de Garcilaso; Carrer de Lluís Sagnier; Passeig de Maragall; Ron
+   8. bc=0.07294  (41.42502, 2.17651)  Avinguda de la Mare de Déu de Montserrat; Carrer de Prat d'en Roquer; 
+   9. bc=0.07235  (41.40691, 2.18453)  Carrer d'Aragó; Carrer de la Independència
+  10. bc=0.07154  (41.42534, 2.17622)  Avinguda dels Quinze; Passeig de Maragall
+
+--- Cyclic structure (undirected) ---
+Cyclomatic number mu = m - n + c       : 5,161   (independent cycles)
+alpha index  mu/(2n-5)                 : 0.287
+beta  index  m/n                       : 1.573
+gamma index  m/3(n-2)                  : 0.524
+Bridge edges (on NO cycle)             : 761 (5.4% of edges, 84.3 km = 6.0% of length)
+Edges on >=1 cycle                     : 13,406 (1,313.7 km = 94.0% of length)
+2-core (cyclic skeleton) nodes         : 8,264 (91.8% of nodes)
+Biconnected blocks (>2 nodes)          : 20, largest spans 8,111 nodes (90.1%)

@@ -8,6 +8,7 @@
 | Chennai and Bangalore, Pagerank Centrality, Detour Index comparison (WIP)| S.Sathyanand |
 | Growth-over-time modeling | *(open)* |
 | Scotland Yard Pursuit and Evasion Simulation and Analysis | Jayvardhan More |
+| Degree correlations / assortativity (Bengaluru, Chennai, Barcelona), edit distance to optimal and model networks, hub-to-hub bottlenecks | Aakash (me24b072) |
 
 Add a row (or extend one) in the same PR/commit as your work.
 
@@ -65,8 +66,11 @@ your teammates' assumptions keep working:
 
 ## Aakash (me24b072) — details
 
-## Aakash (me24b072)
+Outputs are per city, prefixed with the graph tag (`<tag>` = e.g. `bengaluru_city_bengaluru_drive`).
 
-- Degree correlations (Newman, Networks sec. 7.13): assortativity r (eq. 7.82, cross-checked vs networkx), joint degree distribution e_jk, neighbour degree k_nn(k), and a map of local assortativity with the top-betweenness intersections labelled. `degree_correlations.py` -> `figures/bengaluru_degree_correlations_dark.png`, `results/bengaluru_degree_correlations_report.txt`.
-- Local assortativity by road type: nodes classed by OSM highway tag (expressway/trunk, primary, secondary, tertiary, local), flyovers (bridge/viaduct), ring roads, NH/SH refs, and distance from the CBD; full-city and CBD-zoom maps of local assortativity plus a per-category comparison with bootstrap CIs (`figures/bengaluru_local_assortativity_*_dark.png`, `figures/bengaluru_assortativity_by_road_type_dark.png`).
-- Extremes of local assortativity: most disassortative nodes/edges (hub junctions with dead-end spokes), radial centre-vs-boundary profile, and the high-assortativity clusters beyond 10 km from the CBD (planned grid layouts), in `figures/bengaluru_assortativity_extremes_dark.png` and the report.
+- Degree correlations (Newman, Networks sec. 7.13): assortativity r (eq. 7.82, cross-checked vs networkx), joint degree distribution e_jk, neighbour degree k_nn(k), and local assortativity (Piraveenan et al. 2010; node contributions sum exactly to r) mapped with the top-betweenness intersections labelled. `degree_correlations.py` -> `figures/<tag>_degree_correlations_dark.png`, `figures/<tag>_local_assortativity_{map,cbd}_dark.png`, `results/<tag>_degree_correlations_report.txt`, cache `results/<tag>_assortativity.npz`.
+- Local assortativity by road type (OSM highway class, flyovers, ring roads, NH/SH, distance from CBD, bootstrap CIs) -> `figures/<tag>_assortativity_by_road_type_dark.png`; extremes (most disassortative nodes/edges, centre-vs-boundary profile, high-assortativity clusters beyond 10 km) -> `figures/<tag>_assortativity_extremes_dark.png`. `cluster_landuse.py` checks OSM land use at those clusters (Bengaluru: industrial estates and planned BDA layouts, not IT corridors) -> `results/<tag>_cluster_landuse.txt`.
+- City comparison (Bengaluru, Chennai, Barcelona): `assortativity_compare.py` -> `figures/compare_assortativity_dark.png`, `results/compare_assortativity_report.txt`.
+- Edit distance to target networks (Barcelona as the reference optimum; Erdős–Rényi; scale-free Chung–Lu; ring–spoke): exact degree-sequence lower bound on the full city + greedy constructive upper bound on a Barcelona-sized central window, counting edges added and removed, with robustness (Schneider R, random / degree attack), bridges, n·λ₂, min cut / √n, efficiency and detour tracked against the number of edits. `edit_distance.py` -> `results/<tag>_edit_distance_report.txt`, `figures/<tag>_edit_distance_dark.png`, `figures/<tag>_edit_map_dark.png`; comparison `edit_compare.py` -> `figures/compare_edit_{metrics,distance}_dark.png`.
+- Hub-to-hub bottlenecks for ~8 named hubs per city: effective resistance (unit and length-weighted, exact via sparse LU), corridor Fiedler λ₂ and sweep-cut conductance, max-flow min cut between hub areas and where that cut sits. `hub_bottlenecks.py` -> `results/<tag>_hub_bottlenecks.{csv,_report.txt}`, `figures/<tag>_hub_bottlenecks_dark.png`; comparison `hub_compare.py` -> `figures/compare_hubs_dark.png`.
+- Shared helpers in `graph_utils.py` (copies of λ₂ / sweep cut / percolation routines so base scripts stay untouched). Barcelona added to `fetch_namma.py`; steps `assort`, `hubs`, `edits` added to `run_all.py`.

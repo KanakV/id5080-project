@@ -28,6 +28,9 @@ STEPS = [  # (name, script, extra args, what it produces)
     ("degrees",     "degree_distribution.py", [],      "degree histogram chart (needs models)"),
     ("maps",        "render_dark_maps.py",    [],      "dark-theme betweenness / cycles / eccentricity maps"),
     ("edges-map",   "betweenness_edges.py",   [],      "light-theme edge-painted betweenness map"),
+    ("assort",      "degree_correlations.py", [],      "assortativity r, e_jk, k_nn, local assortativity maps (needs core)"),
+    ("hubs",        "hub_bottlenecks.py",     [],      "hub-to-hub effective resistance, corridor Fiedler cut, min cut"),
+    ("edits",       "edit_distance.py",       [],      "edit distance to Barcelona / ER / scale-free / ring-spoke (needs assort)"),
     ("export",      "export_share_data.py",   [],      "plain-CSV hand-off bundle (share_<city>/ + zip)"),
 ]
 

@@ -1,0 +1,29 @@
+================= Edit distance — city comparison =================
+Windows: Bengaluru n=8,974 m=12,628 (radius 3.53 km); Chennai n=8,966 m=11,849 (radius 4.42 km)
+
+metric                                      Bengaluru      Chennai    Barcelona  Erdős–Rényi   scale-free   ring–spoke
+robustness R, random failure ↑                 0.2072       0.1754       0.2509       0.3151       0.2908       0.3335
+robustness R, degree attack ↑                  0.1244       0.1052       0.1673       0.1098      0.04224       0.2605
+bridge share ↓                                 0.1273         0.19      0.05449       0.1536       0.2101            0
+n·λ₂ spectral connectivity ↑ (log)              1.231       0.4063        1.924        166.1        208.3        5.087
+min cut / √n, flow capacity ↑ (log)            0.2111      0.08449       0.3319        19.96        21.73        1.031
+efficiency d_eucl / d_net ↑                    0.8107       0.7333       0.8089       0.1412       0.2656       0.9124
+median detour d_net / d_eucl ↓ (log)            1.211        1.329        1.198        7.408        4.129          1.1
+assortativity r                               0.07035      0.02272       0.2152     -0.01897     -0.01125     -0.00449
+mean degree ⟨k⟩                                 2.814        2.643         3.13        2.729        2.724            4
+(model columns: mean of the per-city builds, each matched to that city's window n and m)
+
+Edits per 1000 edges to reach each target's robustness & flow
+UB = greedy constructive edits on the window ((*) = not reached; value = where the move set stopped)
+LB = exact degree-sequence lower bound on the full city
+target              Bengaluru UB  Bengaluru LB        Chennai UB    Chennai LB
+Barcelona                    226           189           505 (*)           184
+Erdős–Rényi                 2000           280          2000 (*)           283
+scale-free                  2000           649              2000           659
+ring–spoke               433 (*)           520           523 (*)           514
+
+Adds / removes at the last checkpoint:
+  Barcelona     Bengaluru: +2,852 / -0 (D = 0.09)   Chennai: +5,982 / -0 (D = 0.12)
+  Erdős–Rényi   Bengaluru: +12,628 / -12,628 (D = 0.02)   Chennai: +11,849 / -11,849 (D = 0.14)
+  scale-free    Bengaluru: +12,628 / -12,628 (D = 0.05)   Chennai: +11,849 / -11,849 (D = 0.16)
+  ring–spoke    Bengaluru: +5,468 / -0 (D = 0.23)   Chennai: +6,198 / -0 (D = 0.28)

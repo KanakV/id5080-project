@@ -1,0 +1,21 @@
+rank,osmid,betweenness,lat,lon,streets
+1,1311619365,0.105437,41.397015,2.161434,Avinguda Diagonal; Carrer de Pau Claris
+2,3141525071,0.095744,41.397348,2.162709,Avinguda Diagonal; Carrer del Rosselló
+3,1311619445,0.076545,41.395562,2.155664,Avinguda Diagonal; Via Augusta
+4,1311619514,0.076015,41.396768,2.160430,Avinguda Diagonal
+5,1311619488,0.075317,41.395322,2.154711,Avinguda Diagonal; Carrer de Balmes
+6,1116623856,0.074874,41.397770,2.132767,Ronda del General Mitre; Via Augusta
+7,125935921,0.073977,41.423795,2.177633,Carrer de Garcilaso; Carrer de Lluís Sagnier; Passeig de Maragall; Ronda del Guinardó
+8,387127706,0.072941,41.425024,2.176512,Avinguda de la Mare de Déu de Montserrat; Carrer de Prat d'en Roquer; Passeig de Maragall
+9,30253733,0.072345,41.406914,2.184532,Carrer d'Aragó; Carrer de la Independència
+10,387127747,0.071538,41.425339,2.176219,Avinguda dels Quinze; Passeig de Maragall
+11,12643194193,0.071181,41.424075,2.177380,Carrer de Ramon Albó; Passeig de Maragall
+12,1362899971,0.070231,41.394454,2.151303,Avinguda Diagonal; Carrer d'Aribau
+13,2292981087,0.068313,41.405194,2.182228,Carrer d'Aragó; Carrer de Cartagena
+14,30253982,0.067894,41.406036,2.183377,Carrer d'Aragó; Carrer del Dos de Maig
+15,3835613869,0.066391,41.404922,2.181863,Carrer d'Aragó; Carrer dels Enamorats
+16,432467107,0.065792,41.404444,2.140665,Carrer de Balmes; Ronda del General Mitre
+17,5260740738,0.064961,41.395612,2.155867,Avinguda Diagonal; Via Augusta
+18,4189406778,0.064047,41.430329,2.174679,Carrer del Doctor Pi i Molist; Passeig de Fabra i Puig
+19,1311619340,0.063773,41.394037,2.149625,Avinguda Diagonal; Carrer de Muntaner
+20,1377225849,0.063520,41.396404,2.158998,Avinguda Diagonal; Plaça del Cinc d'Oros

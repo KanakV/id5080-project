@@ -1,0 +1,43 @@
+================= Edit distance to target networks: bengaluru_city_bengaluru_drive =================
+Window: 3.53 km around the CBD (centroid of top-betweenness junctions), n = 8,974, m = 12,628 (full city n = 155,779, m = 205,064)
+
+--- Metric vectors (window start vs targets at about the same n) ---
+metric                                  Bengaluru window     Barcelona   Erdős–Rényi    scale-free    ring–spoke
+robustness R, random failure                      0.2072        0.2509        0.3231         0.296        0.3335
+robustness R, degree attack                       0.1244        0.1673         0.116       0.04556        0.2605
+bridge share (lower = more loops)                 0.1273       0.05449        0.1391         0.197             0
+n·λ₂ (spectral connectivity)                       1.231         1.924         149.7         249.5         5.087
+min cut / √n (flow capacity)                      0.2111        0.3319          20.8         22.98         1.031
+efficiency ⟨d_eucl / d_net⟩                       0.8107        0.8089        0.1414        0.2611        0.9125
+median detour d_net / d_eucl                       1.211         1.198         7.354          4.16         1.099
+assortativity r                                  0.07035        0.2152      -0.01764      -0.00592      -0.00449
+mean degree ⟨k⟩                                    2.814          3.13         2.814         2.815             4
+
+--- LOWER bound: degree-sequence edit distance (exact; sorted matching) ---
+Edges that must change for the city to have the target's degree mix at all; a true lower
+bound on graph edit distance to ANY graph with the target's degree distribution.
+target           full city: adds   removes  per 1000 edges   window: adds   removes
+Barcelona                 38,714         0           188.8          1,416         0
+Erdős–Rényi               35,806    21,661           280.2          1,885     1,885
+scale-free                73,672    59,496           649.4          4,152     4,150
+ring–spoke               106,544        52           519.8          5,328        11
+
+--- UPPER bound: edits that reach the target's robustness & flow capacity (constructive) ---
+A different criterion from the degree bound: matching the 6 metrics can need fewer edits than
+matching the degree mix (e.g. adding loops raises robustness without making the degrees equal).
+reached = normalised gap D over the 6 robustness/flow metrics <= 0.10 (D = 1 at the start).
+Barcelona / ring-spoke: one-sided (beating the target on a metric counts as reaching it).
+ER / scale-free: two-sided (the metric must match the model, better or worse).
+target          reached   edits    adds  removes  per 1000 edges  final D  deg-LB (win)
+Barcelona           yes   2,852   2,852        0           225.8    0.091         1,416
+Erdős–Rényi         yes  25,256  12,628   12,628          2000.0    0.015         3,770
+scale-free          yes  25,256  12,628   12,628          2000.0    0.052         8,302
+ring–spoke           no   5,468   5,468        0           433.0    0.228         5,339   (move set exhausted)
+
+Ring-spoke: 489 of the 5,468 added links are the rings (every 0.5 km) and 24 spokes themselves;
+the rest are local loop closures needed to approach the target's zero bridges and <k> = 4.0.
+
+Notes: an upper bound is only certified when 'reached' = yes; otherwise the row shows how far the
+move set got. The trivial ceiling is m + m_target (delete everything, build the target).
+Lower bounds see only degrees: two networks with the same degree mix but different wiring
+get a lower bound of 0, so the true distance can sit far above it.

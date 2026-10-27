@@ -59,6 +59,9 @@ confirmation (~25 min, runs last in the `depth` step).
 | `degrees` | `degree_distribution.py` | Degree histograms (raw + normalized), dark chart | models |
 | `maps` | `render_dark_maps.py` | Dark-theme betweenness / cycles / eccentricity maps | core, depth |
 | `edges-map` | `betweenness_edges.py` | Light-theme edge-painted betweenness map | core |
+| `assort` | `degree_correlations.py` | Assortativity r, e_jk, k_nn(k), local assortativity maps, road-type breakdown, boundary clusters (+ cache npz); compare cities with `assortativity_compare.py <graphml> <graphml> ...`, land use at clusters with `cluster_landuse.py` | core |
+| `hubs` | `hub_bottlenecks.py` | Named hub pairs: effective resistance, corridor Fiedler λ₂ / conductance, min cut between hub areas | — |
+| `edits` | `edit_distance.py` | Edges to add / remove to reach Barcelona, ER, scale-free and ring–spoke robustness & flow (exact degree lower bound + greedy upper bound); needs `data/barcelona_city_barcelona_drive.graphml` (`fetch_namma.py barcelona city`) | assort |
 | `export` | `export_share_data.py` | Plain-CSV hand-off bundle (`share_<city>/` + zip) for non-Python teammates | all |
 
 Every script takes the graphml path as its first argument and caches expensive

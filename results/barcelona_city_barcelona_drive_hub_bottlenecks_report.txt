@@ -1,0 +1,46 @@
+================= Hub-to-hub bottlenecks: barcelona_city_barcelona_drive =================
+Graph: giant component, simple undirected, n = 9,007, m = 14,095
+Hubs (8): Pl. Catalunya, Sagrada Familia, Barceloneta, Sants, Diagonal Mar, Camp Nou, Gracia, Sant Andreu
+
+Road segments leaving each hub's 1 km area (an upper limit on every min cut involving it):
+  Pl. Catalunya 74, Sagrada Familia 77, Barceloneta 33, Sants 84, Diagonal Mar 53, Camp Nou 61, Gracia 80, Sant Andreu 63
+
+pair                                    km  R_unit   R_len    n·λ₂         φ splits min cut  limited by
+Sagrada Familia – Barceloneta          2.7    2.94    0.32    1.73  9.85e-03    yes      20  near Barceloneta
+Barceloneta – Sants                    4.2    3.58    0.38    1.81  8.55e-03    yes      20  near Barceloneta
+Barceloneta – Diagonal Mar             2.7    2.96    0.32    1.74  9.60e-03    yes      20  near Barceloneta
+Barceloneta – Camp Nou                 5.5    3.49    0.41    2.13  7.12e-03    yes      20  near Barceloneta
+Barceloneta – Gracia                   3.6    3.36    0.31    1.92  8.81e-03    yes      20  near Barceloneta
+Barceloneta – Sant Andreu              6.1    4.10    0.43    1.48  4.50e-03    yes      20  near Barceloneta
+Pl. Catalunya – Sant Andreu            5.7    3.25    0.35    1.78  4.98e-03    yes      23  near Sant Andreu
+Sagrada Familia – Sant Andreu          3.8    2.85    0.29    1.64  5.04e-03    yes      23  near Sant Andreu
+Sants – Sant Andreu                    7.6    3.86    0.38    2.01  5.45e-03    yes      23  near Sant Andreu
+Diagonal Mar – Sant Andreu             3.8    3.49    0.33    1.18  4.78e-03    yes      23  near Sant Andreu
+Camp Nou – Sant Andreu                 8.3    3.66    0.41    2.02  5.21e-03    yes      23  near Sant Andreu
+Gracia – Sant Andreu                   4.6    3.24    0.28    2.15  6.32e-03    yes      23  near Sant Andreu
+Pl. Catalunya – Diagonal Mar           3.4    2.59    0.28    2.13  1.09e-02     no      25  between hubs
+Sagrada Familia – Diagonal Mar         2.4    2.41    0.23    1.83  9.29e-03    yes      25  between hubs
+Sants – Diagonal Mar                   6.0    3.37    0.33    1.85  5.69e-03    yes      25  between hubs
+Diagonal Mar – Camp Nou                7.1    3.24    0.36    2.20  5.54e-03    yes      25  between hubs
+Diagonal Mar – Gracia                  3.9    2.95    0.24    1.98  8.73e-03    yes      25  between hubs
+Pl. Catalunya – Barceloneta            1.8    2.78    0.32    1.52  1.32e-02    yes      28  between hubs
+Pl. Catalunya – Camp Nou               3.9    2.45    0.29    2.17  9.38e-03    yes      34  between hubs
+Sagrada Familia – Camp Nou             5.0    2.61    0.30    2.21  6.58e-03    yes      34  between hubs
+Sants – Camp Nou                       1.2    2.22    0.20    2.03  1.75e-02    yes      34  between hubs
+Camp Nou – Gracia                      3.7    2.69    0.25    2.45  9.23e-03    yes      34  between hubs
+Pl. Catalunya – Sants                  2.7    2.51    0.25    2.13  9.63e-03    yes      38  between hubs
+Sagrada Familia – Sants                4.1    2.77    0.27    2.06  7.05e-03    yes      38  between hubs
+Sants – Gracia                         3.1    2.88    0.22    2.08  8.45e-03    yes      38  between hubs
+Pl. Catalunya – Sagrada Familia        1.9    2.04    0.22    1.67  1.26e-02    yes      50  between hubs
+Pl. Catalunya – Gracia                 2.1    2.32    0.20    1.84  9.59e-03    yes      51  between hubs
+Sagrada Familia – Gracia               1.5    2.08    0.17    2.28  1.50e-02    yes      52  between hubs
+
+R_unit vs distance: R ≈ 1.83 + 0.88·ln(d km)  (a 2-D grid gives R ∝ ln d)
+Median R_unit 2.91, median min cut 25 segments, median corridor φ 8.64e-03
+Pairs whose corridor bottleneck lies between the hubs (splits = yes): 27/28
+Where the min cut sits: in one hub's own catchment (same cut to nearly every other hub) 12/28, in the corridor between the hubs 16/28, at a hub's 1 km access roads 0/28
+Choked hubs: Barceloneta, Sant Andreu
+Most constricted pairs for their distance (largest R above the trend):
+  Barceloneta – Sant Andreu: R = 4.10 (+0.69 over trend), min cut 20
+  Diagonal Mar – Sant Andreu: R = 3.49 (+0.49 over trend), min cut 23
+  Barceloneta – Sants: R = 3.58 (+0.48 over trend), min cut 20

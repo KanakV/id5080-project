@@ -1,5 +1,5 @@
 """
-Degree correlations of the Bengaluru drive network (Newman, Networks, sec. 7.13):
+Degree correlations of a city drive network (Newman, Networks, sec. 7.13):
 
   1. e_jk       — joint distribution of the degrees at the two ends of an edge
   2. k_nn(k)    — mean degree of a node's neighbours vs its own degree k
@@ -7,11 +7,12 @@ Degree correlations of the Bengaluru drive network (Newman, Networks, sec. 7.13)
                   contributions that sum exactly to Newman's r, eq. 7.82)
 
 Important nodes = top betweenness intersections from
-results/<tag>_top_betweenness.csv (analyze_bengaluru.py), numbered on every panel.
+results/<tag>_top_betweenness.csv (analyze_network.py), numbered on every panel.
 
 Usage:  python degree_correlations.py [path/to/graph.graphml]
-Writes figures/bengaluru_degree_correlations_dark.png and
-results/bengaluru_degree_correlations_report.txt
+Writes figures/<tag>_degree_correlations_dark.png (+ local assortativity maps),
+results/<tag>_degree_correlations_report.txt and results/<tag>_assortativity.npz
+(the cache assortativity_compare.py reads)
 """
 import csv
 from collections import Counter
@@ -28,8 +29,9 @@ import numpy as np
 import osmnx as ox
 from matplotlib.collections import LineCollection
 
-GRAPH = sys.argv[1] if len(sys.argv) > 1 else "bengaluru_city_bengaluru_drive (10).graphml"
-TAG = "bengaluru_city_bengaluru_drive"
+GRAPH = sys.argv[1] if len(sys.argv) > 1 else "data/bengaluru_city_bengaluru_drive.graphml"
+TAG = os.path.splitext(os.path.basename(GRAPH))[0]
+CITY = TAG.split("_")[0].capitalize()
 N_LABEL = 8
 SURFACE, INKD, SUBD, GRID, SPINE = "#1a1a19", "#f0efec", "#c3c2b7", "#33332f", "#44443f"
 BLUE, ORANGE, BASE = "#3987e5", "#ff8a3d", "#3a3a37"
@@ -157,7 +159,7 @@ Important nodes (top betweenness) — degree, mean neighbour degree, local assor
     f"  {i}. {name[:50]:50s} k={deg[ix]}  k_nn={nbr_mean[ix]:.2f}  rho={rho[ix]:+.2e}  bc={bc:.4f}"
     for i, ((nd, name, bc), ix) in enumerate(zip(important, imp_idx), 1)) + "\n"
 print(report)
-with open(f"results/bengaluru_degree_correlations_report.txt", "w") as f:
+with open(f"results/{TAG}_degree_correlations_report.txt", "w", encoding="utf-8") as f:
     f.write(report)
 
 # ---------------------------------------------------------------- figure
@@ -209,7 +211,7 @@ ax = fig.add_subplot(gs[1])
 style(ax)
 ok = cnt >= 5                                      # drop sparsely populated degrees
 ax.errorbar(ks[ok], knn[ok], yerr=knn_sd[ok], fmt="o-", color=BLUE, ecolor="#2e5f98",
-            capsize=3, ms=6, label="Bengaluru  $k_{nn}(k)$  (± 1 sd)")
+            capsize=3, ms=6, label=f"{CITY}  $k_{{nn}}(k)$  (± 1 sd)")
 ax.axhline(baseline, color=SUBD, ls="--", lw=1.2, label=f"no correlation:  <k²>/<k> = {baseline:.2f}")
 ax.set_xlabel("node degree  k", color=SUBD)
 ax.set_ylabel("mean degree of neighbours", color=SUBD)
@@ -223,9 +225,9 @@ tag_pts(ax, deg[imp_idx], nbr_mean[imp_idx])
 legend = "Important nodes (top betweenness)\n" + "\n".join(
     f"{i}. {name[:34]}   (k={deg[ix]})" for i, ((_, name, _), ix) in enumerate(zip(important, imp_idx), 1))
 fig.text(0.04, 0.015, legend, color=INKD, fontsize=9, va="bottom", family="monospace")
-fig.suptitle("Degree correlations — Bengaluru road network (important nodes numbered)", color=INKD, fontsize=14, y=0.99)
+fig.suptitle(f"Degree correlations — {CITY} road network (important nodes numbered)", color=INKD, fontsize=14, y=0.99)
 fig.subplots_adjust(bottom=0.30, top=0.9, left=0.06, right=0.98)
-fig.savefig("figures/bengaluru_degree_correlations_dark.png", facecolor=SURFACE)
+fig.savefig(f"figures/{TAG}_degree_correlations_dark.png", facecolor=SURFACE)
 plt.close(fig)
 
 
@@ -276,10 +278,10 @@ sc = rho_map(ax, np.ones(len(nodes), bool), 1.6, 0.2, "#33332f", 10)
 ax.set_xlim(xy[:, 0].min(), xy[:, 0].max())
 ax.set_ylim(xy[:, 1].min(), xy[:, 1].max())
 add_cb(fig, ax, sc)
-ax.set_title("Local assortativity of Bengaluru intersections\n"
+ax.set_title(f"Local assortativity of {CITY} intersections\n"
              "red: links to higher-degree nodes than average (assortative) · blue: disassortative",
              color=INKD, fontsize=12)
-fig.savefig("figures/bengaluru_local_assortativity_map_dark.png", bbox_inches="tight", facecolor=SURFACE)
+fig.savefig(f"figures/{TAG}_local_assortativity_map_dark.png", bbox_inches="tight", facecolor=SURFACE)
 plt.close(fig)
 
 # zoom on the central business district, separate figure
@@ -293,7 +295,7 @@ ax.set_xlim(x0, x1)
 ax.set_ylim(y0, y1)
 add_cb(fig, ax, sc)
 ax.set_title("Local assortativity — central business district", color=INKD, fontsize=12)
-fig.savefig("figures/bengaluru_local_assortativity_cbd_dark.png", bbox_inches="tight", facecolor=SURFACE)
+fig.savefig(f"figures/{TAG}_local_assortativity_cbd_dark.png", bbox_inches="tight", facecolor=SURFACE)
 plt.close(fig)
 
 # ================================================================ by road category
@@ -322,7 +324,7 @@ cat_report += f"{'category':36s} {'nodes':>8s} {'mean':>9s} {'95% CI':>20s} {'<k
 for name, n_, mu, lo, hi, kmean, _ in rows:
     cat_report += f"{name:36s} {n_:8,d} {mu:+9.4f} [{lo:+8.4f},{hi:+8.4f}] {kmean:6.2f}\n"
 print(cat_report)
-with open("results/bengaluru_degree_correlations_report.txt", "a", encoding="utf-8") as f:
+with open(f"results/{TAG}_degree_correlations_report.txt", "a", encoding="utf-8") as f:
     f.write(cat_report)
 
 fig = plt.figure(figsize=(19, 8.5), dpi=200)
@@ -370,8 +372,8 @@ ax.set_yticks([])
 ax.set_title("Where those road types are in the city", color=INKD, fontsize=12)
 for s_ in ax.spines.values():
     s_.set_color(SPINE)
-fig.savefig("figures/bengaluru_assortativity_by_road_type_dark.png", bbox_inches="tight", facecolor=SURFACE)
-log("done: figures/bengaluru_degree_correlations_dark.png, _local_assortativity_map_dark.png, "
+fig.savefig(f"figures/{TAG}_assortativity_by_road_type_dark.png", bbox_inches="tight", facecolor=SURFACE)
+log(f"done: figures/{TAG}_degree_correlations_dark.png, _local_assortativity_map_dark.png, "
     "_local_assortativity_cbd_dark.png, _assortativity_by_road_type_dark.png")
 
 
@@ -440,11 +442,13 @@ OUTER_KM, LINK_KM = 10.0, 0.15
 thr = np.percentile(rho_n, 90)
 hi_nodes = np.where((rho_n >= thr) & (dist_km > OUTER_KM))[0]
 X = (xy - cbd) * np.array([111.2 * np.cos(np.radians(cbd[1])), 111.2])
-tree = cKDTree(X[hi_nodes])
-pairs = tree.query_pairs(LINK_KM, output_type="ndarray")
-g = coo_matrix((np.ones(len(pairs)), (pairs[:, 0], pairs[:, 1])), shape=(len(hi_nodes),) * 2)
-_, lab = connected_components(g, directed=False)
-clusters = [hi_nodes[lab == c] for c in range(lab.max() + 1) if (lab == c).sum() >= 40]
+clusters = []
+if len(hi_nodes) > 1:                                   # a compact city may have nothing beyond 10 km
+    tree = cKDTree(X[hi_nodes])
+    pairs = tree.query_pairs(LINK_KM, output_type="ndarray")
+    g = coo_matrix((np.ones(len(pairs)), (pairs[:, 0], pairs[:, 1])), shape=(len(hi_nodes),) * 2)
+    _, lab = connected_components(g, directed=False)
+    clusters = [hi_nodes[lab == c] for c in range(lab.max() + 1) if (lab == c).sum() >= 40]
 clusters.sort(key=len, reverse=True)
 outer = dist_km > OUTER_KM
 ext += (f"\n================ Boundary clusters of high assortativity ================\n"
@@ -462,13 +466,26 @@ for ci, cl in enumerate(clusters[:12], 1):
     ll = xy[cl].mean(0)
     # grid-likeness: share of cluster nodes whose neighbours are all junctions (k>=3)
     allj = np.mean([all(deg[idx[w]] >= 3 for w in S[nodes[j]]) for j in cl])
-    cl_rows.append((ci, ll, len(cl)))
+    cl_rows.append((ci, ll[1], ll[0], len(cl), np.hypot(*c_xy), deg[cl].mean(), (deg[cl] == 4).mean(), allj))
     ext += (f"  #{ci:2d} {len(cl):5,d} nodes  {np.hypot(*c_xy):4.1f} km {compass(*c_xy)}  ({ll[1]:.4f}, {ll[0]:.4f})  "
             f"<k>={deg[cl].mean():.2f}  k=4: {(deg[cl] == 4).mean():.0%}  all-nbrs-junctions: {allj:.0%}  "
             f"local-class: {hw.get(1, 0) / len(cl):.0%}  streets: {', '.join(n for n, _ in names.most_common(3)) or '(unnamed)'}\n")
 print(ext)
-with open("results/bengaluru_degree_correlations_report.txt", "a", encoding="utf-8") as f:
+with open(f"results/{TAG}_degree_correlations_report.txt", "a", encoding="utf-8") as f:
     f.write(ext)
+
+# cache for assortativity_compare.py / cluster_landuse.py (no need to reload the graphml)
+np.savez(f"results/{TAG}_assortativity.npz",
+         city=CITY, r=r, n=len(nodes), m=M, k_mean=k1, baseline=baseline, slope=slope,
+         ejk=ejk, ks=ks, knn=knn, knn_sd=knn_sd, knn_cnt=cnt,
+         deg_hist=np.bincount(deg),
+         radial=np.array(radial),                                  # (bin centre km, mean rho*N, sem)
+         cat_names=np.array([row[0] for row in rows]),
+         cat_stats=np.array([row[1:6] for row in rows], dtype=float),  # n, mean, lo, hi, <k>
+         clusters=np.array(cl_rows, dtype=float).reshape(-1, 8),   # id, lat, lon, n, km, <k>, k4, allj
+         rho_n=rho_n.astype(np.float32), dist_km=dist_km.astype(np.float32), deg=deg.astype(np.int8),
+         cbd=cbd)
+log(f"cached results/{TAG}_assortativity.npz")
 
 # figure
 fig = plt.figure(figsize=(20, 9), dpi=200)
@@ -522,5 +539,5 @@ ax.set_yticks([])
 ax.set_title("Most disassortative: 300 edges (lines) and 300 nodes (dots)", color=INKD, fontsize=12)
 for s_ in ax.spines.values():
     s_.set_color(SPINE)
-fig.savefig("figures/bengaluru_assortativity_extremes_dark.png", bbox_inches="tight", facecolor=SURFACE)
-log("done: figures/bengaluru_assortativity_extremes_dark.png")
+fig.savefig(f"figures/{TAG}_assortativity_extremes_dark.png", bbox_inches="tight", facecolor=SURFACE)
+log(f"done: figures/{TAG}_assortativity_extremes_dark.png")

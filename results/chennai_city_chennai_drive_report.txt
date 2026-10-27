@@ -1,0 +1,31 @@
+
+================= chennai_city_chennai_drive =================
+Nodes (intersections/dead-ends) : 69,376
+Edges (street segments, undir.) : 92,076
+Connected components            : 1
+Total street length             : 6,681.0 km
+
+--- Betweenness centrality (approx, k=300, length-weighted, on largest SCC) ---
+mean = 0.00262   max = 0.12310   (normalized)
+Gini-like concentration: top 1% of nodes hold 19.8% of total betweenness
+Top 10 intersections:
+   1. bc=0.12310  (13.01951, 80.22443)  Abdul Razzak Street; Anna Salai (Mount Road); Maraimalai Adigal Bridge
+   2. bc=0.12255  (13.01981, 80.22459)  Anna Salai (Mount Road); Jeenis Road
+   3. bc=0.11990  (13.01608, 80.22534)  Anna Salai (Mount Road); Maraimalai Adigal Bridge
+   4. bc=0.11951  (13.01576, 80.22528)  Anna Salai (Mount Road); Velachery Road
+   5. bc=0.10159  (13.04439, 80.21244)  Jawaharlal Nehru Road
+   6. bc=0.09164  (13.00844, 80.20412)  (unnamed)
+   7. bc=0.09161  (13.00732, 80.20426)  (unnamed)
+   8. bc=0.09161  (13.00837, 80.20401)  (unnamed)
+   9. bc=0.09160  (13.00738, 80.20419)  (unnamed)
+  10. bc=0.09160  (13.00731, 80.20474)  (unnamed)
+
+--- Cyclic structure (undirected) ---
+Cyclomatic number mu = m - n + c       : 22,701   (independent cycles)
+alpha index  mu/(2n-5)                 : 0.164
+beta  index  m/n                       : 1.327
+gamma index  m/3(n-2)                  : 0.442
+Bridge edges (on NO cycle)             : 18,251 (19.8% of edges, 1,188.7 km = 17.8% of length)
+Edges on >=1 cycle                     : 73,825 (5,492.3 km = 82.2% of length)
+2-core (cyclic skeleton) nodes         : 51,306 (74.0% of nodes)
+Biconnected blocks (>2 nodes)          : 153, largest spans 49,803 nodes (71.8%)

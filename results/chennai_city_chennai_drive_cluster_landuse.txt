@@ -1,0 +1,47 @@
+================ Land use at high-assortativity boundary clusters: chennai_city_chennai_drive ================
+(OSM features within 700 m of each cluster centroid; counts are tagged features, not areas)
+  # 1  988 nodes 11.7 km  (13.1220, 80.2171)  -> unclear (sparse OSM)
+       landuse {'residential': 1}
+       buildings {'apartments': 2, 'house': 1}  offices {}
+       named: Kambar nagar
+  # 2  899 nodes 12.6 km  (13.1230, 80.2569)  -> industrial
+       landuse {'commercial': 2, 'industrial': 1}
+       buildings {'industrial': 2, 'commercial': 1}  offices {}
+       named: Vyasarpadi Cooperative Industrial Estate, SANTHOSH NET WORLD
+  # 3  391 nodes 11.5 km  (13.0966, 80.2836)  -> mixed industrial / residential
+       landuse {'brownfield': 12, 'retail': 5, 'religious': 4, 'construction': 4, 'commercial': 3, 'grass': 2}
+       buildings {'apartments': 27, 'house': 10, 'yes': 9, 'retail': 2, 'office': 1}  offices {'lawyer': 2, 'engineer': 1, 'ngo': 1, 'insurance': 1, 'charity': 3}
+       named: DM Law Associates, R. Anand, Tamil Nadu Engineering Works, Sree Ragas Trust, Aleef Nursery, Arulmigu Santhana Venugopala Swami Thiru Temple, The Indian Leather Corporation Limited, National Insurance Company
+  # 4  273 nodes 13.9 km  (13.1264, 80.1537)  -> unclear (sparse OSM)
+       landuse {'recreation_ground': 4, 'retail': 3, 'grass': 1}
+       buildings {'yes': 16, 'apartments': 6}  offices {}
+       named: Aacini School Playground, School playground
+  # 5  223 nodes 19.4 km  (13.1730, 80.2957)  -> unclear (sparse OSM)
+       landuse {'industrial': 1}
+       buildings {'apartments': 4}  offices {}
+       named: -
+  # 6  209 nodes 13.2 km  (13.1116, 80.2889)  -> industrial
+       landuse {'industrial': 5, 'cemetery': 3, 'residential': 3, 'recreation_ground': 1, 'railway': 1, 'construction': 1}
+       buildings {'apartments': 2, 'house': 1}  offices {}
+       named: Robinson Ground, St Roques
+  # 7  159 nodes 10.3 km  (12.9277, 80.2395)  -> unclear (sparse OSM)
+       landuse {'residential': 2, 'university': 1}
+       buildings {'yes': 1, 'apartments': 1}  offices {'it': 2}
+       named: Zanec, Kannagi Nagar TNSCB Flats, Siri Towers, KCG College of Technology
+  # 8  158 nodes 17.3 km  (13.1700, 80.2473)  -> unclear (sparse OSM)
+       landuse {'forest': 2}
+       buildings {}  offices {}
+       named: -
+  # 9  134 nodes 11.2 km  (13.1060, 80.2641)  -> industrial
+       landuse {'industrial': 7, 'construction': 2, 'railway': 2, 'recreation_ground': 1, 'residential': 1, 'cemetery': 1}
+       buildings {'apartments': 8, 'commercial': 1}  offices {}
+       named: Casagrand Mercury, TNEB Site, TNSCB Colony, Korukkupet Goods Shed, Binny Mills
+  #10  query failed
+  #11  132 nodes 14.5 km  (13.1438, 80.2489)  -> unclear (sparse OSM)
+       landuse {'industrial': 1, 'orchard': 1}
+       buildings {}  offices {'association': 1}
+       named: M SYSTEM & SERVICES
+  #12  108 nodes 10.4 km  (13.0975, 80.2645)  -> industrial
+       landuse {'industrial': 8, 'residential': 3, 'commercial': 2, 'railway': 1, 'construction': 1, 'landfill': 1}
+       buildings {'apartments': 8, 'industrial': 4}  offices {}
+       named: Former Binny Mills Site, Basin Bridge Gas Turbine Power Station, TNEB Site, TNSCB Colony, Binny Mills

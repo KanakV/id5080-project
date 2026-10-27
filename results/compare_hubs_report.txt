@@ -1,0 +1,30 @@
+================= Hub-to-hub connectivity — city comparison =================
+                                             Bengaluru       Chennai     Barcelona
+hubs                                                 8             7             8
+hub pairs                                           28            21            28
+median hub distance (km)                          12.5          11.5           3.8
+R_unit fit: intercept a                          -4.11         -6.17          1.83
+R_unit fit: slope b (per ln km)                   4.87          6.32          0.88
+R_unit predicted at 5 km                          3.72          3.99          3.24
+R_unit predicted at 10 km                         7.10          8.37          3.85
+median R_len per km of distance                  0.061         0.078         0.076
+median min cut (segments)                           21             9            25
+min cut set in one hub's catchment                 46%           29%           43%
+min cut in the corridor between hubs               54%           71%           57%
+median corridor φ (x1e-3)                         0.84          0.91          8.64
+median corridor n·λ₂                              1.05          0.61          1.99
+corridor cut separates the hubs                    96%          100%           96%
+median access roads per hub (1 km)                  74            73            68
+
+Choked hubs (same min cut to nearly every other hub -> choke point in their own catchment):
+  Bengaluru  Electronic City (cut 4), Whitefield (cut 7)
+  Chennai    Sholinganallur (cut 4)
+  Barcelona  Barceloneta (cut 20), Sant Andreu (cut 23)
+
+Access roads leaving each hub's 1 km area (an upper limit on every min cut involving that hub):
+  Bengaluru  MG Road 57, Whitefield 34, Electronic City 19, Koramangala 84, Hebbal 94, Peenya 63, Yeshwanthpur 89, Jayanagar 105
+  Chennai    T Nagar 73, Guindy 21, Sholinganallur 35, Anna Nagar 78, Ambattur 78, Chennai Central 72, Velachery 75
+  Barcelona  Pl. Catalunya 74, Sagrada Familia 77, Barceloneta 33, Sants 84, Diagonal Mar 53, Camp Nou 61, Gracia 80, Sant Andreu 63
+
+Reading: R grows like ln(distance) on a 2-D grid; a larger slope b or intercept a means fewer parallel
+routes at the same distance. A larger min cut / φ / n·λ₂ means a wider corridor between the hubs.
