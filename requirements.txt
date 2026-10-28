@@ -1,3 +1,5 @@
 osmnx>=2.0
 scipy
 matplotlib
+geopy
+pandas
