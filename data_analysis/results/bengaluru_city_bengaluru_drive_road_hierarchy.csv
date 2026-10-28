@@ -1,0 +1,16 @@
+highway_class,edge_count,pct_edges,total_length_km,pct_length
+residential,327564,83.05%,19798.85,81.61%
+tertiary,39711,10.07%,2322.67,9.57%
+secondary,13509,3.43%,875.77,3.61%
+living_street,5439,1.38%,276.44,1.14%
+primary,4215,1.07%,464.81,1.92%
+unclassified,1348,0.34%,129.90,0.54%
+trunk,1070,0.27%,252.96,1.04%
+primary_link,443,0.11%,25.50,0.11%
+trunk_link,382,0.10%,20.99,0.09%
+secondary_link,347,0.09%,10.10,0.04%
+tertiary_link,192,0.05%,7.16,0.03%
+motorway_link,94,0.02%,18.97,0.08%
+motorway,61,0.02%,55.99,0.23%
+road,22,0.01%,0.86,0.00%
+busway,4,0.00%,0.33,0.00%

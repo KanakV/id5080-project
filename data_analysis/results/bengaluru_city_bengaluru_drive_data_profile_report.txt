@@ -1,0 +1,77 @@
+================================================================================
+OSM ROAD NETWORK DATA PROFILE: Bengaluru (bengaluru_city_bengaluru_drive)
+================================================================================
+Total Nodes (Intersections & Dead Ends) : 155,779
+Total Directed Edges (Street Segments)  : 394,401
+Total Street Length (Directed)          : 24,261.3 km
+
+1. ATTRIBUTE COMPLETENESS SUMMARY
+--------------------------------------------------------------------------------
+Node Attributes (n = 155,779):
+  • Coordinates (x, y)          : 155,779 / 155,779 (100.0%)
+  • Physical Degree (street_cnt): 155,779 / 155,779 (100.0%)
+  • Traffic Infrastructure      : 328 / 155,779 (0.21%)
+  • Roundabout/Junction Tagged  : 30 / 155,779 (0.019%)
+
+Edge Attributes (m = 394,401, total length = 24,261.3 km):
+  • Essential Topology (osmid, highway, oneway, reversed, length): 100.0% complete
+  • Street Name                 : 117,983 (29.9% edges, 7,967.6 km)
+    └─ Unnamed Streets           : 276,418 (70.1% edges, 16,293.7 km)
+  • Curved Centerline Geometry  : 113,156 (28.7%) — remainder are straight links
+  • Lane Count (lanes)          : 24,028 (6.1%)
+  • Speed Limit (maxspeed)      : 8,825 (2.2%)
+  • Access Control              : 5,049 (1.3%)
+  • Elevated Bridge / Flyover   : 2,248 (0.57%, 429.3 km)
+  • Highway Route Code (ref)    : 1,694 (0.43%)
+  • Width                       : 1,431 (0.36%)
+  • Tunnel / Underpass          : 188 (0.048%, 56.9 km)
+
+2. ROAD HIERARCHY BREAKDOWN
+--------------------------------------------------------------------------------
+  • residential           : 327,564 edges (83.1%) |  19798.9 km (81.6%)
+  • tertiary              :  39,711 edges (10.1%) |   2322.7 km ( 9.6%)
+  • secondary             :  13,509 edges ( 3.4%) |    875.8 km ( 3.6%)
+  • living_street         :   5,439 edges ( 1.4%) |    276.4 km ( 1.1%)
+  • primary               :   4,215 edges ( 1.1%) |    464.8 km ( 1.9%)
+  • unclassified          :   1,348 edges ( 0.3%) |    129.9 km ( 0.5%)
+  • trunk                 :   1,070 edges ( 0.3%) |    253.0 km ( 1.0%)
+  • primary_link          :     443 edges ( 0.1%) |     25.5 km ( 0.1%)
+  • trunk_link            :     382 edges ( 0.1%) |     21.0 km ( 0.1%)
+  • secondary_link        :     347 edges ( 0.1%) |     10.1 km ( 0.0%)
+  • tertiary_link         :     192 edges ( 0.0%) |      7.2 km ( 0.0%)
+  • motorway_link         :      94 edges ( 0.0%) |     19.0 km ( 0.1%)
+  • motorway              :      61 edges ( 0.0%) |     56.0 km ( 0.2%)
+  • road                  :      22 edges ( 0.0%) |      0.9 km ( 0.0%)
+  • busway                :       4 edges ( 0.0%) |      0.3 km ( 0.0%)
+
+3. JUNCTION DEGREES & TRAFFIC SIGNALS
+--------------------------------------------------------------------------------
+Intersection Types (by incident street count):
+  • 3-way T-junctions (deg 3)   : 96,348 (61.8%)
+  • Dead ends / Cul-de-sacs (1) : 38,262 (24.6%)
+  • 4-way Crossroads (deg 4)    : 20,894 (13.4%)
+  • 5-way+ Complex junctions    : 126 (0.08%)
+  • Interstitial / Simpl. (2)   : 149 (0.10%)
+
+Specialized Intersection Infrastructure:
+  • traffic_signals           :   232 nodes
+  • crossing                  :    31 nodes
+  • bus_stop                  :    29 nodes
+  • motorway_junction         :    19 nodes
+  • mini_roundabout           :     8 nodes
+  • turning_circle            :     5 nodes
+  • stop                      :     1 nodes
+  • junction                  :     1 nodes
+  • street_lamp               :     1 nodes
+  • milestone                 :     1 nodes
+  • junction=yes              :    29 nodes
+  • junction=roundabout       :     1 nodes
+
+4. TRAFFIC FLOW & PHYSICAL CHARACTERISTICS
+--------------------------------------------------------------------------------
+  • One-Way Street Segments     : 16,879 (4.3%) | 1,740.2 km (7.2%)
+  • Two-Way Street Segments     : 377,522 (95.7%) | 22,521.1 km (92.8%)
+  • Bridges / Flyovers / Viaducts: 2,248 (429.3 km)
+  • Tunnels / Underpasses       : 188 (56.9 km)
+  • Named Streets               : 117,983 (7,967.6 km)
+  • Unnamed (Local/Gully) Streets: 276,418 (16,293.7 km)
