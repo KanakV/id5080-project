@@ -1,3 +1,4 @@
+# Author: Kanak Varma
 """
 Namma Graph — fetch street networks for Chennai & Bengaluru at three scales.
 

@@ -1,3 +1,4 @@
+# Author: Kanak Varma
 """
 Export all analysis outputs as plain CSVs + README into share/, then zip it.
 

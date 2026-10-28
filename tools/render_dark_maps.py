@@ -1,3 +1,4 @@
+# Author: Kanak Varma
 """
 Re-render the main network maps on a dark theme (user feedback: light-gray-on-white
 maps were hard to tell from the background).

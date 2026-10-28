@@ -1,3 +1,4 @@
+# Author: Kanak Varma
 """
 Degree distribution of the city vs ER and WS — grouped bars, two panels:
 raw counts and normalized P(d). Reads the histograms cached by

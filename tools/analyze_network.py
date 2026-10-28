@@ -1,3 +1,4 @@
+# Author: Kanak Varma
 """
 Basic structural analysis of a city street network (GraphML from fetch_namma.py):
 

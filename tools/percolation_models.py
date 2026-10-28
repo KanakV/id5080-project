@@ -1,3 +1,4 @@
+# Author: Kanak Varma
 """
 Percolation comparison: the city vs ER and WS (dark-theme chart).
 

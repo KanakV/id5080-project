@@ -1,3 +1,4 @@
+# Author: Kanak Varma
 """
 Edge-painted betweenness map: every street segment colored by the mean
 betweenness centrality of its two endpoint nodes (no node markers).

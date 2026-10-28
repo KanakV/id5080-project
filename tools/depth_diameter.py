@@ -1,3 +1,4 @@
+# Author: Kanak Varma
 """
 Eccentricity ("depth") map, diameter, and degree-exponent check for the street network.
 

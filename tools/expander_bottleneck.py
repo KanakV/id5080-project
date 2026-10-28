@@ -1,3 +1,4 @@
+# Author: Kanak Varma
 """
 Expansion & bottleneck analysis of a street network (GraphML from fetch_namma.py):
 

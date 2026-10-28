@@ -1,3 +1,4 @@
+# Author: Kanak Varma
 """
 Robustness / site-percolation analysis of the street network.
 

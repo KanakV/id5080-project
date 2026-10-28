@@ -1,12 +1,13 @@
+# Author: Kanak Varma
 """
 Plug-and-play pipeline runner: fetch a city's street network (once) and run
 every analysis step on it, in dependency order.
 
-    python run_all.py bengaluru                 # whole pipeline
-    python run_all.py chennai                   # same thing for Chennai
-    python run_all.py chennai --steps core,maps # just those steps
-    python run_all.py data/foo.graphml          # any graphml, skip fetching
-    python run_all.py --list                    # show the steps
+    python tools/run_all.py bengaluru                 # whole pipeline
+    python tools/run_all.py chennai                   # same thing for Chennai
+    python tools/run_all.py chennai --steps core,maps # just those steps
+    python tools/run_all.py data/foo.graphml          # any graphml, skip fetching
+    python tools/run_all.py --list                    # show the steps
 
 Each step is an ordinary script you can also run by hand (see README.md);
 this runner just chains them with the right arguments. A step that fails
@@ -17,6 +18,9 @@ import os
 import subprocess
 import sys
 import time
+
+# All analysis scripts live alongside this runner in tools/
+TOOLS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 STEPS = [  # (name, script, extra args, what it produces)
     ("core",        "analyze_network.py",     ["{k}"], "betweenness + cyclic structure, 2 maps"),
@@ -44,7 +48,7 @@ args = ap.parse_args()
 if args.list or not args.city:
     print("steps, in run order:")
     for name, script, _, desc in STEPS:
-        print(f"  {name:12s} {script:26s} {desc}")
+        print(f"  {name:12s} tools/{script:26s} {desc}")
     sys.exit(0)
 
 if args.city.endswith(".graphml"):
@@ -53,7 +57,7 @@ else:
     graph = f"data/{args.city}_city_{args.city}_drive.graphml"
     if not os.path.exists(graph):
         print(f"== fetch: {graph} missing, downloading via fetch_namma.py (needs internet once)")
-        subprocess.run([sys.executable, "-u", "fetch_namma.py", args.city, "city"], check=True)
+        subprocess.run([sys.executable, "-u", os.path.join(TOOLS_DIR, "fetch_namma.py"), args.city, "city"], check=True)
 if not os.path.exists(graph):
     sys.exit(f"graph not found: {graph}")
 
@@ -65,7 +69,7 @@ if unknown:
 for name, script, extra, _ in STEPS:
     if name not in wanted:
         continue
-    cmd = [sys.executable, "-u", script, graph] + [a.format(k=args.k) for a in extra]
+    cmd = [sys.executable, "-u", os.path.join(TOOLS_DIR, script), graph] + [a.format(k=args.k) for a in extra]
     print(f"\n== {name}: {' '.join(cmd)}", flush=True)
     t = time.time()
     r = subprocess.run(cmd)

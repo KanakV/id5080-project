@@ -1,3 +1,4 @@
+# Author: Kanak Varma
 """
 Compare a city street network against four canonical random-graph models,
 each generated at the same number of nodes (matching edges where the model's
