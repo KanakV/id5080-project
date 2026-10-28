@@ -1,0 +1,18 @@
+CITY VECTOR ZOOM PATCH
+
+This replaces the previous image-scaling city zoom with true vector redraw on each map view.
+When zooming/panning on whole-city maps, roads are rendered again at the selected camera view,
+so the map does not become a magnified blurry bitmap. Junction dots are hidden at overview scale
+and are progressively shown at deeper zoom levels to reduce visual clustering.
+
+Install:
+1. Stop the running game with Ctrl+C in PowerShell.
+2. Extract this ZIP.
+3. Copy static\index.html from this patch into your existing game's static folder, replacing it.
+4. Do not replace app.py, sy_sim.py, data\, or maps\.
+5. Restart the game from the original game folder: python app.py
+6. Hard-refresh the browser with Ctrl+F5.
+
+Only the front-end is changed. Game rules, player strategies, road graph data, and simulation settings
+are not changed. City-map zoom controls work by re-rendering the graph geometry (not CSS scaling).
+Maximum zoom is 3200%. Use the mouse wheel to zoom toward the pointer and drag to pan.

@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scotland Yard on Networks</title>
+<style>
+:root{--bg:#0b0e1a;--panel:#151a2e;--panel2:#1d2340;--line:#2c3354;--text:#f1f2f8;--muted:#b0b6cc;
+--yellow:#ffd23f;--red:#e8392f;--teal:#5eead4;--blue:#6ea8ff;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.4}
+h1,h2,h3{margin:0}
+header{padding:16px 28px;border-bottom:3px solid var(--red);display:flex;align-items:baseline;gap:14px;background:#10142a}
+header h1{font-size:22px;color:var(--yellow);letter-spacing:.02em}header span{color:var(--muted);font-size:14px}
+.screen{display:none;padding:22px 28px;max-width:1360px;margin:0 auto}
+.screen.on{display:block}
+.menu{display:grid;grid-template-columns:minmax(300px,380px) 1fr;gap:22px}
+@media(max-width:900px){.menu,.gamegrid,.cols{grid-template-columns:1fr!important}}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px}
+.panel h2{font-size:15px;color:var(--yellow);text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px}
+.maps{display:flex;flex-direction:column;gap:8px}
+.map{border:1px solid var(--line);background:var(--panel2);border-radius:10px;padding:10px 12px;cursor:pointer;text-align:left;color:var(--text);font:inherit}
+.map b{display:block}.map small{color:var(--muted)}
+.map.sel{border-color:var(--yellow);box-shadow:0 0 0 1px var(--yellow) inset}
+.row{display:flex;gap:10px;align-items:center;margin:8px 0;flex-wrap:wrap}
+label{color:var(--muted);font-size:14px;min-width:120px}
+label.cb{min-width:0;display:flex;align-items:center;gap:8px}
+input,select{background:var(--panel2);color:var(--text);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font:inherit;min-height:40px}
+input[type=number]{width:90px}input[type=range]{padding:0;min-height:30px}
+button.btn{border:0;border-radius:12px;padding:12px 18px;font:inherit;font-weight:700;cursor:pointer;min-height:48px}
+.primary{background:var(--yellow);color:#1a1405}.secondary{background:var(--red);color:#fff}
+.ghost{background:var(--panel2);color:var(--text);border:1px solid var(--line)!important}
+button:disabled{opacity:.5;cursor:not-allowed}
+canvas{display:block;width:100%;border-radius:10px;background:#080b16}
+#preview,#board{aspect-ratio:1.336}#c_heat{aspect-ratio:1.7}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.chip{background:var(--panel2);border:1px solid var(--line);border-radius:999px;padding:4px 10px;font-size:13px;color:var(--muted)}
+.chip b{color:var(--text)}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+.gamegrid{display:grid;grid-template-columns:1fr 300px;gap:18px}
+.legend span{display:inline-flex;align-items:center;gap:6px;margin-right:12px;font-size:13px;color:var(--muted)}
+.dot{width:12px;height:12px;border-radius:50%;display:inline-block}
+.banner{margin-top:10px;padding:12px 14px;border-radius:10px;font-weight:700;display:none}
+.banner.win{background:#3b1c1c;color:#ffb4b4;display:block}.banner.lose{background:#12332f;color:#9ff3e6;display:block}
+.log{font-size:14px;color:var(--muted);min-height:44px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-bottom:16px}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px}
+.kpi small{color:var(--muted);display:block}.kpi b{font-size:28px}.kpi i{font-style:normal;color:var(--muted);font-size:13px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.chart canvas{height:240px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{padding:6px 8px;text-align:right;border-bottom:1px solid var(--line)}
+th:first-child,td:first-child{text-align:left}th{color:var(--muted);font-weight:600}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.tabs button{background:var(--panel2);color:var(--text);border:1px solid var(--line);border-radius:8px;padding:8px 12px;font:inherit;cursor:pointer;min-height:40px}
+.tabs button.on{border-color:var(--yellow);color:var(--yellow)}
+.bar{height:10px;background:var(--panel2);border-radius:6px;overflow:hidden;margin:14px 0}
+.bar>div{height:100%;background:var(--yellow);width:0}
+.note{color:var(--muted);font-size:13px;margin-top:8px}
+.err{color:#ff8a80}
+</style>
+</head>
+<body>
+<header><h1>SCOTLAND YARD ON NETWORKS</h1><span>one Mr. X, several detectives, roads only</span></header>
+
+<!-- MAIN MENU -->
+<section id="menu" class="screen on">
+ <div class="menu">
+  <div>
+   <div class="panel"><h2>1. Choose a map</h2><div class="maps" id="maps"></div>
+    <div id="randopts" style="display:none">
+     <div class="row"><label for="nodes">Nodes</label><input type="range" id="nodes" min="50" max="400" value="199"><b id="nodesv">199</b></div>
+     <button class="btn ghost" id="reroll">New random graph</button>
+    </div>
+    <div id="bigmapnote" class="note" style="display:none">
+     This map uses the entire connected road network, not a sampled neighborhood. City-wide games can take longer than games on the original board.
+    </div>
+   </div>
+   <div class="panel" style="margin-top:14px"><h2>2. Rules</h2>
+    <div class="row"><label for="dets">Detectives</label><input type="number" id="dets" value="6" min="1" max="100"></div>
+    <div class="row"><label for="rounds">Rounds</label><input type="number" id="rounds" value="24" min="1" max="500"></div>
+    <div class="row"><label for="xs">Mr. X plays</label><select id="xs"><option value="strategic">Strategic (runs away)</option><option value="random">Random</option></select></div>
+    <div class="row"><label for="ds">Detectives play</label><select id="ds"><option value="strategic">Strategic (track where he could be)</option><option value="random">Random</option></select></div>
+    <div class="row"><label for="games">Games to simulate</label><select id="games"><option>25</option><option>50</option><option>100</option><option>250</option><option>500</option><option selected>1000</option><option>5000</option></select></div>
+   </div>
+  </div>
+  <div>
+   <div class="panel"><h2 id="mapname">Map preview</h2><canvas id="preview"></canvas>
+    <div class="chips" id="chips"></div>
+    <div class="actions">
+     <button class="btn primary" id="playOne">▶ Watch one game</button>
+     <button class="btn secondary" id="runMany">Run simulations and analyse</button>
+    </div>
+    <div class="note" id="menuerr"></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- GAME -->
+<section id="game" class="screen">
+ <div class="gamegrid">
+  <div class="panel"><canvas id="board"></canvas><div class="banner" id="banner"></div></div>
+  <div>
+   <div class="panel"><h2>Game</h2>
+    <div class="log" id="log"></div>
+    <div class="row"><b id="roundlbl">Round 0</b></div>
+    <div class="actions" style="margin-top:6px">
+     <button class="btn primary" id="pp">Pause</button><button class="btn ghost" id="step">Step</button>
+    </div>
+    <div class="row"><label for="speed">Speed</label><input type="range" id="speed" min="1" max="10" value="5"></div>
+    <div class="row"><label class="cb"><input type="checkbox" id="spec"> Show Mr. X always</label></div>
+    <div class="row"><label class="cb"><input type="checkbox" id="showb" checked> Show where he could be</label></div>
+    <div class="row" id="bgrow"><label class="cb"><input type="checkbox" id="showbg" checked> Board picture</label></div>
+    <div class="row" id="brrow"><label for="bright">Brightness</label><input type="range" id="bright" min="15" max="100" value="55"></div>
+    <div class="actions"><button class="btn ghost" id="again">New game</button><button class="btn ghost" id="toMenu">Menu</button></div>
+   </div>
+   <div class="panel legend" style="margin-top:14px"><h2>Legend</h2>
+    <span><i class="dot" style="background:#0a0a0a;border:2px solid #fff"></i>Mr. X</span>
+    <span><i class="dot" style="background:var(--blue);border:2px solid #fff"></i>Detectives</span>
+    <span><i class="dot" style="background:var(--teal);opacity:.6"></i>Could be here</span>
+    <span><i class="dot" style="border:2px dashed #fff"></i>Last seen</span>
+    <p class="note">Yellow dots are junctions and red lines are roads. Mr. X is hidden and only appears on reveal rounds. Detectives see only those sightings.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- RESULTS -->
+<section id="results" class="screen">
+ <div class="actions" style="margin:0 0 14px"><button class="btn ghost" id="rToMenu">← Menu</button>
+  <button class="btn ghost" id="rWatch">Watch a game on this map</button>
+  <button class="btn ghost" id="rAgain">Run again</button>
+  <a class="btn ghost" id="csv" href="/api/batch/games.csv" style="text-decoration:none;display:inline-flex;align-items:center;font-weight:700">Download games.csv</a></div>
+ <div id="progress"><h2 id="ptitle">Running games…</h2><div class="bar"><div id="pbar"></div></div><div class="note" id="pnote"></div></div>
+ <div id="dash" style="display:none">
+  <h2 id="dtitle" style="margin-bottom:12px"></h2>
+  <div class="kpis" id="kpis"></div>
+  <div class="cols">
+   <div class="panel chart"><h2>When Mr. X gets caught</h2><canvas id="c_hist"></canvas><div class="note">Bars show games ended by capture in each round. The last bar is games where Mr. X escaped.</div></div>
+   <div class="panel chart"><h2>Chance Mr. X is still free</h2><canvas id="c_surv"></canvas><div class="note">Fraction of games where he is not yet caught after each round. Dashed lines mark reveals.</div></div>
+  </div>
+  <div class="panel" style="margin-bottom:16px"><h2>Where the action happens</h2>
+   <div class="tabs" id="hmtabs"></div><canvas id="c_heat"></canvas><div class="note" id="hmnote"></div></div>
+  <div class="cols">
+   <div class="panel"><h2>Network structure vs. outcomes</h2><div id="corr"></div>
+    <div class="note">Spearman correlation across nodes. Positive means higher values of that network property go with more of that event. Capture rate only uses nodes Mr. X visited at least 20 times.</div></div>
+   <div class="panel"><h2>Deadliest nodes</h2><div id="top"></div><h2 style="margin-top:16px">Graph metrics</h2><div id="gm"></div></div>
+  </div>
+  <div class="panel chart"><h2>Mr. X win rate by degree of his starting node</h2><canvas id="c_start"></canvas></div>
+ </div>
+</section>
+
+<script>
+const $=s=>document.querySelector(s);
+const show=id=>{document.querySelectorAll('.screen').forEach(e=>e.classList.toggle('on',e.id===id))};
+async function api(p,body){const r=await fetch(p,body?{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)}:undefined);
+  const j=await r.json();if(!r.ok)throw new Error(j.error||r.statusText);return j}
+const css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+function fit(c){const r=c.getBoundingClientRect(),d=window.devicePixelRatio||1,bw=Math.round(r.width*d),bh=Math.round(r.height*d);
+  if(c.width!==bw||c.height!==bh){c.width=bw;c.height=bh}
+  const x=c.getContext('2d');x.setTransform(d,0,0,d,0,0);return{ctx:x,w:r.width,h:r.height}}
+const TH={edge:'#e8392f',edgeDim:'#4a1d28',node:'#ffd23f',nodeLine:'#17130a'};
+
+let maps=[],G=null,mapId='taxi',seed=1,loading=false;
+const settings=()=>({map:mapId,max_rounds:+$('#rounds').value,detectives:+$('#dets').value,x_strategy:$('#xs').value,det_strategy:$('#ds').value,games:+$('#games').value});
+
+/* ---------- drawing helpers ---------- */
+function projector(g,w,h,pad){const[ax,ay]=g.box||[1,1];const s=Math.min((w-2*pad)/ax,(h-2*pad)/ay),ox=(w-ax*s)/2,oy=(h-ay*s)/2;
+  const X=new Float32Array(g.n),Y=new Float32Array(g.n);for(let i=0;i<g.n;i++){X[i]=ox+g.x[i]*s;Y[i]=oy+g.y[i]*s}
+  return{X,Y,s,ox,oy,sw:ax*s,sh:ay*s}}
+function drawBg(ctx,g,P,bright){if(!g.bg||!g.img||!g.img.complete||!g.img.naturalWidth)return false;
+  ctx.drawImage(g.img,P.ox,P.oy,P.sw,P.sh);ctx.fillStyle=`rgba(6,8,18,${1-bright})`;ctx.fillRect(P.ox,P.oy,P.sw,P.sh);return true}
+const nodeR=g=>g.n>1500?1.6:g.n>600?2.4:g.n>250?3.2:4.5;
+const nodeRad=(g,P)=>g.bg?0.0092*P.sw:nodeR(g);
+function edgeW(g,P){return g.bg?Math.max(1.8,0.0026*P.sw):(g.n>1500?.6:g.n>600?.9:g.n>250?1.3:1.9)}
+function drawEdges(ctx,g,P,col,lw){ctx.strokeStyle=col;ctx.lineWidth=lw;ctx.lineCap='round';ctx.beginPath();
+  for(const[a,b]of g.edges){ctx.moveTo(P.X[a],P.Y[a]);ctx.lineTo(P.X[b],P.Y[b])}ctx.stroke()}
+function drawNodes(ctx,g,P,fn,rExtra){const r=nodeRad(g,P)+(rExtra||0);ctx.lineWidth=1.2;ctx.strokeStyle=TH.nodeLine;
+  for(let i=0;i<g.n;i++){ctx.fillStyle=fn(i);ctx.beginPath();ctx.arc(P.X[i],P.Y[i],r,0,6.2832);ctx.fill();if(r>=3)ctx.stroke()}}
+function drawLabels(ctx,g,P){if(!g.show_labels)return;const r=nodeRad(g,P);if(r<5)return;
+  ctx.fillStyle=TH.nodeLine;ctx.font=`bold ${Math.max(6,Math.round(r*.92))}px system-ui`;ctx.textAlign='center';ctx.textBaseline='middle';
+  for(let i=0;i<g.n;i++)ctx.fillText(g.labels[i],P.X[i],P.Y[i]+.5)}
+function drawMap(ctx,g,P,bright){drawBg(ctx,g,P,bright);drawEdges(ctx,g,P,TH.edge,edgeW(g,P));drawNodes(ctx,g,P,()=>TH.node);drawLabels(ctx,g,P)}
+const baseLayers=new WeakMap();
+function drawCachedBase(ctx,canvas,g,w,h){
+  if(g.n<=10000)return null;
+  const d=window.devicePixelRatio||1,old=baseLayers.get(canvas);
+  if(!old||old.g!==g||old.width!==canvas.width||old.height!==canvas.height){
+    const layer=document.createElement('canvas');layer.width=canvas.width;layer.height=canvas.height;
+    const lc=layer.getContext('2d');lc.setTransform(d,0,0,d,0,0);
+    const P=projector(g,w,h,16);drawBg(lc,g,P,.55);drawEdges(lc,g,P,TH.edge,edgeW(g,P));drawNodes(lc,g,P,()=>TH.node);drawLabels(lc,g,P);
+    baseLayers.set(canvas,{g,width:canvas.width,height:canvas.height,layer,P});
+  }
+  const entry=baseLayers.get(canvas);ctx.drawImage(entry.layer,0,0,w,h);return entry.P;
+}
+function drawPreview(){if(!G)return;const{ctx,w,h}=fit($('#preview'));ctx.clearRect(0,0,w,h);if(w<60||h<60)return;
+  if(!drawCachedBase(ctx,$('#preview'),G,w,h))drawMap(ctx,G,projector(G,w,h,16),.55)}
+function redraw(){if($('#menu').classList.contains('on'))drawPreview();else if($('#results').classList.contains('on'))drawHeat()}
+
+/* ---------- menu ---------- */
+function fmtMetrics(m){return[['Nodes',m.n],['Edges',m.m],['Mean degree',m.mean_degree],['Max degree',m.max_degree],['Diameter',m.diameter],
+ ['Avg path',m.avg_path_length],['Clustering',m.avg_clustering],['Bridges',m.n_bridges]]}
+function chips(m){$('#chips').innerHTML=fmtMetrics(m).map(([k,v])=>`<span class="chip">${k} <b>${v}</b></span>`).join('')}
+async function loadGraph(keepRounds){
+  if(loading)return;loading=true;$('#menuerr').textContent='Loading map…';
+  try{const g=await api('/api/graph',{map:mapId,n:+$('#nodes').value,seed,subgraph:0,area:''});
+    if(g.bg){g.img=new Image();g.img.onload=redraw;g.img.src=g.bg.url}
+    G=g;$('#mapname').textContent=G.name;chips(G.metrics);
+    if(!keepRounds){$('#rounds').value=G.suggested_rounds;$('#dets').value=g.suggested_detectives||6}
+    $('#showb').disabled=G.n>10000;if(G.n>10000)$('#showb').checked=false;else $('#showb').checked=true;
+    $('#bgrow').style.display=$('#brrow').style.display=G.bg?'flex':'none';
+    $('#menuerr').textContent='';drawPreview()}catch(e){$('#menuerr').innerHTML='<span class="err">'+e.message+'</span>'}
+  loading=false}
+function renderMaps(){$('#maps').innerHTML=maps.map(m=>`<button class="map ${m.id===mapId?'sel':''}" data-id="${m.id}"><b>${m.name}</b><small>${m.desc}</small></button>`).join('');
+  document.querySelectorAll('.map').forEach(b=>b.onclick=()=>{mapId=b.dataset.id;seed=1;renderMaps();const m=maps.find(x=>x.id===mapId);
+    $('#randopts').style.display=m.random?'block':'none';$('#bigmapnote').style.display=m.whole_network?'block':'none';
+    if(m.big)$('#games').value='25';else $('#games').value='1000';
+    loadGraph(false)})}
+$('#nodes').oninput=e=>$('#nodesv').textContent=e.target.value;
+$('#nodes').onchange=()=>loadGraph(false);
+$('#reroll').onclick=()=>{seed++;loadGraph(true)};
+window.addEventListener('resize',redraw);
+
+/* ---------- game animation ---------- */
+let rec=null,frames=[],fi=0,tStart=0,playing=true,raf=null,finished=false;
+const DETCOL=['#6ea8ff','#7dd3fc','#a5b4fc','#93c5fd','#818cf8','#60a5fa','#38bdf8','#c4b5fd','#67e8f9','#a78bfa','#bae6fd','#c7d2fe'];
+function buildFrames(r){const t=r.track,F=[],rv=new Set(t.revealed);let last=null;
+  F.push({round:0,xA:t.x[0],xB:t.x[0],dA:t.dets[0],dB:t.dets[0],reveal:false,last:null,belief:null,text:'Start positions. Mr. X is hiding and the detectives cannot see him.'});
+  for(let k=1;k<t.x.length;k++){const reveal=rv.has(k);if(reveal)last=t.x[k];
+    F.push({round:k,xA:t.x[k-1],xB:t.x[k],dA:t.dets[k-1],dB:t.dets[k-1],reveal,last,belief:t.belief[k-2]||null,
+      text:`Round ${k}: Mr. X moves.`+(reveal?' He is spotted this round!':'')});
+    F.push({round:k,xA:t.x[k],xB:t.x[k],dA:t.dets[k-1],dB:t.dets[k],reveal,last,belief:t.belief[k-1]||null,text:`Round ${k}: detectives close in.`});}
+  return F}
+const lerp=(a,b,f)=>a+(b-a)*f,ease=f=>f<.5?2*f*f:1-Math.pow(-2*f+2,2)/2;
+function dur(){return 1500/Math.pow(1.45,+$('#speed').value-1)}
+async function startGame(){
+  show('game');$('#banner').className='banner';$('#log').textContent='Setting up…';
+  try{rec=await api('/api/play',settings())}catch(e){$('#log').innerHTML='<span class="err">'+e.message+'</span>';return}
+  frames=buildFrames(rec);fi=0;tStart=performance.now();playing=true;finished=false;$('#pp').textContent='Pause';
+  cancelAnimationFrame(raf);raf=requestAnimationFrame(loop)}
+function endText(){const r=rec.result,T=rec.config.max_rounds;
+  if(r.x_wins)return['lose',`Mr. X escaped! He survived all ${T} rounds.`];
+  return['win',r.reason==='no_move'?`Mr. X was boxed in at round ${r.rounds}. Detectives win.`:`Mr. X was caught in round ${r.rounds}. Detectives win.`]}
+function loop(now){
+  if(!$('#game').classList.contains('on'))return;
+  let f=Math.min(1,(now-tStart)/dur());
+  if(f>=1&&playing){if(fi<frames.length-1){fi++;tStart=now;f=0}else if(!finished)finish()}
+  draw(fi,playing&&!finished?ease(f):1);raf=requestAnimationFrame(loop)}
+function finish(){finished=true;playing=false;$('#pp').textContent='Replay';const[c,t]=endText();$('#banner').className='banner '+c;$('#banner').textContent=t}
+function draw(i,f){const F=frames[i],canvas=$('#board'),{ctx,w,h}=fit(canvas);ctx.clearRect(0,0,w,h);if(w<60||h<60)return;
+  const cachedP=drawCachedBase(ctx,canvas,G,w,h),cached=!!cachedP,P=cachedP||projector(G,w,h,16),r=nodeRad(G,P);
+  if(!cached){if($('#showbg').checked||!G.bg)drawBg(ctx,G,P,+$('#bright').value/100);drawEdges(ctx,G,P,TH.edge,edgeW(G,P));}
+  const B=F.belief;if(G.n<=10000&&B&&$('#showb').checked){ctx.fillStyle='rgba(94,234,212,.55)';for(const v of B){ctx.beginPath();ctx.arc(P.X[v],P.Y[v],r+3.5,0,6.2832);ctx.fill()}}
+  if(!cached){drawNodes(ctx,G,P,()=>TH.node);drawLabels(ctx,G,P);}
+  if(F.last!=null){ctx.strokeStyle='#fff';ctx.lineWidth=2;ctx.setLineDash([4,3]);ctx.beginPath();ctx.arc(P.X[F.last],P.Y[F.last],r+7,0,6.2832);ctx.stroke();ctx.setLineDash([])}
+  const last=i===frames.length-1&&finished,e=f,dr=r+(G.bg?3:4);
+  F.dB.forEach((_,k)=>{const x=lerp(P.X[F.dA[k]],P.X[F.dB[k]],e),y=lerp(P.Y[F.dA[k]],P.Y[F.dB[k]],e);
+    ctx.fillStyle=DETCOL[k%DETCOL.length];ctx.strokeStyle='#fff';ctx.lineWidth=2;ctx.beginPath();ctx.arc(x,y,dr,0,6.2832);ctx.fill();ctx.stroke();
+    if(dr>=6){ctx.fillStyle='#08101f';ctx.font=`bold ${Math.round(dr*.95)}px system-ui`;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(k+1,x,y+.5)}});
+  if(F.reveal||last||$('#spec').checked){const x=lerp(P.X[F.xA],P.X[F.xB],e),y=lerp(P.Y[F.xA],P.Y[F.xB],e),xr=dr+2;
+    ctx.globalAlpha=F.reveal||last?1:.6;ctx.fillStyle='#0a0a0a';ctx.strokeStyle='#fff';ctx.lineWidth=2.5;ctx.beginPath();ctx.arc(x,y,xr,0,6.2832);ctx.fill();ctx.stroke();
+    ctx.fillStyle='#fff';ctx.font=`bold ${Math.round(xr*1.05)}px system-ui`;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText('X',x,y+.5);ctx.globalAlpha=1}
+  $('#log').textContent=last?endText()[1]:F.text;
+  $('#roundlbl').textContent=`Round ${last?rec.result.rounds:F.round} of ${rec.config.max_rounds}`+(rec.config.reveals.includes(F.round)?'  (reveal round)':'')}
+$('#pp').onclick=()=>{if(finished){fi=0;finished=false;playing=true;$('#banner').className='banner';$('#pp').textContent='Pause';tStart=performance.now();return}
+  playing=!playing;$('#pp').textContent=playing?'Pause':'Play';tStart=performance.now()};
+$('#step').onclick=()=>{playing=false;$('#pp').textContent='Play';if(fi<frames.length-1)fi++;else if(!finished)finish();tStart=performance.now()};
+$('#again').onclick=startGame;$('#toMenu').onclick=()=>{cancelAnimationFrame(raf);show('menu');drawPreview()};
+$('#playOne').onclick=startGame;
+
+/* ---------- batch & analysis ---------- */
+let R=null,hmMode='x_visits';
+async function runMany(){
+  show('results');$('#progress').style.display='block';$('#dash').style.display='none';$('#pbar').style.width='0';
+  const s=settings();$('#ptitle').textContent=`Running ${s.games.toLocaleString()} games on ${G.name}${G.area?' · '+G.area:''}…`;$('#pnote').textContent='';
+  try{await api('/api/batch/start',s)}catch(e){$('#pnote').innerHTML='<span class="err">'+e.message+'</span>';return}
+  const t0=performance.now();
+  for(;;){await new Promise(r=>setTimeout(r,350));const st=await api('/api/batch/status');
+    if(st.status==='running'){$('#pbar').style.width=(100*st.done/st.total)+'%';$('#pnote').textContent=`${st.done.toLocaleString()} / ${st.total.toLocaleString()} games`;continue}
+    if(st.status==='error'){$('#pnote').innerHTML='<span class="err">'+st.error+'</span>';return}
+    R=st.result;$('#progress').style.display='none';$('#dash').style.display='block';renderDash(st.graph_name+(G.area?' · '+G.area:''),((performance.now()-t0)/1000).toFixed(1));return}}
+$('#runMany').onclick=runMany;$('#rAgain').onclick=runMany;$('#rWatch').onclick=startGame;$('#rToMenu').onclick=()=>{show('menu');drawPreview()};
+
+const pct=v=>(100*v).toFixed(1)+'%';
+function renderDash(name,secs){
+  $('#dtitle').textContent=`${name}: ${R.games.toLocaleString()} games (${secs}s)`;
+  const c=R.config,sn={strategic:'strategic',random:'random'};
+  $('#kpis').innerHTML=[
+   ['Detectives win',pct(1-R.x_win_rate),`95% interval ${pct(1-R.ci[1])} to ${pct(1-R.ci[0])}`],
+   ['Mr. X escapes',pct(R.x_win_rate),`${R.escaped.toLocaleString()} of ${R.games.toLocaleString()} games`],
+   ['Average game length',R.mean_rounds.toFixed(1)+' rounds',`median ${R.median_rounds}, limit ${c.max_rounds}`],
+   ['Setup',`${c.detectives} detectives`,`Mr. X ${sn[c.x_strategy]}, detectives ${sn[c.det_strategy]}`]
+  ].map(([a,b,d])=>`<div class="kpi"><small>${a}</small><b>${b}</b><br><i>${d}</i></div>`).join('');
+  const labels=R.captured_by_round.map((_,i)=>i+1).concat(['Free']);
+  bars($('#c_hist'),R.captured_by_round.concat([R.escaped]),labels,{hi:R.captured_by_round.length,color:'#e8392f',hiColor:'#ffd23f'});
+  line($('#c_surv'),R.survival,c.reveals);
+  const tabs=[['x_visits','Where Mr. X goes'],['captures','Where he is caught'],['det_visits','Where detectives go'],['capture_rate','Capture chance per visit']];
+  $('#hmtabs').innerHTML=tabs.map(([k,l])=>`<button data-k="${k}" class="${k===hmMode?'on':''}">${l}</button>`).join('');
+  document.querySelectorAll('#hmtabs button').forEach(b=>b.onclick=()=>{hmMode=b.dataset.k;document.querySelectorAll('#hmtabs button').forEach(x=>x.classList.toggle('on',x===b));drawHeat()});
+  drawHeat();
+  const cols=['x_visits','captures','capture_rate','det_visits'],cn=['Mr. X visits','Captures','Capture rate','Detective visits'];
+  let t='<table><tr><th>Node property</th>'+cn.map(x=>`<th>${x}</th>`).join('')+'</tr>';
+  let best=null;
+  for(const[m,v]of Object.entries(R.correlations)){t+=`<tr><td>${m}</td>`;for(const k of cols){const r=v[k];
+    if(r!=null&&k!=='det_visits'&&(!best||Math.abs(r)>Math.abs(best[0])))best=[r,m,k];
+    const a=r==null?0:Math.min(1,Math.abs(r)),bg=r==null?'transparent':(r>0?`rgba(255,210,63,${a*.6})`:`rgba(110,168,255,${a*.6})`);
+    t+=`<td style="background:${bg}">${r==null?'n/a':r.toFixed(2)}</td>`}t+='</tr>'}
+  $('#corr').innerHTML=t+'</table>'+(best?`<div class="note"><b>Strongest link:</b> node ${best[1]} vs ${cn[cols.indexOf(best[2])].toLowerCase()} (ρ = ${best[0].toFixed(2)}).</div>`:'');
+  $('#top').innerHTML='<table><tr><th>Node</th><th>Captures</th><th>Degree</th><th>X visits</th></tr>'+R.top_capture_nodes.map(n=>`<tr><td>${n.label}</td><td>${n.captures}</td><td>${n.degree}</td><td>${n.x_visits}</td></tr>`).join('')+'</table>';
+  $('#gm').innerHTML='<div class="chips">'+fmtMetrics(G.metrics).concat([['Articulation pts',G.metrics.n_articulation_points],['Leaves',pct(G.metrics.pct_degree1)],['Assortativity',G.metrics.degree_assortativity]]).map(([k,v])=>`<span class="chip">${k} <b>${v}</b></span>`).join('')+'</div>';
+  bars($('#c_start'),R.start_by_degree.map(d=>100*d.x_win_rate),R.start_by_degree.map(d=>d.degree+' ('+d.games+')'),{color:'#ffd23f',unit:'%'})}
+const heatNote={x_visits:'Brighter nodes are visited more often by Mr. X.',captures:'Brighter nodes are where he is caught most often.',det_visits:'Brighter nodes are visited more often by detectives.',capture_rate:'Share of Mr. X visits to a node that end in capture (nodes with at least 20 visits).'};
+function heat(t){t=Math.max(0,Math.min(1,t));const s=[[40,48,110],[120,70,180],[232,57,47],[255,210,63]],p=t*(s.length-1),i=Math.min(s.length-2,Math.floor(p)),f=p-i;
+  return`rgb(${s[i].map((v,k)=>Math.round(v+(s[i+1][k]-v)*f)).join(',')})`}
+function drawHeat(){if(!R||!G)return;const{ctx,w,h}=fit($('#c_heat'));ctx.clearRect(0,0,w,h);if(w<60||h<60)return;const P=projector(G,w,h,16);
+  drawBg(ctx,G,P,.28);drawEdges(ctx,G,P,G.bg?'rgba(232,57,47,.35)':TH.edgeDim,edgeW(G,P)*.8);
+  const arr=R[hmMode].map(v=>v==null?null:v),vals=arr.filter(v=>v!=null);let mx=1e-9;for(const v of vals)if(v>mx)mx=v;
+  const order=[...arr.keys()].sort((a,b)=>(arr[a]||0)-(arr[b]||0)),r=nodeRad(G,P)+(G.bg?0:1.2);
+  ctx.lineWidth=1;ctx.strokeStyle='rgba(10,10,20,.8)';
+  for(const i of order){ctx.fillStyle=arr[i]==null?'#2a3158':heat(Math.sqrt(arr[i]/mx));ctx.beginPath();ctx.arc(P.X[i],P.Y[i],r,0,6.2832);ctx.fill();if(r>=3)ctx.stroke()}
+  $('#hmnote').textContent=heatNote[hmMode]}
+
+function nice(v){const p=Math.pow(10,Math.floor(Math.log10(v))),f=v/p;return(f<=1?1:f<=2?2:f<=4?4:f<=5?5:10)*p}
+function axes(ctx,w,h,m,ymax,fmt){ctx.strokeStyle='#2c3354';ctx.fillStyle='#b0b6cc';ctx.font='11px system-ui';ctx.textAlign='right';ctx.textBaseline='middle';ctx.lineWidth=1;
+  for(let k=0;k<=4;k++){const y=m.t+(h-m.t-m.b)*(1-k/4);ctx.beginPath();ctx.moveTo(m.l,y);ctx.lineTo(w-m.r,y);ctx.stroke();ctx.fillText(fmt(ymax*k/4),m.l-6,y)}}
+function bars(c,vals,labels,o){const{ctx,w,h}=fit(c);ctx.clearRect(0,0,w,h);const m={l:44,r:10,t:10,b:30},mx=nice(Math.max(...vals,1e-9));
+  const fmt=o.unit==='%'?v=>v.toFixed(0)+'%':v=>Math.round(v).toLocaleString();axes(ctx,w,h,m,mx,fmt);
+  const bw=(w-m.l-m.r)/vals.length,step=Math.ceil(vals.length/12);
+  vals.forEach((v,i)=>{const bh=(h-m.t-m.b)*v/mx;ctx.fillStyle=(o.hi!=null&&i>=o.hi)?o.hiColor:o.color;ctx.fillRect(m.l+i*bw+1,h-m.b-bh,Math.max(1,bw-2),bh);
+    if(i%step===0||i===vals.length-1){ctx.fillStyle='#b0b6cc';ctx.textAlign='center';ctx.textBaseline='top';ctx.fillText(labels[i],m.l+i*bw+bw/2,h-m.b+6)}})}
+function line(c,ys,reveals){const{ctx,w,h}=fit(c);ctx.clearRect(0,0,w,h);const m={l:44,r:10,t:10,b:30};axes(ctx,w,h,m,1,v=>(100*v).toFixed(0)+'%');
+  const X=i=>m.l+(w-m.l-m.r)*i/(ys.length-1),Y=v=>m.t+(h-m.t-m.b)*(1-v);
+  ctx.setLineDash([3,4]);ctx.strokeStyle='#5b6392';for(const r of reveals){if(r<ys.length){ctx.beginPath();ctx.moveTo(X(r),m.t);ctx.lineTo(X(r),h-m.b);ctx.stroke()}}ctx.setLineDash([]);
+  ctx.strokeStyle='#ffd23f';ctx.lineWidth=2.5;ctx.beginPath();ys.forEach((v,i)=>i?ctx.lineTo(X(i),Y(v)):ctx.moveTo(X(i),Y(v)));ctx.stroke();
+  ctx.fillStyle='#b0b6cc';ctx.textAlign='center';ctx.textBaseline='top';const st=Math.ceil(ys.length/12);for(let i=0;i<ys.length;i+=st)ctx.fillText(i,X(i),h-m.b+6)}
+
+/* ---------- start ---------- */
+(async()=>{maps=await api('/api/maps');renderMaps();const m=maps.find(x=>x.id===mapId);if(m)$('#bigmapnote').style.display=m.whole_network?'block':'none';loadGraph(false)})();
+</script>
+</body>
+</html>

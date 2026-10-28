@@ -1,0 +1,22 @@
+CITY MAP ZOOM-ONLY PATCH
+
+This patch changes only the front-end map display. It does not change Mr. X's strategy,
+Detective strategy, game rules, simulation settings, app.py, or the city network data.
+
+Install:
+1. Stop the running game with Ctrl+C in the PowerShell window.
+2. Extract this ZIP.
+3. Copy the included static\index.html into your EXISTING game project's static folder,
+   replacing the existing index.html.
+4. Do not replace app.py, sy_sim.py, data\, maps\, or any other files.
+5. Open PowerShell in the original project folder and run: python app.py
+6. Hard-refresh the game webpage with Ctrl+F5 if the old interface still appears.
+
+For whole-city maps (Chennai and Bengaluru), zoom controls appear above the game map:
+- + and - buttons: zoom in/out
+- Reset: return to the full map
+- Mouse wheel over the map: zoom toward the pointer
+- Click and drag while zoomed in: pan around the map
+
+The controls remain hidden on non-city maps. Zoom is display-only and does not change
+which nodes are in the game or affect simulation behavior.
