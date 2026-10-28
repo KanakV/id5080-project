@@ -5,7 +5,7 @@
 | Area | Person |
 |---|---|
 | Bengaluru analysis, pipeline scripts, write-up (ANALYSIS.md) | Kanak Varma |
-| Chennai and Bangalore, Pagerank Centrality, Detour Index comparison (WIP)| S.Sathyanand |
+| Chennai and Bangalore, Modularity, Pagerank Centrality, Detour Index comparison (WIP)| S.Sathyanand |
 | Growth-over-time modeling | *(open)* |
 | Scotland Yard Pursuit and Evasion Simulation and Analysis | Jayvardhan More |
 | Degree correlations / assortativity (Bengaluru, Chennai, Barcelona), edit distance to optimal and model networks, hub-to-hub bottlenecks | Aakash (me24b072) |
