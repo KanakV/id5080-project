@@ -136,13 +136,13 @@ Modeling framework suggestion: Strano et al. (2012) / Barthélemy–Flammini **d
 ## 10. Reproducibility
 
 - Env: `python3 -m venv .venv && .venv/bin/pip install -r requirements.txt` (osmnx 2.0.7, networkx 3.4.2, scipy, matplotlib).
-- Scripts (run with `.venv/bin/python <script> data/bengaluru_city_bengaluru_drive.graphml`):
-  - `fetch_namma.py bengaluru city` — data download (cached in `cache/`)
-  - `analyze_network.py` — betweenness + cyclic structure (+ light-theme maps)
-  - `betweenness_edges.py` — edge-painted betweenness map (uses cached bc)
-  - `expander_bottleneck.py` — λ₂/Cheeger/Ramanujan, Fiedler cut, min cuts (dark maps)
-  - `model_comparison.py` — ER/WS comparison table + charts
-  - `depth_diameter.py` — eccentricity, diameter, γ check
-  - `percolation.py` — robustness curves
-  - `render_dark_maps.py` — dark-theme re-render of betweenness/cycles/eccentricity maps
+- Scripts (run with `.venv/bin/python tools/<script> data/bengaluru_city_bengaluru_drive.graphml`):
+  - `tools/fetch_namma.py bengaluru city` — data download (cached in `cache/`)
+  - `tools/analyze_network.py` — betweenness + cyclic structure (+ light-theme maps)
+  - `tools/betweenness_edges.py` — edge-painted betweenness map (uses cached bc)
+  - `tools/expander_bottleneck.py` — λ₂/Cheeger/Ramanujan, Fiedler cut, min cuts (dark maps)
+  - `tools/model_comparison.py` — ER/WS comparison table + charts
+  - `tools/depth_diameter.py` — eccentricity, diameter, γ check
+  - `tools/percolation.py` — robustness curves
+  - `tools/render_dark_maps.py` — dark-theme re-render of betweenness/cycles/eccentricity maps
 - Raw numbers: `results/*.txt`, `results/model_comparison.csv`; cached arrays: `results/*.npz`.

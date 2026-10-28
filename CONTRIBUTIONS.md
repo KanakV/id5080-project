@@ -28,7 +28,6 @@ never overwrite each other. Commit `results/` + `figures/` for your city;
 
 Write your findings into `ANALYSIS.md` (new section or a sibling
 `ANALYSIS_chennai.md` — your call), embedding figures by relative path.
-
 ## Adding a new metric / analysis step
 
 Conventions every script in this repo follows — keep them so the runner and
@@ -52,7 +51,7 @@ your teammates' assumptions keep working:
 5. **Reproducibility**: seed randomness (`SEED = 42` everywhere here), log
    progress with timestamps, and make re-runs cheap (check for cached npz
    before recomputing).
-6. **Register it**: add the script to the `STEPS` list in `run_all.py` (in
+6. **Register it**: add the script to the `STEPS` list in `tools/run_all.py` (in
    dependency order) and one row to the pipeline table in `README.md`.
 
 ## Workflow

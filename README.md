@@ -41,6 +41,9 @@ python3 -m venv .venv
 .venv/bin/python run_all.py --list            # what the steps are
 ```
 
+> All analysis scripts live in `tools/`. The root `run_all.py` is a thin shim
+> that delegates to `tools/run_all.py` so you can keep running from the project root.
+
 All outputs are prefixed with the graph's tag (`chennai_city_chennai_drive_...`),
 so cities never overwrite each other. Expect ~45–60 min total for a 150k-node
 city; the slow parts are betweenness (~12 min) and the exact-diameter
@@ -50,19 +53,19 @@ confirmation (~25 min, runs last in the `depth` step).
 
 | Step | Script | What it computes | Needs |
 |---|---|---|---|
-| `core` | `analyze_network.py <graphml> 300` | Betweenness centrality (length-weighted, 300 sampled sources) + cyclic structure: cyclomatic number, α/β/γ, bridges, 2-core, biconnected blocks | — |
-| `expander` | `expander_bottleneck.py` | Spectral gap λ₂, Cheeger bounds, Ramanujan/expander verdict, Fiedler sweep cut, N–S and E–W max-flow min-cuts | — |
-| `models` | `model_comparison.py` | Same-size ER G(n,m) and WS (k=4, p=0.1) null models: clustering, paths, λ₂, assortativity, bridges | — |
-| `depth` | `depth_diameter.py` | Per-node eccentricity (64-landmark BFS), exact diameter, power-law γ check | — |
-| `percolation` | `percolation.py` | Robustness S(q): random failure vs degree/betweenness attacks (exact reverse union–find curves) | core |
-| `perc-models` | `percolation_models.py` | Percolation vs ER and WS, dark chart | models, percolation |
-| `degrees` | `degree_distribution.py` | Degree histograms (raw + normalized), dark chart | models |
-| `maps` | `render_dark_maps.py` | Dark-theme betweenness / cycles / eccentricity maps | core, depth |
-| `edges-map` | `betweenness_edges.py` | Light-theme edge-painted betweenness map | core |
-| `assort` | `degree_correlations.py` | Assortativity r, e_jk, k_nn(k), local assortativity maps, road-type breakdown, boundary clusters (+ cache npz); compare cities with `assortativity_compare.py <graphml> <graphml> ...`, land use at clusters with `cluster_landuse.py` | core |
-| `hubs` | `hub_bottlenecks.py` | Named hub pairs: effective resistance, corridor Fiedler λ₂ / conductance, min cut between hub areas | — |
-| `edits` | `edit_distance.py` | Edges to add / remove to reach Barcelona, ER, scale-free and ring–spoke robustness & flow (exact degree lower bound + greedy upper bound); needs `data/barcelona_city_barcelona_drive.graphml` (`fetch_namma.py barcelona city`) | assort |
-| `export` | `export_share_data.py` | Plain-CSV hand-off bundle (`share_<city>/` + zip) for non-Python teammates | all |
+| `core` | `tools/analyze_network.py <graphml> 300` | Betweenness centrality (length-weighted, 300 sampled sources) + cyclic structure: cyclomatic number, α/β/γ, bridges, 2-core, biconnected blocks | — |
+| `expander` | `tools/expander_bottleneck.py` | Spectral gap λ₂, Cheeger bounds, Ramanujan/expander verdict, Fiedler sweep cut, N–S and E–W max-flow min-cuts | — |
+| `models` | `tools/model_comparison.py` | Same-size ER G(n,m) and WS (k=4, p=0.1) null models: clustering, paths, λ₂, assortativity, bridges | — |
+| `depth` | `tools/depth_diameter.py` | Per-node eccentricity (64-landmark BFS), exact diameter, power-law γ check | — |
+| `percolation` | `tools/percolation.py` | Robustness S(q): random failure vs degree/betweenness attacks (exact reverse union–find curves) | core |
+| `perc-models` | `tools/percolation_models.py` | Percolation vs ER and WS, dark chart | models, percolation |
+| `degrees` | `tools/degree_distribution.py` | Degree histograms (raw + normalized), dark chart | models |
+| `maps` | `tools/render_dark_maps.py` | Dark-theme betweenness / cycles / eccentricity maps | core, depth |
+| `edges-map` | `tools/betweenness_edges.py` | Light-theme edge-painted betweenness map | core |
+| `assort` | `tools/degree_correlations.py` | Assortativity r, e_jk, k_nn(k), local assortativity maps, road-type breakdown, boundary clusters (+ cache npz); compare cities with `tools/assortativity_compare.py <graphml> <graphml> ...`, land use at clusters with `tools/cluster_landuse.py` | core |
+| `hubs` | `tools/hub_bottlenecks.py` | Named hub pairs: effective resistance, corridor Fiedler λ₂ / conductance, min cut between hub areas | — |
+| `edits` | `tools/edit_distance.py` | Edges to add / remove to reach Barcelona, ER, scale-free and ring–spoke robustness & flow (exact degree lower bound + greedy upper bound); needs `data/barcelona_city_barcelona_drive.graphml` (`tools/fetch_namma.py barcelona city`) | assort |
+| `export` | `tools/export_share_data.py` | Plain-CSV hand-off bundle (`share_<city>/` + zip) for non-Python teammates | all |
 
 Every script takes the graphml path as its first argument and caches expensive
 arrays in `results/*.npz`, so re-rendering figures costs seconds, not minutes.
@@ -86,6 +89,8 @@ arrays in `results/*.npz`, so re-rendering figures costs seconds, not minutes.
 
 ## Repo layout
 
+- `tools/` — all analysis scripts (city-agnostic; each takes a graphml path as first arg)
+- `run_all.py` — thin shim at the root; delegates to `tools/run_all.py`
 - `data/`, `cache/` — git-ignored (graphml ~145 MB; regenerate via fetch, see above)
 - `results/` — committed: reports (txt), tables (csv), small npz caches
 - `figures/` — committed: rendered maps and charts (`*_dark` = dark theme)
