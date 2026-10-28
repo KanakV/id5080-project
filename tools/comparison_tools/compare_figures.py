@@ -93,6 +93,7 @@ def make_comparison(cities: list[dict], topic_key: str, suffix: str, out_stem: s
     # Use the tallest image to set figure height; keep each panel at ~7 in wide
     fig, axes = plt.subplots(1, n, figsize=(7 * n, 7),
                              facecolor=BG_DARK,
+                             constrained_layout=True,
                              gridspec_kw={"wspace": 0.04})
     if n == 1:
         axes = [axes]
@@ -100,9 +101,9 @@ def make_comparison(cities: list[dict], topic_key: str, suffix: str, out_stem: s
     for ax, img, label in zip(axes, images, labels):
         ax.imshow(img)
         ax.axis("off")
-        ax.set_title(label, color="white", fontsize=14, pad=6, fontweight="bold")
+        ax.set_title(label, color="white", fontsize=14, pad=4, fontweight="bold")
 
-    fig.suptitle(title, color="white", fontsize=16, y=1.01, fontweight="bold")
+    fig.suptitle(title, color="white", fontsize=16, fontweight="bold")
 
     out_path = out_dir / f"{out_stem}.png"
     fig.savefig(out_path, dpi=150, bbox_inches="tight",
@@ -157,3 +158,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
