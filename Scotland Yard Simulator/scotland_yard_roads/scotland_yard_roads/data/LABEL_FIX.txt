@@ -1,0 +1,4 @@
+The original repo's taxi_map.txt used shifted station numbers for part of the board.
+Matching it against the board picture (zero crossing edges after the fix, 52 before) shows:
+repo 118 = board 108, repo 128 = board 118, repo 159 = board 128, repo 171 = board 159, repo 200 = board 171.
+board_edges.csv uses the true board numbers 1-199.

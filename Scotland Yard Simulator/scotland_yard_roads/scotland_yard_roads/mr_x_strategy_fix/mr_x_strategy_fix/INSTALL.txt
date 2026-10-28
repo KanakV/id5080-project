@@ -1,0 +1,12 @@
+Mr. X backtracking fix
+
+Replace only sy_sim.py in your EXISTING game project with the sy_sim.py in this archive.
+
+Do not extract the archive into a new nested project folder. Do not replace app.py, data/, maps/, or static/.
+
+Then restart the app:
+  1. Stop the running app with Ctrl+C.
+  2. In PowerShell, cd to the project directory containing app.py and sy_sim.py.
+  3. Run: python app.py
+
+The fix passes Mr. X's movement history to the strategy, avoids immediately returning to the previous node when alternatives exist, discourages short loops, and still permits backtracking when boxed in or at a dead end.
