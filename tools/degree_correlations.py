@@ -194,7 +194,7 @@ ax = fig.add_subplot(gs[0])
 style(ax)
 disp = np.ma.masked_less_equal(ejk[1:, 1:], 0)
 im = ax.imshow(disp, origin="lower", extent=(0.5, kmax + 0.5, 0.5, kmax + 0.5),
-               cmap=mpl.colors.LinearSegmentedColormap.from_list("dk", ["#232b36", BLUE, "#bcd9ff"]),
+               cmap=mpl.colormaps["inferno"],
                norm=mpl.colors.LogNorm(vmin=disp.min(), vmax=disp.max()))
 ax.set_xlabel("degree j at one end of an edge", color=SUBD)
 ax.set_ylabel("degree k at the other end", color=SUBD)

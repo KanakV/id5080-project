@@ -30,10 +30,12 @@ os.makedirs("figures", exist_ok=True)
 
 SURFACE, BASE, INKD = "#1a1a19", "#3a3a37", "#f0efec"
 SUBD = "#c3c2b7"
-BLUE_RAMP = mpl.colors.LinearSegmentedColormap.from_list(
-    "dkblue", ["#232b36", "#3987e5", "#bcd9ff"])
-ECC_RAMP = mpl.colors.LinearSegmentedColormap.from_list(
-    "dkecc", ["#2e5f98", "#3f8ef0", "#d6ecff"])
+# inferno: black→red→orange→yellow — high contrast on dark background, no
+# near-white tail that bleeds into the dark canvas.
+BLUE_RAMP = mpl.colormaps["inferno"]
+# magma: similar but slightly cooler purple base — good for eccentricity
+# (continuous spatial gradient, perceptually uniform).
+ECC_RAMP  = mpl.colormaps["magma"]
 ORANGE = "#ff8a3d"
 
 

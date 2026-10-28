@@ -99,8 +99,7 @@ from matplotlib.collections import LineCollection
 
 x = np.array([xs[u] for u in nodes]); y = np.array([ys[u] for u in nodes])
 segs = np.array([[[xs[u], ys[u]], [xs[v], ys[v]]] for u, v in S.edges])
-CMAP = mpl.colors.LinearSegmentedColormap.from_list(
-    "blues1", ["#dbe9f6", "#2a78d6", "#08306b"])
+CMAP = mpl.colormaps["plasma"]  # dark purple → yellow: no near-white tail on white bg
 
 fig, ax = plt.subplots(figsize=(11, 11), dpi=220)
 ax.add_collection(LineCollection(segs, colors="#e3e2da", linewidths=0.25, zorder=1))

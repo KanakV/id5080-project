@@ -62,7 +62,13 @@ log(f"largest strongly connected component: {Gs.number_of_nodes():,} nodes "
 # ---------------------------------------------------------------- betweenness
 D = ox.convert.to_digraph(Gs, weight="length")   # collapse parallel edges, keep shortest
 nD = D.number_of_nodes()
-if nD <= EXACT_LIMIT:
+bc_file = f"results/{tag}_node_bc.npz"
+if os.path.exists(bc_file):
+    z = np.load(bc_file, allow_pickle=True)
+    bc = dict(zip(z["nodes"].tolist(), z["bc"]))
+    bc_kind = "cached (k=300)"
+    log(f"loaded cached betweenness from {bc_file}")
+elif nD <= EXACT_LIMIT:
     log(f"computing EXACT betweenness centrality on {nD:,} nodes ...")
     bc = nx.betweenness_centrality(D, weight="length", normalized=True)
     bc_kind = "exact"
@@ -152,7 +158,9 @@ log("plotting betweenness map ...")
 # single-hue sequential ramp (light -> dark blue) on sqrt scale; faint gray base net
 bvals = np.array([bc[nd] for nd in Gs.nodes])
 norm = mpl.colors.Normalize(vmin=0, vmax=np.sqrt(bvals.max()) or 1)
-cmap = mpl.colors.LinearSegmentedColormap.from_list("blues1", ["#c6dbef", "#2171b5", "#08306b"])
+# plasma: dark purple → magenta → yellow, perceptually uniform, no near-white
+# tail that washes into the white background.
+cmap = mpl.colormaps["plasma"]
 nc = [cmap(norm(np.sqrt(b))) for b in bvals]
 ns = list(0.15 + 28 * np.sqrt(bvals / (bvals.max() or 1)))
 fig, ax = ox.plot_graph(Gs, bgcolor="white", node_color=nc, node_size=ns, node_zorder=2,

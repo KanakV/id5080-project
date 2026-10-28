@@ -5,7 +5,7 @@ Edges (street segments, undir.) : 205,640
 Connected components            : 1
 Total street length             : 13,000.7 km
 
---- Betweenness centrality (approx, k=300, length-weighted, on largest SCC) ---
+--- Betweenness centrality (cached (k=300), length-weighted, on largest SCC) ---
 mean = 0.00138   max = 0.07842   (normalized)
 Gini-like concentration: top 1% of nodes hold 20.1% of total betweenness
 Top 10 intersections:

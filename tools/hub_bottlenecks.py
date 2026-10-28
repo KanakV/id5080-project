@@ -205,8 +205,8 @@ names = [n for n, _ in hubs]
 fig = plt.figure(figsize=(21, 13), dpi=160)
 fig.patch.set_facecolor(SURFACE)
 gs = fig.add_gridspec(2, 3, width_ratios=[1, 1, 1.6], hspace=0.35, wspace=0.3)
-# red = worse connection, blue = better; light neutral middle stays visible on the dark surface
-HIGH_BAD = mpl.colors.LinearSegmentedColormap.from_list("hb", ["#3987e5", "#e8e6df", "#e34948"])
+# red = worse connection, blue = better; amber/gold middle stays vividly distinguishable on dark surfaces without fading into white
+HIGH_BAD = mpl.colors.LinearSegmentedColormap.from_list("hb", ["#1e88e5", "#ffb300", "#e53935"])
 LOW_BAD = HIGH_BAD.reversed()
 
 

@@ -48,7 +48,7 @@ else:
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 
-BLUES = mpl.colors.LinearSegmentedColormap.from_list("blues1", ["#dbe9f6", "#2171b5", "#08306b"])
+BLUES = mpl.colormaps["plasma"]  # dark purple → yellow: no near-white tail on white bg
 
 log("rendering edge-painted betweenness map ...")
 ev = np.array([(bc.get(u, 0.0) + bc.get(v, 0.0)) / 2 for u, v, _ in Gs.edges(keys=True)])
