@@ -15,7 +15,7 @@ Bottlenecks between named hubs of a city, three ways per hub pair:
 Hub coordinates are approximate centres, snapped to the nearest junction; hubs more than
 1.5 km from the network (outside the municipal boundary) are dropped.
 
-Usage:  python hub_bottlenecks.py [path/to/graph.graphml]
+Usage:  python hub_bottlenecks.py [path/to/graph.graphml] [--plot-only]
 Writes results/<tag>_hub_bottlenecks.csv, results/<tag>_hub_bottlenecks_report.txt,
 figures/<tag>_hub_bottlenecks_dark.png
 """
@@ -39,7 +39,9 @@ from scipy.spatial import cKDTree
 from graph_utils import classify_cuts, load_simple, log, set_min_cut, sweep_cut, to_km
 
 sys.stdout.reconfigure(encoding="utf-8")
-GRAPH = sys.argv[1] if len(sys.argv) > 1 else "data/bengaluru_city_bengaluru_drive.graphml"
+ARGS = [a for a in sys.argv[1:] if not a.startswith("--")]
+PLOT_ONLY = "--plot-only" in sys.argv          # redraw the figure from the saved CSV
+GRAPH = ARGS[0] if ARGS else "data/bengaluru_city_bengaluru_drive.graphml"
 tag = os.path.splitext(os.path.basename(GRAPH))[0]
 CITY = tag.split("_")[0].capitalize()
 os.makedirs("figures", exist_ok=True)
@@ -83,109 +85,119 @@ for name, (la, lo) in HUBS[tag.split("_")[0]].items():
     log(f"hub {name:16s} -> node {nodes[i]} ({d * 1000:.0f} m away)")
 H = len(hubs)
 hix = np.array([i for _, i in hubs])
-# roads leaving each hub's 1 km area: a pair's min cut can never exceed the smaller of the two
-area = [{nodes[i] for i in tree.query_ball_point(P[h], NBHD_KM)} for _, h in hubs]
-area_out = [sum(1 for _ in nx.edge_boundary(S, a_)) for a_ in area]
-for (n_, _), k_ in zip(hubs, area_out):
-    log(f"  {n_:16s}: {k_} road segments leave its {NBHD_KM:.0f} km area")
+if not PLOT_ONLY:
+    # roads leaving each hub's 1 km area: a pair's min cut can never exceed the smaller of the two
+    area = [{nodes[i] for i in tree.query_ball_point(P[h], NBHD_KM)} for _, h in hubs]
+    area_out = [sum(1 for _ in nx.edge_boundary(S, a_)) for a_ in area]
+    for (n_, _), k_ in zip(hubs, area_out):
+        log(f"  {n_:16s}: {k_} road segments leave its {NBHD_KM:.0f} km area")
 
-# ---------------------------------------------------------------- 1. effective resistance
-def resistance_matrix(weight):
-    A = nx.to_scipy_sparse_array(S, nodelist=nodes, weight=weight, format="csr", dtype=float)
-    if weight == "length":
-        A.data = 1.0 / np.maximum(A.data / 1000.0, 1e-3)    # conductance = 1 / length (km)
-    L = laplacian(A).tocsc()
-    g = next(i for i in range(len(nodes)) if i not in set(hix))   # ground a non-hub node
-    keep = np.ones(len(nodes), bool)
-    keep[g] = False
-    Lg = L[keep][:, keep].tocsc()
-    pos_in_g = np.cumsum(keep) - 1
-    t0 = time.time()
-    lu = splu(Lg)
-    B = np.zeros((Lg.shape[0], H))
-    B[pos_in_g[hix], np.arange(H)] = 1.0
-    X = lu.solve(B)[pos_in_g[hix]]                    # H x H block of Lg^-1
-    log(f"effective resistance ({weight or 'unit'}) via LU [{time.time() - t0:.0f}s]")
-    d = np.diag(X)
-    return d[:, None] + d[None, :] - 2 * X
+    # ---------------------------------------------------------------- 1. effective resistance
+    def resistance_matrix(weight):
+        A = nx.to_scipy_sparse_array(S, nodelist=nodes, weight=weight, format="csr", dtype=float)
+        if weight == "length":
+            A.data = 1.0 / np.maximum(A.data / 1000.0, 1e-3)    # conductance = 1 / length (km)
+        L = laplacian(A).tocsc()
+        g = next(i for i in range(len(nodes)) if i not in set(hix))   # ground a non-hub node
+        keep = np.ones(len(nodes), bool)
+        keep[g] = False
+        Lg = L[keep][:, keep].tocsc()
+        pos_in_g = np.cumsum(keep) - 1
+        t0 = time.time()
+        lu = splu(Lg)
+        B = np.zeros((Lg.shape[0], H))
+        B[pos_in_g[hix], np.arange(H)] = 1.0
+        X = lu.solve(B)[pos_in_g[hix]]                    # H x H block of Lg^-1
+        log(f"effective resistance ({weight or 'unit'}) via LU [{time.time() - t0:.0f}s]")
+        d = np.diag(X)
+        return d[:, None] + d[None, :] - 2 * X
 
 
-R_unit = resistance_matrix(None)
-R_len = resistance_matrix("length")
+    R_unit = resistance_matrix(None)
+    R_len = resistance_matrix("length")
 
-# ---------------------------------------------------------------- 2 + 3. corridors and min cuts
-rows = []
-for a, b in itertools.combinations(range(H), 2):
-    (na, ia), (nb, ib) = hubs[a], hubs[b]
-    pa, pb = P[ia], P[ib]
-    dab = float(np.hypot(*(pa - pb)))
-    ell = np.hypot(*(P - pa).T) + np.hypot(*(P - pb).T) <= 1.3 * dab + 2.0
-    C = S.subgraph([nodes[i] for i in np.flatnonzero(ell)])
-    C = C.subgraph(max(nx.connected_components(C), key=len)).copy()
-    cn = list(C.nodes)
-    Ac = nx.to_scipy_sparse_array(C, nodelist=cn, weight=None, format="csr", dtype=float)
-    sw = sweep_cut(Ac)
-    ci = {u: i for i, u in enumerate(cn)}
-    splits = (nodes[ia] in ci and nodes[ib] in ci and sw["side"][ci[nodes[ia]]] != sw["side"][ci[nodes[ib]]])
+    # ---------------------------------------------------------------- 2 + 3. corridors and min cuts
+    rows = []
+    for a, b in itertools.combinations(range(H), 2):
+        (na, ia), (nb, ib) = hubs[a], hubs[b]
+        pa, pb = P[ia], P[ib]
+        dab = float(np.hypot(*(pa - pb)))
+        ell = np.hypot(*(P - pa).T) + np.hypot(*(P - pb).T) <= 1.3 * dab + 2.0
+        C = S.subgraph([nodes[i] for i in np.flatnonzero(ell)])
+        C = C.subgraph(max(nx.connected_components(C), key=len)).copy()
+        cn = list(C.nodes)
+        Ac = nx.to_scipy_sparse_array(C, nodelist=cn, weight=None, format="csr", dtype=float)
+        sw = sweep_cut(Ac)
+        ci = {u: i for i, u in enumerate(cn)}
+        splits = (nodes[ia] in ci and nodes[ib] in ci and sw["side"][ci[nodes[ia]]] != sw["side"][ci[nodes[ib]]])
 
-    src, snk = area[a], area[b]
-    common = src & snk
-    t0 = time.time()
-    cut, cut_edges = set_min_cut(S, src - common, snk - common)
-    limit = (f"{na} access roads" if cut == area_out[a] else f"{nb} access roads" if cut == area_out[b] else "")
-    rows.append(dict(hub_a=na, hub_b=nb, dist_km=dab, R_unit=R_unit[a, b], R_len_km=R_len[a, b],
-                     corridor_n=len(cn), lam2=sw["lam2"], n_lam2=len(cn) * sw["lam2"], phi=sw["phi_bal"],
-                     sweep_cut_edges=sw["n_cut"], splits=bool(splits), min_cut=cut, cut_limited_by=limit,
-                     src_n=len(src), snk_n=len(snk)))
-    log(f"{na} - {nb}: d={dab:.1f} km  R={R_unit[a, b]:.2f}  phi={sw['phi_bal']:.2e}  "
-        f"min cut={cut}  [{time.time() - t0:.0f}s]")
+        src, snk = area[a], area[b]
+        common = src & snk
+        t0 = time.time()
+        cut, cut_edges = set_min_cut(S, src - common, snk - common)
+        limit = (f"{na} access roads" if cut == area_out[a] else f"{nb} access roads" if cut == area_out[b] else "")
+        rows.append(dict(hub_a=na, hub_b=nb, dist_km=dab, R_unit=R_unit[a, b], R_len_km=R_len[a, b],
+                         corridor_n=len(cn), lam2=sw["lam2"], n_lam2=len(cn) * sw["lam2"], phi=sw["phi_bal"],
+                         sweep_cut_edges=sw["n_cut"], splits=bool(splits), min_cut=cut, cut_limited_by=limit,
+                         src_n=len(src), snk_n=len(snk)))
+        log(f"{na} - {nb}: d={dab:.1f} km  R={R_unit[a, b]:.2f}  phi={sw['phi_bal']:.2e}  "
+            f"min cut={cut}  [{time.time() - t0:.0f}s]")
 
-# Where does each min cut sit? If a hub's cut is the same number to (nearly) every other hub,
-# the choke point is in that hub's own catchment, not in the corridor between the pair.
-where = classify_cuts([(r_["hub_a"], r_["hub_b"], r_["min_cut"]) for r_ in rows])
-for r_ in rows:
-    r_["cut_limited_by"] = r_["cut_limited_by"] or where[(r_["hub_a"], r_["hub_b"])]
+    # Where does each min cut sit? If a hub's cut is the same number to (nearly) every other hub,
+    # the choke point is in that hub's own catchment, not in the corridor between the pair.
+    where = classify_cuts([(r_["hub_a"], r_["hub_b"], r_["min_cut"]) for r_ in rows])
+    for r_ in rows:
+        r_["cut_limited_by"] = r_["cut_limited_by"] or where[(r_["hub_a"], r_["hub_b"])]
 
-with open(f"results/{tag}_hub_bottlenecks.csv", "w", newline="", encoding="utf-8") as f:
-    w = csv.DictWriter(f, fieldnames=list(rows[0]))
-    w.writeheader()
-    w.writerows(rows)
+    with open(f"results/{tag}_hub_bottlenecks.csv", "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=list(rows[0]))
+        w.writeheader()
+        w.writerows(rows)
 
-# ---------------------------------------------------------------- report
-rep = (f"================= Hub-to-hub bottlenecks: {tag} =================\n"
-       f"Graph: giant component, simple undirected, n = {len(nodes):,}, m = {S.number_of_edges():,}\n"
-       f"Hubs ({H}): " + ", ".join(n for n, _ in hubs) + "\n\n"
-       f"Road segments leaving each hub's {NBHD_KM:.0f} km area (an upper limit on every min cut involving it):\n  "
-       + ", ".join(f"{n_} {k_}" for (n_, _), k_ in zip(hubs, area_out)) + "\n\n"
-       f"{'pair':36s}{'km':>6s}{'R_unit':>8s}{'R_len':>8s}{'n·λ₂':>8s}{'φ':>10s}{'splits':>7s}{'min cut':>8s}"
-       f"  limited by\n")
-for r_ in sorted(rows, key=lambda r_: r_["min_cut"]):
-    rep += (f"{r_['hub_a'] + ' – ' + r_['hub_b']:36s}{r_['dist_km']:6.1f}{r_['R_unit']:8.2f}{r_['R_len_km']:8.2f}"
-            f"{r_['n_lam2']:8.2f}{r_['phi']:10.2e}{'yes' if r_['splits'] else 'no':>7s}{r_['min_cut']:8d}"
-            f"  {r_['cut_limited_by']}\n")
-Ru = np.array([r_["R_unit"] for r_ in rows])
-dk = np.array([r_["dist_km"] for r_ in rows])
-mc = np.array([r_["min_cut"] for r_ in rows])
-slope, icpt = np.polyfit(np.log(dk), Ru, 1)
-rep += (f"\nR_unit vs distance: R ≈ {icpt:.2f} + {slope:.2f}·ln(d km)  (a 2-D grid gives R ∝ ln d)\n"
-        f"Median R_unit {np.median(Ru):.2f}, median min cut {np.median(mc):.0f} segments, "
-        f"median corridor φ {np.median([r_['phi'] for r_ in rows]):.2e}\n"
-        f"Pairs whose corridor bottleneck lies between the hubs (splits = yes): "
-        f"{sum(r_['splits'] for r_ in rows)}/{len(rows)}\n"
-        f"Where the min cut sits: in one hub's own catchment (same cut to nearly every other hub) "
-        f"{sum(r_['cut_limited_by'].startswith('near ') for r_ in rows)}/{len(rows)}, "
-        f"in the corridor between the hubs {sum(r_['cut_limited_by'] == 'between hubs' for r_ in rows)}/{len(rows)}, "
-        f"at a hub's 1 km access roads {sum(r_['cut_limited_by'].endswith('access roads') for r_ in rows)}/{len(rows)}\n"
-        f"Choked hubs: " + (", ".join(sorted({r_['cut_limited_by'][5:] for r_ in rows
-                                                if r_['cut_limited_by'].startswith('near ')})) or "none") + "\n")
-resid = Ru - (icpt + slope * np.log(dk))
-worst = np.argsort(-resid)[:3]
-rep += "Most constricted pairs for their distance (largest R above the trend):\n"
-for i in worst:
-    rep += f"  {rows[i]['hub_a']} – {rows[i]['hub_b']}: R = {Ru[i]:.2f} (+{resid[i]:.2f} over trend), min cut {mc[i]}\n"
-print(rep)
-with open(f"results/{tag}_hub_bottlenecks_report.txt", "w", encoding="utf-8") as f:
-    f.write(rep)
+    # ---------------------------------------------------------------- report
+    rep = (f"================= Hub-to-hub bottlenecks: {tag} =================\n"
+           f"Graph: giant component, simple undirected, n = {len(nodes):,}, m = {S.number_of_edges():,}\n"
+           f"Hubs ({H}): " + ", ".join(n for n, _ in hubs) + "\n\n"
+           f"Road segments leaving each hub's {NBHD_KM:.0f} km area (an upper limit on every min cut involving it):\n  "
+           + ", ".join(f"{n_} {k_}" for (n_, _), k_ in zip(hubs, area_out)) + "\n\n"
+           f"{'pair':36s}{'km':>6s}{'R_unit':>8s}{'R_len':>8s}{'n·λ₂':>8s}{'φ':>10s}{'splits':>7s}{'min cut':>8s}"
+           f"  limited by\n")
+    for r_ in sorted(rows, key=lambda r_: r_["min_cut"]):
+        rep += (f"{r_['hub_a'] + ' – ' + r_['hub_b']:36s}{r_['dist_km']:6.1f}{r_['R_unit']:8.2f}{r_['R_len_km']:8.2f}"
+                f"{r_['n_lam2']:8.2f}{r_['phi']:10.2e}{'yes' if r_['splits'] else 'no':>7s}{r_['min_cut']:8d}"
+                f"  {r_['cut_limited_by']}\n")
+    Ru = np.array([r_["R_unit"] for r_ in rows])
+    dk = np.array([r_["dist_km"] for r_ in rows])
+    mc = np.array([r_["min_cut"] for r_ in rows])
+    slope, icpt = np.polyfit(np.log(dk), Ru, 1)
+    rep += (f"\nR_unit vs distance: R ≈ {icpt:.2f} + {slope:.2f}·ln(d km)  (a 2-D grid gives R ∝ ln d)\n"
+            f"Median R_unit {np.median(Ru):.2f}, median min cut {np.median(mc):.0f} segments, "
+            f"median corridor φ {np.median([r_['phi'] for r_ in rows]):.2e}\n"
+            f"Pairs whose corridor bottleneck lies between the hubs (splits = yes): "
+            f"{sum(r_['splits'] for r_ in rows)}/{len(rows)}\n"
+            f"Where the min cut sits: in one hub's own catchment (same cut to nearly every other hub) "
+            f"{sum(r_['cut_limited_by'].startswith('near ') for r_ in rows)}/{len(rows)}, "
+            f"in the corridor between the hubs {sum(r_['cut_limited_by'] == 'between hubs' for r_ in rows)}/{len(rows)}, "
+            f"at a hub's 1 km access roads {sum(r_['cut_limited_by'].endswith('access roads') for r_ in rows)}/{len(rows)}\n"
+            f"Choked hubs: " + (", ".join(sorted({r_['cut_limited_by'][5:] for r_ in rows
+                                                    if r_['cut_limited_by'].startswith('near ')})) or "none") + "\n")
+    resid = Ru - (icpt + slope * np.log(dk))
+    worst = np.argsort(-resid)[:3]
+    rep += "Most constricted pairs for their distance (largest R above the trend):\n"
+    for i in worst:
+        rep += f"  {rows[i]['hub_a']} – {rows[i]['hub_b']}: R = {Ru[i]:.2f} (+{resid[i]:.2f} over trend), min cut {mc[i]}\n"
+    print(rep)
+    with open(f"results/{tag}_hub_bottlenecks_report.txt", "w", encoding="utf-8") as f:
+        f.write(rep)
+
+else:  # --plot-only: redraw from the saved CSV, no LU / min-cut recompute
+    with open(f"results/{tag}_hub_bottlenecks.csv", newline="", encoding="utf-8") as f:
+        rows = list(csv.DictReader(f))
+    for r_ in rows:
+        for k_ in ("dist_km", "R_unit", "R_len_km", "lam2", "n_lam2", "phi"):
+            r_[k_] = float(r_[k_])
+        r_["min_cut"] = int(r_["min_cut"])
+    log(f"plot-only: {len(rows)} pairs from results/{tag}_hub_bottlenecks.csv")
 
 # ---------------------------------------------------------------- figure
 log("plotting ...")
@@ -193,14 +205,18 @@ names = [n for n, _ in hubs]
 fig = plt.figure(figsize=(21, 13), dpi=160)
 fig.patch.set_facecolor(SURFACE)
 gs = fig.add_gridspec(2, 3, width_ratios=[1, 1, 1.6], hspace=0.35, wspace=0.3)
-SEQ = mpl.colors.LinearSegmentedColormap.from_list("seq", ["#184f95", "#3987e5", "#9ec5f4"])
-SEQ_R = SEQ.reversed()
+# red = worse connection, blue = better; light neutral middle stays visible on the dark surface
+HIGH_BAD = mpl.colors.LinearSegmentedColormap.from_list("hb", ["#3987e5", "#e8e6df", "#e34948"])
+LOW_BAD = HIGH_BAD.reversed()
 
 
-def heat(ax, M, title, fmt, cmap):
+def heat(ax, M, title, fmt, cmap, log_scale=False):
     ax.set_facecolor(SURFACE)
     Mm = np.ma.masked_where(np.eye(H, dtype=bool), M)
-    im = ax.imshow(Mm, cmap=cmap)
+    vals = M[~np.eye(H, dtype=bool)]
+    norm_ = (mpl.colors.LogNorm(vals.min(), vals.max()) if log_scale
+             else mpl.colors.Normalize(vals.min(), vals.max()))
+    im = ax.imshow(Mm, cmap=cmap, norm=norm_)
     for i in range(H):
         for j in range(H):
             if i != j:
@@ -215,6 +231,9 @@ def heat(ax, M, title, fmt, cmap):
     ax.set_title(title, color=INKD, fontsize=12)
     cb = fig.colorbar(im, ax=ax, shrink=0.75, pad=0.02)
     cb.ax.tick_params(colors=SUBD, labelsize=8)
+    if log_scale:                                  # plain numbers, not 4x10^0
+        cb.ax.yaxis.set_major_formatter(mpl.ticker.FormatStrFormatter("%g"))
+        cb.ax.yaxis.set_minor_formatter(mpl.ticker.FormatStrFormatter("%g"))
 
 
 def mat(key):
@@ -225,22 +244,23 @@ def mat(key):
     return M
 
 
-heat(fig.add_subplot(gs[0, 0]), R_unit, "Effective resistance R (unit conductance)\nhigher = fewer parallel routes",
-     ".2f", SEQ_R)
-heat(fig.add_subplot(gs[0, 1]), mat("min_cut"), "Min cut between 1 km hub areas\n(road segments; lower = tighter bottleneck)",
-     ".0f", SEQ)
-heat(fig.add_subplot(gs[1, 0]), 1e3 * mat("phi"), "Corridor Fiedler conductance φ × 10³\n(lower = sharper bottleneck)",
-     ".2f", SEQ)
-heat(fig.add_subplot(gs[1, 1]), mat("n_lam2"), "Corridor n·λ₂ (size-normalised)\n(lower = weaker connectivity)", ".1f", SEQ)
+heat(fig.add_subplot(gs[0, 0]), mat("R_unit"), "Effective resistance R (unit conductance)\nred = fewer parallel routes",
+     ".2f", HIGH_BAD)
+heat(fig.add_subplot(gs[0, 1]), mat("min_cut"), "Min cut between 1 km hub areas (road segments)\nred = tighter bottleneck (log colour)",
+     ".0f", LOW_BAD, log_scale=True)
+heat(fig.add_subplot(gs[1, 0]), 1e3 * mat("phi"), "Corridor Fiedler conductance φ × 10³\nred = sharper bottleneck (log colour)",
+     ".2f", LOW_BAD, log_scale=True)
+heat(fig.add_subplot(gs[1, 1]), mat("n_lam2"), "Corridor n·λ₂ (size-normalised)\nred = weaker connectivity", ".1f", LOW_BAD)
 
 ax = fig.add_subplot(gs[:, 2])
 ax.set_facecolor(SURFACE)
 segs = np.array([[P[idx[u]], P[idx[v]]] for u, v in S.edges])
 ax.add_collection(LineCollection(segs, colors="#2f2f2c", linewidths=0.2, zorder=1))
+Ru = np.array([r_["R_unit"] for r_ in rows])
 norm = mpl.colors.Normalize(Ru.min(), Ru.max())
-for r_ in rows:
+for r_ in sorted(rows, key=lambda r_: r_["R_unit"]):          # worst pairs drawn on top
     pa, pb = P[hubs[names.index(r_["hub_a"])][1]], P[hubs[names.index(r_["hub_b"])][1]]
-    ax.plot(*zip(pa, pb), color=SEQ_R(norm(r_["R_unit"])), lw=1 + 3 * norm(r_["R_unit"]), zorder=2, alpha=0.9)
+    ax.plot(*zip(pa, pb), color=HIGH_BAD(norm(r_["R_unit"])), lw=1.2 + 3 * norm(r_["R_unit"]), zorder=2)
 halo = [mpl.patheffects.withStroke(linewidth=3, foreground=SURFACE)]
 for n_, i in hubs:
     ax.scatter(*P[i], s=90, color=ORANGE, zorder=4, edgecolors=SURFACE, linewidths=1.5)
@@ -253,7 +273,7 @@ ax.set_yticks([])
 for s_ in ax.spines.values():
     s_.set_color(SPINE)
 ax.margins(0.08)                                      # room for hub labels at the edges
-sm = mpl.cm.ScalarMappable(norm=norm, cmap=SEQ_R)
+sm = mpl.cm.ScalarMappable(norm=norm, cmap=HIGH_BAD)
 cb = fig.colorbar(sm, ax=ax, orientation="horizontal", shrink=0.6, pad=0.03)
 cb.set_label("effective resistance R between the pair (thicker = more constricted)", color=SUBD)
 cb.ax.tick_params(colors=SUBD)
