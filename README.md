@@ -38,9 +38,9 @@ When prompted, enter two city names (including country or state for accurate geo
 
 ```text
 Enter the first city (e.g., Chennai, India): Chennai, India
-Enter the second city (e.g., Bangalore, India): Bangalore, India
+Enter the second city (e.g., Bengaluru, India): Bengaluru, India
 ```
-
+Note that querying for Bangalore returns an error as OSM only considers Bengaluru.  
 ### Smart Caching / Skip Logic
 `main.py` automatically checks your working directory before running expensive network downloads or graph calculations:
 1. **If `{City}_centralities.csv` exists:** Skips both the OSM download and centrality calculations, proceeding straight to city comparison.
