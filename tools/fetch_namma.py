@@ -36,10 +36,6 @@ CITIES = {
         "city":  {"bengaluru": "Bengaluru, Karnataka, India"},
         "metro": {"bengaluru30km": (12.9716, 77.5946)},
     },
-    # reference city for assortativity_compare.py (Cerda grid, ~16k people/km^2)
-    "barcelona": {
-        "city":  {"barcelona": "Barcelona, Catalonia, Spain"},
-    },
 }
 METRO_RADIUS_M = 30_000
 

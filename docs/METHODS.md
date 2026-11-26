@@ -68,7 +68,7 @@ Uses excess degree q = k − 1. Its mean μ_q and variance σ_q² are taken over
 The CBD is the centroid of the top-8 betweenness junctions, read from
 `results/<tag>_top_betweenness.csv`. That file comes from the team script `analyze_network.py`
 (length-weighted betweenness on the directed graph, 300 sampled sources, seed 42). Every
-"distance from CBD" and every central window is measured from this point.
+"distance from CBD" is measured from this point.
 
 ---
 
@@ -167,34 +167,39 @@ The corridor is the set of nodes p inside the ellipse
 
 ---
 
-## 4. Edit distance to a robust street network (`edit_spatial.py`)
+## 4. Limits of a direct comparison
 
-The full write-up is in [EDIT_DISTANCE.md](EDIT_DISTANCE.md).
+Both analyses compare Bengaluru and Chennai **directly**, with no reference city. That is a
+known weakness of the method:
 
-- **Window:** the 9,000 junctions nearest the CBD.
-- **Metric:** Schneider R under random failure and adaptive degree attack.
-- **Target:** 60 / 70 / 80% of a 95×95 square grid's R, the same for both cities.
-- **Edits:** new local roads only, between Delaunay-neighbour junctions ≤ 300 m apart, both
-  ends with fewer than 4 roads. Each road counts 1.
-- **Order:** greedy by robustness gain, with exact R after every batch, plus a random-order baseline.
+- **Different topography.** Chennai is a coastal city bounded by the sea on the east and cut
+  by the Adyar and Cooum rivers. Bengaluru sits inland on a plateau with no such edge. A
+  coastline and few river crossings force bottlenecks and dead ends that no road plan could
+  avoid, so part of any difference is geography, not planning.
+- **Different size and boundary.** The municipal areas differ (about 741 vs 426 km²; 155,779
+  vs 69,376 junctions), and so do the shapes of the boundaries. Measures such as global r and
+  the share of dead ends depend on size and on where the boundary cuts the network.
+- **No baseline for "normal".** With two cities, a difference shows which one is higher but
+  not whether either is unusual for an Indian city of its kind. Choosing Indian cities with
+  similar growth and density as peers (for example Pune and Hyderabad) would provide that
+  baseline. This was considered but not done (see TRIED.md).
+
+The results should therefore be read as "Bengaluru's network differs from Chennai's in this
+way", not as "this difference comes from better or worse planning". The hub analysis reduces
+the size effect by comparing hub pairs at the same road distance (§3e). The assortativity
+analysis reduces it by looking at local assortativity by distance from the CBD and by road
+class (§2b), not only at the single global r.
 
 ---
 
-## 5. Conflict points per intersection (`conflict_points.py`)
-
-The full write-up is in [CONFLICT_POINTS.md](CONFLICT_POINTS.md).
-
----
-
-## 6. Constants at a glance
+## 5. Constants at a glance
 
 | Constant | Value | Used in |
 |---|---|---|
 | Random seed | 42 | Everywhere |
-| CBD | centroid of the top-8 betweenness junctions | §2c, §4 |
+| CBD | centroid of the top-8 betweenness junctions | §2c |
 | Assortativity clusters | > 10 km from the CBD, ≥ 90th percentile ρ·N, 150 m link, ≥ 40 nodes | §2b |
 | Hub snap limit / hub area radius | 1.5 km / 1 km | §3 |
 | Corridor ellipse | 1.3 d + 2 km | §3c |
 | Sweep-cut balance | ≥ 10% volume per side | §3c |
 | Length floor in R_len | 1 m | §3b |
-| Edit distance: window / new road / target | 9,000 junctions / Delaunay neighbour ≤ 300 m, both degree < 4 / 60–80% of a 95×95 grid's R | §4 |

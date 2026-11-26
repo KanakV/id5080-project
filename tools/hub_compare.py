@@ -1,8 +1,8 @@
 """
 Hub-to-hub connectivity compared across cities, normalised by ROAD distance.
 
-Hub pairs sit at different distances in each city (Barcelona is ~10 km across,
-Bengaluru ~30 km), so every measure is plotted against the shortest road distance
+Hub pairs sit at different distances in each city (Chennai's hubs span ~33 km of road,
+Bengaluru's ~30 km), so every measure is plotted against the shortest road distance
 between the two hubs, and cities are compared only where their distances overlap.
 
   A  Resistance per km of road  R_len / d_road
@@ -14,7 +14,7 @@ between the two hubs, and cities are compared only where their distances overlap
   C  Corridor Fiedler conductance phi (worst balanced cut of the corridor between the
      hubs, relative to its size). Lower = sharper bottleneck.
   D  The three measures at MATCHED road distance (the range all cities share),
-     as the city's median divided by Barcelona's median.
+     as the city's median divided by the first city's (Bengaluru's) median.
 Lines in A-C are medians in road-distance bins.
 
 Road distances: Dijkstra on segment length between the snapped hub nodes, computed
@@ -38,12 +38,12 @@ from graph_utils import classify_cuts, hub_road_km, load_simple, log, snap_hubs,
 
 sys.stdout.reconfigure(encoding="utf-8")
 SURFACE, INKD, SUBD, GRID, SPINE = "#1a1a19", "#f0efec", "#c3c2b7", "#33332f", "#44443f"
-CITY_STYLE = {"Bengaluru": ("#3987e5", "o"), "Chennai": ("#c98500", "s"), "Barcelona": ("#d55181", "D")}
+CITY_STYLE = {"Bengaluru": ("#3987e5", "o"), "Chennai": ("#c98500", "s")}
 
 paths = sys.argv[1:] or ["data/bengaluru_city_bengaluru_drive.graphml", "data/chennai_city_chennai_drive.graphml"]
 tags = [os.path.splitext(os.path.basename(p))[0] for p in paths]
 cities = [t.split("_")[0].capitalize() for t in tags]
-REF = "Barcelona" if "Barcelona" in cities else cities[0]   # panel D baseline
+REF = cities[0]   # panel D baseline
 D = {}
 for p, t in zip(paths, tags):
     f = f"results/{t}_hub_bottlenecks.csv"

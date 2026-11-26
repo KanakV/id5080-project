@@ -6,7 +6,7 @@ Panels: global r, degree distribution P(k), k_nn(k) / (<k^2>/<k>) (1 = uncorrela
 e_jk difference (2nd city minus 1st), radial profile of local assortativity,
 mean local assortativity by road category.
 
-Usage:  python assortativity_compare.py data/bengaluru_city_bengaluru_drive.graphml data/chennai_city_chennai_drive.graphml [...]
+Usage:  python assortativity_compare.py [graphml ...]   (default: Bengaluru, Chennai)
 Writes figures/compare_assortativity_dark.png, results/compare_assortativity_report.txt
 """
 import os
@@ -19,7 +19,7 @@ import numpy as np
 
 SURFACE, INKD, SUBD, GRID, SPINE = "#1a1a19", "#f0efec", "#c3c2b7", "#33332f", "#44443f"
 # fixed entity -> colour/marker (dark categorical slots; never re-ordered by rank)
-CITY_STYLE = {"Bengaluru": ("#3987e5", "o"), "Chennai": ("#c98500", "s"), "Barcelona": ("#d55181", "D")}
+CITY_STYLE = {"Bengaluru": ("#3987e5", "o"), "Chennai": ("#c98500", "s")}
 FALLBACK = [("#199e70", "^"), ("#9085e9", "v")]
 KMAX_SHOW = 6
 

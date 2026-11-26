@@ -1,12 +1,8 @@
 """
-Shared helpers for edit_spatial.py, hub_bottlenecks.py and hub_compare.py.
+Shared helpers for hub_bottlenecks.py and hub_compare.py.
 
-Copied (not imported) from the base scripts so those stay untouched:
-  sweep_cut    <- expander_bottleneck.py (Fiedler sweep)
-  giant_curve  <- percolation.py (reverse Newman-Ziff union-find)
-  adaptive_degree_order <- percolation.py (lazy-heap peeling)
+sweep_cut is copied (not imported) from expander_bottleneck.py so that script stays untouched.
 """
-import heapq
 import time
 
 import networkx as nx
@@ -86,64 +82,6 @@ def sweep_cut(A, min_side=0.10):
     return dict(lam2=lam2, phi=float(phi.min()), phi_bal=float(phi[best_bal]), side=side, n_cut=n_cut)
 
 
-def giant_curve(indptr, indices, removal_order):
-    """removal_order: node indices, first-removed first.
-    Returns S_rel[k] = giant component fraction after removing the first k nodes."""
-    n = len(indptr) - 1
-    parent = np.arange(n)
-    size = np.ones(n, dtype=np.int64)
-    present = np.zeros(n, dtype=bool)
-
-    def find(a):
-        root = a
-        while parent[root] != root:
-            root = parent[root]
-        while parent[a] != root:
-            parent[a], a = root, parent[a]
-        return root
-
-    best = 0
-    S_rel = np.empty(n + 1)
-    S_rel[n] = 0.0
-    for pos in range(n - 1, -1, -1):          # re-add in reverse removal order
-        v = removal_order[pos]
-        present[v] = True
-        for w in indices[indptr[v]:indptr[v + 1]]:
-            if present[w]:
-                ra, rb = find(v), find(w)
-                if ra != rb:
-                    if size[ra] < size[rb]:
-                        ra, rb = rb, ra
-                    parent[rb] = ra
-                    size[ra] += size[rb]
-        best = max(best, size[find(v)])
-        S_rel[pos] = best / n
-    return S_rel
-
-
-def adaptive_degree_order(indptr, indices):
-    """Removal order that always takes the currently highest-degree node."""
-    n = len(indptr) - 1
-    livedeg = np.diff(indptr).copy()
-    alive = np.ones(n, dtype=bool)
-    heap = [(-int(d), i) for i, d in enumerate(livedeg)]
-    heapq.heapify(heap)
-    order = np.empty(n, dtype=np.int64)
-    k = 0
-    while heap:
-        d, v = heapq.heappop(heap)
-        if not alive[v] or -d != livedeg[v]:
-            continue
-        alive[v] = False
-        order[k] = v
-        k += 1
-        for w in indices[indptr[v]:indptr[v + 1]]:
-            if alive[w]:
-                livedeg[w] -= 1
-                heapq.heappush(heap, (-int(livedeg[w]), w))
-    return order
-
-
 def set_min_cut(G, src_set, snk_set):
     """Unit-capacity max-flow min-cut between two node sets of G (simple undirected)."""
     F = nx.Graph()
@@ -180,21 +118,6 @@ def classify_cuts(pairs):
     return out
 
 
-def robustness(G, n_rand=3):
-    """Schneider R (mean giant-component fraction over the whole removal curve; max 0.5) under
-    random failure (mean of n_rand fixed-seed orders) and adaptive degree attack.
-    Returns ({'rand': R, 'deg': R}, dict(A, orders, curves)) — the extras feed edit_spatial.py."""
-    nodes = list(G.nodes)
-    n = len(nodes)
-    A = nx.to_scipy_sparse_array(G, nodelist=nodes, weight=None, format="csr")
-    rng = np.random.default_rng(SEED)
-    orders = {"rand": [rng.permutation(n) for _ in range(n_rand)],
-              "deg": [adaptive_degree_order(A.indptr, A.indices)]}
-    curves = {m: [giant_curve(A.indptr, A.indices, o) for o in os_] for m, os_ in orders.items()}
-    R = {m: float(np.mean([c[:n].mean() for c in cs])) for m, cs in curves.items()}
-    return R, dict(A=A, orders=orders, curves=curves)
-
-
 # named hubs for hub_bottlenecks.py / hub_compare.py (approximate centres, picked by hand)
 HUBS = {  # (lat, lon), approximate centres
     "bengaluru": {"MG Road": (12.9756, 77.6066), "Whitefield": (12.9698, 77.7500),
@@ -205,10 +128,6 @@ HUBS = {  # (lat, lon), approximate centres
                 "Sholinganallur": (12.9010, 80.2279), "Anna Nagar": (13.0850, 80.2101),
                 "Ambattur": (13.1143, 80.1548), "Tambaram": (12.9249, 80.1000),
                 "Chennai Central": (13.0827, 80.2757), "Velachery": (12.9815, 80.2180)},
-    "barcelona": {"Pl. Catalunya": (41.3870, 2.1700), "Sagrada Familia": (41.4036, 2.1744),
-                  "Barceloneta": (41.3809, 2.1897), "Sants": (41.3790, 2.1400),
-                  "Diagonal Mar": (41.4030, 2.2040), "Camp Nou": (41.3809, 2.1228),
-                  "Gracia": (41.4026, 2.1564), "Sant Andreu": (41.4354, 2.1897)},
 }
 
 
