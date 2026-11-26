@@ -10,7 +10,7 @@ def main():
     os.makedirs(DATA_DIR, exist_ok=True)
 
     city1_input = input("Enter the first city (e.g., Chennai, India): ").strip()
-    city2_input = input("Enter the second city (e.g., Bangalore, India): ").strip()
+    city2_input = input("Enter the second city (e.g., Bengaluru, India): ").strip()
 
     cities = [city1_input, city2_input]
     centrality_csvs = []
