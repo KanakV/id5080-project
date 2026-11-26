@@ -1,0 +1,84 @@
+================= Degree correlations: barcelona_city_barcelona_drive =================
+Nodes / edges (simple, undirected, giant component) : 9,007 / 14,095
+<k> = 3.130   <k^2>/<k> = 3.336   k_max = 6
+Assortativity r (Newman eq. 7.82)    : +0.2152
+Slope of neighbour degree vs degree  : +0.1578
+k_nn(k):  k=1: 3.21  k=2: 2.82  k=3: 3.23  k=4: 3.54  k=5: 3.50  k=6: 3.49
+
+Important nodes (top betweenness) — degree, mean neighbour degree, local assortativity:
+  1. Avinguda Diagonal; Carrer de Pau Claris            k=4  k_nn=3.75  rho=+3.90e-04  bc=0.1054
+  2. Avinguda Diagonal; Carrer del Rosselló             k=5  k_nn=4.20  rho=+1.36e-03  bc=0.0957
+  3. Avinguda Diagonal; Via Augusta                     k=4  k_nn=3.50  rho=+1.55e-04  bc=0.0765
+  4. Avinguda Diagonal                                  k=3  k_nn=4.00  rho=+3.13e-04  bc=0.0760
+  5. Avinguda Diagonal; Carrer de Balmes                k=4  k_nn=4.00  rho=+6.26e-04  bc=0.0753
+  6. Ronda del General Mitre; Via Augusta               k=4  k_nn=4.00  rho=+6.26e-04  bc=0.0749
+  7. Carrer de Garcilaso; Carrer de Lluís Sagnier; Pass k=5  k_nn=3.40  rho=+1.00e-04  bc=0.0740
+  8. Avinguda de la Mare de Déu de Montserrat; Carrer d k=4  k_nn=3.25  rho=-8.14e-05  bc=0.0729
+
+Local assortativity by road category (rho x N, so the mean over all nodes = r = +0.2152):
+category                                nodes      mean               95% CI    <k>
+Expressway / trunk                        250   -1.0562 [ -1.2956, -0.8102]   2.90
+Primary                                   650   +1.1034 [ +0.9186, +1.2872]   3.45
+Secondary                               1,326   +0.8969 [ +0.7569, +1.0442]   3.40
+Tertiary                                1,738   +0.6576 [ +0.5491, +0.7626]   3.33
+Local street                            5,043   -0.1680 [ -0.2349, -0.1036]   2.96
+Flyover / viaduct                         188   -0.0800 [ -0.5003, +0.3232]   3.31
+Ring road                                   0      +nan [    +nan,    +nan]    nan
+Outer Ring Road                             0      +nan [    +nan,    +nan]    nan
+National / state highway                    0      +nan [    +nan,    +nan]    nan
+Central (< 3 km of CBD)                 3,723   +0.8583 [ +0.7657, +0.9441]   3.25
+Outskirts (> 12 km)                         0      +nan [    +nan,    +nan]    nan
+Important nodes (top betweenness)           8   +3.9277 [ +1.6414, +6.8811]   4.12
+
+================ Most DISassortative nodes (lowest rho*N) ================
+(rho_v = q_v * sum_nbrs(q_w - mu) / (2M sigma^2); negative = hub-like node whose neighbours are low-degree)
+  rho*N=-15.611  k=4  nbr degrees=[1, 1, 2, 2]  (41.3872, 2.1789)   2.4 km from CBD  Carrer de Fonollar; Carrer de l'Arc de Sant Cristòfol
+  rho*N=-14.231  k=6  nbr degrees=[2, 2, 3, 3, 3, 3]  (41.4286, 2.0894)   6.5 km from CBD  Carretera de Vallvidrera a Sant Cugat
+  rho*N=-11.360  k=4  nbr degrees=[1, 1, 3, 3]  (41.3367, 2.1306)   7.8 km from CBD  Avinguda Número 5; Carrer Número 28
+  rho*N=-11.360  k=4  nbr degrees=[1, 1, 3, 3]  (41.4130, 2.1562)   1.1 km from CBD  Carrer d'Antequera; Carrer de Molist
+  rho*N=-11.360  k=4  nbr degrees=[1, 1, 3, 3]  (41.3968, 2.1561)   0.8 km from CBD  Carrer de Minerva; Carrer de Sèneca
+  rho*N=-11.360  k=4  nbr degrees=[1, 1, 3, 3]  (41.4177, 2.1696)   1.8 km from CBD  Carrer de Gènova; Carrer de Brusel·les
+  rho*N=-11.360  k=4  nbr degrees=[1, 1, 3, 3]  (41.3713, 2.1597)   3.6 km from CBD  Passeig de l'Exposició; Carrer de Julià
+  rho*N=-11.360  k=4  nbr degrees=[1, 1, 3, 3]  (41.4327, 2.1507)   3.3 km from CBD  Carrer de Berruguete; Carrer de Can Travi
+  rho*N=-10.432  k=5  nbr degrees=[1, 3, 3, 3, 3]  (41.4340, 2.1923)   4.3 km from CBD  Carrer de Sant Adrià; Carrer del Segre
+  rho*N=-9.235  k=4  nbr degrees=[1, 1, 3, 4]  (41.4242, 2.1474)   2.5 km from CBD  Carrer dels Cortada; Plaça d'Isop
+  rho*N=-9.235  k=4  nbr degrees=[1, 1, 3, 4]  (41.3618, 2.1418)   4.9 km from CBD  Carrer de Riudaura; Carrer de la Foneria
+  rho*N=-9.235  k=4  nbr degrees=[1, 2, 3, 3]  (41.3763, 2.1482)   3.2 km from CBD  Carrer del Príncep Jordi; Carrer de Tarragona
+  rho*N=-9.235  k=4  nbr degrees=[1, 2, 3, 3]  (41.3405, 2.1244)   7.6 km from CBD  Avinguda del Parc Logístic; Carrer Número 27
+  rho*N=-9.235  k=4  nbr degrees=[1, 2, 3, 3]  (41.4230, 2.1389)   2.8 km from CBD  Carrer de Samària; Carrer de Natzaret
+  rho*N=-9.235  k=4  nbr degrees=[1, 1, 3, 4]  (41.4169, 2.1397)   2.3 km from CBD  Carrer de Cesare Cantù; Carrer de Ca l'Alegre
+
+Nodes with rho*N < -0.5: 3,307 (36.7%);  of these, 18% touch a dead end (k=1), degree mix {2: 148, 3: 2359, 4: 774, 5: 21, 6: 5}
+Mean distance from CBD: disassortative 3.8 km vs all nodes 3.4 km
+
+================ Most DISassortative edges (hub linked to low-degree node) ================
+  c*M=-8.618  degrees 5-1  (41.4339, 2.1920)   4.3 km  Carrer de Sant Adrià | Carrer de Sant Adrià
+  c*M=-7.892  degrees 2-6  (41.4286, 2.0892)   6.5 km  Carretera de Vallvidrera a San | Carretera de Vallvidrera a San
+  c*M=-7.892  degrees 2-6  (41.4287, 2.0892)   6.6 km  Carretera de Vallvidrera a San | Carretera de Vallvidrera a San
+  c*M=-4.929  degrees 2-5  (41.3860, 2.1863)   2.9 km  (unnamed) | Passeig de Picasso
+  c*M=-4.929  degrees 5-2  (41.4339, 2.1899)   4.2 km  Carrer de Sant Adrià | Carrer de Sant Adrià
+  c*M=-4.929  degrees 2-5  (41.4225, 2.1915)   3.3 km  Carrer de Garcilaso | Carrer de Garcilaso
+  c*M=-4.929  degrees 5-2  (41.4219, 2.2095)   4.6 km  Carrer de Ca n'Oliva | Carrer del Concili de Trento
+  c*M=-4.929  degrees 2-5  (41.3649, 2.1337)   4.8 km  Gran Via de les Corts Catalane | Avinguda del Carrilet
+  c*M=-4.929  degrees 2-5  (41.3661, 2.1373)   4.6 km  Gran Via de les Corts Catalane | Gran Via de les Corts Catalane
+  c*M=-4.929  degrees 2-5  (41.3662, 2.1373)   4.6 km  Gran Via de les Corts Catalane | Gran Via de les Corts Catalane
+  c*M=-4.929  degrees 5-2  (41.4037, 2.2144)   4.5 km  Carrer de la Selva de Mar | Ronda Litoral
+  c*M=-3.438  degrees 1-4  (41.4015, 2.1093)   4.3 km  Passatge de la Blada | Carrer de la Capella de Can Ca
+  c*M=-3.438  degrees 4-1  (41.4068, 2.1936)   2.8 km  Carrer del Perú | Rambla del Poblenou
+  c*M=-3.438  degrees 4-1  (41.3761, 2.1480)   3.2 km  Carrer del Príncep Jordi | Carrer de la Diputació
+  c*M=-3.438  degrees 4-1  (41.4516, 2.1902)   5.9 km  Carrer d'Almassora | Carrer d'Almassora
+
+Total contribution to r by edge type (deg_a, deg_b), most negative / most positive:
+  neg: (3, 4):-0.1558  (1, 4):-0.0381  (3, 5):-0.0173  (2, 4):-0.0106  (3, 6):-0.0052  (2, 5):-0.0028
+  pos: (4, 4):+0.1911  (3, 3):+0.0938  (1, 3):+0.0596  (4, 5):+0.0321  (2, 3):+0.0242  (2, 2):+0.0239
+
+Radial profile (distance from CBD): mean rho*N, share of nodes with k>=3, mean k
+   0- 2 km: n= 1,680  rho*N=+1.349  k>=3: 93%  <k>=3.33
+   2- 4 km: n= 4,567  rho*N=+0.247  k>=3: 91%  <k>=3.15
+   4- 6 km: n= 2,199  rho*N=-0.374  k>=3: 86%  <k>=3.01
+   6- 8 km: n=   397  rho*N=-1.387  k>=3: 75%  <k>=2.71
+   8-10 km: n=   164  rho*N=-0.493  k>=3: 93%  <k>=3.10
+
+================ Boundary clusters of high assortativity ================
+(nodes > 10 km from CBD with rho*N >= 3.52 (city 90th pct), linked within 150 m, >= 40 nodes)
+Outskirts baseline: k>=3 share nan%, k=4 share nan%, mean rho*N +nan

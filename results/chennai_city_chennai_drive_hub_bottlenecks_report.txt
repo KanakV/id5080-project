@@ -1,0 +1,39 @@
+================= Hub-to-hub bottlenecks: chennai_city_chennai_drive =================
+Graph: giant component, simple undirected, n = 69,376, m = 91,659
+Hubs (7): T Nagar, Guindy, Sholinganallur, Anna Nagar, Ambattur, Chennai Central, Velachery
+
+Road segments leaving each hub's 1 km area (an upper limit on every min cut involving it):
+  T Nagar 73, Guindy 21, Sholinganallur 35, Anna Nagar 78, Ambattur 78, Chennai Central 72, Velachery 75
+
+pair                                    km  R_unit   R_len    n·λ₂         φ splits min cut  limited by
+T Nagar – Sholinganallur              15.7   12.49    1.55    0.42  3.53e-04    yes       4  near Sholinganallur
+Guindy – Sholinganallur               11.8   11.26    1.49    0.49  5.32e-04    yes       4  near Sholinganallur
+Sholinganallur – Anna Nagar           20.5   13.66    1.65    0.40  2.45e-04    yes       4  near Sholinganallur
+Sholinganallur – Ambattur             25.1   18.29    2.07    0.40  2.43e-04    yes       4  near Sholinganallur
+Sholinganallur – Chennai Central      21.0   14.17    1.75    0.40  2.66e-04    yes       4  near Sholinganallur
+Sholinganallur – Velachery             9.0   10.59    1.30    0.40  4.68e-04    yes       4  near Sholinganallur
+T Nagar – Velachery                    6.9    5.90    0.68    0.54  9.12e-04    yes       8  between hubs
+Anna Nagar – Velachery                11.5    7.07    0.77    0.53  6.26e-04    yes       8  between hubs
+Ambattur – Velachery                  16.3   11.71    1.19    0.48  5.40e-04    yes       8  between hubs
+Chennai Central – Velachery           13.0    7.63    0.88    0.58  5.84e-04    yes       8  between hubs
+T Nagar – Guindy                       4.2    4.06    0.58    1.24  3.64e-03    yes       9  between hubs
+Guindy – Anna Nagar                    8.8    5.26    0.67    1.04  1.88e-03    yes       9  between hubs
+Guindy – Ambattur                     14.0    9.89    1.09    0.61  1.06e-03    yes       9  between hubs
+Guindy – Chennai Central              10.4    5.88    0.79    0.94  1.86e-03    yes       9  between hubs
+T Nagar – Ambattur                    11.8    8.27    0.77    0.82  1.08e-03    yes      11  between hubs
+Guindy – Velachery                     2.8    4.04    0.52    0.64  3.30e-03    yes      11  between hubs
+Anna Nagar – Ambattur                  6.9    6.98    0.63    0.72  7.95e-04    yes      11  between hubs
+Ambattur – Chennai Central            13.6    8.37    0.79    1.28  1.67e-03    yes      11  between hubs
+T Nagar – Chennai Central              6.5    4.25    0.46    1.15  2.61e-03    yes      27  between hubs
+Anna Nagar – Chennai Central           7.2    3.99    0.41    1.23  2.37e-03    yes      27  between hubs
+T Nagar – Anna Nagar                   5.5    3.60    0.35    1.08  1.98e-03    yes      30  between hubs
+
+R_unit vs distance: R ≈ -6.17 + 6.32·ln(d km)  (a 2-D grid gives R ∝ ln d)
+Median R_unit 7.63, median min cut 9 segments, median corridor φ 9.12e-04
+Pairs whose corridor bottleneck lies between the hubs (splits = yes): 21/21
+Where the min cut sits: in one hub's own catchment (same cut to nearly every other hub) 6/21, in the corridor between the hubs 15/21, at a hub's 1 km access roads 0/21
+Choked hubs: Sholinganallur
+Most constricted pairs for their distance (largest R above the trend):
+  Sholinganallur – Ambattur: R = 18.29 (+4.12 over trend), min cut 4
+  Guindy – Velachery: R = 4.04 (+3.67 over trend), min cut 11
+  Sholinganallur – Velachery: R = 10.59 (+2.88 over trend), min cut 4

@@ -1,0 +1,2 @@
+Bengaluru: intersections=116,038  mean conflicts=11.81 (diverge 3.56, merge 3.56, cross 4.70)  median=9
+Chennai: intersections=52,573  mean conflicts=11.02 (diverge 3.38, merge 3.38, cross 4.26)  median=9

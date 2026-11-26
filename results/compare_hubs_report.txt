@@ -1,0 +1,24 @@
+================= Hub-to-hub connectivity, normalised by road distance =================
+                                                Bengaluru      Chennai
+hub pairs                                              28           21
+road distance range (km)                         4.2-30.4     3.1-33.2
+median road / straight-line distance                 1.18         1.20
+median resistance per road km, all pairs            0.051        0.063
+median min cut, all pairs                              21            9
+median φ x1e-3, all pairs                            0.84         0.91
+
+Matched road distance 4.2-30.4 km (the range all cities share):
+  pairs in range                                       28           19
+  median resistance per road km                     0.051        0.063
+  median min cut                                    21.00         9.00
+  median corridor conductance φ x1e-3                0.84         0.91
+  resistance per road km / Bengaluru                 1.00         1.25
+  min cut / Bengaluru                                1.00         0.43
+  corridor conductance φ / Bengaluru                 1.00         1.08
+
+Choked hubs (same min cut to nearly every other hub -> choke point in their own catchment):
+  Bengaluru  Electronic City (cut 4), Whitefield (cut 7)
+  Chennai    Sholinganallur (cut 4)
+
+Resistance per road km = length-weighted effective resistance / shortest road distance:
+1 = as good as a single road, 1/k = as good as k parallel roads of that length.

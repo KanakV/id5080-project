@@ -1,0 +1,22 @@
+================= Edit distance to a robust street network =================
+Window: 9,000 junctions nearest the CBD.  New roads: neighbouring junctions (Delaunay, <= 300 m),
+both ends with < 4 roads.  R = Schneider robustness (max 0.5).  Ceiling = R of a 95x95 square grid.
+
+--- Starting robustness: R (% of ceiling) ---
+                            random failure     degree attack
+ceiling (grid)                       0.327             0.258
+Bengaluru window              0.214 ( 66%)      0.125 ( 48%)
+Chennai window                0.179 ( 55%)      0.105 ( 41%)
+Barcelona (whole city)        0.251 ( 77%)      0.167 ( 65%)   (reference only)
+
+--- Edit distance: new roads per 1000 existing roads until BOTH modes reach the level ---
+   level      Bengaluru greedy      Bengaluru random        Chennai greedy        Chennai random
+     60%                    78                   143                   139                   233
+     70%                   143                   239                   233                   325
+     80%                   239                   334                   349                   407
+
+--- Highest level reached when every buildable road is used ---
+  Bengaluru  greedy: 4,335 roads (343 per 1000)  random failure 99%  degree attack 90%
+  Bengaluru  random: 4,288 roads (340 per 1000)  random failure 89%  degree attack 88%
+  Chennai    greedy: 5,031 roads (425 per 1000)  random failure 99%  degree attack 89%
+  Chennai    random: 5,042 roads (426 per 1000)  random failure 87%  degree attack 85%

@@ -1,0 +1,41 @@
+================ Land use at high-assortativity boundary clusters: bengaluru_city_bengaluru_drive ================
+(OSM features within 700 m of each cluster centroid; counts are tagged features, not areas)
+  # 1  117 nodes 12.4 km  (13.0485, 77.5086)  -> mixed industrial / residential
+       landuse {'residential': 4, 'industrial': 2, 'retail': 1, 'construction': 1, 'recreation_ground': 1, 'orchard': 1}
+       buildings {'commercial': 48, 'apartments': 5}  offices {'educational_institution': 1}
+       named: Job Academy Careers, Royalmart Supermarket, Sri Vishnu, HSR Square, St Theresa Pre-university College, Triveni School, Karnataka Bank, Savi Ruchi Veg And Non Restaurant
+  # 2  query failed
+  # 3  107 nodes 13.5 km  (12.9217, 77.4842)  -> residential layout
+       landuse {'residential': 12, 'commercial': 4, 'railway': 1, 'construction': 1}
+       buildings {'apartments': 7, 'residential': 3, 'commercial': 2, 'yes': 2, 'house': 2}  offices {}
+       named: Sri Lakshmi Narashima Champers, Kailash BDA Apartments, PBR, Sahyadri Apartments, Sanchike
+  # 4  103 nodes 14.0 km  (13.0980, 77.6266)  -> residential layout
+       landuse {'residential': 13, 'construction': 5, 'orchard': 4, 'industrial': 2, 'farmland': 1}
+       buildings {'apartments': 15}  offices {}
+       named: Kogilu Layout, Agrahara Layout, Brigade Northridge, Fortuna Viva (u/c), Concorde Neo (u/c), Brigade Bricklane, Legacy Eldora, DS Max Synergy
+  # 5  query failed
+  # 6   75 nodes 14.3 km  (13.1016, 77.5694)  -> residential layout
+       landuse {'residential': 64, 'commercial': 8, 'orchard': 5, 'construction': 3, 'farmland': 3, 'industrial': 2}
+       buildings {'residential': 90, 'apartments': 30, 'house': 10, 'commercial': 5, 'industrial': 4}  offices {'research': 1}
+       named: Agropak Private Limited, Mother Dairy, NCC Urban Aster Park, Purva Venezia, Self Financed Society 208, Yelahanka, DMart, Divyasree (u/c)
+  # 7   61 nodes 10.5 km  (12.9135, 77.5226)  -> residential layout
+       landuse {'residential': 3, 'orchard': 2, 'religious': 2, 'recreation_ground': 1}
+       buildings {'apartments': 4, 'commercial': 1, 'residential': 1, 'retail': 1}  offices {'government': 1, 'company': 1}
+       named: BBMP office, Cinebazzar, Best Apartments, Cricket Ground, Shakthi Arcade, Sangameshwara Temple
+  # 8   55 nodes 12.2 km  (13.0003, 77.4863)  -> mixed industrial / residential
+       landuse {'residential': 2, 'farmland': 1, 'industrial': 1, 'recreation_ground': 1, 'religious': 1}
+       buildings {'apartments': 2, 'commercial': 1}  offices {}
+       named: Accutec Tooling solution, Shri Veerabhadreshwara Temple
+  # 9  query failed
+  #10   43 nodes 13.4 km  (12.8706, 77.6566)  -> mixed industrial / residential
+       landuse {'residential': 10, 'industrial': 8, 'construction': 2, 'commercial': 1, 'grass': 1, 'forest': 1}
+       buildings {'apartments': 16, 'yes': 2, 'industrial': 1, 'commercial': 1}  offices {'company': 1, 'yes': 1}
+       named: Trelleborg, Bosch NhP, 703, Bosch RBAI, 701 Production, Admin Block, Concorde Midway City Apartments, Salarpuria Symphony
+  #11   41 nodes 14.4 km  (12.8825, 77.5033)  -> residential layout
+       landuse {'residential': 5, 'forest': 2, 'orchard': 2, 'farmland': 1}
+       buildings {}  offices {}
+       named: Turahalli Minor Reserve Forest, Banashankari 6th Stage - 6th Block, Banashankari 6th Stage - 5th Block, Banashankari 6th Stage - 7th Block, Banashankari 6th Stage - 8th Block
+  #12   40 nodes 11.1 km  (12.9956, 77.4955)  -> industrial
+       landuse {'industrial': 3, 'residential': 1}
+       buildings {'commercial': 1}  offices {}
+       named: Accutec Tooling solution

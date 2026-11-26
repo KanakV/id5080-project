@@ -1,0 +1,100 @@
+================= Degree correlations: chennai_city_chennai_drive =================
+Nodes / edges (simple, undirected, giant component) : 69,376 / 91,659
+<k> = 2.642   <k^2>/<k> = 2.987   k_max = 6
+Assortativity r (Newman eq. 7.82)    : -0.0133
+Slope of neighbour degree vs degree  : -0.0602
+k_nn(k):  k=1: 3.16  k=2: 2.60  k=3: 2.95  k=4: 3.10  k=5: 3.10  k=6: 3.17
+
+Important nodes (top betweenness) — degree, mean neighbour degree, local assortativity:
+  1. Abdul Razzak Street; Anna Salai (Mount Road); Mara k=3  k_nn=3.00  rho=+7.85e-07  bc=0.1231
+  2. Anna Salai (Mount Road); Jeenis Road               k=3  k_nn=3.33  rho=+2.15e-05  bc=0.1226
+  3. Anna Salai (Mount Road); Maraimalai Adigal Bridge  k=3  k_nn=3.33  rho=+2.15e-05  bc=0.1199
+  4. Anna Salai (Mount Road); Velachery Road            k=3  k_nn=3.33  rho=+2.15e-05  bc=0.1195
+  5. Jawaharlal Nehru Road                              k=4  k_nn=3.50  rho=+6.36e-05  bc=0.1016
+  6. (unnamed)                                          k=3  k_nn=2.33  rho=-4.06e-05  bc=0.0916
+  7. Grand Southern Trunk Road                          k=3  k_nn=3.00  rho=+7.85e-07  bc=0.0897
+  8. Kambar Street                                      k=3  k_nn=2.67  rho=-1.99e-05  bc=0.0897
+
+Local assortativity by road category (rho x N, so the mean over all nodes = r = -0.0133):
+category                                nodes      mean               95% CI    <k>
+Expressway / trunk                        275   +0.9198 [ +0.6998, +1.1449]   3.17
+Primary                                 3,818   +0.6559 [ +0.6003, +0.7085]   3.13
+Secondary                               4,050   +0.7731 [ +0.7147, +0.8372]   3.17
+Tertiary                                7,183   +0.3098 [ +0.2625, +0.3516]   3.13
+Local street                           54,050   -0.1672 [ -0.1837, -0.1509]   2.50
+Flyover / viaduct                         992   +0.5540 [ +0.4451, +0.6822]   3.14
+Ring road                                 169   +0.9640 [ +0.7315, +1.2201]   3.17
+Outer Ring Road                             0      +nan [    +nan,    +nan]    nan
+National / state highway                2,842   +0.5971 [ +0.5376, +0.6619]   3.12
+Central (< 3 km of CBD)                 3,749   +0.1100 [ +0.0556, +0.1664]   2.72
+Outskirts (> 12 km)                    21,598   -0.0189 [ -0.0476, +0.0070]   2.64
+Important nodes (top betweenness)           8   +0.5992 [ -0.7569, +2.0472]   3.12
+
+================ Most DISassortative nodes (lowest rho*N) ================
+(rho_v = q_v * sum_nbrs(q_w - mu) / (2M sigma^2); negative = hub-like node whose neighbours are low-degree)
+  rho*N=-12.801  k=4  nbr degrees=[1, 1, 1, 3]  (13.0597, 80.1729)   6.6 km from CBD  (unnamed)
+  rho*N=-12.801  k=4  nbr degrees=[1, 1, 1, 3]  (13.0467, 80.2512)   5.0 km from CBD  Muthiah Street
+  rho*N=-12.801  k=4  nbr degrees=[1, 1, 1, 3]  (13.0178, 80.1790)   4.0 km from CBD  (unnamed)
+  rho*N=-12.801  k=4  nbr degrees=[1, 1, 1, 3]  (13.0740, 80.1755)   7.7 km from CBD  (unnamed)
+  rho*N=-12.801  k=4  nbr degrees=[1, 1, 1, 3]  (13.1823, 80.2331)  18.5 km from CBD  (unnamed)
+  rho*N=-12.801  k=4  nbr degrees=[1, 1, 1, 3]  (13.0208, 80.1813)   3.8 km from CBD  (unnamed)
+  rho*N=-12.801  k=4  nbr degrees=[1, 1, 1, 3]  (13.0764, 80.2551)   7.8 km from CBD  (unnamed)
+  rho*N=-12.801  k=4  nbr degrees=[1, 1, 1, 3]  (12.9816, 80.2101)   4.0 km from CBD  (unnamed)
+  rho*N=-12.801  k=4  nbr degrees=[1, 1, 1, 3]  (13.1597, 80.2988)  18.2 km from CBD  (unnamed)
+  rho*N=-12.801  k=4  nbr degrees=[1, 1, 1, 3]  (13.0775, 80.2142)   6.7 km from CBD  (unnamed)
+  rho*N=-12.801  k=4  nbr degrees=[1, 1, 1, 3]  (13.0823, 80.2504)   8.2 km from CBD  (unnamed)
+  rho*N=-12.801  k=4  nbr degrees=[1, 1, 1, 3]  (12.9223, 80.2039)  10.6 km from CBD  (unnamed)
+  rho*N=-12.801  k=4  nbr degrees=[1, 1, 1, 3]  (12.9480, 80.2338)   7.9 km from CBD  (unnamed)
+  rho*N=-12.801  k=4  nbr degrees=[1, 1, 1, 3]  (13.1750, 80.2423)  17.8 km from CBD  (unnamed)
+  rho*N=-12.801  k=4  nbr degrees=[1, 1, 1, 3]  (12.9537, 80.2335)   7.3 km from CBD  (unnamed)
+
+Nodes with rho*N < -0.5: 14,502 (20.9%);  of these, 92% touch a dead end (k=1), degree mix {2: 680, 3: 12016, 4: 1801, 5: 5}
+Mean distance from CBD: disassortative 9.6 km vs all nodes 9.6 km
+
+================ Most DISassortative edges (hub linked to low-degree node) ================
+  c*M=-7.580  degrees 5-1  (13.1478, 80.1789)  15.1 km  (unnamed) | (unnamed)
+  c*M=-7.580  degrees 5-1  (13.1144, 80.2754)  12.6 km  Cochrane Basin Road | (unnamed)
+  c*M=-7.580  degrees 5-1  (13.0131, 80.2246)   1.1 km  Vinayagar Koil Street | (unnamed)
+  c*M=-7.580  degrees 5-1  (13.0987, 80.2539)  10.0 km  3rd Lane | (unnamed)
+  c*M=-7.580  degrees 5-1  (12.9298, 80.2376)  10.0 km  (unnamed) | (unnamed)
+  c*M=-3.814  degrees 4-1  (12.9809, 80.2043)   4.2 km  Brindavan Nagar Main Road | (unnamed)
+  c*M=-3.814  degrees 4-1  (13.0423, 80.2505)   4.7 km  (unnamed) | (unnamed)
+  c*M=-3.814  degrees 1-4  (12.9861, 80.2132)   3.5 km  Lakshmi Hayagriva 1st Main Roa | Lakshmi Hayagriva 1st Main Roa
+  c*M=-3.814  degrees 4-1  (12.9992, 80.2047)   2.3 km  Pudupet Street | Arasi Mandi Street
+  c*M=-3.814  degrees 4-1  (12.9967, 80.2083)   2.4 km  (unnamed) | (unnamed)
+  c*M=-3.814  degrees 4-1  (12.9971, 80.2076)   2.4 km  (unnamed) | (unnamed)
+  c*M=-3.814  degrees 4-1  (12.9839, 80.2129)   3.7 km  Bhavathi Amman Koil Street | Bhavathi Amman Koil Street
+  c*M=-3.814  degrees 4-1  (12.9827, 80.2169)   3.8 km  1st Cross Street | (unnamed)
+  c*M=-3.814  degrees 1-4  (12.9753, 80.2010)   4.9 km  Hindu Colony 1st Main Road | Hindu Colony 1st Main Road
+  c*M=-3.814  degrees 4-1  (12.9804, 80.2046)   4.3 km  Brindavan Nagar Main Road | (unnamed)
+
+Total contribution to r by edge type (deg_a, deg_b), most negative / most positive:
+  neg: (1, 4):-0.1117  (1, 3):-0.0068  (2, 4):-0.0033  (1, 5):-0.0004  (2, 3):-0.0002  (2, 5):-0.0000
+  pos: (4, 4):+0.0911  (2, 2):+0.0077  (3, 4):+0.0052  (1, 2):+0.0040  (4, 5):+0.0009  (3, 3):+0.0002
+
+Radial profile (distance from CBD): mean rho*N, share of nodes with k>=3, mean k
+   0- 2 km: n= 2,004  rho*N=-0.061  k>=3: 77%  <k>=2.65
+   2- 4 km: n= 5,195  rho*N=+0.064  k>=3: 78%  <k>=2.69
+   4- 6 km: n=11,687  rho*N=-0.001  k>=3: 76%  <k>=2.65
+   6- 8 km: n=11,188  rho*N=-0.108  k>=3: 74%  <k>=2.60
+   8-10 km: n= 8,988  rho*N=-0.076  k>=3: 74%  <k>=2.61
+  10-12 km: n= 8,716  rho*N=+0.134  k>=3: 78%  <k>=2.70
+  12-15 km: n=12,412  rho*N=-0.006  k>=3: 76%  <k>=2.65
+  15-20 km: n= 7,300  rho*N=-0.102  k>=3: 73%  <k>=2.59
+  20-40 km: n= 1,886  rho*N=+0.222  k>=3: 79%  <k>=2.74
+
+================ Boundary clusters of high assortativity ================
+(nodes > 10 km from CBD with rho*N >= 1.49 (city 90th pct), linked within 150 m, >= 40 nodes)
+Outskirts baseline: k>=3 share 76%, k=4 share 11%, mean rho*N +0.025
+  # 1   988 nodes  11.7 km N  (13.1220, 80.2171)  <k>=3.21  k=4: 21%  all-nbrs-junctions: 100%  local-class: 68%  streets: 1st Main Road, Paper Mills Road, Jambulingam Main Road
+  # 2   899 nodes  12.6 km N  (13.1230, 80.2569)  <k>=3.27  k=4: 26%  all-nbrs-junctions: 99%  local-class: 70%  streets: Melpatti Ponappa Street, Meenambal Road, 2nd Main Road
+  # 3   391 nodes  11.5 km NE  (13.0966, 80.2836)  <k>=3.31  k=4: 31%  all-nbrs-junctions: 100%  local-class: 68%  streets: Amman Koil Street, Anna Pillai Street, Audiappa Naicken Street
+  # 4   273 nodes  13.9 km NW  (13.1264, 80.1537)  <k>=3.21  k=4: 20%  all-nbrs-junctions: 100%  local-class: 65%  streets: Vanagaram - Ambathur - Puzhal Road, Gandhi Main Road, Anna Road
+  # 5   223 nodes  19.4 km NE  (13.1730, 80.2957)  <k>=3.24  k=4: 24%  all-nbrs-junctions: 99%  local-class: 89%  streets: Manali High Road, Shanmugapuram 10th Street, Jothi Nagar Main Road
+  # 6   209 nodes  13.2 km NE  (13.1116, 80.2889)  <k>=3.35  k=4: 35%  all-nbrs-junctions: 100%  local-class: 70%  streets: Gollavar Agraharam Road, Rama Street, N N Garden
+  # 7   159 nodes  10.3 km S  (12.9277, 80.2395)  <k>=3.32  k=4: 32%  all-nbrs-junctions: 100%  local-class: 91%  streets: (unnamed)
+  # 8   158 nodes  17.3 km N  (13.1700, 80.2473)  <k>=3.25  k=4: 25%  all-nbrs-junctions: 100%  local-class: 92%  streets: 3rd Main Road, Kamarajar Salai, 2nd Cross Street
+  # 9   134 nodes  11.2 km NE  (13.1060, 80.2641)  <k>=3.31  k=4: 31%  all-nbrs-junctions: 99%  local-class: 80%  streets: Brightons Road, 4th Street, Narasimha Nagar Main Road
+  #10   133 nodes  20.8 km N  (13.1958, 80.2737)  <k>=3.29  k=4: 29%  all-nbrs-junctions: 99%  local-class: 68%  streets: Thiruvottriyur – Ponneri – Panchetty Road, Ariyalur - Vilangadupakkam Road
+  #11   132 nodes  14.5 km N  (13.1438, 80.2489)  <k>=3.25  k=4: 25%  all-nbrs-junctions: 99%  local-class: 77%  streets: Kodungaiyur Manali Salai, Main Road, Moolachatram Main Road
+  #12   108 nodes  10.4 km NE  (13.0975, 80.2645)  <k>=3.27  k=4: 27%  all-nbrs-junctions: 97%  local-class: 80%  streets: Motilal Nehru Street, 1st Street, Pulianthope High Road
