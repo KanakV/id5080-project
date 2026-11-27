@@ -1,0 +1,6 @@
+numpy
+scipy
+networkx
+flask
+# optional, only for downloading real road networks with fetch_city.py:
+# osmnx
