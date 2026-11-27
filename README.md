@@ -7,7 +7,6 @@ pipeline runs unchanged for **Chennai** (or any city OSM knows).
 - Results write-up with all figures: **[ANALYSIS.md](ANALYSIS.md)**
 - How to add a city or a new metric: **[CONTRIBUTIONS.md](CONTRIBUTIONS.md)**
 
-## Where the data comes from
 
 All networks are from **OpenStreetMap** (© OpenStreetMap contributors, ODbL —
 keep this credit on anything published). `fetch_namma.py` uses **osmnx 2.x**,
