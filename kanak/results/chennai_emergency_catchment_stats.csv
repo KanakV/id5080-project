@@ -1,0 +1,156 @@
+city,category,station_name,lat,lon,catchment_nodes,catchment_road_km,max_response_road_km
+chennai,police,Mambalam Police Station,13.0349573,80.22946,0,0.0,0.0
+chennai,police,Royapettah PS,13.0520106,80.2637348,313,57.44,1.58
+chennai,police,Unnamed Police,13.0596173,80.2427681,708,134.58,2.58
+chennai,police,S-8 Adambakkam Police Station,12.9893957,80.2019683,1162,206.19,2.57
+chennai,police,Teynampet E3 PS,13.048651,80.2494881,323,58.09,2.01
+chennai,police,Adyar J2,12.997814,80.2557176,1,0.0,0.0
+chennai,police,Unnamed Police,12.9814685,80.192063,714,135.02,1.91
+chennai,police,Central Station PS,13.0818276,80.2755071,46,9.08,1.05
+chennai,police,Chennai Central RPF,13.0830613,80.2732996,4,0.94,0.25
+chennai,police,B1 Saint Thomas Mount PS,12.9991212,80.200262,194,35.57,2.35
+chennai,police,Koyambedu Police Station,13.0696407,80.2004587,131,23.66,1.46
+chennai,police,"Office, Police Commissioner",13.0100865,80.1990931,170,25.34,1.44
+chennai,police,T15 SRMC PS,13.0341993,80.1602489,448,67.05,1.77
+chennai,police,KK Nagar PS,13.0415108,80.2054415,361,73.1,1.78
+chennai,police,N4 PS,13.1345408,80.2974596,1035,189.1,4.42
+chennai,police,Virugambakkam Police Station,13.0491123,80.1992562,292,47.29,1.33
+chennai,police,Unnamed Police,13.03694,80.2674177,140,23.66,1.86
+chennai,police,Police Booth,13.0737484,80.1923421,312,68.8,3.6
+chennai,police,Police Booth,13.0656907,80.1935705,450,80.8,3.95
+chennai,police,Velachery,12.9850126,80.2208713,409,70.67,2.22
+chennai,police,Police Booth,13.0447322,80.1862162,510,84.76,1.88
+chennai,police,Chintadripet,13.0749088,80.2725042,164,32.16,1.44
+chennai,police,S6 Shankar Nagar Police Station,12.9692797,80.1257959,0,0.0,0.0
+chennai,police,Vadapalani Police station,13.0496955,80.2117161,920,164.41,2.76
+chennai,police,Ramapuram Police Station,13.0317737,80.1790069,989,153.88,2.08
+chennai,police,Police booth,12.9651635,80.2060352,1102,222.44,3.59
+chennai,police,Unnamed Police,13.1244932,80.2771688,5351,880.48,8.06
+chennai,police,Porur Police Station,13.0343074,80.1601292,661,100.65,2.69
+chennai,police,Unnamed Police,13.0576855,80.2041548,233,41.12,1.55
+chennai,police,Shastri Nagar Police Station,13.0006116,80.2659307,449,86.98,3.07
+chennai,police,Police Outpost,13.2156173,80.1694388,2644,494.67,9.12
+chennai,police,HVF,13.1291456,80.1073794,290,52.22,2.12
+chennai,police,K11 CMBT Police Station,13.0687012,80.2046669,710,117.89,2.55
+chennai,police,J9 Police Station,12.947613,80.2416251,3343,549.11,5.21
+chennai,police,Madipakkam Police Station,12.9559858,80.1853072,507,76.26,2.55
+chennai,police,Unnamed Police,13.0229741,80.1999165,199,34.15,1.47
+chennai,police,Police Booth,12.8975662,80.1823209,0,0.0,0.0
+chennai,police,Police Assistance Booth Mugalivakam,13.0207162,80.1663239,856,129.43,2.84
+chennai,police,J6 Police Station,12.9874599,80.2559315,1171,217.79,3.72
+chennai,police,S-10 Police Station (Pallikaranai),12.9173825,80.1950805,1641,246.6,4.63
+chennai,police,Chetpet,13.0706907,80.2421194,331,60.66,2.5
+chennai,police,R6 KUMARAN NAGAR POLICE STATION ,13.0283677,80.2163105,448,88.0,1.62
+chennai,police,Otteri Police Station,13.0874523,80.2458786,267,46.4,2.4
+chennai,police,police station s11,12.9254171,80.1128984,0,0.0,0.0
+chennai,police,J.J Nagar Police Booth (V3),13.0876952,80.1878894,3353,585.62,5.23
+chennai,police,Police Assistance Booth,13.0699263,80.2714181,113,19.62,1.35
+chennai,police,Police Booth,13.1037724,80.0585425,258,39.79,2.46
+chennai,police,T9 Police Station Pattabiram,13.1222511,80.0624155,150,27.87,2.35
+chennai,police,J-10 Semmenchery Police Station,12.9008558,80.2280156,264,57.44,3.44
+chennai,police,Police Booth,13.0149758,80.1816427,271,41.9,1.62
+chennai,police,Railway Police,13.0341367,80.2664405,230,41.46,1.6
+chennai,police,Unnamed Police,12.9931857,80.2674928,206,37.87,1.3
+chennai,police,Unnamed Police,13.1188229,80.2974617,352,54.36,1.62
+chennai,police,Unnamed Police,13.0757377,80.2775929,66,14.75,2.6
+chennai,police,Unnamed Police,12.9738305,80.186835,687,122.55,5.07
+chennai,police,R10 MGR Nagar Police Station,13.0310886,80.2017034,549,94.58,1.88
+chennai,police,R6 Police Booth,13.026501,80.2116238,236,39.45,1.41
+chennai,police,Unnamed Police,13.0504496,80.1828617,1828,297.14,4.25
+chennai,police,Velachery Police Station,12.9809435,80.2209233,1351,248.85,4.04
+chennai,police,Unnamed Police,13.0414828,80.1331364,0,0.0,0.0
+chennai,police,mangadu police station,13.0352881,80.114521,301,50.17,3.84
+chennai,police,Control Room,13.0848694,80.2182466,1074,209.94,2.43
+chennai,police,M5 Ennore Police Booth,13.1864179,80.3076057,2845,613.31,11.11
+chennai,police,Srinagar colony police booth,13.0125062,80.2272456,290,54.7,3.31
+chennai,police,Selaiyur Beat Post,12.9339134,80.1295679,0,0.0,0.0
+chennai,police,"K2 Police Station, Ayanavaram",13.093795,80.2409682,444,78.48,2.52
+chennai,police,R-5 Virugambakkam Police Station,13.0571823,80.1995238,291,59.23,2.11
+chennai,police,Kilambakkam Bus Terminus Police Booth,12.8744391,80.0781668,155,20.7,2.03
+chennai,police,E-3 Teynampet Police Help Station,13.0412543,80.2503552,295,52.68,2.03
+chennai,police,Mylapore E1 PS,13.0359873,80.2701421,280,47.1,1.24
+chennai,police,Periamet PS,13.0831121,80.2709138,219,40.1,1.74
+chennai,police,Unnamed Police,13.0590491,80.2706569,618,110.36,1.8
+chennai,police,R1 Police Station,13.0347642,80.2294897,591,128.96,2.23
+chennai,police,Esplanade PS,13.0864715,80.2853702,33,7.24,0.73
+chennai,police,F4 Greams Road PS,13.0598386,80.2547972,222,39.14,1.87
+chennai,police,Unnamed Police,13.1231943,80.2873206,584,107.91,1.96
+chennai,police,Unnamed Police,13.1000303,80.2601445,809,124.03,1.91
+chennai,police,Peravallur Police Station,13.1113985,80.2263784,5315,966.65,6.57
+chennai,police,Unnamed Police,13.0934393,80.2434556,136,23.28,1.0
+chennai,police,D1 Triplicane Police Station,13.0672549,80.2736489,159,28.51,1.54
+chennai,police,K4 Police Station,13.0925447,80.21797,1056,192.73,3.85
+chennai,police,R3 Ashok Nagar Police Station,13.0440809,80.2173045,486,93.19,2.21
+chennai,police,Abhiramapuram,13.0332562,80.2559671,446,88.07,2.24
+chennai,police,F2 Egmore Police Station,13.0750725,80.257014,188,31.93,1.86
+chennai,police,Selaiyur Police Station,12.9229459,80.1352359,0,0.0,0.0
+chennai,police,Police Station - J1 - Saidapet,13.0224076,80.226078,279,48.63,1.72
+chennai,police,E5 Foreshore Estate Police Station,13.0245553,80.2748155,299,51.78,1.68
+chennai,police,Unnamed Police,12.9845863,80.2611458,1080,186.92,4.46
+chennai,police,Ambattur T1 Police Station,13.1073143,80.1525569,903,213.26,9.07
+chennai,police,Guindy J3 Police station,13.0093531,80.2106918,165,39.42,1.61
+chennai,police,B1 North Beach Police Station,13.0899215,80.2904578,53,14.87,2.03
+chennai,police,C3 Seven Wells Police Station,13.0988879,80.2816945,496,86.49,4.15
+chennai,police,C5 Kothavalchavadi Police Station,13.0940347,80.2854602,68,17.18,0.51
+chennai,police,C1 Flower Bazaar Police Station,13.0884077,80.2817032,1,0.05,0.0
+chennai,police,C1 Flower Bazaar Police Booth,13.0883718,80.2823944,72,14.71,0.9
+chennai,police,H1 Washermanpet Police Station,13.1086614,80.2809199,276,41.48,1.94
+chennai,police,P2 Otteri Police Station,13.1003326,80.2515633,620,109.49,2.57
+chennai,police,E3 Teynampet Police Assistance Booth,13.0313112,80.2398324,62,11.48,1.49
+chennai,police,Office of the Director General of Police Civil Supplies CID Chennai,13.0300516,80.2432354,385,75.32,3.19
+chennai,police,C2 Elephant Gate Police Station,13.0926307,80.2750124,151,26.48,1.29
+chennai,police,"Office of the Deputy Commissioner of Police, Pudupet",13.0686386,80.2620582,158,26.88,1.23
+chennai,police,N3 Muthialpet Police Station,13.0998376,80.2870248,339,62.52,1.85
+chennai,police,D5 Marina Police Station,13.0391513,80.2793207,223,35.2,1.82
+chennai,police,B1 North Beach Police Station,13.0966217,80.2915125,96,22.94,0.78
+chennai,police,G7 Chetpet Police Station,13.0725347,80.2520681,255,39.88,1.94
+chennai,police,D2 Anna Salai (Mount Road) Poice Station,13.061062,80.262232,35,7.68,1.06
+chennai,police,Tamil Nadu Police Computer Communication Centre,13.0225066,80.271388,0,0.0,0.0
+chennai,police,Tamil Nadu State Crime Records Bureau,13.022806,80.2716339,118,22.63,2.24
+chennai,police,Elliots Beach Police Outpost,13.0007139,80.2712201,79,18.21,0.69
+chennai,police,C5 Kothavalchavadi Police Station,13.0953439,80.2807237,101,20.83,0.71
+chennai,police,T13 Kundrathur Police Station,12.9974051,80.0918523,322,51.78,1.93
+chennai,police,T-1 Police Station,13.1306625,80.1587027,3088,511.72,5.14
+chennai,police,T-13 Chitlapakkam Police Station,12.9395399,80.1380005,595,99.42,4.71
+chennai,police,டி-16 செம்மஞ்சேரி காவல் நிலையம்,12.8996998,80.2275581,2096,430.42,7.58
+chennai,police,டி-3 பல்லாவரம் காவல் நிலையம்,12.9715664,80.1485692,1,0.02,0.0
+chennai,police,எஸ்4 நந்தம்பாக்கம் காவல் நிலையம்,13.0182243,80.1865645,111,24.02,1.56
+chennai,fire_station,Esplanade Fire Station,13.086478,80.286064,463,97.96,2.69
+chennai,fire_station,Korukkupet Fire Station,13.1118,80.2721,460,70.82,2.34
+chennai,fire_station,Royapuram Fire Station,13.1092,80.2946,582,106.19,1.89
+chennai,fire_station,Secretariat Fire Station,13.0798,80.2871,38,10.12,2.3
+chennai,fire_station,Sembium Fire Station,13.1249,80.2391,2880,502.78,4.41
+chennai,fire_station,Tondiarpet Fire Station,13.1245,80.2882,1271,239.91,3.3
+chennai,fire_station,V.O.C. Nagar Fire Station,13.1165,80.2642,628,94.34,2.49
+chennai,fire_station,Vyasarpadi Fire Station,13.1184,80.2594,1603,280.35,3.04
+chennai,fire_station,Washermanpet Fire Station,13.10244,80.274401,837,136.08,3.81
+chennai,fire_station,Moolakothalam Fire Station,13.105508,80.278214,312,56.7,2.38
+chennai,fire_station,Ashok Nagar Fire Station,13.0336,80.2104,4039,691.11,8.8
+chennai,fire_station,Guindy Fire Station,13.0094,80.2125,11,3.59,1.36
+chennai,fire_station,Mylapore Fire Station,13.0358,80.2673,1619,291.83,3.86
+chennai,fire_station,Rajbhavan Fire Station,13.0112,80.2228,908,168.0,4.87
+chennai,fire_station,Saidapet Fire Station,13.0211,80.2225,1085,196.99,3.47
+chennai,fire_station,Teynampet Fire Station,13.047447,80.249119,1537,276.99,4.61
+chennai,fire_station,T. Nagar Fire Station,13.0385,80.2312,1356,284.5,4.15
+chennai,fire_station,Thiruvanmiyur Fire Station,12.9831,80.2594,4263,766.14,7.1
+chennai,fire_station,Velachery Fire Station,12.9772,80.2221,5383,986.24,7.1
+chennai,fire_station,Tambaram Fire Station,12.9254,80.1172,3026,474.81,8.16
+chennai,fire_station,Tambaram Sanatorium Fire Station,12.943636,80.133596,6,1.14,0.68
+chennai,fire_station,Kilpauk Fire Station,13.0782,80.2425,2610,476.05,4.16
+chennai,fire_station,Vepery Fire Station,13.0835,80.2647,1134,198.74,3.66
+chennai,fire_station,Egmore Fire Station (Directorate),13.068633,80.261333,611,106.11,3.54
+chennai,fire_station,Triplicane Fire Station,13.0645,80.2785,1120,204.0,3.19
+chennai,fire_station,Koyambedu Fire Station,13.0689,80.1918,4065,696.02,5.48
+chennai,fire_station,J.J. Nagar Fire Station,13.0841,80.1762,2937,510.88,4.31
+chennai,fire_station,Villivakkam Fire Station,13.1072,80.2054,5573,1007.31,6.85
+chennai,fire_station,Ambattur Fire Station,13.1021,80.1582,3070,580.96,9.16
+chennai,fire_station,Avadi Fire Station,13.111394,80.106389,306,48.84,2.46
+chennai,fire_station,Madhavaram Fire Station,13.155,80.2412,2230,365.7,5.58
+chennai,fire_station,Manali Fire Station,13.1636,80.2586,2867,521.54,9.74
+chennai,fire_station,Thiruvottiyur Fire Station,13.1602,80.3015,1785,331.09,6.63
+chennai,fire_station,Ennore Fire Station,13.2085,80.3218,786,192.26,7.79
+chennai,fire_station,Poonamallee Fire Station,13.0492,80.0941,2245,346.88,8.23
+chennai,fire_station,Redhills Fire Station,13.1902,80.1874,1684,332.63,6.79
+chennai,fire_station,Sholinganallur Fire Station,12.9015,80.2285,3381,641.02,7.34
+chennai,fire_station,Siruseri SIPCOT Fire Station,12.8308,80.2223,580,106.03,6.13
+chennai,fire_station,Chennai Airport Fire Station,12.992503,80.166022,26,3.14,0.62

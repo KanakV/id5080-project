@@ -1,0 +1,1306 @@
+city,osm_id,osm_type,category,name,lat,lon,emergency,phone,address
+bengaluru,266740082,node,hospital,Swamy Hospital,12.8550625,77.6642727,unknown,,
+bengaluru,267214379,node,hospital,Clinic,12.9134182,77.6774852,unknown,,
+bengaluru,283650908,node,police,Hebbagodi Police Station,12.8263652,77.6820851,yes,,
+bengaluru,295766640,node,police,DCP Bangalore North Traffic Police,13.0181973,77.5581675,yes,,
+bengaluru,303924572,node,hospital,Shanti Hospital,12.9235041,77.5857517,unknown,,
+bengaluru,303925790,node,police,Jayanagar 4th Block Police Station,12.9285653,77.5813657,yes,,
+bengaluru,307401529,node,hospital,Apollo Hospital,12.9263714,77.6765455,unknown,+91-80-40222555,Outer Ring Road
+bengaluru,308866071,node,hospital,Narayana Hrudayalaya Dental Clinic,12.9155759,77.6349897,unknown,,Outer Ring Road
+bengaluru,310393723,node,hospital,Dr Ganesh Medical and Diabetic Clinic,12.9129006,77.6419101,unknown,,
+bengaluru,364629422,node,hospital,JBS Hospital,12.9207173,77.5745968,unknown,,Kanakapura Road
+bengaluru,364629734,node,hospital,Jayanagar heart Centre,12.9231684,77.584433,unknown,,
+bengaluru,428843493,node,police,Cubbon Park Police Station,12.9762399,77.5983458,yes,,
+bengaluru,428857750,node,police,Maleshwaram Police station,12.9966811,77.5696708,yes,,
+bengaluru,443612463,node,hospital,Sri Vijayalakshmi Pragathi Hospital,13.0371728,77.6409543,unknown,,
+bengaluru,454142398,node,hospital,Sathya Hospital,13.0185503,77.6364728,unknown,,
+bengaluru,459436210,node,police,Electronics City Police Station,12.839963,77.6631389,yes,+918022943469,6th Cross Road
+bengaluru,459464857,node,hospital,Ramakrishna Hospital,12.8500655,77.6624706,yes,+918040800300,
+bengaluru,519549595,node,hospital,Chord Road Hospital Pvt Ltd,12.9981215,77.5404836,unknown,+91-80-23225858;+91-80-23225868;+91-80-23225878,West of Chord Road (LIC Colony)
+bengaluru,521144416,node,police,Jalahalli Police Station,13.0486481,77.5495673,yes,,
+bengaluru,530353033,node,hospital,Pristline Hospital,12.9978931,77.5436127,unknown,+91-80-41354444;+91-80-51270776,Modi Hospital Road (West of Chord Road)
+bengaluru,582384953,node,hospital,"Bengaluru Hospital, Susruta Medical Aid AndResearch Home Limited",12.9376734,77.5802836,unknown,,Rashtriya Vidyalaya Road
+bengaluru,625856709,node,hospital,Manipal Northside Hospital,13.0011275,77.5639285,unknown,080 2222 1111,"11th Main Road, Opp Railway Station, Malleswaram"
+bengaluru,663317752,node,police,Police Headquarters,12.9695368,77.5877623,yes,,
+bengaluru,663604723,node,hospital,Government Primary Health Centre,12.9503234,77.6162619,unknown,,
+bengaluru,665727326,node,hospital,Divakars speciality Hospital,12.9100629,77.5924585,unknown,,"220, 2nd phase, JP Nagar,Next to Nilgiris"
+bengaluru,671185206,node,hospital,Hema Poly Clinic,12.960765,77.7137961,unknown,,
+bengaluru,691164726,node,police,Tilaknagar Police Station,12.928367,77.5905691,yes,,Tilak Nagar Main Road
+bengaluru,691930445,node,hospital,BMTC Hospital,12.9234317,77.5923374,unknown,,
+bengaluru,769216417,node,hospital,Ramakrishna Nursing Home and Hospital,12.9364329,77.583477,unknown,,
+bengaluru,844462412,node,police,Indira Nagar Police Station,12.983019,77.6384106,yes,,
+bengaluru,940525605,node,police,Jeevan Bhima Nagar Police Station,12.9677712,77.6556937,yes,,
+bengaluru,951203526,node,police,Mico Layout Police Station,12.9086369,77.6105652,yes,,
+bengaluru,953626886,node,police,Girinagar Police Station,12.935917,77.5439681,yes,,
+bengaluru,954623054,node,hospital,Sri Vinayaka Poly Clinic,12.939058,77.5510802,unknown,080 2672 8455,"80 Feet Road, SBM Colony, Near-Bank Colony Bus Stop, Banashankari 1st Stage"
+bengaluru,966862788,node,police,Sanjayanagar Police station,13.0335598,77.5758979,yes,,
+bengaluru,966863252,node,hospital,RMV Hospital,13.0322788,77.576876,yes,,
+bengaluru,975680681,node,hospital,Yashomathi Hospitals,12.9559302,77.7112689,yes,,Varthur Road
+bengaluru,1005544881,node,hospital,Mallya Audikesh Diagnostics Center,12.9815051,77.6011944,unknown,+918022868423,Infantry Road
+bengaluru,1006462338,node,hospital,Mallige Medical Centre,12.985247,77.5803846,unknown,080 2220 3333,"Crescent Rd,Nehru Nagar,Gandhi Nagar"
+bengaluru,1026508950,node,police,Seshadripuram Police Station,12.9881279,77.5744324,yes,,
+bengaluru,1067181192,node,hospital,Devine Hospital,13.0038999,77.6039313,unknown,,"110,6Th Main Iti Layout Benson Town Post"
+bengaluru,1085786951,node,hospital,Lalbagh Nursing Home,12.9452313,77.5861734,unknown,,Siddapura Road
+bengaluru,1093355153,node,hospital,Dr. Batra Clinic,12.9797287,77.7271089,unknown,,
+bengaluru,1101622501,node,hospital,Government Maternity Hospital,12.9988604,77.5817424,unknown,,
+bengaluru,1108014134,node,hospital,Soujanya Clinic,12.9681189,77.54325,no,,
+bengaluru,1108040901,node,hospital,Kanva Diagnostics Collection Centre,12.967291,77.5429164,unknown,,
+bengaluru,1118255762,node,police,Rajaji Nagar Police Station,12.9945063,77.554298,yes,,
+bengaluru,1150839598,node,hospital,New Akshay Mallya Hospital,12.9568527,77.6990468,unknown,,Varthur Road
+bengaluru,1186831410,node,hospital,Presidency Hospital,12.9951629,77.69923,unknown,,Whitefield Road
+bengaluru,1228960966,node,hospital,BGS Gleneagles Hospitals,12.90306,77.4974982,unknown,,"67, Uttarahalli Road, Kengeri"
+bengaluru,1272424543,node,hospital,Srinivas Clinic,12.9073391,77.5830655,no,,29 Main
+bengaluru,1290125198,node,hospital,Unnamed Hospital,13.0043642,77.5652959,unknown,,
+bengaluru,1299725537,node,police,Hebbal Police Station,13.0386192,77.5896244,yes,,
+bengaluru,1318987638,node,hospital,Metro Hospital,12.8915893,77.560715,yes,,
+bengaluru,1365797756,node,hospital,Brookefield Hospital(A Unit Of Sanjeevani Hospital),12.9668213,77.7168891,yes,,"521, 522, Vijayalakshmi Square Itpl Main Road Kundallahall Near Cosmos Mall"
+bengaluru,1428600902,node,hospital,Tenet diagnostics,12.9573067,77.7087044,no,,Spice Garden Compound Road
+bengaluru,1436177631,node,hospital,ESI Hospital,12.995242,77.6523255,unknown,,
+bengaluru,1437213383,node,hospital,Karunalayam Hospital,12.9111263,77.7073377,unknown,,
+bengaluru,1438212033,node,hospital,SDS Tuberculosis Research Centre and Rajiv Gandhi Institute of Chest diseases,12.9367955,77.5907094,no,,
+bengaluru,1440343668,node,hospital,Maiya Multispecialty Hospital,12.942614,77.5854533,unknown,,"34, 10Th Main 1st Block, Jayanagar"
+bengaluru,1454651986,node,hospital,Narayana Netralaya,12.9671401,77.6094485,unknown,,Castle Street
+bengaluru,1462686365,node,police,Vyali Kaval Police Station,13.0015732,77.578628,yes,,
+bengaluru,1463452754,node,hospital,Nagappa Hadli Hospital,13.0829889,77.5489026,unknown,,"M S Palya, Bharath Nagar,Hesaraghatta Main Road,Vidyaranyapura Post"
+bengaluru,1463507632,node,hospital,"Vasan Eye Care Hospital, Nagarabhavi",12.9746134,77.5129757,unknown,,"No-5, 20 Th Cross, Malagala Under Pass Ring Road"
+bengaluru,1463555571,node,hospital,Rc Hospital,12.930936,77.5153776,unknown,,"No. 484/A, Ideal Homes Township, 18th Main Road, Rajarajeshwarinagar"
+bengaluru,1463563608,node,hospital,Veturi Child Health Centre,12.9263226,77.5156579,unknown,,
+bengaluru,1463656830,node,hospital,Ketham's Hospital Pvt. Ltd,13.0686568,77.5582571,unknown,,"# 50/2, Vidyaranyapura, Nanjappa Main Road"
+bengaluru,1464742684,node,hospital,Ragavendra Hospital,13.0425433,77.5155377,unknown,,
+bengaluru,1464772262,node,hospital,Guru Kripa Clinic,13.0349833,77.5676844,unknown,,
+bengaluru,1464782617,node,hospital,Deeksha Orthopaedic Hospital,13.0973922,77.5964894,unknown,,
+bengaluru,1464783198,node,hospital,Shushrusha Hospital,13.0997316,77.5980216,unknown,,
+bengaluru,1464921265,node,hospital,Chirag Hospital and Maternity Center,12.9126298,77.5913594,unknown,,17th Main Road
+bengaluru,1466477036,node,hospital,Udhbhava Hospital,12.9256842,77.5489346,yes,,"No:114, 100 Feet Ring Road, 3Road Stage Banashankari"
+bengaluru,1466576385,node,hospital,DG Hospital,12.9206648,77.5598673,yes,,"274 / 275, M K Puttalingaiah Road, Padmanabhanagar"
+bengaluru,1466638204,node,hospital,Srinivasa Nursing Home,12.9423039,77.6174893,unknown,,
+bengaluru,1467778591,node,hospital,Kangila Clinic,12.9336501,77.5660602,yes,,
+bengaluru,1467969798,node,hospital,Chaitanya Hospital,13.0990911,77.5861904,unknown,,
+bengaluru,1468540733,node,hospital,"Vasan Eye Care Hospital, Koramangala",12.9402371,77.6253403,yes,,"No.897/C, 80 Feet Road, 6th Block, Koramangala"
+bengaluru,1468908300,node,hospital,health nest,12.9075992,77.6488507,unknown,,
+bengaluru,1469035492,node,hospital,Amma's ENT Clinic,13.0281613,77.5793947,unknown,,
+bengaluru,1469036754,node,hospital,Krishna Specialty Clinic,13.026721,77.5789272,unknown,,
+bengaluru,1469181813,node,hospital,Seventh Day Adventist Hospital,12.995625,77.6113272,unknown,,Saunders Road
+bengaluru,1469314053,node,hospital,Srinivasa Nursing Home,12.9965077,77.6220456,unknown,,
+bengaluru,1470603498,node,hospital,Kids Care Clinic,12.914434,77.6050207,unknown,,
+bengaluru,1471128628,node,hospital,Pristine Health care,12.9382768,77.6186753,yes,,
+bengaluru,1471719697,node,hospital,Prerana Dental Clinic,12.9186845,77.630774,unknown,,
+bengaluru,1471720698,node,hospital,Mamtha Health Center,12.9180492,77.6318764,unknown,,
+bengaluru,1471737564,node,hospital,Suprabha Hospital,13.0079383,77.5469059,unknown,,
+bengaluru,1471738635,node,hospital,Sangolli Nursing Home,13.0083564,77.5469273,unknown,,
+bengaluru,1471781028,node,hospital,Diacon Hospital,13.0037682,77.5498337,unknown,,"359 / 360, 19Th Main 1 St Block Rajajinagar Near Indian Bank"
+bengaluru,1472015890,node,hospital,Agarwal Eye Hospital,12.9273417,77.6221301,unknown,,
+bengaluru,1472037865,node,hospital,Sri Sapthagiri Clinic,12.8736928,77.6449626,unknown,,
+bengaluru,1472111625,node,hospital,Sagar Dental Clinic,12.9169725,77.6300572,unknown,,
+bengaluru,1472735174,node,hospital,Venkateshwara Hospital,12.9257842,77.6170828,unknown,,Hosur road
+bengaluru,1472808792,node,hospital,Namratha Hospital,13.0047859,77.543073,unknown,,
+bengaluru,1472878021,node,hospital,Devi Eye Hospital,12.9162576,77.6374069,unknown,,
+bengaluru,1472981151,node,police,Police Station,12.9363435,77.5615008,yes,,
+bengaluru,1473023593,node,hospital,Mysore Hospital,13.0275337,77.5397051,unknown,,"No. 35/6, Industrial Suburb, Goragunte Palya, Yashwantpur"
+bengaluru,1473296715,node,hospital,Jayanagar Orthopaedic Centre,12.9293288,77.5877091,no,,"24/1-1, 14Th Main, 4Th Block East Jayanagar"
+bengaluru,1473921774,node,hospital,Shekar Hospital,12.9458714,77.5675192,no,,Shyamaraja Iyengar Road
+bengaluru,1474001855,node,hospital,Punya Hospital,13.0011459,77.5359798,yes,,
+bengaluru,1474104406,node,hospital,Vasan Eye Care,12.9102705,77.6265538,unknown,,Hosur road
+bengaluru,1474106961,node,hospital,Apollo Clinic,12.8517246,77.6681472,unknown,,
+bengaluru,1474277938,node,hospital,Parimala Clinic,12.9135707,77.5788941,unknown,,Ayodhyarama Road
+bengaluru,1474302941,node,police,Commercial Street Police Station,12.9825702,77.6070982,yes,,Commercial Street
+bengaluru,1474317196,node,hospital,Karanth Speciality Hospital,12.9160081,77.6193573,yes,,"No 72, 35Th Main 1st Cross 100 Ft Ring Road, Btm Layour, 2nd Stage Btm Layout"
+bengaluru,1474323515,node,hospital,Gangothri Hospital,12.9162878,77.6138218,yes,,Outer Ring Road
+bengaluru,1474449391,node,hospital,Spurthy Hospital,12.9239335,77.61116,unknown,,"#22, 1st Main, Chocolate Factory Road , Tavarekere Btm Layout"
+bengaluru,1474458358,node,hospital,Prasad Eye Hospital,12.9351929,77.6086817,unknown,,
+bengaluru,1474472488,node,hospital,NIMHANS Screening block,12.9387115,77.5937737,no,,
+bengaluru,1474472859,node,hospital,NIMHANS OPD,12.9388056,77.5942994,unknown,,
+bengaluru,1474511948,node,hospital,Manjunath Hospital,12.9483598,77.5940621,unknown,,"87/2, 8Th Cross,Wilson Garden"
+bengaluru,1474512442,node,hospital,Karthik Hospital,12.9484356,77.5942592,unknown,,8th Cross
+bengaluru,1474819060,node,hospital,Aswad Hospital,12.9147871,77.6247622,unknown,,Hosur road
+bengaluru,1474819111,node,hospital,TSR heart care,13.0264438,77.5933686,unknown,,
+bengaluru,1474819886,node,hospital,Fortis Hospital,13.0022409,77.5490879,unknown,,"111, West Of Chord Road, Mahalakshmipuram, Rajajinagar I Block"
+bengaluru,1474819896,node,hospital,Citi Hospital,12.9956506,77.5510696,unknown,+(91)-80-23131778,Chord Road
+bengaluru,1474819897,node,hospital,"Vasan Eye Care Hospital, Rajaji Nagar",12.9995223,77.5505328,unknown,,19th Cross Road
+bengaluru,1474819898,node,hospital,Ananya Hospital,12.9998205,77.55045,unknown,,"No.389/44, 19th Main, 1st Block, Rajajinagar"
+bengaluru,1474820321,node,hospital,Baptist,12.9970915,77.5719766,unknown,,
+bengaluru,1474827898,node,hospital,Shivakrupa Hospital,12.973967,77.5479135,unknown,,
+bengaluru,1474835635,node,police,Vijaynagar Traffic Police Station,12.9733449,77.5414869,yes,,
+bengaluru,1474875685,node,hospital,Dr. Ambedkar Medical College Hospital,13.0248621,77.6139585,yes,,
+bengaluru,1497217077,node,police,Kadugodi Police Station,12.995384,77.7574684,yes,,
+bengaluru,1500601533,node,police,Indiranagar Traffic Police Station,12.967409,77.6559012,yes,,
+bengaluru,1617398469,node,hospital,"Sri Maruthi hospital, Sheshadripuram",12.9926441,77.5742046,unknown,080 2344 9632,"Link Rd, Malleswaram, Jai Bheema Nagar, Seshadripuram"
+bengaluru,1693120843,node,hospital,Sunny Medicals Hospital Clinic,12.9267954,77.6699091,yes,,
+bengaluru,1722802205,node,hospital,Karunya Homoeopathy Centre,13.0307899,77.653594,no,,
+bengaluru,1724416882,node,hospital,Ayur Seva Hospital,13.0148188,77.6653699,unknown,,
+bengaluru,1727637379,node,hospital,Vinayaka Specialty Hospital,12.8990004,77.6218548,no,,
+bengaluru,1761866934,node,hospital,Koshys Hospital,13.0207033,77.6760593,unknown,,
+bengaluru,1778854020,node,hospital,Gurushree Hitech Multispeciality Hospital,12.9593144,77.5265054,yes,,"No. 1558, Opposite Chandra Layout Bus Stand, Chandra Layout, Vijaynagar"
+bengaluru,1778897704,node,hospital,"Shobha Hospital, Bengaluru Urban",12.9755854,77.5313495,no,,"29 And 30, Nagarbhavi Road, Opp To Prashanthnagar Bus Stop, Vijaynagar"
+bengaluru,1778917090,node,police,Vijayanagar Police Station,12.9707264,77.5377251,yes,,
+bengaluru,1778953072,node,hospital,"Gayathri Hospital, Bengaluru Urban",12.9744053,77.5426819,yes,,"# 91, Magadi Chord Road"
+bengaluru,1789726678,node,police,Chamarajapet Police Station,12.9604765,77.5643202,yes,,
+bengaluru,1791567417,node,police,Shankarapuram Police Station,12.9538729,77.570101,yes,,Shankar Matt Road
+bengaluru,1794111895,node,hospital,MEDSOL Hospital,12.9309944,77.4929837,yes,,"3 P (2), 60 Ft Road, Jnanabharathi Layout, 1st Block, (Valgerhalli), Near To Srikki Apartment"
+bengaluru,1794166166,node,hospital,Government Primary Health Centre,13.003447,77.504284,no,,Hegganahalli
+bengaluru,1794656846,node,police,Peenya Police Station,13.0360107,77.5211853,yes,,
+bengaluru,1806966026,node,police,Cottenpet Police Station,12.9680925,77.5700945,yes,,
+bengaluru,1809734261,node,hospital,Bharathy Hospital,12.9761294,77.5326369,unknown,,"No.4, Nagarabhavi Main Road,Prashanth Nagar,Near Shopper City Shop"
+bengaluru,1812673570,node,hospital,Yogananda Medical and Research Centre,12.9202791,77.5598033,yes,,"No. 277, M.K. Puttalingaiah Road, Padmanabha Nagar"
+bengaluru,1815951927,node,police,Women's Police Station,12.9292268,77.5678506,yes,,
+bengaluru,1815951935,node,police,Thyagaraja Nagar Police Station,12.929436,77.5678479,yes,,
+bengaluru,1816331548,node,police,BSK 3rd stage Police Station,12.9235553,77.5533335,yes,,
+bengaluru,1818494842,node,hospital,"Government Primary Healthcare Center, Begur",12.8778532,77.6246582,unknown,,"Begur Main Road, Classic Paradise Layout, Bommanhalli, Bengaluru"
+bengaluru,1820438239,node,police,Magadi Road Police Station,12.9744861,77.5512501,yes,,
+bengaluru,1835512586,node,hospital,Cure & Care Dental Clinic Dr. Moumita Mukherjee,12.9074968,77.6492213,unknown,,
+bengaluru,1843611471,node,police,Krishna Rajendra Market Police Station,12.9649402,77.5761878,yes,,Sultan Road
+bengaluru,1871539757,node,hospital,Shirdi Sai Hospital,13.0372438,77.5648754,yes,,"No 519 2nd Nain Netravathystreet, Devasandra, New Bel Road"
+bengaluru,1894298053,node,hospital,Nayantara Opticals,12.8924828,77.6198497,no,,
+bengaluru,1905152108,node,hospital,Kottakkal Arya Vaidya Sala,12.9411061,77.5850591,no,,
+bengaluru,1918889488,node,police,Hulimavu Police Station,12.87667,77.6000418,yes,,
+bengaluru,1958294905,node,hospital,"Charan Homeopathy, Ramamurthy Nagar",13.0100409,77.6674667,unknown,,
+bengaluru,1988322107,node,hospital,Dhanavantri Hospital,13.0834023,77.6348642,unknown,,
+bengaluru,2002686385,node,hospital,T.R.Hospital,12.8807554,77.5841671,unknown,,"Kothanur Dinne Main Road,Sapthagiri Layout,OppositeFabricana Factory,J.P.Ngar,8Th Phase"
+bengaluru,2012122119,node,hospital,Rainbow Clinic and Diagnostic Laboratory,12.891484,77.5816961,yes,,
+bengaluru,2016154125,node,police,Chikkapete Police Station,12.9707012,77.5736393,yes,,
+bengaluru,2019362244,node,hospital,Cloud Nine Hospital,13.0078742,77.5625316,unknown,9972999729,"11th Main Road,17th Cross"
+bengaluru,2026076836,node,hospital,"Nayak Hospital, Gayathri Nagar",12.9993857,77.5606403,yes,,"No 3367,5Th Cross, Gayathri Nagar"
+bengaluru,2090827123,node,police,Nandini Layout Police Station,13.0124684,77.5368288,yes,,
+bengaluru,2122595759,node,hospital,"Rajnandani Hospital, Bangalore",12.8845448,77.5701276,unknown,,"#3, 6 th Cross, Old Bank Colony, Konanakunte"
+bengaluru,2123564200,node,hospital,"Maharaja Agrasen Hospital, Bengaluru Urban",12.915903,77.5550223,yes,,"15Th Main, 17Th Cross Padmanabhanagar"
+bengaluru,2123630629,node,police,Banashankari Police Station,12.9229116,77.5650055,yes,,
+bengaluru,2123630630,node,hospital,Banashankari Referral Hospital,12.9231342,77.5642974,unknown,,"17Th, Main,27Th Cross, Banashankari 2nd Stage, South"
+bengaluru,2124813862,node,hospital,Bangalore Kidney Foundation - NU Hospital,12.9179548,77.555816,unknown,,
+bengaluru,2212459207,node,hospital,"GM Hospital, Nagarabhavi",12.9613237,77.511726,unknown,,"# 611 /612, Nagarabhavi Main Road"
+bengaluru,2249069522,node,hospital,Shanbhag Hospital,12.9856882,77.5435424,unknown,,"#6, Thimmaiah Layout, 1st Main 3rd D Cross, 3rd Stage, 2nd Block"
+bengaluru,2268407035,node,hospital,Trupti Nursing Home,12.9946566,77.5397544,unknown,,"No. 463, 1st Block, 3Road Stage, Dr.Siddaiah Puranika Road, Basaveshwaranagear"
+bengaluru,2272455276,node,hospital,Srivijaya Speciality Hospital,13.0124345,77.6580271,unknown,,"No. 699, 3Road Main Road,Bhuvanagiri Layout,(O.M.B.R),Doddabanasawadi"
+bengaluru,2285453337,node,hospital,Magnus Diagnostic Lab,12.9349187,77.6305022,no,,
+bengaluru,2296638505,node,hospital,Krupa Medical center,13.000431,77.5411664,no,,
+bengaluru,2340693281,node,police,Kodigehalli Police Station,13.0621975,77.5741087,yes,,
+bengaluru,2343099977,node,hospital,Soukya Hospital,13.0774744,77.5587548,unknown,,"17, Nti Layout, Vidyaranyapura"
+bengaluru,2387173532,node,hospital,Greenview Medical Center,12.9191813,77.6381379,yes,,"14th Main Rd, opposite Agara Lake, Sector 5, 1st Sector, HSR Layout"
+bengaluru,2414612953,node,hospital,Vaidyaratnam Oushadhasala,12.9121004,77.6485848,no,,
+bengaluru,2447846664,node,hospital,Blossoms Hospital,12.9064393,77.6308237,yes,,
+bengaluru,2449294308,node,hospital,Live100,12.8791713,77.6454925,yes,,
+bengaluru,2475284844,node,hospital,ESi Hospital,13.0077936,77.6923101,unknown,,Old Madras Road
+bengaluru,2475357989,node,police,Hennur Police Station,13.0237703,77.6457711,yes,,Outer Ring Road
+bengaluru,2480870848,node,hospital,Happy Tooth,12.9744193,77.5336479,no,,Vijayanagar Water Tank Road
+bengaluru,2480884777,node,hospital,Rishi Women and Child Clinic,12.9745812,77.532699,unknown,,Vijayanagar Water Tank Road
+bengaluru,2483779679,node,hospital,Penta Care Ayurvedic Hospital,12.9736894,77.5369482,unknown,,Vijayanagar Water Tank Road
+bengaluru,2484900084,node,hospital,Shalini Nursing & MAternity Home,12.9436624,77.5419997,unknown,,6th Main Road
+bengaluru,2487658338,node,hospital,Shreya Poly Clinic,12.9729127,77.5394723,unknown,,6th Main
+bengaluru,2514705828,node,hospital,Anurag Medical Center,12.9612829,77.5271683,no,,4th Main Road
+bengaluru,2533566686,node,hospital,United Medical lab,13.0007683,77.6132902,unknown,,
+bengaluru,2554302512,node,hospital,Pragathi Ayurvedic Center,12.9843701,77.555666,unknown,,
+bengaluru,2577231853,node,police,Sampangi Rama Nagar Police Station,12.9632542,77.5920638,yes,,Mission Road (Kalinga Rao Road)
+bengaluru,2623054534,node,hospital,Srujana Hospital,12.8413465,77.6475451,yes,+91 80 49152339,Neeladri Road
+bengaluru,2623332318,node,hospital,Narayana Hrudayalaya Dental Clinic,12.9231571,77.6728066,unknown,,
+bengaluru,2720476857,node,hospital,Vatsalya Chidren's Clinic,12.8948505,77.6109105,no,,
+bengaluru,2720498311,node,hospital,Kottakkal Arya Vaidya Sala,12.9002599,77.6271003,no,,
+bengaluru,2914260121,node,hospital,Sharavathi Hospitals (P) Ltd.,12.9623406,77.5342853,unknown,,"No.1133/F,30 Ft.Service Road, R.P.C. Layout,Vijaynagar"
+bengaluru,2932851733,node,hospital,"Dr.Agarwal's Eye Hospital Ltd, Padmanabha Nagar",12.9169288,77.5592568,unknown,,"No. 30, Pavana Dhama, 80 Feet Main Road,Opposite Nilgiris,Padmanabha Nagar"
+bengaluru,2984295033,node,hospital,Shraddha Eye Care,12.9184617,77.5555842,unknown,,"Thimmaiah Road, Padmanabhanagar, Bengaluru"
+bengaluru,3004275434,node,hospital,"Vasan Eye Care Hospital, Rajarajeswari Nagar",12.931334,77.5154779,unknown,,"#483, 16 Th Cross, 8 Th Main"
+bengaluru,3016090364,node,hospital,Cloud Nine Fertility,12.9055088,77.5858347,unknown,080 4350 0123,"24th Main, 5th Phase, Opp Nandini Hotel, Puttenhalli, JP Nagar"
+bengaluru,3037310855,node,hospital,Aikya Healthcare,12.8827229,77.5466715,unknown,,Kanakapura Road
+bengaluru,3100475907,node,hospital,Konanakunte Government Hospital,12.8840897,77.5664029,unknown,8026323311,"PARK, NEAR PARK"
+bengaluru,3120578217,node,hospital,Anand Clinic,12.8002465,77.5088745,unknown,,
+bengaluru,3120578218,node,hospital,Sanjeevani Clinic,12.8011096,77.5084507,unknown,,
+bengaluru,3120578551,node,hospital,Government Hospital,12.8047243,77.5109371,unknown,,
+bengaluru,3120590213,node,hospital,Rajarajeshwari Hospital and Medical College,12.896052,77.4618775,unknown,,
+bengaluru,3268435578,node,hospital,Cloud Nine Hospital,12.9878709,77.7319773,unknown,+91 80 6799 9999,Whitefield Main Road
+bengaluru,3270010723,node,hospital,Telerad Rx Dx Health Care Whitefield,12.9768424,77.7103746,unknown,+91-80-49261111;+91-80-40187588,
+bengaluru,3369937900,node,police,Indiranagar Traffic Police Station,12.978243,77.6404269,yes,,
+bengaluru,3370028968,node,hospital,Motherhood Hospital(Unit Of Rhea Healthcare Pvt Ltd),12.9784409,77.6375845,unknown,,"No. 324, Cmh Road Indiranagar 1st Stage Next To Vijaya Bank Building"
+bengaluru,3370244392,node,hospital,Respiratory and womens health clinic.,12.9762645,77.6376528,unknown,,
+bengaluru,3370279044,node,hospital,Rashmi Hospital,12.9766951,77.6362278,unknown,,Indiranagar Double Road (Paramahansa Yogananda road)
+bengaluru,3370453173,node,hospital,Netradama Eye Hospital,12.9734836,77.6357281,unknown,,
+bengaluru,3394753831,node,hospital,Sree Venkateshwara Speciality Hospital,12.9425246,77.6025303,unknown,,Bannerghatta Road
+bengaluru,3400223539,node,hospital,Leela Hospital and Diagnostic Center,13.0002667,77.5694894,unknown,,"# 133, Margosa Road,10Th Cross, Malleshwaram"
+bengaluru,3400223541,node,hospital,Dr. Rajkumar Blood Bank,12.968031,77.5878222,unknown,,
+bengaluru,3476877518,node,police,Karnataka State Reserve Police,12.9691307,77.6168652,yes,,
+bengaluru,3477797688,node,hospital,Nelivigi Eye Hospital,12.9241818,77.6737518,unknown,,"446/21 Above Vijaya Bank, Opposite To Amba Bajaja Showroom"
+bengaluru,3541798347,node,hospital,Sanghi Medical Centre (P) Ltd,12.9517397,77.6994832,unknown,,
+bengaluru,3555393844,node,hospital,"Sri Sai Krupa Hospital, Bengaluru Urban",13.0294181,77.5593857,unknown,,"No. 19/A, Opposite Lic , Mathikere Main Road"
+bengaluru,3556103531,node,hospital,ALDOS Medical Service Pvt LTD,12.9826672,77.6381036,unknown,,
+bengaluru,3607116665,node,hospital,Government Hospital,12.8870605,77.603414,unknown,,
+bengaluru,3607404261,node,hospital,Rajashree Granthim hospital,12.8893134,77.602422,unknown,,
+bengaluru,3633415798,node,hospital,Sri Laxmi Hospital,12.8504718,77.6553058,unknown,,
+bengaluru,3671907239,node,hospital,Wipro First Aid Clinic,12.8377272,77.6584571,no,,
+bengaluru,3710210170,node,hospital,Krishna Nursing Home,12.9474222,77.5986921,unknown,,
+bengaluru,3714125744,node,hospital,"Shifa Hospital, Bengaluru Urban",12.9900105,77.5988107,unknown,,Queen's Road
+bengaluru,3719549886,node,hospital,Milann Fertility Center,12.9159249,77.5856011,unknown,,"Jayanagar, J P Nagar, Bengaluru"
+bengaluru,3725710400,node,hospital,Gift IVF center,12.962951,77.6418711,unknown,,
+bengaluru,3761248698,node,police,Vidhana Soudha Police Station,12.9773726,77.5884362,yes,,
+bengaluru,3773028057,node,hospital,HCG Cancer Hospital,12.9603157,77.5930493,unknown,,"44-45/2, 2nd Cross Raja Rammohan Roy Extn Off Lalbagh Double Road"
+bengaluru,3783584167,node,police,Traffic Police Cabin,12.9568555,77.7011085,yes,,
+bengaluru,3922280181,node,hospital,Health Care Global,12.9584755,77.5919279,unknown,,
+bengaluru,4097027897,node,hospital,Gulecha Dental Care,12.9292418,77.5893625,unknown,,"4th Cross Road, KV Layout, Jayanagar 4th Block"
+bengaluru,4101097589,node,police,J J R Nagar Police station,12.9643591,77.5551587,yes,,Hosahalli Main Road
+bengaluru,4171032289,node,hospital,Unnamed Hospital,12.9767055,77.5424167,unknown,,8th cross
+bengaluru,4189843307,node,hospital,Rajbal Skin Clinic,13.0206063,77.6445361,no,,"4th B cross, 7th C Main"
+bengaluru,4203857493,node,hospital,Prashanth Hospital,12.9066637,77.6287463,unknown,,"90-D, Bommanahalli Circle, Hosur road"
+bengaluru,4209499020,node,police,Avenue Road Police Chowky,12.9680176,77.5787039,yes,,
+bengaluru,4263313808,node,hospital,Dianova Diabetes Center and Hospital,13.0147612,77.6335463,unknown,,
+bengaluru,4286285517,node,hospital,Ameena Medical centre,12.9777082,77.6323407,unknown,,18th Cross Road
+bengaluru,4322812542,node,hospital,Dr.Agarwal Eye & Dental Hospital,12.9700356,77.6362439,unknown,,
+bengaluru,4325331196,node,hospital,SRL Diagnostics,12.9599306,77.7160447,unknown,,
+bengaluru,4343881190,node,hospital,Dr Raos Maternity Hospital,12.9850421,77.5460481,unknown,,"No 370.371,I Stage West Of Cord Road"
+bengaluru,4349307192,node,hospital,Sagar Chandramma Hospitals,12.9485535,77.5748248,unknown,,
+bengaluru,4349443891,node,hospital,Trilife Hospital,13.0169826,77.6432959,unknown,,"Kalyan Nagar, Bengaluru"
+bengaluru,4386507095,node,hospital,Vignesh Lab and Diagnostics,13.0267226,77.6041132,unknown,,
+bengaluru,4392383890,node,hospital,Apollo Cradle,12.9368104,77.6206345,unknown,,"No.58, 5th Cross, 18th Main Dhanlakshmi Bank Building"
+bengaluru,4406333893,node,hospital,Shiva Kumaraswamy Building,12.9717049,77.5493718,unknown,,
+bengaluru,4440769883,node,hospital,Myo Medex - Ace Speciality Clinic,12.8615976,77.5999324,unknown,,
+bengaluru,4440829279,node,hospital,Stanford Speciality Hospital,12.911533,77.6764094,yes,080 6566 6689,"Kasvanahalli Road, Behind State Bank of Mysore, Sarjapur Road, Kaikondrahalli"
+bengaluru,4440931106,node,hospital,Dr Mohan Nursing Home,12.9124371,77.6813917,yes,+91-80-42119084,Sarjapur Road
+bengaluru,4440939217,node,hospital,Sparsh Clinic,12.9072384,77.6755805,unknown,+91-99000 19567,Kasavanahalli Road
+bengaluru,4440946384,node,hospital,Raksha Orthopaedic And Multi Speciality Centre,12.9041502,77.6741043,unknown,+91-74115 27777,"Lake Shore HomesRoad, Amrita college road, off sarjapur road, Kasavanahalli"
+bengaluru,4440987271,node,hospital,Narayana Nethralaya,12.8750879,77.5950098,unknown,,
+bengaluru,4441670838,node,hospital,Naadi Ayurveda Center,12.9121008,77.6820003,unknown,+91-9980016089,"Doddakannelli, Sarjapur Road"
+bengaluru,4441681632,node,hospital,Kottakkal Arya Vaidya Sala,12.9217604,77.6618321,unknown,+91-80 6450 4434,"Service Rd, Agara, Iblur Village, Bellandur"
+bengaluru,4441938603,node,hospital,The Family Doctor & The Family Pharma,12.9122002,77.6818637,unknown,+91-80 2574 6204,"Sarjapur Main Rd, Kaikondrahalli"
+bengaluru,4441961605,node,hospital,Life Care Hospital,12.9194712,77.6130111,unknown,+91-80 2684 6677,"Om Complex, 20th Main, Gangotri Circle, BTM Layout, Madiwala"
+bengaluru,4442511855,node,hospital,Bhagavathi Hospitals Private Limited,12.9161259,77.6311505,unknown,+91-80 4124 5860,HSR Layout Sector 6
+bengaluru,4442516055,node,hospital,Gunasheela Hospitals,12.9250105,77.6278708,unknown,+91-80 - 4646 2626,"Sulochana Building, 1st Cross Rd, 3rd Block, Sarjapura Main Road, Koramangala"
+bengaluru,4443301971,node,hospital,NRS Medical & Dental Specialists Centre,12.9151071,77.5624888,unknown,08026696054,"80 feet road,banashankari"
+bengaluru,4443656796,node,police,Hulimavu Traffic Police Station,12.8565752,77.5889783,yes,080 2294 3030,Gottigere Tank Bund Road
+bengaluru,4444115045,node,police,Chennamanakere Achukattu Police Station,12.9301326,77.5606044,yes,080 2294 3483,"8th Cross Rd, Vidyapeeta Layout, Banashankari 3rd Stage"
+bengaluru,4444988626,node,hospital,Anurag Medical Centre,12.9060641,77.6049776,unknown,,"Main Road, Chandra Layout, Vijayanagar,"
+bengaluru,4444989840,node,hospital,Sarvodaya Hospital,12.9390944,77.5619057,unknown,098440 74946,Magadi Main Road
+bengaluru,4445139977,node,hospital,Indianova Healthcare Pvt Ltd,12.9703581,77.63022,unknown,+9197390 07505,"3rd main shridi sai baba mandir road, Cambridge layout halasuru"
+bengaluru,4445163720,node,hospital,Sky Diagnostic Centre kumbena agrahara,12.9977711,77.7548105,unknown,08033051529,"Kk White Castle Apartment, Vijaya Lakshmi Colony, Kumbena Agaraha Main Rd, Kadugodi"
+bengaluru,4445167354,node,hospital,Dr Rachna - Homeopathy,12.9179831,77.6691258,unknown,+9195909 10963,"Sarjapur Main Rd, Bellandur"
+bengaluru,4445179843,node,hospital,Regal Hospital,13.0830463,77.6347174,unknown,08033082383,"Thanisandra Main Road, Chokkanahalli"
+bengaluru,4445183934,node,hospital,Thyrocare,13.0158543,77.7033173,unknown,080 6568 0365,"Near Sathya Sai Lake Side Hospital, 3rd Main, Vinayaka Layout, Old Madras Road, Battarahalli, K.R. Puram, Vidya Nagar, Krishnarajapuram"
+bengaluru,4445213681,node,hospital,Welnext,12.9240063,77.6545058,unknown,+9196960 00222,"Third Floor, H.S.R Agara Circle, Sarjapura, Outer Ring Rd, Agara Village, HSR Layout,"
+bengaluru,4445356402,node,police,Bellanduru Traffic Police Station,12.9217846,77.6616311,yes,,"IBBLUR SAMUDAYA BAVANA, HSR Layout"
+bengaluru,4445356902,node,hospital,Employees State Insurance Dispensary,12.966771,77.5349228,unknown,080 2845 2785,"17th Cross Rd, Service Road, Opp. Maruthi Mandir, TTMC Bus Stop, Govindaraja Nagar Ward, PF Layout, Vijayanagar"
+bengaluru,4445397516,node,hospital,Dr Solankis Eye Hospital,12.9951627,77.5738144,unknown,080 2356 2211,", 2nd cross, Link Road, Malleswaram"
+bengaluru,4445430292,node,hospital,Sri Sanjeevini Cold Laser Therapy,13.0053923,77.5713352,unknown,080663 79862,"3rd Flr, Srikrupa, Nxt To Adiga Hotel, 15th Crs, Sampige Mn Rd, Malleswaram"
+bengaluru,4445578787,node,hospital,Dr. Bhargavi Reddy Women & Children Hospital,12.975403,77.6470594,unknown,080 2525 6666,"Indiranagar 80ft Road, New Thippasandra, Hal 3rd Stage, Via Indira Nagar 80ft Road"
+bengaluru,4445586944,node,hospital,Axon Speciality Hospital,12.973892,77.6460904,unknown,080 4334 6333,"6th Main Road, HAL 2nd Stage, Indira Nagar"
+bengaluru,4445660067,node,hospital,Bright Children's Clinic,12.9891818,77.689783,unknown,+9178994 22511,"ORR Service Road, Shiva Ganga Layout, B Narayanapura, Mahadevapura"
+bengaluru,4445886952,node,hospital,Sanjeevini Children & Women Clinic,13.0316481,77.6023154,unknown,080 2292 4422,"Sultanpalya Main Road, Near-Bus Stand, R T Nagar"
+bengaluru,4445955282,node,hospital,Procare Hospital,13.0203944,77.6512682,yes,080 4162 0620,Outer Ring Road
+bengaluru,4445973784,node,hospital,Parimala Health Care,12.9003193,77.6008061,yes,080 2658 3117,Bannerghatta Road
+bengaluru,4445986377,node,hospital,"Sriram Hospital, Bangalore",13.0087504,77.6939806,yes,080 2561 0988,Old Madras Road
+bengaluru,4445998037,node,hospital,K R Puram Super Speciality Hospital,13.0110115,77.6935975,yes,080 2561 7799,"3rd Main Road, Old Extension, Krishnarajapuram, Near Indane Gas"
+bengaluru,4446018021,node,hospital,Maithri Nursing Home,13.0048396,77.7036425,unknown,+918025611928,"Devasandra Main Road, Krishnarajapuram"
+bengaluru,4446268170,node,hospital,Unnamed Hospital,12.9702741,77.6468603,unknown,080 4530 0300,"12th Main, HAL II Stage, Indiranagar"
+bengaluru,4446285519,node,hospital,Medic Star Hospital,12.9876871,77.6093097,unknown,080 2554 1337,"AM Road, Bharati Nagar, Shivaji Nagar"
+bengaluru,4446289881,node,hospital,Hsis Gosha Hospital,12.9856985,77.6058578,unknown,"""080 2286 6529","Tasker Town, Near-KSPCB Limited, Shivaji Nagar, Sulthangunta, Shivaji Nagar"
+bengaluru,4446300155,node,hospital,Santosh Hospital,12.9959413,77.6082575,unknown,080 2536 7706,"Promenade Road, Near Coles Park, Frazer Town"
+bengaluru,4446312027,node,hospital,Hospital,12.9914123,77.6117329,unknown,+9193411 44150,"St Johns Church Rd, Bharati Nagar, Shivaji Nagar"
+bengaluru,4446322688,node,hospital,Keva Ayurveda Health Care Pvt Ltd,12.9127062,77.6201668,unknown,080508 01515,"7th Cross, 35th Main, BTM 2nd Stage,, Adjacent DSR Naveen Lake View Apartments, Karnataka"
+bengaluru,4446329807,node,hospital,Ayurvaid Hospital,12.9552696,77.6428508,unknown,080 4092 5555,"Amarjyothi Layout, Off Intermediate Ring Road, Near Dell India/Millennium Motors, Domlur Extension, Amarjyoti Layout, Domlur, Karnataka"
+bengaluru,4446341278,node,hospital,H B S Hospital,12.9891941,77.6037864,unknown,080 2554 1321,"Sultan Gunta,, Cock Burn Rd, Sulthangunta, Shivaji Nagar"
+bengaluru,4446346449,node,hospital,St. Martha's Heart Centre,12.9705436,77.5834769,unknown,+9195380 43453,"Nrupathunga Rd, RBI Colony, Sampangi Rama Nagar"
+bengaluru,4446502570,node,hospital,Sumathi Nursing and Maternity Home,13.0325717,77.5582602,unknown,+9180 2337 2762,"#426/12, 2 Cross,Mathikere Layout,Behind Canara Bank"
+bengaluru,4446518811,node,hospital,Desai Nursing Home,12.9863736,77.5793154,unknown,+9180 2226 0307,"Kumarakrupa Road, High Grounds, Madhava Nagar, Gandhi Nagar"
+bengaluru,4446664412,node,hospital,Fortis Hospital,12.9881648,77.5548179,unknown,080-2300-4444,"West of Chord Road,, Opp Rajajinagar 1st Block Junction"
+bengaluru,4446826362,node,hospital,Healing Earth Multispeciality Ayurveda Hospital,12.9165359,77.6361865,unknown,080674 75757,"HSR Ring Road, 5th Sector , HSR Layout, Karnataka"
+bengaluru,4446833350,node,hospital,Global Ayurveda Multispeciality Hospital,12.9165795,77.6362187,unknown,080674 75757,"HSR Ring Road, 5th Sector , HSR Layout, Jakkasandra, 1st Block Koramangala, HSR Layout, Karnataka"
+bengaluru,4446840727,node,hospital,Brahmi Ayurvedic Center,12.8830054,77.6073285,unknown,+9190086 54547,"12th Main Road, Behind Ingu Tengu Restaurant, Off Bannerghatta Road, Shantiniketan Layout, Karnataka"
+bengaluru,4446849884,node,hospital,Fj Merrit Hydrotherapy And Wellness,12.9344224,77.6299785,unknown,080 4095 1282,"KAY ARR CORNER STONE 2nd Floor 80 Feet Road 4th Block, Koramangala,Karnataka"
+bengaluru,4446852004,node,hospital,Vedam Ayurveda Multispeciality Hospital,12.9175511,77.6039486,unknown,080 4120 2911,"8th B Main Road, BTM Layout 1st Stage, KEB Colony, New Gurappana Palya, BTM Layout 1, Karnataka"
+bengaluru,4446857201,node,hospital,Ayur jagruti,12.9667253,77.6378289,unknown,+9196633 81398,"10th Cross Rd, Doopanahalli, Indiranagar, Karnataka"
+bengaluru,4446876066,node,hospital,Herbocare Hospital Pvt,13.0204424,77.6440607,unknown,+9174064 30003,"4th B Cross, 7th A Main, 1st Block, HRBR Layout, Kalyan Nagar"
+bengaluru,4446881168,node,hospital,""" NRS Medical & Dental Specialists Centre""",12.9378359,77.5573329,unknown,080-26696054,"80 Feet Road, 1st Stage, Srinivasa Nagar, Banashankari"
+bengaluru,4446887432,node,hospital,Tele Rad RX DX Health care Pvt Ltd,12.9992982,77.7575636,unknown,080 4926 1111,"First Floor Above Dominos Pizza Opposite Sai Baba Ashram Kadugodi, Kadugodi"
+bengaluru,4446889930,node,hospital,Spring Leaf Health Care Pvt Ltd,12.8526731,77.6676459,unknown,080673 45000,"Konappana Agrahara, Electronic City, Opp. Infosys Convention Centre, Hosur Main Road"
+bengaluru,4446891375,node,hospital,Chiranjeevi Hospital & Maternity Home,12.9386994,77.5518394,unknown,080 2691 7676,"2nd Main, Bsk 1st Stage, 80 Feet Road, Srinivasa Nagar,Sree Manjunatha Temple Street"
+bengaluru,4446893667,node,hospital,"Vinayaka Hospital, Hanumantha Nagar",12.9373748,77.5494778,unknown,080 2679 6167,"State Bank Of Mysore Colony, 1st Stage,80 Feet Road,, Banashankari"
+bengaluru,4446894388,node,hospital,Diavista Diabetes & Multispeciality Hospital,12.9354293,77.5477956,unknown,080 4096 9392,"11th Cross, 2nd Main, 80ft Main Road, SBM Colony, Giri Nagar 4th Phase"
+bengaluru,4446897063,node,hospital,Meenakshi Hospital,12.9420715,77.553698,unknown,+918026755800,50 Feet Road
+bengaluru,4446899253,node,hospital,Medi-Tech Multi Speciality Hospital,12.9408667,77.5603657,unknown,080 2660 2910,"9th Main, 2nd Block, Hanumantha Nagar, Near-Shaneshwara Temple Road, Banashankari 1st Stage"
+bengaluru,4446900247,node,hospital,Kusuma Hospital,12.9420124,77.5506918,unknown,080 2642 1177,"Nagendra Block, 50ft Road, 10th Main Rd, Srinagar, Banashankari"
+bengaluru,4446907220,node,hospital,Ring Road Hospital,12.9274553,77.5516293,unknown,080 2679 7040,"1st Main Road, Kathreguppe Cross Road, Kathreguppe, Banashankari 3rd Stage"
+bengaluru,4446907712,node,hospital,Pulse Multispecialty Hospital,12.9389007,77.5438808,unknown,080 2672 4466,"20th Main Road, Muneshwara Block, Girinagar, 1st phase Girinagar, Kadavanthra, Banashankari"
+bengaluru,4446909294,node,hospital,Surya Galaxy Hospital,12.9316792,77.5450887,unknown,080 2642 1051,",2nd Main,1st Block,4th Phase,Kathriguppe,BSK 3rd Stage, Water Tank Road, Banashankari"
+bengaluru,4446915481,node,hospital,Wellness Ever,12.9593576,77.7461682,yes,095919 89220,Whitefield Main Road
+bengaluru,4446919794,node,hospital,Hair Loss Treatment in Bangalore - Hairline International,12.9566858,77.7419283,yes,091488 74972,"MCC Tower, Opposite Sigma Tech Park, Varthur Kodi, Varthur Main Rd, Ramagondanahalli, Whitefield"
+bengaluru,4446924573,node,hospital,Surya Diagnostics and Health Services,12.9242825,77.6170883,yes,080 2552 6667,"Hosur Road, Madiwala, Venkateshwara Layout, Sadduguntepalya"
+bengaluru,4446938197,node,hospital,New Life Hospital bangalore,12.9967611,77.7591252,yes,080 4954 0540,"Opposite Whitefield Railway Station, Kadugodi"
+bengaluru,4447003711,node,hospital,Ayushman Ayurvedic therapy centre,12.9946163,77.6023871,unknown,+91 95356 68668,"Millers Rd, Cantonment Railway Quarters"
+bengaluru,4447009524,node,hospital,Pristine Hospital,12.9984229,77.5403887,unknown,+9180 4135 4444,"Dr. Modi Hospital Road, 2nd stage extension"
+bengaluru,4447013195,node,hospital,Sri Vinayaka Hospital,12.9575029,77.5276466,unknown,080 2339 8062,14th Main Road
+bengaluru,4447015118,node,hospital,Shathayu Ayurveda Wellness Centre,12.9573897,77.5276882,unknown,+91 8040999110,14th Main Road
+bengaluru,4447020601,node,hospital,Shri Vishnu Ent Speciality Center,13.0226079,77.4748015,unknown,+91 80 2672 4211,NICE Peripheral Ring Road
+bengaluru,4447072265,node,hospital,Hospital Sharavathi,12.9594984,77.5275515,unknown,+918023300222,"30 Service Road Rpc Layout Vijaynagar, Chandra Layout"
+bengaluru,4447072624,node,hospital,Arogya Kendra,12.9735891,77.5443283,unknown,+918023400463,"Adichunchangiri Shopping Complex Adichunchangirishpgcplx Vjyngrb40 Vijaynagar, Attiguppe"
+bengaluru,4447073029,node,hospital,The Family Doctor Malleswaram,13.0029689,77.5526666,unknown,+9180 2337 6262,10A Crossroad
+bengaluru,4447075424,node,hospital,Venkat Charmalaya,12.9644231,77.5333324,unknown,+918023392788,"7 Subbanna Garden Vijaynagar, Attiguppe"
+bengaluru,4447076167,node,hospital,V Care Medical Systems P Ltd,12.9787049,77.5403581,unknown,+918023110651,"S V Complex Magadi Main Vijaynagar, Magadi Road"
+bengaluru,4447076314,node,hospital,Manasa Hospital,12.968821,77.5246297,unknown,+918023104640,Nagarabhavi Road
+bengaluru,4447079172,node,hospital,Saikrupa Hospital For Women's and Surgical Centre,12.9691657,77.5351921,unknown,+91080 2311 9592,"20th B Cross, Marenahalli Main Road, Govindaraja Nagar Ward, Vijayanagar"
+bengaluru,4447082866,node,hospital,Cutis Academy of Cutaneous Sciences,12.9768117,77.5449094,unknown,080 4115 9049,"4th Main, MRCR Layout, Vijayanagar, Behind Godrej Interio, Near Veeresh Theatre, Govindaraja Nagar Ward, MC Layout, Vijayanagar"
+bengaluru,4447083784,node,hospital,Shreya Hearing Clinic,12.9621516,77.533401,unknown,""" 080 2318 0012""",Chord Road
+bengaluru,4447087999,node,hospital,Acura Speciality Hospital,12.9353208,77.6205504,unknown,+9180 4110 5151,"5th Block, 17th C Main Road, KHB Colony , Koramangala"
+bengaluru,4447088630,node,hospital,Prasad Nethralaya,12.9603312,77.5300796,unknown,080 2339 2807,"Widia Layout, Chandra Layout Main Road, Govindaraja Nagar Ward, Widia Layout, Vijayanagar"
+bengaluru,4447097087,node,hospital,Vijayanagar Global Hospital,12.9717905,77.5372864,unknown,080 4240 8200,"17th Cross, Near Main Bus Stand, M.C. Road, Vijayanagar"
+bengaluru,4447100075,node,hospital,Blossom Infertility Center,12.9649703,77.5389842,unknown,+91 99009 99116,"1st Floor, Next to Sai Prasadam Hotel, 5th Main Rd, Hampi Nagar 2nd Stage, RPC Layout"
+bengaluru,4447105332,node,hospital,Padmashree Nursing Home and Maternity Home,12.958321,77.5350434,unknown,080 2311 8372,"1108/30 10Th Main 4Th Cross, Rpc Layout, Vijayanagar"
+bengaluru,4447119911,node,hospital,Unnamed Hospital,12.9639998,77.5302683,unknown,080 2335 2200,"1st Main Rd, Kaveri Layout, Govindaraja Nagar Ward, Anubhav Nagar, Vijayanagar"
+bengaluru,4447142720,node,hospital,Dhanush Hospital,12.9706209,77.5151893,unknown,080 2318 5544,", Byraveshwara Nagar, 2nd Main, Moodalapalya, Nagarabhavi Main Road, 2nd Block, Govindaraja Nagar Ward"
+bengaluru,4447155158,node,hospital,"S K Hospital, Bengaluru Urban",12.957572,77.5184436,unknown,080 2321 3699,Nagarabhavi Road
+bengaluru,4447156427,node,hospital,"Green City Hospital, Bengaluru Urban",12.9062193,77.580682,unknown,080 2653 6222,"Outer Ring Rd, Rose Garden, JP Nagar Phase 6, JP Nagar,"
+bengaluru,4447171840,node,hospital,The Homoeo World,12.9947201,77.5715879,unknown,080 2346 1995,"2nd Cross Rd, Malleshwaram"
+bengaluru,4447213952,node,hospital,Modern Family Doctor Pvt Ltd,12.9698405,77.5327211,unknown,080 2335 2200,"1st Main Rd, Kaveri Layout, Govindaraja Nagar Ward, Anubhav Nagar, Vijayanagar,"
+bengaluru,4447273084,node,hospital,Oxford Hospital,12.9312101,77.5756907,unknown,080 2245 2500,"Mnr Arcade, Saraki Gate, Kanakapura Road, Saraki Gate"
+bengaluru,4447308983,node,hospital,Oxford Hospital,12.8584183,77.6653346,unknown,080 2245 2500,"Mnr Arcade, Saraki Gate, Kanakapura Road, Saraki Gate,"
+bengaluru,4447316956,node,hospital,R R Hospital & Trauma Centre,12.9059465,77.5904192,unknown,080 2671 8785,"8th cross, Gangadhar Nagar, 100 Feet Ring Road, J P Nagar,"
+bengaluru,4447380551,node,police,Electronics City Traffic Police Station,12.8394292,77.661459,yes,080 2294 3718,"Electronics City Phase 1, Electronics City,near wipro"
+bengaluru,4447383325,node,hospital,M N Speciality Clinic,12.9039905,77.5859569,unknown,080 2653 0121,"24th Main Rd, KR Layout, 1st Phase, JP Nagar"
+bengaluru,4447398385,node,police,HAL Traffic Police Station,12.9588013,77.6675094,yes,080 2294 3115,"HAL Employees Quarters,Old Airport Road, Near HAL Post Office,Reddypalya"
+bengaluru,4447422294,node,police,Upparpet Traffic Police Station,12.9744833,77.5748342,yes,080 2294 2665,"Kempe Gowda Circle, Danvanthri Rd, Majestic,"
+bengaluru,4447436362,node,police,Traffic Police Station,12.9724461,77.5386676,yes,080 2294 2809,"BMTC Building, Vijayanagar Service Road, 8th Main Road, Hoshalli Extension, RPC Layout, Vijayanagar,"
+bengaluru,4447972412,node,hospital,Prashanth Hospital,12.9067129,77.6265085,yes,080 4150 3714,"Bommanahalli Circle, Hosur Main Road"
+bengaluru,4447978869,node,hospital,Parimala Health Care,12.9009278,77.5986641,yes,080 2658 3117,"Bannerghatta Road, Near Kalyani Kala Mantap, Bilekahalli, 2nd Cross Rd,, Ram Shetty Nagar, Bilekahalli"
+bengaluru,4447985903,node,hospital,Springleaf Hospital,12.853228,77.6653506,yes,080673 45000,"Konappana Agrahara, Electronic City, Opp. Infosys Convention Centre, Hosur Main Road"
+bengaluru,4448000087,node,hospital,Sri Ram Hospital,13.0096231,77.6924713,yes,080 2561 0988,"Nishvasaha Centre, Old Madras Main Road, Opposite-Traffic Police, Station, K R Puram"
+bengaluru,4448075597,node,hospital,Vijay Diagnostic Centre,12.9458746,77.5877756,yes,080 2668 4260,"3rd Main,KEB Layout, BTM Layout  1"
+bengaluru,4448118314,node,hospital,Dr Lal PathLabs,12.924274,77.5680927,yes,080 4091 6014,"Ground Floor, 1st Phase, 2nd Stage, Oppo. Ias Colony Ground, BTM Layout, Mahadeshwara Nagar, Stage 2, BTM 2nd Stage"
+bengaluru,4448133411,node,hospital,Welnext,12.9242869,77.6532853,yes,+9196960 00222,"H.S.R Agara Circle, Sarjapura, Outer Ring Rd, Agara Village, HSR Layout"
+bengaluru,4456339090,node,hospital,Sri Sai Ram Hospital,12.8943049,77.5682821,unknown,,Kanakapura Road
+bengaluru,4457764089,node,police,Thalaghattapura Police Station,12.8689461,77.5362854,yes,,Kanakapura Road
+bengaluru,4472318420,node,police,Unnamed Police,12.9081741,77.6368327,yes,,
+bengaluru,4484938764,node,hospital,Tamara Hospital & IVF Centre,13.0044499,77.5530755,unknown,+91 80 2337 0780,Vidhya Vardhaka Sangha Road
+bengaluru,4509817152,node,hospital,ChanRe Rheumatology and Immunology Center and Research,12.995573,77.5354215,unknown,,
+bengaluru,4518518597,node,police,Byadarahalli Police Station,12.9867684,77.491253,yes,,Magadi Road
+bengaluru,4518518893,node,hospital,Anupama Hospital,12.9838763,77.4788534,unknown,,
+bengaluru,4528847591,node,hospital,Deepa Hospital,13.0120509,77.6998816,unknown,,"#27, Old Madras Road"
+bengaluru,4533735695,node,hospital,"Manasa Hospital, Vijayanagar",12.9709463,77.5451059,unknown,,"No. 318, 6Th Main,2nd Cross,Vijayanagar"
+bengaluru,4544234694,node,hospital,Agarahara Government Hospital,13.0957329,77.6273067,unknown,,"Agrahara Badavane, Bengaluru"
+bengaluru,4547191103,node,hospital,Nagarathna Hospital,12.9056092,77.5426964,unknown,,Dr. Vishnuvardhan Road
+bengaluru,4552286367,node,hospital,Ramana Rao's clinic,13.0130826,77.5761449,unknown,,
+bengaluru,4577045761,node,hospital,Government Maternity Home,12.9983402,77.6200927,unknown,,
+bengaluru,4578753189,node,hospital,Lucid Medical Diagnostics,12.9306876,77.5794541,unknown,08049364444,3 Main Road
+bengaluru,4597833389,node,hospital,Cauvery Orthopaedic Centre,12.9984887,77.5504219,unknown,,"No. 408, 20Th Main, 1st Block,Opp Swathi Hotel, Woc Road, Rajajinagar"
+bengaluru,4609603646,node,hospital,"Apollo Bengaluru Cradle Limited, Jayanagar",12.9168014,77.5851878,unknown,,"No.25, 46th Cross, 5th Block, Jayanagar"
+bengaluru,4623723101,node,hospital,"Nethradhama Superspeciality Eye Hospital, Rajajinagar",12.997613,77.5509423,unknown,,"No.607/77, 1st Main, Dr.Rajkumar Road, Rajajinagar 2nd Block"
+bengaluru,4636471341,node,police,Kaggalipura Police Station,12.8014297,77.5085132,yes,,
+bengaluru,4680014207,node,hospital,NIMHANS - Ashwini Block,12.9397588,77.59445,unknown,,
+bengaluru,4689872196,node,hospital,Sathya Sai Lake Side Ortho Hospital,13.0215807,77.7128053,unknown,,"Road , Casross Opposite Tc Palya Bus Store Old Madars Road"
+bengaluru,4690537789,node,hospital,Comfort Multispeciality Hospital,12.9817167,77.6800412,unknown,,"SRR Arcade, C.V. Raman Nagar, Kaggadasapura, Bengaluru"
+bengaluru,4729472422,node,hospital,National Institute of Mental Health and Neuro Sciences,12.9400669,77.5931597,unknown,08026995201;08026995000;08026995202,"Lakkasandra, Wilson Garden, Bangalore, Karnataka, India"
+bengaluru,4729478014,node,hospital,NBRC(National Brain Research Center),12.9404277,77.5988406,unknown,,
+bengaluru,4782423379,node,hospital,Dr. Roshni's Tooth Planet Dental Clinic,12.9876335,77.6851595,yes,,DRDO Phase 2 Main Road
+bengaluru,4840185928,node,hospital,Cambridge Hospital,12.9716236,77.6273835,unknown,,"No 18/17, Cambridge Road, Ulsoor"
+bengaluru,4843104321,node,hospital,Respigen healthcare,12.9555357,77.5918347,unknown,,
+bengaluru,4844865057,node,hospital,Doctor's diagnostics Centre,13.014746,77.6357881,unknown,,
+bengaluru,4849107926,node,hospital,Hosmat Hospital,13.0080001,77.5837482,unknown,,
+bengaluru,5106809421,node,hospital,Cloudnine Hospital Pvt. Ltd.,12.9597752,77.6569127,unknown,,"#115,Kodihalli,Old Airport Road"
+bengaluru,5112187604,node,hospital,Subramanium Medicine Store,13.0090912,77.656317,unknown,,
+bengaluru,5112191947,node,hospital,Columbiaa Hospital,13.0104342,77.6583242,unknown,,"6C - 335, 4Th C Main Road, 6Th Cross Ombr Layout Bhuvanagiri"
+bengaluru,5157373807,node,hospital,Altius Hospital,12.9849537,77.5569222,unknown,,"6/63, 59Th Cross, 4Th Block, Rajajinagar Entrance, Mei Polytechnic, Rajajinagar"
+bengaluru,5174903787,node,hospital,Bangalore Diabetes Hospital,12.9918415,77.5968531,unknown,,
+bengaluru,5174994725,node,hospital,NU Hospitals,13.011845,77.5526061,unknown,,
+bengaluru,5229482744,node,police,High Grounds Traffic Police Station,12.9848902,77.5828907,yes,,
+bengaluru,5234723863,node,hospital,V. S. Achar Multispeciality Hospital,12.9472091,77.5966914,unknown,,"196, 10Th Cross, Wilson Gardens"
+bengaluru,5234739990,node,hospital,Nature Cure Hospital,12.933223,77.5842632,unknown,+91 80 2663 1945;+91 80 2244 6035,9th Main Road
+bengaluru,5259407821,node,hospital,Government Hospital,12.966103,77.5549647,unknown,,
+bengaluru,5265649228,node,hospital,"Emergency Block , NIMHANS",12.9403849,77.5945391,yes,,
+bengaluru,5277512112,node,hospital,Usha Vikranth Diagnostic Center and Hospital,12.9138086,77.5273633,unknown,,
+bengaluru,5297145822,node,hospital,Nethradhama Superspeciality Eye Hospital,12.9719805,77.6474011,unknown,,"# 66, Indiranagar Double Road, Hal 2nd Stage"
+bengaluru,5356991434,node,hospital,Kannamangala Primary Health Center,13.0308849,77.7599564,yes,,
+bengaluru,5423028221,node,hospital,Telerad RXDX Kadugodi,13.0028637,77.7569157,unknown,,
+bengaluru,5520252375,node,hospital,Care Health,13.0552027,77.6028234,unknown,,"Bhuvaneswari Nagar, Hebbal Kempapura, Bengaluru"
+bengaluru,5716797221,node,hospital,Sri Shankara Cancer Hospital And Research Centre (A Service Unit Of Sscf),12.9542624,77.5709473,unknown,080-26981000,"1st cross, Shankar math premises"
+bengaluru,5825292845,node,hospital,Vathsalya Speciality Hospital,12.9939752,77.5391801,unknown,,565 Iii Stage 4Th Block
+bengaluru,5862563586,node,police,JC Nagara Police Station,13.0057165,77.5934124,yes,,
+bengaluru,5862574185,node,hospital,Lakeside Medical Centre and Hospital,12.9878631,77.6177434,unknown,,
+bengaluru,5879132707,node,hospital,Maruthi Hospital,12.9677607,77.5413282,unknown,,"No.14 , Maruthi Nagar , Near Maruthi Temple , Nagarbhavi Main Road"
+bengaluru,5915195092,node,hospital,Aparna Hospital,12.9362087,77.616947,unknown,,
+bengaluru,5915409411,node,hospital,Apollo Spectra Hospitals,12.9338175,77.6201615,unknown,,
+bengaluru,5915906204,node,hospital,Sankeerthana Hospital and Fertility Center,12.9256013,77.6359638,unknown,,"No. 8, 1st Main Road 1st Block, Koramangala"
+bengaluru,5959076193,node,hospital,Jayashree Multi Specilaity Hospital,12.881611,77.6260763,unknown,,"#25,26,27, B Block, Viswapriyanagara, Near Chowdeshwari Temple, Begur"
+bengaluru,5966255497,node,hospital,Bangalore Prime Hospital,13.066842,77.6390545,unknown,,
+bengaluru,5983331355,node,hospital,CyteCare,13.118638,77.6078781,unknown,,
+bengaluru,6124618183,node,hospital,Shiva Vision Care,12.9366526,77.6277125,unknown,,
+bengaluru,6380900077,node,hospital,Medical Center,13.0711049,77.5781394,unknown,,
+bengaluru,6385321492,node,hospital,apollo medical shop,12.8437851,77.6659275,unknown,,
+bengaluru,6393830707,node,hospital,Sujatha Hospital,12.9781293,77.6372391,unknown,,
+bengaluru,6464656077,node,hospital,Patil Hospital,13.011214,77.6979598,yes,080 2561 3891,"Sri Thimappa Complex, Old Madras Road, KR Puram, Below Syndicate Bank"
+bengaluru,6502980174,node,hospital,The Eye Surgical Centre,12.9821954,77.5493143,unknown,,"1032, 5th Block Opp Ganesh Temple, Chor Road Rajajinagar"
+bengaluru,6630713206,node,hospital,Omega Multispeciality Hospital,13.1001877,77.5813432,unknown,,"Yelahanka New Town, Bengaluru"
+bengaluru,6630713207,node,hospital,NDR Hospital,13.0957808,77.5792872,unknown,,
+bengaluru,6779119335,node,hospital,Venus Bone & Joint Centre,13.0665572,77.59647,unknown,,
+bengaluru,6807542967,node,hospital,Lourdes High School,13.0182102,77.540004,unknown,,
+bengaluru,6807551928,node,hospital,Boregowda Lingamma Hospital,13.016705,77.539386,unknown,,
+bengaluru,6807551937,node,hospital,Kanva Hospital,13.0175606,77.5394308,unknown,,
+bengaluru,6809801083,node,hospital,Kengeri Upanagara Government Hospital,12.9156896,77.4808065,unknown,,"NEAR COLLAGE, RAILWAY STATION"
+bengaluru,6852266953,node,hospital,Yogananda Multi Speciality Hospital,12.9158516,77.5593919,unknown,,"Padmanabhanagar, Bengaluru"
+bengaluru,6855409793,node,hospital,Dr. Agrawal's Eye Hospital,12.9998982,77.5501121,unknown,,"Laxmi, No.20, Shankarmutt Main Road"
+bengaluru,6937748988,node,hospital,Ashok Hospital,12.9948905,77.5347984,unknown,,"No.65,N.H.C.S. Layout,3Road Stage,4Th Block,Basaveshwar Nagar,Kamalanagar Main Road"
+bengaluru,6937814427,node,hospital,Balaji Hospital and Gastroenterology Center,12.9376087,77.5666429,unknown,,"#118, 5 Th Main , 7Th Cross, N R Colony , Bull Temple Road"
+bengaluru,6937844482,node,hospital,Abhay Hospital,12.9517481,77.4939886,unknown,,"#43/2, 3Road Cross, OppositeSaroja Memorial School, Jnanajyothi Nagar, Ullal Main Road"
+bengaluru,6937890455,node,hospital,Chaitanya Hospital,13.0237316,77.5941463,unknown,,"No 80, P&T Colony R T Nagar"
+bengaluru,6937892396,node,hospital,Dr. B. Venkatasubbarao Memorial Hospital,12.9981979,77.568151,unknown,,"53, 7Th Cross , 4Th Main Road, Malleswaram"
+bengaluru,6937898160,node,hospital,"South City Hospital, Bengaluru Urban",12.9497745,77.5802779,unknown,,"#53/1 (45), Shalini,Susheela Road,Lalbagh Upparahalli ( Lalbagh West Gate)"
+bengaluru,6938005237,node,hospital,"Sri Sai Hospital, Bengaluru Urban",13.0370143,77.6238732,unknown,,"#978, 18Th Cross,14Th Main, 5Th Block, 1st Stage,H.B.R.Layout"
+bengaluru,6938414183,node,hospital,Jupiter Hospital And Institute Of Vascular Surgery,12.9998457,77.5663653,unknown,,"28, 7Th Main 9Th Cross, Malleshwaram"
+bengaluru,6938540502,node,hospital,"Shreyas Hospital, Bengaluru Urban",12.9829857,77.5309655,unknown,,"No. 2/3, 5Th Main Shiva Complex, Kamakshipalya, Nagadimain Road , Opp Vishal Theatre"
+bengaluru,6938547661,node,hospital,Ashirwad Hospital,13.0289685,77.6045479,unknown,,# 125 1st Cross Bhuwaneshwarinagar Sultanpalya Main Road R T Nagar Post
+bengaluru,6938637677,node,hospital,N.D.R. Hospital,13.0965172,77.5787745,unknown,,"2118, 12Th Main RoadB Sector, 3Road Phase Yalahanka New Toen"
+bengaluru,6938637678,node,hospital,N.R.V Hospital,13.1631138,77.6293449,unknown,,"OppositeReliance Petrol Pump, B.B. Road, Near Vidyanagar Cross"
+bengaluru,6938685761,node,hospital,Krishnadevaraya Hospital And Research Centre,13.1498837,77.608248,unknown,,"Sir Mvit Campus, Hunasamarana Halli, Yelahanka"
+bengaluru,6938690597,node,hospital,Radha Maternity and Surgical Hospital,12.9690441,77.5688544,unknown,,"No.71, Mill Road, Cottonpet"
+bengaluru,6938690598,node,hospital,"Hitech Kidney Stone Hospital, Bengaluru Urban",12.9878104,77.5809833,unknown,,"No.6/7, Crescent Road Cross, Kumar Park East"
+bengaluru,6938690600,node,hospital,Sri Dhavantari Ayurveda Hoapital,12.9822186,77.5599374,unknown,,"1033,4 Th Block Dr Rajdumar Road"
+bengaluru,6938690603,node,hospital,Vaidyam Hospital,12.9845512,77.5528322,unknown,,"No. 851/D , 5Th Block , Rajajinagar , 60Th Cross"
+bengaluru,6938690604,node,hospital,Suresh Hospital - Bangalore,12.9897745,77.5551014,unknown,,"723 / B Main E S I Hospital Raod, 3Road Block, Rajajinagar"
+bengaluru,6938690614,node,hospital,Lakshmi Maternity Home,13.0058226,77.5694512,unknown,,"No. 95 and 96, Margosa Road, 15Th Cross, Malleswaram"
+bengaluru,6938690621,node,hospital,Manjunatha Maternity Home and Surgical Centre,13.0077265,77.5696993,unknown,,"# 90/1, West Park Road,Between 17Th And 18Th Cross,Malleswaram"
+bengaluru,6938690626,node,hospital,Samprathi Eye Hospital And Squint Centre,12.9932806,77.580691,unknown,,"# 111 Railway Parallel Road, 7 Th Cross, Kumara Park (W)"
+bengaluru,6938690629,node,hospital,Shankara Nethralaya Eye Hospital,13.0089953,77.5406188,unknown,,"41-42/5 7Th Cross, Saraswathipuram, Nandini Layout, Main Road"
+bengaluru,6938692472,node,hospital,Supra South City Hospital,12.8919509,77.5799654,unknown,,"No.2, Chandra Complex,J.P.Nagar, 7Th Phase,Puttenahalli,OppositeRbi Cly"
+bengaluru,6938693547,node,hospital,"Indira Hospital, Bengaluru Urban",12.7893233,77.6272005,unknown,,"Next To Corporation Bank Atm, Jigani"
+bengaluru,6938695148,node,hospital,ChanRe Rheumatology and Immunology Center and Research,12.9992083,77.550269,unknown,080 - 42516699,"No. 414/65, 20th Main, West of Chord road, 1st Block, Rajajinagar, Bangalore"
+bengaluru,6938695149,node,hospital,Chandana Hospital,12.9579894,77.5114394,unknown,,"54, 4th cross,4th main, NGEF Layout, Nrupathunganagar, Nagarabhavi, Bengaluru, Karnataka 560072"
+bengaluru,6938695174,node,hospital,"J M J Hospital, Bengaluru Urban",13.0398217,77.6230843,unknown,,Nagarwara
+bengaluru,6938708338,node,hospital,Sri Krishna Hospital,12.9215013,77.5655432,unknown,,"No 154, 17 Th Main, 29 Th Cross, Near Bnm Institution"
+bengaluru,6938717990,node,hospital,Malleswaram Eye Day Care Hospital - Bengalore,12.9966677,77.5716037,unknown,,24/1 5Th Cross Malleswaram
+bengaluru,6938717991,node,hospital,Mahaveer Eye Hospital Private Limited,12.9933551,77.5729595,unknown,,"No.02, Sirur Park Road, Seshadripuram"
+bengaluru,6938717993,node,hospital,Bilva Hospital,12.9989833,77.5802015,unknown,,"No.21,22,2nd Main Road, Palace Guttahalli"
+bengaluru,6938727983,node,hospital,"Nethradhama Superspeciality Eye Hospital, Jayanagar",12.9256932,77.5773127,unknown,,"256/14, Kanakapura Main Road, 7th Block, Jayanagar"
+bengaluru,6938741378,node,hospital,Dr Agarwals Eye Hospital Ltd,12.9122295,77.5994906,unknown,,"C K Emerald, No-10,N S Palya Kaveriappa Industrial Area, Bannergatta Road"
+bengaluru,6938758526,node,hospital,Sri Venkateshwara Hospitals,12.926471,77.6167399,unknown,,"#86 Hosur Main Road, Madivala"
+bengaluru,6938759412,node,hospital,"Nova Specialty Surgery Center, Koramangala",12.9339097,77.620208,unknown,,"Opus, 143, 1st Cross, 5th Block, Koramangala"
+bengaluru,6938762135,node,hospital,Fosa Humanitarian Hospital,12.8130672,77.5825109,unknown,,"Bannerghatta 20 Milestone, Near Bannerghatta Police Stn"
+bengaluru,6938772336,node,hospital,C.S. Hospital,12.9118831,77.5528805,unknown,,"Dr.Gurappa Naidu Complex, Opposite Komarla Brigade Residency. Uttarahalli Main Road, Chikkalasandra"
+bengaluru,6938774143,node,hospital,Sri Kalabyraveshwara Swamy Ayurvedic Medical College hospital,12.9650437,77.5435022,unknown,,"No.10, Pipeline Road, RPC Layout, Vijayanagar, 2nd Stage"
+bengaluru,6938775801,node,hospital,"Anugraha Hospital, Vijayanagar",12.9765645,77.5455876,unknown,,"No 18/2, 1st Cross, M.C. Layout, Vijayanagar"
+bengaluru,6938775815,node,hospital,Apple Hospital,13.103924,77.5837862,unknown,,"No.32/1, Maruthi Complex,M S Nagar Bus Stop,Banaswadi Road"
+bengaluru,6938775840,node,hospital,Amar Hospital,12.9711822,77.5781228,unknown,,"7Th Cross, Rangaswamy Temple Street"
+bengaluru,6938775845,node,hospital,Retina Institute Of Karnataka,12.95727,77.5640827,unknown,,"# 122, 5th Main Road, Chamarajpet"
+bengaluru,6938775846,node,hospital,The Venlakh Hospital,12.9572978,77.5644522,unknown,,"123, 5Th Main Road, Chamarajpet"
+bengaluru,6938775854,node,hospital,Vishwabharathi Hospital Pvt. Ltd,12.9406698,77.5644596,unknown,,"No.10/4 & 10/5, 3Road Main Road, Hanumanthanagar"
+bengaluru,6938775855,node,hospital,"Sunetra Eye Hospital, Bengaluru Urban",12.9404548,77.5578493,unknown,,"No 519/34, 2nd Cross 10Th Main, Bsk 1st Stage Banashankari"
+bengaluru,6938775856,node,hospital,Sri Vivekananda Sevashrama,12.9253299,77.5711893,unknown,,"No. 39, 8Th B Main Raod, Bsk 2nd Stage"
+bengaluru,6938775857,node,hospital,Saraswathi Hospital,12.9276382,77.568896,unknown,,"# 39, 17Thc Cross, 8Thb Main, Banashankari Ii Stage"
+bengaluru,6938777910,node,hospital,National Institute of Mental Health and Neuro Sciences,12.9386321,77.5944105,unknown,,Hosur Road
+bengaluru,6938777925,node,hospital,Netraspandana Healthcare and Research Pvt. Ltd,12.9291283,77.5461361,unknown,,"No.160, 1st Floor,Rashi Complex,2nd Stage,2nd Block,Near Bda Complex, Nagarabhavi"
+bengaluru,6938777940,node,hospital,North City CT Scan,13.0945892,77.594104,unknown,,No 150/3 Jnrt Mansion B.B. Road
+bengaluru,6938777945,node,hospital,Nu Trust,12.9176216,77.5550705,unknown,,"Bkf Chand , Nephro- Urology Centre, Ca - 6,15Th, Main Street, 11Th Cross, Padmanabhanagar"
+bengaluru,6938777957,node,hospital,"Padmavathi Hospital, Bengaluru Urban",12.9817311,77.5333714,unknown,,"67/1, H V R Complex Magadi Main Road Kanakapura"
+bengaluru,6938777962,node,hospital,Panchamukhi Specialityu Hospital,12.9957177,77.5031644,unknown,,"# 1/3, Heggenanalli Main Road, Opposite Ganesh Temple, Near Peenya 2nd Stage, , Last Bus Stop"
+bengaluru,6938779562,node,hospital,Sri Lakshmi Multi Speciality Hospital,12.9881868,77.5087273,unknown,,"No. 127/1, Sri Gandhanda Kaval, Sunkadakatte, Viswaneedam Post, Magadi Main Road"
+bengaluru,6938781514,node,hospital,K C Raju Multi Speciality Hospital,13.0090828,77.6235594,unknown,,Hennur Main Road Opposite Srirama Temple
+bengaluru,6938783140,node,hospital,Ring Road Hospital,12.9278657,77.5519297,unknown,,"#129, 1 Main Road, Kattriguppe, Banashankari Iii Stage"
+bengaluru,6938787285,node,hospital,"Vasan Eye Care Hospital, Bannergatta Road",12.8822813,77.5957945,unknown,,"Dsp Tower, No 40, 1st Floor Above Icici Bank Ltd"
+bengaluru,6938790393,node,hospital,Varalakshmi Hospital,12.924624,77.6170966,unknown,,"No. 38/2, 2nd Main Road, Madiwala New Extension"
+bengaluru,6938794412,node,hospital,Kala Hospital,13.0223669,77.5587304,unknown,,"1105, 5Th Cross,Kn Extension, Yeshwanthpur"
+bengaluru,6938824058,node,hospital,Sri Raghava Childrens And General Hospital,12.7804299,77.7707067,unknown,,"Opposite Syndicate Bank, Sarjapura Main Road, Attibele, Anekal (Taluk)"
+bengaluru,6938863247,node,hospital,"Shekhar Hospital, Jayanagar",12.917589,77.5948906,unknown,,"#942, 28Th Main, 9Th Block,Jayanagar"
+bengaluru,6938864290,node,hospital,Rajalakshmi Hospital,13.0842019,77.5308891,unknown,,"#21/1, Lakshmipura Main Road,Vidyaranyapura,Opposite Lakshmipura Lake"
+bengaluru,6938876210,node,hospital,"Vasan Eye Care Hospital, Sarakki",12.9103393,77.5732398,unknown,,"Plot No.2(A-2) A Type Bbmp No.57-64-2, Shivana Arcade"
+bengaluru,6938889541,node,hospital,Lions Airport City Hospital,12.9551501,77.7051643,unknown,,"#103, Munnekolal, Verthur Road, Marthahalli Post"
+bengaluru,6938896388,node,hospital,Mahanth Hospital,12.9079615,77.6235715,unknown,,"No-8, 1st Cross Ngr Layout Roopera Agrahara"
+bengaluru,6938912267,node,hospital,Sunayana Eye Hospital,12.9255233,77.5937748,unknown,,"No.1156, 26th Main, 4th `T` Block, Jayanagar (Opposite 4th `T` BlockBus Depot)"
+bengaluru,6938948962,node,hospital,"Lakshmi Hospital, Ganganagar",13.024837,77.592089,unknown,,"402, 2nd Cross Judges Colony Ganganagar"
+bengaluru,6938949273,node,hospital,Lokhande S Hospital,13.0186045,77.6479433,unknown,,"No. 3Ac 902, 3Road A Cross, 1st Block,9Th A Main, Kalyannagar"
+bengaluru,6938988776,node,hospital,Dr. T.V.Ramesh Piles Hospital,13.0250141,77.5856289,unknown,,"1st Main Road, 7th Cross, Ganganagar"
+bengaluru,6938995621,node,hospital,Dr Kamini Rao Hospital(A Unit Of Bacc Health Care Pvt Ltd),12.9163994,77.5847384,unknown,,"909, 47Th Cross, 9Thmain, 5Th Block, Opposite Adarshapalace Apts And Near Raghavendra Matha, Jayanagar"
+bengaluru,6939048258,node,hospital,HCG,12.9605309,77.592659,unknown,,"No 44-45/2, 2nd Cross, Raja Rammohan Roy Extension, Opposite Double Road"
+bengaluru,6939074293,node,hospital,Dr Ambedkar Medical College Hospital,13.0218188,77.613084,unknown,,Kadugondanahalli
+bengaluru,6939075872,node,hospital,"Supriya Hospital, Bengaluru Urban",12.9929043,77.5588015,unknown,,15/1 Iyappaswamy Templestraight Road
+bengaluru,6939076687,node,hospital,Manju Sree Hospital,13.0212406,77.6070739,unknown,,"91, Kavalbhyrasandra Dr Amc Road, Rt Nagar Post R T Nagar"
+bengaluru,6939108450,node,hospital,Raj Mahal Vilas Hospital,13.0322819,77.5770459,unknown,,"No.138, Aec Layout, Sanjay Nagar"
+bengaluru,6939253041,node,hospital,Devi Eye Hospital,12.9412109,77.6238987,unknown,,18th Main Road
+bengaluru,6939257334,node,hospital,Essential Hospital,12.974865,77.5096312,unknown,,"42, 7Th Block,Ii Stage,Nagarabhavi Ring Road,Near Bhojana Shale Hotel"
+bengaluru,6939311791,node,hospital,Shree Vijayalakshmi Hospital and Trauma Centre,13.0373572,77.6409059,unknown,,"#3/666, Hennur Bande,Hennur Main Road, Kalayan Nagar Post,International Link Road"
+bengaluru,6939319393,node,hospital,Kalasa Maternity Home,12.9548208,77.5672585,unknown,,"127/1, Bull Temple Road"
+bengaluru,6939438895,node,hospital,Sidvin Hospital Pvt Ltd,12.982442,77.5493681,unknown,,"1031, 20Th Main Road, 5Th Block, Rajajinagar"
+bengaluru,6939444286,node,hospital,Abhilash Hospital And Sara Rehabilitation Centre,12.9246384,77.5509238,unknown,,"#271, 5Th Block, 100 Feet Road, 3Road Phase, Banashankari"
+bengaluru,6939445234,node,hospital,"HCG, Koramangala",12.9343279,77.6228848,unknown,,17th A Main Road
+bengaluru,6939522367,node,hospital,"Ganesh Nursing Home, Bengaluru Urban",12.8957636,77.6330289,unknown,,"No.4, Achaiah Chetty Layout, Mekri Circle"
+bengaluru,6939562670,node,hospital,Kavya Hospital,12.8987442,77.6263127,unknown,,"No 4/158, Hongasandra Begur Main Road Bdgur Main Road"
+bengaluru,6939582677,node,hospital,Sg Hospital,12.9275311,77.5457901,unknown,,"30, 2nd Cross Anjaneya Nagar, 3Road Stage Banashankari"
+bengaluru,6939699617,node,hospital,Place Guttahalli Maternity Home,12.9988238,77.5819892,unknown,,"Near Nti Qtrs, Jataka Stand, P.G.Halli, East"
+bengaluru,6939719899,node,hospital,"Phoenix Hospital, Bengaluru Urban",12.9608027,77.5911717,unknown,,"26, 1st Main, 2nd Cross, Ckc Garden Off Mission Road"
+bengaluru,6944095844,node,hospital,"Shreya Hospital, Bengaluru Rural",12.9215104,77.4832503,unknown,,"No 73, 3Road Main Road, Kengeri Satellite Town, Kengeri"
+bengaluru,6944095845,node,hospital,"Vasan Eye Care Hospital, Banaswadi",13.0241341,77.6335546,unknown,,"#205-4c, 4th Cross, 3 Road Block"
+bengaluru,6944096856,node,hospital,Sri Annapoorneshwari Hospital,12.9255704,77.4857756,unknown,,80 Ft. Road
+bengaluru,6944105329,node,hospital,"Vasan Eye Care Hospital, R.T.Nagar",13.0251833,77.5920609,unknown,,"No.533, 108 Bus Stop, Ganganagar"
+bengaluru,6944128588,node,hospital,Kims Hospital and Research Centre,12.9563016,77.5747874,unknown,,"K. R. Road, V. V. Puram"
+bengaluru,6944138103,node,hospital,"Karthik Hospital, Bengaluru Urban",12.9489406,77.5949925,unknown,,"56, 8Th Cross, Wilson Garden"
+bengaluru,6944138105,node,hospital,Bangalore Kidney Stones Hospital,12.9670215,77.5892667,unknown,,"10, Vokkaligara Bhavana, Hudson Circle"
+bengaluru,6944143695,node,hospital,Sree Lakshmi Hospital,12.9825937,77.6814736,unknown,,21st Cross Kaggadasapura Main Road C V Raman Nagar
+bengaluru,6944201468,node,hospital,"Abhaya Eye Hospital, Super Speciality Eye Care Centre",12.9271131,77.5471291,unknown,,"# 77, 100 Ft.Ring Road, B.S.K.3rd Stage, 5th Block"
+bengaluru,6944231454,node,hospital,Mediscope Hospital Private Limited,12.9994472,77.6162584,unknown,,Pillana Garden
+bengaluru,6944231456,node,hospital,Medi Derma Hospital,13.0555559,77.6517145,unknown,,"85 Byrathi, Hennur Main Road,Near Kothnur Police Station"
+bengaluru,6944231472,node,hospital,Mathru Hospital - Bangalore,12.9110975,77.4806057,unknown,,"No-304, Kuvempu Street, Bazar Street , Kenegeri"
+bengaluru,6944239588,node,hospital,Manjushree Speciality Hospital,12.9825845,77.6124926,unknown,,"22/70, St. John`S Road, (Opposite R B A N M S Ground)"
+bengaluru,6944256035,node,hospital,Namratha Nursing And Maternity Home,13.0045747,77.5432728,unknown,,"158, 6Th Main Road 4Th Stage, Ii Phase West Of Chord Road"
+bengaluru,6944256036,node,hospital,The Pulse Multi Speciality Hospital,12.9424801,77.5473283,unknown,,"5/81, 50 Feet Road, 20Th Main Road, Muneshwara Block, Girinagar"
+bengaluru,6944256037,node,hospital,Popular Hospital,12.9514854,77.5703564,yes,,3rd Cross Road
+bengaluru,6944256049,node,hospital,Rajankunte Hospital,13.1731008,77.5640868,unknown,,Tirumala Doddaballapur Road Opp Rajakunte Police Station
+bengaluru,6944269353,node,hospital,Gavipuramguttahalli Maternity Home,12.9526505,77.5548633,unknown,,"Kempegoudanagara, Near Police Station, South"
+bengaluru,6944274074,node,hospital,Ayurseva Hospital,13.0139247,77.6640775,unknown,,"No. 16, Hoysala Nagar, Maruti Complex, Ramamurthy Nagar Extension"
+bengaluru,6944276882,node,hospital,Spine Care And Ortho Care Hospital,12.9745134,77.5493883,unknown,,"No-170, 12th, Ist Main, Near Anjaneya Temple, Opposite Karnatakaa Bank"
+bengaluru,6944283814,node,hospital,Vijayashree Hospitals,12.8579673,77.5892687,unknown,,"#3, Gottigere, Bannerghatta Main Road,Near Gottigere Bus Stand"
+bengaluru,6944287716,node,hospital,Tanmay Hospital,12.9733764,77.5474034,unknown,,"66 B/7, Pipe Line Road, Vijayanagara"
+bengaluru,6944290474,node,hospital,Aayug Multi Speciality Hospital,12.9651587,77.7150508,unknown,,"#477, I Main 'B' Block, Aecs Layout,,Kundalahalli"
+bengaluru,6944290475,node,hospital,MGA Hospital,12.9568547,77.7002262,unknown,,"96,Varthur Main Road, Marathahalli"
+bengaluru,6944290482,node,hospital,Bhagavathi Multi Speciality Hospital,12.9160636,77.6308219,unknown,,"L 168, Sector - 6, Ring Road, Hsr Layout"
+bengaluru,6944290483,node,hospital,Sri Sai Ram Hospital - Bangalore,12.9144587,77.6003156,unknown,,"# 33, Bannerghatta Road (Service Road), B.T.M.Layout B.T.M. Layout 2nd Stage"
+bengaluru,6944309977,node,hospital,Susheel Hospital,12.9645006,77.5427189,unknown,,"No. 1869, 5Th Main, 13Th Cross, R.P.C. Lay Out, Vijayanagar"
+bengaluru,6944332151,node,hospital,Dhanush Hospital,12.9654318,77.52312,unknown,,"#63, 2nd Main, Byraveshwara Nagar,2nd Main , Nagarbhavi Main Road"
+bengaluru,6944364980,node,hospital,"Sadhana Eye Hospital, Bengaluru Urban",12.970023,77.6307987,unknown,,"No. 114, 5Th Cross, Sai Baba Temple Road, Cambridge Layout, Ulsoor"
+bengaluru,6944392358,node,hospital,Athreya Hospital,12.7945637,77.7068165,unknown,,"Government Of Karnataka Dept. Of Labauv Gonikoppal Road, Opposite Ksrtc Bus Stant"
+bengaluru,6944392363,node,hospital,Av Hospital,12.938853,77.5786096,unknown,,"9, Patalamma Temple Street, Basavanagudi"
+bengaluru,6944392364,node,hospital,"Balaji Hospital, K.H. Ranganath Colony",12.9632506,77.5602901,unknown,,"No. 40/1, J.J.R. Nagar Main Road, K.H. Ranganath Colony, Behind Sadarshini Hotel"
+bengaluru,6944392375,node,hospital,Banasawadi Hospital,13.0205082,77.6509675,unknown,,"904, 1st Block, Hrbr Layout (Near Overhead Water Tank, Outer Ring Road) Bansawadi"
+bengaluru,6944392376,node,hospital,Bangalore Eye Hospital And Retina Centre,13.0221036,77.6387729,unknown,,"#4 Ac-426,4Thcross,2nd Block, Oop.Kalyana Nagar,Telephone Exchange"
+bengaluru,6944400794,node,hospital,Belaku Eye Hospital,12.9110766,77.4800451,unknown,,"#709, 1st Cross, Ring Road, Kengeri Upanagar,Behind Vijaya Bank"
+bengaluru,6944400815,node,hospital,Bhavatprabhu Hospitals Pvt Limited,12.9670615,77.5903161,unknown,,"No.2 , 8Th A Main,S.R.Nagar,Near Corporation Offices"
+bengaluru,6944418996,node,hospital,Nikad Ortho Centre,12.975802,77.6184806,unknown,,"No.1 Haudin Road, Off Ulsoor Road"
+bengaluru,6944437383,node,hospital,Raksha Multispeciality Hospital,13.0195733,77.5419559,unknown,,"# 141/142, 1st Main, Krishnandanagar, Khb Colony"
+bengaluru,6944464768,node,hospital,"Prasad Hospital, Bengaluru Urban",13.0983472,77.5773677,unknown,,"2069/2074, 16Th B Cross, (Near Mother Dairy Cross), Yelahanka New Town"
+bengaluru,6944464779,node,hospital,Saranalaya Hospital,13.1215236,77.6126106,unknown,,"Near Bagalur Cross Signal,International Airport Main Road,Yelahanka"
+bengaluru,6944464994,node,hospital,Azad Nagar Maternity Home,12.9559644,77.5485635,unknown,,"Kasturabanagar, Mysore Road , South"
+bengaluru,6944507652,node,hospital,Gunasheela Surgical and Maternity Hospital,12.9403012,77.5764705,unknown,,"1,Dewan N, Madhava Rao Road, Basavanagudi"
+bengaluru,6944507653,node,hospital,Excel Care Hospital,12.9207314,77.5736019,unknown,,"#3/2, 27Th Cross, Banashankari 2nd Stage,Near Brigade Software Park"
+bengaluru,6944507654,node,hospital,"Vasan Eye Care Hospital, Jayanagar",12.9292015,77.5819811,unknown,,"No 28&29, 7Th Main Diagnal Road, Jayanagar 4Th Blook"
+bengaluru,6944507655,node,hospital,Hi Tech Kidney Stone Hospital,12.9271389,77.579028,unknown,,"#240, 32nd Cross, 7 Th Block"
+bengaluru,6944507660,node,hospital,Dr. Vidyananda's Surgery and Dia Centre,12.9242515,77.573217,unknown,,"2269, 22nd Cross K R Road, K.R.Road"
+bengaluru,6944507676,node,hospital,"Srushti Hospital, Bengaluru Rural",12.8981572,77.6207364,unknown,,"124, Kanakapura Main Road, Jayanagara 7Th Block, Bangalore"
+bengaluru,6944507681,node,hospital,Parimala Speciality Hospital,12.9004567,77.6005474,unknown,,"12/13, Bilekahalli, Bannerghatta Road"
+bengaluru,6944507682,node,hospital,Banashankari Hospital,12.8443653,77.583809,unknown,,"Weavers Colony Main Road, Bannerghatta Road"
+bengaluru,6944525274,node,hospital,"R K Hospital, Bengaluru Urban",13.0138123,77.6354731,unknown,,"No. 31, Kammanahalli Main Road Near Venkateswara Ent"
+bengaluru,6944525392,node,hospital,"Prasad Eye Hospital, Bengaluru Urban",12.9356703,77.6079905,unknown,,"#11, Krishna Nagar Industrial Layout, D.R.C.Post,Near Christ College,Hosur"
+bengaluru,6944525393,node,hospital,Unity Lifline Hospital Pvt Ltd,12.9819768,77.5108275,unknown,,"No 193, So Feet Road, 2nd Block 2nd Stage"
+bengaluru,6944525394,node,hospital,"Athreya Hospital, Chandpura",12.7945363,77.7068715,unknown,,"6/2 B, Opposite Suryanagara, Phase 1, Chandpura, Anekal Main Road"
+bengaluru,6944543261,node,hospital,J.P.Nursing Home,13.0098352,77.5384723,unknown,,"#4,Sfhs,Next To Nandini Layout"
+bengaluru,6944560298,node,hospital,North Side Health Centre,13.0267995,77.5870813,unknown,,"Cbi Road, (10Th Cross) Between 2 nd & 3 nd Main Ganganagar"
+bengaluru,6944574932,node,hospital,Anugrahaa Hospital,12.8548947,77.6681162,unknown,,"55/3A Govindana Settypalya Road Konappana Agrahara, Electronicity, Infosis South Taluk"
+bengaluru,6944577884,node,hospital,Amrutha Hospital,13.0657486,77.5992653,unknown,,"No. 1, Near Water Tank Jakkur Main Road Amruthahalli"
+bengaluru,6944578226,node,hospital,"Unity Hospital, Bengaluru Urban",12.910823,77.5207892,unknown,,"No.886, Beml Layout,Near Police Station Main Road,Rajarajeshwari Nagar"
+bengaluru,6944578925,node,hospital,Dr Chaitanyas Dental Care & Implant Centre,12.9675989,77.6565533,unknown,,"Ist Floor, Lic Colony Main Road, Jeevan Bhima Nagar"
+bengaluru,6944578930,node,hospital,Kareem E.N.T and Multispeciality Centre,12.9188948,77.6058905,unknown,,"No.53, 3Road Main Road, Opposite To Maruti Layout, B.T.M Layout 1st Stage"
+bengaluru,6944616329,node,hospital,HK Hospital,12.9085981,77.4784157,unknown,,106/2&135 - Mysore Road Kengeri
+bengaluru,6944707745,node,hospital,Chinmaya Narayana Super Specialty Centre,12.9777106,77.6459773,unknown,,"C.M.H.Road, Indiranagar, 2nd Stage"
+bengaluru,6944888150,node,hospital,Jyothi The Lasik Vision Centre,12.9496114,77.5790786,unknown,,"37, M.N. Krishna Rao Road, Opp Lalbagh West Gate"
+bengaluru,6944895084,node,hospital,S.S.G. Hospital,12.9868695,77.4794832,unknown,,"116/2, Herohalli, Anjananagar, Opposite Petrol Bunk"
+bengaluru,6944925493,node,hospital,Bengaluru West Lions Hospital,12.9563042,77.5830996,unknown,,J.C.Road
+bengaluru,6944983789,node,hospital,Vijayanagar Hospital,12.9716291,77.5371969,unknown,,"17th Cross, Near Main Bus Stand, MC Road, Vijayanagar"
+bengaluru,6945001435,node,hospital,Abhinava Eye Hospital,12.9550181,77.5683897,unknown,,"No. 36, Vagdevi, Shankara Park, Opposite Jnanodaya School"
+bengaluru,6945010490,node,hospital,North Star Maternity and Nursing Home,12.9067079,77.5849275,unknown,,"No. 4, Sarakki Industrial Estate, 3Road Phase, J.P.Nagar, Bannerghatta Road"
+bengaluru,6945020140,node,hospital,"Punarjyoti Eye Hospital, Bengaluru Urban",12.9685305,77.5843965,unknown,,"No 37, Next To Ganesha Temple Near Cubbonpet Market Near Cubbonpet Market"
+bengaluru,6945031202,node,hospital,Sundar Hospital,13.0080166,77.6221479,unknown,,"1 & 2, Hennur Road Cross, Lingarajpuram,Below Railway Flyover"
+bengaluru,6945033191,node,hospital,"Sri Ramakrishna Hospital, Bengaluru Urban",13.0121705,77.6961802,unknown,,"Opposite Syndicate Bank, Old Madras Road, Krihnarjapuram"
+bengaluru,6945050485,node,hospital,Sri Venkateshwara Eye Hospital,13.0423919,77.5136653,unknown,,"No. 15, Drls Plaza, 1st Floor, Nh-4, Above Andhra Bank, T. Dasarahalli"
+bengaluru,6945075435,node,hospital,V Care Hospital,13.015884,77.5973475,unknown,,"No 29, 9Th Cross Adi Kabir Ashram Road,H.D Devegowda Road"
+bengaluru,6945309984,node,hospital,A.M. Hospital,12.9601022,77.5315556,unknown,,"No.20/1, 2nd Cross, Widia Layout, Chandra Layout Main Road,Vijayanagar"
+bengaluru,6945348721,node,hospital,"Divya Drishti Eye Hospital, Vijayanagar",12.9586907,77.5352668,unknown,,"#966/ 22, Service Road, RPC Layout, Vijayanagar, Opposite Syndicate Bank"
+bengaluru,6945398483,node,hospital,"Shridevi Hospital, Bengaluru Urban",12.9617045,77.5217172,unknown,,"No-14, Maruthi Nagar, Nagarabhavi Main Road"
+bengaluru,6945434031,node,hospital,Srinivasa Eye Hospital,13.0147224,77.6515616,unknown,,"No.60, Near Banaswadi Bus Stop, Banaswadi Main Road"
+bengaluru,6945724749,node,hospital,Spandana Hospital And Medical Centre,13.0112166,77.6743939,unknown,,Ramamurthynagar
+bengaluru,6945768862,node,hospital,Sreeniwasa Hospital,12.9732706,77.5725357,unknown,,"No. 12, Park Road, Bale Peth"
+bengaluru,6946978667,node,hospital,Ashraya Medinova Pvt Ltd,12.988865,77.5078006,unknown,,"Magadi Main Road, Sunkadakatte"
+bengaluru,6947003707,node,hospital,Magadi Road Maternity Home,12.9741253,77.561823,unknown,,"2nd Cross, Magadi Road"
+bengaluru,6947033494,node,hospital,Pristine Hospital,12.9980009,77.5432779,unknown,,"No.877, Modi Hospital Road, West of Chord Road, II Stage Extension"
+bengaluru,6947106775,node,hospital,Dr Zamindar's Micro Surgical Eye Centre,13.0021978,77.6329015,unknown,,"7Th B Cross, 1st Floor Banaswadi Road Jai Bharath Nagar"
+bengaluru,6947226705,node,hospital,K.T.G. Hospital,13.0004769,77.5054027,unknown,,"Ktg Educational Campus, Sy No. 93, Srigandadakaval, Sunkadakatte Road, Vishwaneedam Post"
+bengaluru,6947247040,node,hospital,Vasan Eye Care Hospital,12.8980516,77.6339279,unknown,,"Sri Murthy Complex, No.43, Garvey Bhav Palya Hongasandra Village Begur, Hosur Main Road Bommanahalli, Hobli"
+bengaluru,6947371813,node,hospital,Health Cottage Hospital,12.9709143,77.6321116,unknown,,"#289.1 Cross, Cambridge Layout, Halasuru, Near Sai Baba Temple"
+bengaluru,6947375064,node,hospital,Samastha Hospitals Pvt Ltd,12.89708,77.5473364,unknown,,"No.4, Sagar Complex,Gopalakrishna Layout,Vasanthapura Main Road,Subramanyapura Post,Uttarahalli Hobli"
+bengaluru,6947430278,node,hospital,Poornima Hospital,13.0263344,77.595128,unknown,,"#200/A, Hmt Layout, Karthik Complex, Dinnur Main Road, R.T. Nagar"
+bengaluru,6947459688,node,hospital,S.N. Hospital,13.0357404,77.7347061,unknown,,"Avalahalli, Virgonagar P.O."
+bengaluru,6947499707,node,hospital,Dr.Zamindar Microsurgical Eye Centre,13.0178594,77.6547577,unknown,,"No.1013, 1st Block, 3 Road Cross, Hrbr Layout, Kalyan Nagar"
+bengaluru,6947499708,node,hospital,Good Shepherd Hospital,13.0328036,77.633289,unknown,,"#1,9 Cross 9 Main Hennur Cross, Kalyan Nagar Post"
+bengaluru,6947499711,node,hospital,"Dr.Agarwal Eye Hospital, Frazer Town, Bangalore",12.9960196,77.6128413,unknown,,"No.33, Coles Road,Frazer Town"
+bengaluru,6947504016,node,hospital,"Mamta Hospital, Bengaluru Rural",13.0377564,77.5744454,unknown,,"12, D Rajgopal Road, Next To Food World, Nagashettyhalli, Sanjaynagar"
+bengaluru,6947504017,node,hospital,S. J. Hospital,13.0360827,77.575065,unknown,,"No.2, Ngef Layout, Sanjaynagar Main Road"
+bengaluru,6947504038,node,hospital,Republic Hospital,12.964162,77.5982255,unknown,,"No. 5, Langford Gardens, Near Richmond Circle"
+bengaluru,6947556032,node,hospital,R.R. Hospital and Trauma Centre,12.9074269,77.5716318,unknown,,"11/2 8Th Cross, Gangadhar Nagar 100 Ring Road, J.P Nagar Post"
+bengaluru,6947662459,node,hospital,Geetha Hospital,13.0357169,77.7351701,unknown,,Avalahalli Virgonagar Old Madras Road Bangaror
+bengaluru,6947662464,node,hospital,"Suresh Hospital, Bengaluru Urban",13.0080397,77.6971089,unknown,,"37/, 1st Cross, Devasandra Main Road, K.R.Puram"
+bengaluru,6947662469,node,hospital,Sri Ram Netralaya and Surgical Centre,13.0088071,77.6948659,unknown,,"2 1st Floor, Kr Purav"
+bengaluru,6947662474,node,hospital,"Patil Hospital, Bengaluru Urban",13.0090854,77.6969567,unknown,,"No. 42-B1, Below Synicate Bank, Sri Thimmappa Complex, Old Madras Road, Krishnarajapuram"
+bengaluru,6947662480,node,hospital,Sri Sai Eye Hospital,13.011968,77.6659168,unknown,,"#311, 4B Cross, R.M. Nagar Main Road, Kasthuri Nagar"
+bengaluru,6947674447,node,hospital,Sri Ram Speciality Hospital,12.9543777,77.6209764,unknown,,"No.162, 4Th Main, Opposite Post Office, Viveknagar, 20Yds, Viveknagar Bus Stand"
+bengaluru,6947678585,node,hospital,Zion Hospital And Research Centre Pvt.Ltd.,13.0149675,77.6354957,unknown,,"No.1, 1 Cross Rananurthy Road"
+bengaluru,6947682046,node,hospital,Jai Maruthi Hospital,13.0068811,77.5055636,unknown,,"208, 210, Hegganahalli Main Road, Near Peenya 2nd Stage, Hegganahalli"
+bengaluru,6947682067,node,hospital,Institute Of Nephro Urology hospital,12.9619528,77.5728562,unknown,,Victoria Hospital Campus
+bengaluru,6947701126,node,hospital,Well Spring hospital,12.9425676,77.6224349,unknown,,Koramangala
+bengaluru,6947707788,node,hospital,Aaroyha Mandir Hospital,13.0105038,77.5502452,unknown,,Bengaluru Urban
+bengaluru,6947707895,node,hospital,"Punya Hospital, Bengaluru Urban",12.9862161,77.5374853,unknown,,"# 52 /10 80 Ft Road, Khb Colony Basaveshwaranagar"
+bengaluru,6947707903,node,hospital,"Vijaya Hospital, Bengaluru Urban",12.9418827,77.48376,unknown,,"4,Kirloskar Colony, Basaveshwaranagar"
+bengaluru,6947716888,node,hospital,Sandhyashree Hospital,12.9761802,77.5261763,unknown,,"No. 8, 60Ft. Road, Pattegara Palya, Vijayanagar"
+bengaluru,6947716900,node,hospital,Dr. Sailaja's Super Speciality Eye Hospital,13.0276736,77.6614188,unknown,,"No.21,22,1st Floor,Horamavu Main Road"
+bengaluru,6947750361,node,hospital,Hillside Hospital,12.9162753,77.5589544,unknown,,"No. 113, 4Th Cross, R. K. Layout, Padmanabhanagar"
+bengaluru,6947915400,node,hospital,Pd Hinduja Sindhi Hospital,12.9646359,77.5926509,unknown,,Sindhi Hospital Road Sampangiramnagar S R Nagar
+bengaluru,6948030294,node,hospital,Sri Ranga Arogyadhama,12.9986239,77.542782,unknown,,1078 11Th Main 9Th Cross Above Punjab National Bank Mahalakshmipura
+bengaluru,6948059664,node,hospital,Brinda Hospital,12.978053,77.5115959,unknown,,"No.4, 5Th Block,2nd Stage Nagarabhavi"
+bengaluru,6948187839,node,hospital,Sankalpa Hospital,12.95119,77.4918039,unknown,,"34/1, Ta.Ra.Su. Circla Yadavagiri"
+bengaluru,6948391975,node,hospital,Deepashri Hospital,12.9705902,77.5108503,unknown,,"No. 86, 2nd Main,16Th D Cross,Malagala,Inner Ring Road,Underpass, Nagarabhavi 2nd Stag"
+bengaluru,6948438892,node,hospital,Rotary Eye Hospital (A Unit Of Bangalore North Rotary Trust),12.9817233,77.5549364,unknown,,"10Th, A Main, 68Th Cross, 5Th Block, Rajajinagar Near Bhasyam Circle"
+bengaluru,6948459038,node,hospital,Acharya Tulsi Jain Hospital,13.0218344,77.5567093,unknown,,"No. 22/21, 6Th Cross, K N Extn, Yeshwanth Pur"
+bengaluru,6948552667,node,hospital,Get Well Hospital,12.9526616,77.61503,unknown,,"#20, 7Th Cross Rosegarden, Neelasandra"
+bengaluru,6948590938,node,hospital,Premier Hospital,13.0241863,77.5960574,unknown,,"No.2, Ex-Servicemen Colony, 5Th Cross, Dinnur Main Road, R.T.Nagar"
+bengaluru,6948604083,node,hospital,Gurukripa Hospital and Health Care Centre,13.0001802,77.5461146,unknown,,"No - 30,1st Cross, Opp Geleyara Balaga Bus Stop,Mahalakshmipuram,Banglore"
+bengaluru,6948659616,node,hospital,Avian Medicare and Research Centre,13.0269276,77.6227882,unknown,,"Lmc 1210 &1211 ,1st Main, 1st Stage, 3Road Block Hbr Layout"
+bengaluru,6948725861,node,hospital,Lakshmi Hospital,13.1579281,77.6252103,unknown,,Bettahalasur Cross
+bengaluru,6948751340,node,hospital,Vinayaka Health Care and Maternity Home,12.8919999,77.6257829,unknown,,"13/29,Prathik Complexhongaasandra, Begur Road"
+bengaluru,6950124287,node,hospital,Little Flower Hospital,13.0113204,77.6771966,unknown,,Opposite to bus stop
+bengaluru,6950124308,node,hospital,"Venkateswara Hospital, Bengaluru Urban",12.9543465,77.5755649,unknown,,"506, Aswathankatte Road V V Puram"
+bengaluru,6950185719,node,hospital,Sai Baba Hospital,13.0093599,77.5222108,unknown,,"No.12, Laggere Main Road, Laggere, Bengaluru"
+bengaluru,6950185729,node,hospital,"Metro Hospital, Bengaluru Rural",12.8914666,77.5612113,unknown,,No. 21/3 Vasanthpur Main Road Konanakunte Cross
+bengaluru,6950185730,node,hospital,"Madhu Hospital, Bengaluru Urban",12.9783164,77.5429603,unknown,,"58, M. Muniyappa Complex Magadi Main Road, Agrahara Dasarahalli,"
+bengaluru,6950412307,node,hospital,Al- Habeeb Hospital,13.0236062,77.6196139,unknown,,"5, Arabic College Main Road, Banglore"
+bengaluru,6950412318,node,hospital,"Santhigiri Ayurveda and Siddha Hospital, Bengaluru Urban",12.9439008,77.6065864,unknown,,"No.2/2, ARS Mansion, New Mico Factory Road, Opposite GovernmentHigh School, Adugodi"
+bengaluru,6991301269,node,police,Ramamurthy Nagar Police Station,13.0041876,77.6659393,yes,,Kempegowda Underpass Road
+bengaluru,7139631443,node,hospital,Padmashree Diagnostics,12.9745983,77.5436792,unknown,,
+bengaluru,7140653801,node,hospital,Venus MultiSpeciality Hospital,12.9721779,77.6807872,unknown,,
+bengaluru,7179096799,node,hospital,Ramakrishna Hospital,12.8541208,77.6624811,yes,,Hewlett Packard Avenue
+bengaluru,7202723905,node,hospital,Roopena Agrahara Government Hospital,12.9102142,77.6244654,unknown,,"3rd Main Rd, NGR Layout, Roopena Agrahara, Bommanahalli"
+bengaluru,7202723984,node,hospital,Government Hospital SULIKERE,12.938541,77.4485,unknown,,GRAMMA PANCHYATH
+bengaluru,7202724055,node,hospital,"Government Hospital, Gunjur",12.922327,77.736038,unknown,,Gunjur
+bengaluru,7202935749,node,hospital,Thippenalli Government Hospital,13.031132,77.483923,unknown,,Thippenahalli
+bengaluru,7202935764,node,hospital,"Govt hospital,Rajanukunte",13.175209,77.564562,unknown,,"near govt.School,Rajanukunte"
+bengaluru,7202935803,node,hospital,Laggere Government Hospital,13.009817,77.5231852,unknown,,"Peenya Post, Muneshwara Badavane"
+bengaluru,7202935809,node,hospital,Seegehalli Government Hospital,13.0164321,77.7169887,unknown,,"Seegehalli, Virgonagara Post"
+bengaluru,7202935821,node,hospital,Ullalu Government Hospital,12.9629127,77.4751834,unknown,,"Sir M Vishweshwaraiah Layout 6th Block, Ullal Uppanagar"
+bengaluru,7202935829,node,hospital,K.C. General Hospital,12.993382,77.5694167,unknown,08199-242555,"K.C. General Hospital, Srirampura"
+bengaluru,7202935841,node,hospital,"Government Hospital, Budigere",13.1376521,77.744809,unknown,,Budigere
+bengaluru,7202935849,node,hospital,NELAMAHESHWARI Government Hospital,13.049152,77.510442,unknown,,Nelamaheshwarinagar T DASARAHALLI
+bengaluru,7213498681,node,hospital,Sai Hospital,13.0701337,77.6329103,unknown,,Sri Balaji Krupa Layout
+bengaluru,7213514086,node,hospital,Sree Ranga Hospital,12.9358669,77.4927128,unknown,,"Mutharayana Nagar, Gnana Bharathi, Bengaluru"
+bengaluru,7213565705,node,hospital,Cure Hospital,13.0324318,77.6085263,unknown,,"48/1, KHB Colony Main Rd, Sultanpalya, Hebbal, Bengaluru"
+bengaluru,7235403686,node,hospital,Yashas Neurocare,12.9853993,77.5454024,unknown,,
+bengaluru,7235403985,node,hospital,Focus Diagnostic Center,12.9870634,77.549951,unknown,,
+bengaluru,7258378647,node,hospital,Vittal Eye HOspital,12.931298,77.5412566,unknown,,
+bengaluru,7489626471,node,hospital,naveen clinc,13.0413777,77.5050224,unknown,,
+bengaluru,7514681681,node,hospital,Chamundi Hi Tech Hospital,12.9240924,77.6177848,unknown,,
+bengaluru,7572131814,node,hospital,Little Flower Hospital,12.9807257,77.6823734,unknown,,"Nagappareddy Layout, Kaggadasapura, Bengaluru"
+bengaluru,7572131816,node,hospital,NMPC Hospital,13.006205,77.7004289,unknown,,"Ayyappa Nagar, Krishnarajapura, Bengaluru"
+bengaluru,7572131818,node,hospital,R R Hospital,13.0082031,77.697197,unknown,,"Devasandra Main Road, Krishnarajapura, Bengaluru"
+bengaluru,7572131819,node,hospital,Jeevan Hospital,12.9901305,77.6713322,unknown,,"Udayanagar Extension, Mahadevapura, Bengaluru"
+bengaluru,7572131823,node,hospital,Vicky Family Life,13.0031618,77.7059531,unknown,,"Ayyappa Nagar, Krishnarajapura, Bengaluru"
+bengaluru,7572131824,node,hospital,Vedam Ayurveda Multi Speciality Hospital,12.9946786,77.6709989,unknown,,"Udaya Nagar, Mahadevapura, Bengaluru"
+bengaluru,7572131833,node,hospital,Stroke Treatment Paralysis,13.0239995,77.6585299,unknown,,"Horamavu, Near Banaswadi, Bengaluru"
+bengaluru,7572131835,node,hospital,Geriatric Hospitals,13.0283977,77.6599575,unknown,,"Banaswadi, Bengaluru"
+bengaluru,7572131842,node,hospital,Health Plus Multi Speciality Hospital,13.0219523,77.6994046,unknown,,"Sunshine Layout, Krishnarajapura, Bengaluru"
+bengaluru,7572131844,node,hospital,Pragathi Piles Hospital,12.9966313,77.671863,unknown,,"Udaya Nagar, Bengaluru"
+bengaluru,7572131866,node,hospital,Mahaveer Hospitals,12.9895049,77.6741439,unknown,,"Udaya Nagar, Mahadevapura, Bengaluru"
+bengaluru,7572131884,node,hospital,Eshawar HospItal,13.033219,77.6747693,unknown,,"Punyabhoomi Layout, Kalkere, Bengaluru"
+bengaluru,7572131892,node,hospital,Medihope Super Specialty Hospital,12.973637,77.675186,unknown,,"Malleshpalya, New Tippasandra, Bengaluru"
+bengaluru,7572131894,node,hospital,Cure N Care Hospital,12.989869,77.676589,unknown,,"Udaya Nagar, Mahadevapura, Bengaluru"
+bengaluru,7572131905,node,hospital,Sad Bydya Shala Ayurvedic Hospital,13.0106539,77.6969464,unknown,,"V B Layout, Krishnarajapura, Bengaluru"
+bengaluru,7572131909,node,hospital,Sri Lakshmi Super Speciality Hospital,13.011115,77.697361,unknown,,"Krishnarajapura, Bengaluru"
+bengaluru,7572131920,node,hospital,Kids Health Link,13.0031938,77.7128759,unknown,,"Surya Layout, Ayyappa Nagar, Krishnarajapura, Bengaluru"
+bengaluru,7572131923,node,hospital,Prakruti Hospital,12.991561,77.6757833,unknown,,"Udaya Nagar, Bengaluru"
+bengaluru,7572131935,node,hospital,Amrutha Healthcare,13.0042616,77.7114153,unknown,,"Ayyappa Nagar, Krishnarajapura, Bengaluru"
+bengaluru,7572526686,node,hospital,Kamadhenu Hospital,12.975501,77.534972,unknown,,"Govindarajanagar, Bengaluru"
+bengaluru,7572526687,node,hospital,Dr. Rajesh Hospitals Eye and Dental,12.9688989,77.6422131,unknown,,"Indiranagar, Bengaluru"
+bengaluru,7572526690,node,hospital,OJUS Multi Speciality Hospital,12.957269,77.653945,unknown,,"Kaveri Nagar, Murgesh Pallya, Bengaluru"
+bengaluru,7572526693,node,hospital,Benaka Hospital,12.9835824,77.5289448,unknown,,"Govindaraja Nagar Ward, Priyadarshini Layout, Kamakshipalya, Bengaluru"
+bengaluru,7572526698,node,hospital,"Goverment Hospital, Hosahalli",12.9744928,77.5342045,unknown,,"Stage 2, Vijayanagar, Bengaluru"
+bengaluru,7572526699,node,hospital,Jhon's Medical Hospital,12.9635299,77.6662889,unknown,,"Jyothi Nagar, Bengaluru"
+bengaluru,7572526700,node,hospital,Vijaya Hospital,12.96767,77.5226459,unknown,,"Govindaraja Nagar Ward, Kalyan Nagar, Vijayanagar, Bengaluru"
+bengaluru,7572526703,node,hospital,Government Hospital,12.9780731,77.5251934,unknown,,"Govindaraja Nagar Ward, Pattegarhpalya, Vijayanagar, Bengaluru"
+bengaluru,7572526708,node,hospital,Sriprasad Ayurveda,12.9734087,77.5462808,unknown,,"Hoshalli Extension, Vijayanagar, Bengaluru"
+bengaluru,7572526709,node,hospital,Vidya Eye Hospital,12.9707429,77.5377684,unknown,,"Near Vijayanagar Police Station, Vijaya Nagar, Bengaluru"
+bengaluru,7572526710,node,hospital,Sai Baba Hospital,12.9698194,77.6317472,unknown,,"Someshvarapura Layout, Jogupalya, Bengaluru"
+bengaluru,7572526717,node,hospital,Shree Sai Speciality Hospital,12.9555948,77.6418006,unknown,,"Amarjyoti Layout, Domlur, Bengaluru"
+bengaluru,7572526718,node,hospital,Shree Dhanvantari Ayurveda Hospital,12.9615606,77.5222312,unknown,,"Maruthi Nagar, Attiguppe, Bengaluru"
+bengaluru,7572526728,node,hospital,Srinivasam Cancer Care Multi Speciality Hospital,12.961509,77.523151,unknown,,"Netravati Road, Maruthi Nagar, Bengaluru"
+bengaluru,7572526747,node,hospital,Magdum Hospital,12.9589495,77.6603768,unknown,,"Near Rajeshwari Theatre, Murgesh Pallya, Bengaluru"
+bengaluru,7572526750,node,hospital,Athoz Hospitals,12.9673428,77.6424996,unknown,,"Indiranagar, Bengaluru"
+bengaluru,7572526752,node,hospital,G.R. Hospital,12.9802303,77.5548818,unknown,,"Rajajinagar, Bengaluru"
+bengaluru,7572526753,node,hospital,Sneha Horizon Hospital,12.9754301,77.5358001,unknown,,"Nagarabhavi Main Road, Govindaraja Nagar Ward, Vijayanagar, Bengaluru"
+bengaluru,7572526756,node,hospital,Jagjeevanram Hospital,12.968292,77.524492,unknown,,"Nagarabavi Main Road, Mudalapalya, Vijayanagar, Bengaluru"
+bengaluru,7572526757,node,hospital,Kangroo Hospital,12.974339,77.542325,unknown,,"CHBS Layout, Vijayanagar, Bengaluru"
+bengaluru,7572526762,node,hospital,Abhinav Hospital,12.9757486,77.553782,unknown,,"Rajajinagar, Bengaluru"
+bengaluru,7572526763,node,hospital,Suhusannidhi Hospital,12.969102,77.534951,unknown,,"Govindaraja Nagar Ward, PF Layout, Vijayanagar, Bengaluru"
+bengaluru,7572526764,node,hospital,Abivrud Cancer Care & Research Centre,12.963967,77.4973049,unknown,,"Vishweshwaraiah Layout, Annapurneshwari Nagar, Bengaluru"
+bengaluru,7572526766,node,hospital,Panchsheela Nagar Hospital,12.9745497,77.5208943,unknown,,"Govindaraja Nagar Ward, Panchasheel Nagar, Vijayanagar, Bengaluru"
+bengaluru,7572526767,node,hospital,ESIC Hospital,12.9693009,77.6317545,unknown,,"Someshvarapura Layout, Jogupalya, Bengaluru"
+bengaluru,7572526776,node,hospital,Sai Ortho and Dental Centre,12.9698191,77.5360801,unknown,,"CHBS Layout, MC Layout, Vijayanagar, Bengaluru"
+bengaluru,7572526781,node,hospital,Ammashrees Hospital,12.9794315,77.5441641,unknown,,"Agrahara Dasarahalli, Rajajinagar, Bengaluru"
+bengaluru,7572526782,node,hospital,Lohitha Hospital,12.963951,77.64308,unknown,,"Kodihalli, Bengaluru"
+bengaluru,7572526783,node,hospital,Government Hospital,12.9639829,77.5188899,unknown,,"Govindrajanagar, Anubhav Nagar, Mudalapalya, Vijayanagar, Bengaluru"
+bengaluru,7572526785,node,hospital,Revathi Hospital,12.9679971,77.5015759,unknown,,"Radhakrishna Main Road, Mines &,Geology Layout, Mallathahalli, Bengaluru"
+bengaluru,7572526787,node,hospital,Shanthakumari Hospital,12.9637162,77.5188263,unknown,,"Govindaraja Nagar Ward, Garden Villas, Vijayanagar, Bengaluru"
+bengaluru,7572526791,node,hospital,Bengaluru Child Neurology and Rehabilitaion Centre,12.9735574,77.5461246,unknown,,"Hans Complex, Manuvana, Vijayanagar, Bengaluru"
+bengaluru,7572526792,node,hospital,Sumati Hospital,12.976379,77.524439,unknown,,"Srinivasnagar, Amarajyothi Nagar, Vijayanagar, Bengaluru"
+bengaluru,7572526798,node,hospital,Dr. Hemant Agrawal,12.9583212,77.659636,unknown,,"Konena Agrahara, Murgesh Pallya, Bengaluru"
+bengaluru,7572526800,node,hospital,Dr. Nothesh Child Specialist,12.975423,77.540659,unknown,,"Near SBI, Vijayanagar, Bengaluru"
+bengaluru,7572526801,node,hospital,Swasthya Hospitals,12.9544981,77.6401572,unknown,,"Amarjyoti Layout, Domlur, Bengaluru"
+bengaluru,7572526802,node,hospital,Miracle Hopital,12.958861,77.654322,unknown,,"Kaveri Nagar, Murgesh Pallya, Bengaluru"
+bengaluru,7572526804,node,hospital,Sastry Memorial Hospital,12.9698787,77.5332834,unknown,,"Vijaya Nagar, Bengaluru"
+bengaluru,7572669019,node,hospital,Sri Swaranaamrutha Hospital,12.79603,77.706405,unknown,,"Venkateshappa Layout, Chandapura, Bengaluru"
+bengaluru,7572669024,node,hospital,Springleaf Hospital,12.852699,77.667688,unknown,,"Hosur Main Road, Bengaluru"
+bengaluru,7572669025,node,hospital,Sri Sai Hospitals,12.787708,77.741822,unknown,,"Yadavanahalli, Bengaluru"
+bengaluru,7572669027,node,hospital,Hospitec Multispeciality Hospital,12.8859649,77.6489078,unknown,,"AECS Layout, Kudlu"
+bengaluru,7572669029,node,hospital,Global Speciality Hospital,12.808615,77.699385,unknown,,"Bommasandra Road, Bangaluru"
+bengaluru,7572669031,node,hospital,Sri Venkateswara Hospital,12.9056165,77.6122688,unknown,,"EWS Colony, BTM Layout, Bengaluru"
+bengaluru,7572669032,node,hospital,Rajashri Grandhim Hospitals,12.895426,77.607662,unknown,,"Vijaya Bank Layout, Bilekahalli, Bengaluru"
+bengaluru,7572669035,node,hospital,Goldage Hospital,12.8908362,77.6040715,unknown,,"Duo Heights Layout, Devarachiknahalli, Bengaluru"
+bengaluru,7572669037,node,hospital,JJ Hospitals,12.8350141,77.6953077,unknown,,"Kammasandra, Electronic City, Bengaluru"
+bengaluru,7572669044,node,hospital,Best E City Hospital,12.850377,77.6567056,unknown,,"Vemana Road, Electronic City"
+bengaluru,7572669047,node,hospital,Bhumika Hospital,12.826249,77.678792,unknown,,"Hebbagodi, Bengaluru"
+bengaluru,7572669050,node,hospital,Naryana Hrudalya,12.796888,77.706122,unknown,,"Suryanagar, Bengaluru"
+bengaluru,7572669051,node,hospital,Elite Hospital,12.7815739,77.7713884,unknown,,"R.G Arcade, Attibele, Bengaluru"
+bengaluru,7572669061,node,hospital,Aastha Hospital,12.7815275,77.7713727,unknown,,Attibele
+bengaluru,7576958025,node,hospital,Vinayaka Hospital,12.93753,77.549675,unknown,,"Srinivasnagar, Banashankari, Bengaluru"
+bengaluru,7576958028,node,hospital,Unani Hospital,12.9633185,77.5790145,unknown,,"Near Jamia Masjid, NR Road, Bengaluru"
+bengaluru,7576958032,node,hospital,Rahul Maternity & Child Health Centre,12.9596227,77.6146819,unknown,,"Austin Town, Neelasandra, Bengaluru"
+bengaluru,7576958033,node,hospital,Bangaluru Unani Hospital,12.9405198,77.5794387,unknown,,"Basavanagudi, Bengaluru"
+bengaluru,7576958037,node,hospital,Medcare Hospital,12.953049,77.574203,unknown,,"S.S. Temple Street, V V Puram, Bengaluru"
+bengaluru,7576958039,node,hospital,Sumanjara Hospital,12.9417439,77.5601782,unknown,,"50 Feet Road, Basavanagadi, Banashankari, Bengaluru"
+bengaluru,7576958043,node,hospital,Corporation Hospital,12.961345,77.560893,unknown,,"Mahaveer Arcade, Sirsi Road, Chamrajpet, Bengaluru"
+bengaluru,7576958045,node,hospital,Mitralaya Hospital,12.945591,77.5712865,unknown,,"DVG Road, Gandhi Bazaar, Basavanagudi, Bengaluru"
+bengaluru,7576958048,node,hospital,People Tree Hospitals,12.942076,77.553598,unknown,,"Dasarhalli, Srinagar, Banashankari, Bengaluru"
+bengaluru,7576958052,node,hospital,Government Hospital,12.9609494,77.5613939,unknown,,"Sirsi Road, Chamrajpet, Bengaluru"
+bengaluru,7576958060,node,hospital,Verna Hospital,12.940404,77.5580361,unknown,,"SBM Colony, Banashankari, Bengaluru"
+bengaluru,7576958061,node,hospital,"Government Hospital, Banglore",12.9587464,77.5573456,unknown,,"Ramachandra Agrahara, Azad Nagar, Bengaluru"
+bengaluru,7576958062,node,hospital,Royan Maternity & Child Welfare Centre,12.960311,77.568274,unknown,,"Kamalanagar, Chamrajpet, Bengaluru"
+bengaluru,7576958064,node,hospital,Alisa Eye Hospital,12.9652304,77.6104334,unknown,,"Campbell Road, Bangalore"
+bengaluru,7576958065,node,hospital,Shekhar Hospital,12.945944,77.567404,unknown,,"Bull Temple Road, Hanumanthnagar, Bengaluru"
+bengaluru,7576958066,node,hospital,Government Hospital,12.949104,77.563226,unknown,,"RK Mutt Layout, Kempegowda Nagar, Bengaluru"
+bengaluru,7576958068,node,hospital,Jeevini Sarvodaya Hospital,12.9415883,77.5641917,unknown,,"Hanumanthnagar, Banashankari, Bengaluru"
+bengaluru,7576958070,node,hospital,Mahaveer Ortho Care Speciality Centre,12.9569684,77.5695045,unknown,,"Shankar Mutt Road, Chikkanna Garden, Shankarapura, Bengaluru"
+bengaluru,7576958071,node,hospital,Raghavendra Hospital,12.938787,77.554296,unknown,,"Banashankari, Bengaluru"
+bengaluru,7576958074,node,hospital,Apaara Multi Speciality,12.938453,77.551329,unknown,,"Srinivasnagar, Banashankari, Bengaluru"
+bengaluru,7576958078,node,hospital,Khincha Orthopaedic Centre,12.939882,77.573989,unknown,,"Krishna Rajendra Road, Basavanagudi, Bengaluru"
+bengaluru,7576958080,node,hospital,Parameshwari Hospital,12.948971,77.563543,unknown,,"RK Mutt Layout, Gavipura, Kempegowda Nagar, Bengaluru"
+bengaluru,7576958083,node,hospital,Drishti Nethralaya,12.9422541,77.5506328,unknown,,"Giri Nagar, Banashankari, Bengaluru"
+bengaluru,7576958084,node,hospital,Furtde Hospital,12.9654649,77.5894756,unknown,,"Sampangi Rama Nagar, Bengaluru"
+bengaluru,7576958086,node,hospital,Manavarthapet Pregnancy Hospital,12.9702549,77.5734571,unknown,,"Santhusapet, Bengaluru"
+bengaluru,7576958089,node,hospital,Trinity Hospital and Heart Foundation,12.9434996,77.5796583,unknown,,"Basavanagudi, Bengaluru"
+bengaluru,7576958091,node,hospital,Spandana Heart Centre,12.957222,77.566486,unknown,,"Chamrajpet, Bengaluru"
+bengaluru,7576958092,node,hospital,Shas Eye Care,12.960296,77.614714,unknown,,"Victoria Layout, Bengaluru"
+bengaluru,7576958093,node,hospital,Matha Pitha Hospital,12.9420276,77.575634,unknown,,"M N Krishna Rao Park Road, Basavanagudi, Bengaluru"
+bengaluru,7576958095,node,hospital,ESI Hospital,12.972126,77.573351,unknown,,"JM Road, Upparpete, Bengaluru"
+bengaluru,7576958096,node,hospital,Herige Hospital,12.960972,77.5609696,unknown,,"Chamrajpet, Bengaluru"
+bengaluru,7576958106,node,hospital,Gleneagles Global Hospitals,12.9654497,77.5999044,unknown,,"Richmond Road, Shanthala Nagar, Ashok Nagar, Bengaluru"
+bengaluru,7576958116,node,hospital,Punarjyoti Eye Hospital,12.9658901,77.589928,unknown,,"Ashwath Nagar, Sampangi Rama Nagara, Bengaluru"
+bengaluru,7576958117,node,hospital,Swastik Eye Hospital,12.9479647,77.5696395,unknown,,"Vanivilas Road, Gandhi Bazaar, Basavanagudi, Bengaluru"
+bengaluru,7576958118,node,hospital,Dave Gray Hospital,12.9458294,77.5799015,unknown,,"Rashtriya Vidyalaya Road, Basavanagudi, Bengaluru"
+bengaluru,7576958120,node,hospital,Dr. Rudrappa's Hospital,12.9650303,77.5954946,unknown,,"Sampangi Rama Nagara, Bengaluru"
+bengaluru,7577248184,node,hospital,Aveksha Hospital,13.081777,77.54091,unknown,,"Varadharaja Nagar, Varadarajaswamy Layout, Singapura, Bengaluru"
+bengaluru,7577248186,node,hospital,Shishuka Children's Speciality Hospital,13.0193799,77.6535352,unknown,,"HRBR Layout, Banaswadi, Bengaluru"
+bengaluru,7577248193,node,hospital,Skin Remediez,13.0091103,77.6579493,unknown,,"Lal Bahadur Nagar, Kasturi Nagar, Bengaluru"
+bengaluru,7577248218,node,hospital,Navya Hospital,13.0524836,77.6120857,unknown,,"Mariyannapalya, Thanisandra, Bengaluru"
+bengaluru,7577248221,node,hospital,Ovum Birthing Centre,13.0201491,77.6516628,unknown,,"HRBR Layout, Kalyan Nagar, Bengaluru"
+bengaluru,7577248224,node,hospital,Icon Hospital,13.0528211,77.6041042,unknown,,"Hebbal Kempapura, Bengaluru"
+bengaluru,7577248227,node,hospital,Medicure Hospital,13.0283463,77.6298629,unknown,,"HBR Layout, Bengaluru"
+bengaluru,7577248235,node,hospital,Motherhood Women & Children Hospital,13.0102697,77.6525909,unknown,,"OMBR Layout, Banaswadi, Bengaluru"
+bengaluru,7577248239,node,hospital,Santhamma Hospital,13.0866852,77.5535728,unknown,,"Abbasia Colony, Adityanagar, Vidyaranyapura, Bengaluru"
+bengaluru,7577248246,node,hospital,Feran Hospital,13.0263661,77.6302142,unknown,,"HBR Layout, Kalyan Nagar, Bengaluru"
+bengaluru,7577248254,node,hospital,Super Specialty Eye Hospital,13.0166883,77.6604049,unknown,,"Ramamurthy Nagar, Kuvempu Nagar, Bellandur, Bengaluru"
+bengaluru,7577248260,node,hospital,Endocrine Speciality Centre,13.013761,77.648529,unknown,,"Balaji Layout, Subbaiahnapalya, Banaswadi, Bengaluru"
+bengaluru,7577248262,node,hospital,Shree Sai Hospital,13.0885791,77.5455057,unknown,,"Vinayak Nagar, Vidyaranyapura, Bengaluru"
+bengaluru,7577248265,node,hospital,Axis Hospital,13.065863,77.604213,unknown,,"Swami Vivekananda Layout, Amrutahalli, Bengaluru"
+bengaluru,7577248266,node,hospital,Anjani Women's Day Care Hospital,13.0188119,77.647187,unknown,,"HRBR Layout, Banaswadi, Bengaluru"
+bengaluru,7577248269,node,hospital,Eswar Women and Day Care Hospital,13.0658472,77.5992844,unknown,,"Talacauvery Layout, Sneha Nagar, Byatarayanapura, Bengaluru"
+bengaluru,7577248275,node,hospital,CDEC Hospital,13.026989,77.6281742,unknown,,"HBR Layout, Bengaluru"
+bengaluru,7577248277,node,hospital,Pranam Dental Hospital,13.029101,77.620568,unknown,,"Kadugondanahalli, Bengaluru"
+bengaluru,7577248278,node,hospital,Milaan Hospital,13.0109537,77.6476418,unknown,,"Chikka Banaswadi, Banaswadi, Bengaluru"
+bengaluru,7577248279,node,hospital,Cloudnine Hospital,13.020084,77.654053,unknown,,"Nanjappa Garden, Horamavu, Bengaluru"
+bengaluru,7579683177,node,hospital,NDR Multi Speciality Hospital,13.1051735,77.6027864,unknown,,"Kogilu Main Road, Maruthi Nagar, Yelahanka, Bengaluru"
+bengaluru,7579683179,node,hospital,Chiguru Hospital,13.1706303,77.5642307,unknown,,"Suryodaya Layout, Bengaluru"
+bengaluru,7579683193,node,hospital,Valens Hospitals,13.120977,77.6176084,unknown,,"Dwarka Nagar, Bengaluru"
+bengaluru,7579683203,node,hospital,Bengalure Hospital,13.1039081,77.5754898,unknown,,"Yelahanka New Town, Bengaluru"
+bengaluru,7579683213,node,hospital,Amruth Hospital,13.102578,77.627895,unknown,,"Agrahara Badavane, Bengaluru"
+bengaluru,7579683215,node,hospital,Rangalakshmi Netralaya,13.098943,77.576716,unknown,,"Udaya Layout, Yelahanka New Town, Bengaluru"
+bengaluru,7579683217,node,hospital,Saralaya Hospital,13.121743,77.629478,unknown,,"Saralaya Layout, Kattigenahalli, Bengaluru"
+bengaluru,7579683219,node,hospital,Apurva Hospital,13.101335,77.59858,unknown,,"BB Road, Yelahanka, Bengaluru"
+bengaluru,7579683220,node,hospital,Om Shakthi Hospital,13.1215701,77.6126077,unknown,,"Vinayak Nagar, Kattigenahalli, Bengaluru"
+bengaluru,7579683225,node,hospital,Shadab Hospital,13.1025229,77.6278506,unknown,,"Kogilu Layout, Srinivaspur, Bengaluru"
+bengaluru,7579683228,node,hospital,Rainbow Health Care,13.0997321,77.5760891,unknown,,"Yelahanka New Town, Bengaluru"
+bengaluru,7579683232,node,hospital,Jayalakshmi Hospital,13.098909,77.596219,unknown,,"Gandhi Nagar, Yelahanka, Bengaluru"
+bengaluru,7579683237,node,hospital,NDR Orthopaedic,13.10051,77.595603,unknown,,"Gandhi Nagar, Yelahanka, Bengaluru"
+bengaluru,7579683240,node,hospital,Sri Arogya Hospital,13.1215659,77.6250507,unknown,,"Kattigenahalli, Bengaluru"
+bengaluru,7579683247,node,hospital,Sapthagiri Hospital,13.1213668,77.6174817,unknown,,"Bagalur Main Road, Vinayak Nagar, Kattigenahalli, Bengaluru"
+bengaluru,7579683251,node,hospital,Pavan Hospitals,13.0981485,77.596139,unknown,,"Gandhi Nagar, Yelahanka, Bengaluru"
+bengaluru,7579683252,node,hospital,Kushi Hospital,13.0938081,77.5804166,unknown,,"Chikka Bommasandra, Yelahanka, Bengaluru"
+bengaluru,7579683253,node,hospital,Vikrant Hospital,13.142831,77.6727356,unknown,,"North Bagalur, Bengaluru"
+bengaluru,7579683258,node,hospital,Varsha Hospital,13.1026581,77.6297932,unknown,,"Kogilu Layout, Srinivaspur, Bengaluru"
+bengaluru,7579683261,node,hospital,Just Smiles,13.098668,77.5826843,unknown,,"Yelahanka New Town, Bengaluru"
+bengaluru,7579924711,node,hospital,Lavis Hospital,12.925461,77.609021,unknown,,"Maruti Nagar, Brindavan Nagar, BTM Layout, Bengaluru"
+bengaluru,7579924715,node,hospital,Sevakshetra Hospital,12.9215119,77.5724702,unknown,,"Banashankari, Bengaluru"
+bengaluru,7579924725,node,hospital,Perfetual Help Hospital,12.9055752,77.5425258,unknown,,"Uttarahalli, Bengaluru"
+bengaluru,7579924729,node,hospital,Shree Vaishnavi Heart Centre and Multi Speciality,12.9121632,77.6098276,unknown,,"Mahadeshwara Nagar, BTM Layout, Bengaluru"
+bengaluru,7579924731,node,hospital,Marigold Hospital,12.9136262,77.6045369,no,,"BTM, Bengaluru"
+bengaluru,7579924732,node,hospital,Bharathi Hospitals,12.9334096,77.5622345,unknown,,"Vidyapeeta Layout, Basavanagudi, Bengaluru"
+bengaluru,7579924738,node,hospital,Devi Hospital,12.9239445,77.6198634,unknown,,"Sidharata Colony, Santhosapuram, Koramangala, Bengaluru"
+bengaluru,7579924744,node,hospital,Devagiri Hospital,12.924153,77.565797,unknown,,"Banashankari, Bengaluru"
+bengaluru,7579924753,node,hospital,Pothys Hospital,12.9159348,77.6034098,unknown,,"Bannerghatta Main Road, BTM, Bengaluru"
+bengaluru,7579924754,node,hospital,Center for Liver Disease Hospital,12.916234,77.593019,unknown,,"J.P. Nagar, Bengaluru"
+bengaluru,7579924760,node,hospital,Sudha Prevention Centre,12.9254569,77.5467101,unknown,,"Banashankari, Bengaluru"
+bengaluru,7579924766,node,hospital,Health India Hospital,12.9265183,77.6090995,unknown,,"Brindavan Nagar, S.G. Palya, Bengaluru"
+bengaluru,7579924768,node,hospital,Shanti Hospital,12.9202202,77.5772991,unknown,,"Jayanagar, Bengaluru"
+bengaluru,7579924779,node,hospital,Spurthy Hospital,12.923857,77.611355,unknown,,"Taverekere, Bengaluru"
+bengaluru,7579924780,node,hospital,Apollo Cradle Maternity & Children's Hospital,12.916885,77.585258,unknown,,"TMC Layout, Jayanagar, Bengaluru"
+bengaluru,7579924783,node,hospital,St. Martha's Hospital,12.906113,77.542548,unknown,,"Simhadri layout, Uttarahalli Hobli, Bengaluru"
+bengaluru,7976310624,node,hospital,Chinmaya Hrudayalaya,12.9778121,77.6459447,unknown,,
+bengaluru,8188036050,node,hospital,Sri Lakshmi Multi Speciality Hospital,12.8812376,77.7516894,unknown,,"Bowring Hospital Rd, Dommasandra, Bengaluru, Karnataka"
+bengaluru,8188038448,node,hospital,Government Hospital,13.0903942,77.4966765,unknown,,"Dwarka Road, Dwaraka Nagar Layout, Kempe Gowda Nagar, Bengaluru, Karnataka"
+bengaluru,8188038457,node,hospital,Government Hospital,13.0803204,77.5535057,unknown,,"Jamia Masjid Rd, Mohammed Sab Palya, Vidyaranyapura, Bengaluru, Karnataka"
+bengaluru,8188038463,node,hospital,Bangalore Healthcare Center Pranav Ayurveda Hospital,13.0770012,77.5581038,unknown,,"OPP HDFC BANK,VIDYARANYAPURA Main Road, Opposite HDFC Bank, Vidyaranyapura Main Road Near NTI Ground, NTI Layout, Vidyaranyapura, Bengaluru, Karnataka"
+bengaluru,8188038473,node,hospital,Government Hospital,13.070554,77.5388968,unknown,,"KVP Nagar, Jalahalli, Bengaluru, Karnataka"
+bengaluru,8188038495,node,hospital,Kruthika Hospital,13.0650144,77.5041964,unknown,,"Bus Stop, Bus Stop, Bonemill, Hesarghatta Main Rd, Soundarya Layout, Bengaluru, Karnataka"
+bengaluru,8188038499,node,hospital,Dr Saju George Kottakkal,13.0621628,77.5177637,unknown,,"342, 6th Cross, Brindavan Layout, Shetty Halli, Jalahalli West, Bengaluru, Karnataka"
+bengaluru,8188038523,node,hospital,Fathima Hospital,13.0559513,77.5329456,unknown,,"144, Kammagondana Halli Main Rd, Kammagondahalli, Jalahalli, Bengaluru, Karnataka"
+bengaluru,8188038553,node,hospital,Esi Dispensary,13.0439933,77.5065494,unknown,,"Vidya Nagar, Peenya, Bengaluru, Karnataka"
+bengaluru,8188038578,node,hospital,Ashwini Hospital,13.0313399,77.5055985,unknown,,"Bengaluru, Nalagadderanahalli, Peenya, Bengaluru, Karnataka"
+bengaluru,8188038584,node,hospital,Esi Hospital Peenya 1st Stage,13.0280728,77.5231858,unknown,,"KIADB Housing Complex, Peenya, Yeshwanthpur Suburb II Stage, KIADB Housing Complex, Peenya, Bengaluru, Karnataka"
+bengaluru,8188038659,node,hospital,Nayanalaya Super Speciality Eye Care Centre,13.006795,77.571159,unknown,,"260/1, Abhiram, Near 17th Cross, Sampige Road, Malleswaram, Ranganathapura, Malleshwaram, Bengaluru, Karnataka"
+bengaluru,8188038670,node,hospital,Srinidhi Health Centre,13.005821,77.5725746,unknown,,"17, 3rd, 15th-16th Cross, Temple Road, Malleshwaram Bengaluru, Vyalikaval, Kodandarampura, Malleshwaram, Bengaluru, Karnataka"
+bengaluru,8188038674,node,hospital,Orthopedic & Eye Care Center,13.0054934,77.5719519,unknown,,"1/1, 15th Cross 1st Temple Road, Behind-Hotel Adigas Sampige, Malleshwaram, Vyalikaval, Kodandarampura, Malleshwaram, Bengaluru, Karnataka"
+bengaluru,8188038681,node,hospital,ESI Hospital,13.004596,77.5540033,unknown,,"8/3, E Block, I Block, I Stage, Rajajinagar, E block, 2nd Stage, Rajajinagar, Bengaluru, Karnataka"
+bengaluru,8188038683,node,hospital,Ramani Orthopaedic Hospital,13.0044307,77.5785238,unknown,,"5/19, 1st Main, Vyalikaval, Lower Palace Orchards, Guttahalli, Bengaluru, Karnataka"
+bengaluru,8188038684,node,hospital,Atharva Ayurdhama Ayurvedic Hospital,13.004314,77.547749,unknown,,"233, 1st A Main Rd, West of Chord Road 2nd Stage, 2nd Stage, Mahalakshmipuram, Bengaluru, Karnataka"
+bengaluru,8188038691,node,hospital,RICH CARE HOMEOPATHY,13.0015461,77.5721683,unknown,,"11th Cross Rd, HN Layout, Malleshwaram, Bengaluru, Karnataka"
+bengaluru,8188038705,node,hospital,Poornayu Ayurveda Hospital,12.998238,77.551173,unknown,,"69/26, 19th Main, 19th Cross, Rajajinagar 1st Block, 1st Block, Rajajinagar, Bengaluru, Karnataka"
+bengaluru,8188038706,node,hospital,Appllo Diagnostic,12.9981064,77.6008126,unknown,,"79/10, Nandi Durga Rd, Byadarahalli, Benson Town, Bengaluru, Karnataka"
+bengaluru,8188038712,node,hospital,Supra Diagnostics Spine Care And Ortho Care Hospital,12.9969996,77.5730038,unknown,,"Sangeetha Apts, Malleshwaram, Bengaluru, Karnataka"
+bengaluru,8188038718,node,hospital,K.C.General Hospital,12.9960244,77.5693714,unknown,,"89, 5th Cross Rd, Behind Police Station, Malleshwaram, Bengaluru, Karnataka"
+bengaluru,8188038735,node,hospital,ESIC Model Hospital,12.9916924,77.5539007,unknown,,"620/A/1, 12th Main Rd, 2nd Block, Rajajinagar, Bengaluru, Karnataka"
+bengaluru,8188038742,node,hospital,Government Hospital,12.9905045,77.5566355,unknown,,"172/A, 8th Main Rd, 2nd Block, Rajajinagar, Bengaluru, Karnataka"
+bengaluru,8188038743,node,hospital,Esi Hospital Bangalore,12.9904985,77.5530924,unknown,,"3rd Block, Rajajinagar, Bengaluru, Karnataka"
+bengaluru,8188038786,node,hospital,Government Hospital,12.9844963,77.5551801,unknown,,"20th Main Rd, 5 Block, 3rd Block, Rajajinagar, Bengaluru, Karnataka"
+bengaluru,8188038795,node,hospital,Anupama Hospital,12.9831814,77.4787872,unknown,,"72/3 CIIQ, Magadi Main Road, Bel Layout, 2nd Phase, Near Karnataka Bank, Byadarahalli, Balaji Layout, Bedarahalli, Bengaluru, Karnataka"
+bengaluru,8364348296,node,hospital,Sun Orthopaedic center,13.0332219,77.5549236,unknown,,
+bengaluru,8428403226,node,hospital,St. Johns hospital Emergency ward,12.9305937,77.6186159,unknown,,
+bengaluru,8776646948,node,hospital,Healing Hands Advanced Physiotherapy Clinic,12.9128623,77.5714903,unknown,,4th Cross Road
+bengaluru,8873805759,node,hospital,Narayan Multispeciality clinic,12.9288444,77.5828703,unknown,,
+bengaluru,9192967331,node,hospital,Adarsh Hospital,12.9208444,77.4847891,unknown,,
+bengaluru,9276855256,node,hospital,clinic,12.9395279,77.586437,unknown,,
+bengaluru,9527967835,node,hospital,Shree Manyata Hospitals,13.0544507,77.6316369,unknown,,
+bengaluru,9730853893,node,hospital,Kidwai Cancer Institute Radiation Block,12.9355966,77.5971575,unknown,,
+bengaluru,9739831278,node,hospital,Altius Hospital,13.0344639,77.6291947,unknown,,
+bengaluru,9776823581,node,hospital,Neo Hospital,12.8474,77.6439378,unknown,,
+bengaluru,9783706519,node,police,Police Station,12.9965632,77.6425776,yes,,
+bengaluru,9830781726,node,hospital,Maya Hospital,12.9365283,77.7046741,unknown,,
+bengaluru,9841433907,node,hospital,Devi Eye Hospital,12.9556074,77.7216631,unknown,,
+bengaluru,9874033652,node,hospital,Sahasra Hospital,12.9337751,77.7433234,unknown,,
+bengaluru,9884952776,node,hospital,Cloudnine Hospital,12.8832909,77.5500857,yes,9972999729,"Narayana Nagar, 1st Block, Doddakallasandra Village, Kanakapura Road"
+bengaluru,9934012104,node,hospital,My Dentist,12.9429852,77.5460604,unknown,,
+bengaluru,10051271572,node,hospital,Siddanth Hospital,12.9563317,77.7305782,unknown,,
+bengaluru,10137293053,node,hospital,Apollo Pharmacy,12.9263862,77.6766068,unknown,,
+bengaluru,10218105725,node,hospital,Sai Krupa Hospital,12.8629885,77.4330082,unknown,,
+bengaluru,10731125349,node,hospital,Suraksha Hospital,13.048083,77.628791,unknown,,
+bengaluru,10963251389,node,hospital,The Local Dentist,12.9094156,77.663997,yes,,"HARLUR MAIN ROAD ,OPP.OZONE EVERGREEN SOCIETY GATE 1"
+bengaluru,11031908387,node,hospital,Janani Clinics,12.9918503,77.5437825,unknown,9036817877,"8th B Main Road, 3rd Stage, 2nd Block, Basaveshwaranagara"
+bengaluru,11085582504,node,hospital,Lotus Hospital,12.9144825,77.6491563,unknown,,"24th Main Rd, Vanganahalli, 1st Sector, HSR Layout 5th Sector, Bengaluru,"
+bengaluru,11248318176,node,police,Kengeri Police Station,12.9104906,77.4815428,yes,,
+bengaluru,11272209797,node,hospital,Ayaans Hospital,12.9782618,77.6435889,unknown,,
+bengaluru,11295071515,node,hospital,NIMHANS Department Of Psychiatric and Neuro Rehabilitation,12.9400516,77.5954768,unknown,,
+bengaluru,11295217457,node,hospital,Nimhans Mr-pet Center,12.9396498,77.5967825,unknown,,
+bengaluru,11295246682,node,hospital,NIMHANS Physiotherapy Center,12.9402037,77.5954721,unknown,,
+bengaluru,11295829642,node,police,NIMHANS Police Outpost,12.9406149,77.5949214,yes,,
+bengaluru,11299121541,node,hospital,Zymus Hospitals,12.8784742,77.5450234,unknown,,
+bengaluru,11303711371,node,hospital,Cadabam's Hospitals,12.906071,77.5869281,unknown,,
+bengaluru,11342710964,node,hospital,JJ Hospital,12.8350455,77.693987,unknown,,
+bengaluru,11385217932,node,hospital,"Fortis Hospital, Nagarbhavi",12.9596032,77.5112481,unknown,,"No 23, 80 Feet Road, Gurukrupa Layout"
+bengaluru,11407254183,node,hospital,MEDSTAR Speciality Hospital,13.058128,77.5860405,unknown,,
+bengaluru,11649535553,node,police,Mico Layout Traffic Police Station,12.9132041,77.6009835,yes,,
+bengaluru,11684501144,node,hospital,Span Health Center,12.9774449,77.6271297,unknown,,
+bengaluru,11700164026,node,hospital,Smile Smart Dental & Implant Centre,12.8804891,77.6552588,unknown,,Haralur Road
+bengaluru,11710491602,node,hospital,Uvin Care Hospital,12.9778346,77.6282837,unknown,,
+bengaluru,11782289126,node,hospital,Sai Sparsh Hospital,12.8933895,77.6368614,unknown,,
+bengaluru,11813227397,node,hospital,Bengaluru City Hospital,12.9075935,77.5707809,unknown,,
+bengaluru,11853321328,node,hospital,Aspire Hospital,12.9971683,77.6145878,unknown,,
+bengaluru,11869384815,node,hospital,Dhee Hospital,12.8835095,77.550214,unknown,,Kanakapura Road
+bengaluru,11903094814,node,hospital,Sai Thunga Hospitals,12.9240012,77.6481809,unknown,,
+bengaluru,11917792343,node,police,Chandra Layout Police Station,12.9589313,77.5283822,yes,,
+bengaluru,11932360089,node,hospital,Esha Hospital,13.098072,77.567378,unknown,,
+bengaluru,11946809268,node,hospital,Chirag Global Hospital,12.9058817,77.6037517,unknown,,
+bengaluru,11949327621,node,hospital,Manipal Hospital OPD,13.0624568,77.592227,unknown,18001025555,
+bengaluru,11965775664,node,hospital,PMC Hospital,13.0065047,77.5545009,unknown,,
+bengaluru,11982389397,node,hospital,New Varalakshmi Hospital,12.9988382,77.5550964,unknown,,
+bengaluru,12056743550,node,hospital,Ashwini Hospital,13.0988482,77.5978974,unknown,,
+bengaluru,12103684982,node,hospital,Apollo Cradle Children's Hospital,13.002768,77.5536287,unknown,,
+bengaluru,12117952601,node,hospital,Motherhood Children's Hospital,13.0620051,77.5930638,unknown,,Bellary Road
+bengaluru,12144434658,node,hospital,Abiramm Hospital,12.8728525,77.6515698,unknown,,
+bengaluru,12240737170,node,hospital,Netradhama,12.99743,77.5510293,unknown,,
+bengaluru,12246090205,node,police,Mahadevapura Traffic Police,12.9964893,77.6935636,yes,,
+bengaluru,12246090206,node,police,Office Of The Assistant Commissioner Whitefield Subdivision,12.9964748,77.6936783,yes,,
+bengaluru,12265548492,node,police,Unnamed Police,13.0747194,77.633371,yes,,
+bengaluru,12270754747,node,hospital,Sri Sai Hospital,12.871395,77.6542581,unknown,,
+bengaluru,12270754755,node,hospital,Unnamed Hospital,12.8841477,77.6492549,unknown,,
+bengaluru,12270754757,node,hospital,Raksha Hospital,12.8892622,77.6505317,unknown,,
+bengaluru,12389587601,node,hospital,St Philomenas Hospital OPD Building,12.9658506,77.6109015,unknown,08040164346;08040164300,Mother Teresa Road
+bengaluru,12438173201,node,hospital,Hiremath Hospital,12.9754354,77.5358965,unknown,,
+bengaluru,12460939644,node,hospital,Gawai Hospital,12.9962739,77.6075693,unknown,,
+bengaluru,12500298573,node,hospital,Dr. Agarwal's Eye Hospital,12.9678752,77.7500478,unknown,,
+bengaluru,12508687328,node,hospital,Beams Hospitals Private Limited,12.9342277,77.6296323,unknown,,"640, 12Th Main, 80 Ft Road, 4Th Block, Koramangala"
+bengaluru,12536338712,node,hospital,Best Hospital,12.8015345,77.7079091,unknown,,
+bengaluru,12541779301,node,hospital,H Siddiah Referral Hospital,12.9569057,77.5824398,unknown,,
+bengaluru,12570033453,node,hospital,Suraksha Hospitsls,12.939978,77.7467408,unknown,,
+bengaluru,12620153411,node,hospital,Aria,12.9433908,77.7475266,unknown,+91 90907 86110,
+bengaluru,12651764011,node,hospital,"Shri Mokambika Women's Clinic, Child care and Nethralaya",12.9519863,77.4989075,unknown,,Ullal Main Road
+bengaluru,12651764012,node,hospital,Suraksha Diagnostic Centre,12.9519538,77.4990341,unknown,,Ullal Main Road
+bengaluru,12651832969,node,hospital,Cloud Nine,12.9566829,77.7414284,unknown,,
+bengaluru,12670396699,node,police,Cubbon Park Traffic Police Station,12.9760045,77.5981119,yes,,
+bengaluru,12676261338,node,hospital,Jindal Charitable Hospital,12.9937247,77.5539724,unknown,,
+bengaluru,12737013801,node,hospital,Hosmat Hospitals,12.9644726,77.6143018,unknown,+918025593796,"Palmgrove Road, Stage 2, Xavier Layout, Victoria Layout"
+bengaluru,12765777977,node,hospital,Bangalore Gastro Centre,12.9160037,77.6523087,unknown,080 46 888 888,
+bengaluru,12767981104,node,hospital,Narayana Nethralaya,12.980602,77.7092104,unknown,08066121658,
+bengaluru,12879028441,node,hospital,Sree Venkateshwara Hospital,12.9388501,77.7472104,unknown,,
+bengaluru,12909734196,node,police,Hebbal Traffic Police Station,13.0424185,77.5893069,yes,,
+bengaluru,12917084092,node,hospital,AMC Multispeciality Hospital,12.9296701,77.5764082,unknown,,
+bengaluru,12956090274,node,hospital,Proteeth Dental,12.9346221,77.6284665,no,,"5th cross, 4th block"
+bengaluru,12959840781,node,hospital,Trilife Hospital,13.0170153,77.6429262,unknown,,
+bengaluru,12995318310,node,hospital,Big Hospitals,12.9405054,77.5848675,unknown,,
+bengaluru,13065064242,node,hospital,Motherhood,13.0202419,77.6516186,unknown,,
+bengaluru,13072628554,node,hospital,NASA Hospitals,13.0058328,77.6597392,unknown,,
+bengaluru,13164592436,node,hospital,Bangalore Orthopeadic And Surgical Hospital,13.0219385,77.6385853,unknown,,"CMR Main Rd, 3rd Cross,2nd Block HRBR Layout, Kalyan nagar"
+bengaluru,13205997044,node,police,Bengaluru Police - Konankunte Beat,12.8715628,77.5760581,yes,,
+bengaluru,13257391201,node,hospital,Nano Hospitals,12.9070989,77.5460762,unknown,,Dr. Vishnuvardhan Road
+bengaluru,13381419281,node,police,Cybercrime Police Station,12.9903748,77.5929507,yes,,
+bengaluru,13666515767,node,hospital,Sakra World Hospital,12.932315,77.6852483,unknown,,"akra World Hospital - SY NO 52/2, 52/3, Devarabeesanahalli, Varthur Hobli Opp Intel, Outer Ring Rd, Marathahalli"
+bengaluru,13817232442,node,hospital,"Healing Hands Clinic - Indiranagar, Bengaluru",12.9783093,77.6426202,unknown,,Chinmaya Mission Hospital Road
+bengaluru,13817489999,node,hospital,"Healing Hands Clinic - Sahakar Nagar, Bengaluru",13.0635992,77.5895961,unknown,,
+bengaluru,13821019822,node,hospital,"Healing Hands Clinic - HSR Layout, Bengaluru",12.9120415,77.6479898,unknown,,17th Cross Road
+bengaluru,13821035120,node,hospital,"Healing Hands Clinic - Rajajinagar, Bengaluru",12.9981698,77.5429724,unknown,,Modi Hospital Main Road
+bengaluru,13821072256,node,hospital,"Healing Hands Clinic - Sarjapura, Bengaluru",12.8666262,77.767802,unknown,,Sarjapura Main Road
+bengaluru,13821104862,node,hospital,"Healing Hands Clinic - Whitefield, Bengaluru",12.9880628,77.7298427,unknown,,ITPL Main Road
+bengaluru,13926749740,node,hospital,Apollo Cradle & Children's Hospital,12.8695143,77.6542531,unknown,,
+bengaluru,13955109101,node,hospital,Kauvery hospital,12.855088,77.6631602,unknown,,Hewlett Packard Avenue
+bengaluru,14008366201,node,hospital,Sukoon Psychiatry Centre,13.0408289,77.5626277,unknown,,"New Bel road, 2nd main road"
+bengaluru,14072044535,node,hospital,Sunshine Hospital,13.059585,77.648516,unknown,,
+bengaluru,14133768378,node,hospital,Ovum Women & Child Speciality Hospital,12.9072685,77.64555,unknown,,
+bengaluru,14170477502,node,hospital,Dr Ramesh Dalwai Spine Surgeon,12.9324666,77.6853621,unknown,,"Sakra World Hospital, Devarabisanahalli, Bellandu"
+bengaluru,14266374026,node,hospital,Aster DM Healthcare,12.9886866,77.7337079,unknown,,
+bengaluru,32258435,way,hospital,Aster RV Hospital,12.9114199,77.5850249,unknown,08046414641,"24th Main Road, 1st Phase, J P Nagar"
+bengaluru,35133587,way,hospital,Chinmaya Mission Hospital,12.9779337,77.6461885,yes,+91 80 2502 6100,
+bengaluru,36676436,way,hospital,KLE Dental College,13.0305079,77.535667,unknown,,
+bengaluru,37976777,way,hospital,Health Centre,13.0157723,77.5638038,unknown,,
+bengaluru,38536360,way,hospital,K C General Hospital,12.9950532,77.5697431,unknown,,Malleswaran
+bengaluru,38542913,way,hospital,St Marthas Hospital,12.9708175,77.5857431,yes,,"Office No-05, Nrupathunga Road"
+bengaluru,38750705,way,hospital,Vydehi Superspeciality Hospital,12.9681553,77.5950421,unknown,+9180 2227 7979,Vittal Mallya Road
+bengaluru,40631131,way,hospital,Jayanagar General Hospital,12.9261175,77.592549,unknown,0821-2461158,"Near Balodhyana school Mysore, Jayanagara town Mysore, Jayanagara Main Road Mysore"
+bengaluru,40631657,way,hospital,Hospital Complex,12.9383683,77.5899069,unknown,,
+bengaluru,40678727,way,hospital,Sri Jayadeva Institute Of Cardiology,12.918526,77.599265,yes,,Bannerghatta Road
+bengaluru,42407828,way,hospital,BEL Hospital,13.0503387,77.5567647,unknown,,Jalahalli Post
+bengaluru,44091443,way,hospital,"Fortis Hospitals, Bannerghatta Road",12.8947511,77.5985816,yes,,"154/9, Bannerghatta Road, OppositeIIM-B"
+bengaluru,44091445,way,hospital,Apollo Hospital,12.896305,77.5983495,yes,,Bannerghatta Road
+bengaluru,45185764,way,hospital,Bhagwan Mahaveer Jain Hospital,12.9914884,77.5952993,yes,,
+bengaluru,45444044,way,hospital,Bowring and Lady Curzon Hospitals,12.9830115,77.6047116,unknown,+91-80-25591325,Lady Curzon Road
+bengaluru,52063534,way,hospital,Sir Haji Ismail Gosha Sait Hospital,12.9837175,77.599792,unknown,,Venkataswamy Naidu Road
+bengaluru,53849361,way,hospital,Government Veterinary Hospital,12.964165,77.5676947,unknown,,
+bengaluru,53859295,way,hospital,Divisional Railway Hospital,12.9798353,77.5651105,unknown,,
+bengaluru,54963084,way,hospital,Baptist Hospital,13.0347249,77.5901708,yes,08022024700,Bellary Road
+bengaluru,59358741,way,hospital,ESI Hospital,12.9713479,77.6367243,unknown,,
+bengaluru,82432632,way,hospital,Railways Hospital,13.1041114,77.5829963,unknown,,Yelahanka
+bengaluru,82494617,way,hospital,KK Hospital,13.0971434,77.5893851,unknown,,"No: 9, A1, A2, Opp. MEC School, A-Sector Yelahanka"
+bengaluru,89781247,way,hospital,ESI Dispensary,12.992488,77.7062224,unknown,080 28524261,Graphite India Road
+bengaluru,118411722,way,hospital,Rajshekhar Hospital,12.9110143,77.5797725,yes,080 4252 7555,"9th Cross Road, Phase 1, Sarakki Layout, JP Nagar"
+bengaluru,122157597,way,hospital,Karunashraya,12.9574104,77.7134875,unknown,,
+bengaluru,124013168,way,hospital,Sankara Eye Hospital,12.9571436,77.7128215,unknown,,Varthur Road
+bengaluru,124760551,way,hospital,"Sparsh Hospital For Advanced Surgeries, Bengaluru Urban",12.9833345,77.5945358,unknown,,Infantry Road
+bengaluru,124782791,way,hospital,Sri Sathya Sai Institute of Higher Medical Sciences,12.9808814,77.7303048,unknown,,
+bengaluru,131396829,way,police,Siddapura Police Station,12.9388722,77.5923803,yes,,
+bengaluru,132913842,way,hospital,Manipal Speciality Hospital,12.908884,77.5136186,unknown,,
+bengaluru,133061664,way,hospital,"Manipal Hospital, Bengaluru Urban",12.9587074,77.6490296,yes,,"No. 98, Rusthom Bhag, Airport Road"
+bengaluru,133352357,way,hospital,Chaitanya Nursing Home,13.0990774,77.5861467,unknown,,
+bengaluru,133379520,way,hospital,Radhakrishna Multispeciality Hospital,12.9409612,77.5455617,yes,080 2642 2977,"Sunrise Towers, 30th crs JP Rd. Girinagar.,opp Canara Bank"
+bengaluru,133951786,way,hospital,Rajalakshmi Multispeciality Hospital,12.9164637,77.5796155,unknown,,"VR Layout, J. P. Nagar, Bengaluru"
+bengaluru,135262255,way,hospital,Manipal Hospital,12.9585777,77.6481409,unknown,,
+bengaluru,135266042,way,hospital,Indiranagar Government Hospital,12.9829238,77.6446972,unknown,,
+bengaluru,135266057,way,hospital,Isolation Hospital,12.9839262,77.6436191,unknown,,
+bengaluru,135270813,way,hospital,Epidemic Disesase Hospital,12.9864155,77.6437586,unknown,,Old Madras Road
+bengaluru,136492654,way,police,Whitefield Traffic Police Station,12.9942469,77.7571802,yes,,
+bengaluru,138697265,way,hospital,Employees' State Insurance Corporation Model Hospital,12.9909672,77.5535011,yes,,
+bengaluru,141791769,way,hospital,"Vittala International Institute Of Ophthalmology, Hosakerehalli",12.9308127,77.5412224,yes,,"#1,2nd Cross, 2nd Main,7Th Block, Banashankari 3Road Stage, Hosakerehalli"
+bengaluru,146204781,way,hospital,ISRO Employees Hospital,12.966082,77.656317,unknown,,
+bengaluru,148032600,way,hospital,Ramaiah Memorial Hospital,13.0282176,77.569775,yes,,"M S R I T Nagar, New Bel Road"
+bengaluru,148065730,way,hospital,Hosmat Hospital,12.9691029,77.6133228,yes,,"45 Magrath Road, Off Richmond Road"
+bengaluru,150350476,way,hospital,Victoria Hospital,12.9634957,77.5736948,yes,,
+bengaluru,160906231,way,hospital,Manipal Hospital,13.050953,77.5938654,yes,,"Kirloskar Business Park, Bellary Road Hebbal"
+bengaluru,161984945,way,hospital,Dasappa Maternity Hospital,12.9643477,77.5845256,yes,,"Near Town Hall, Sjp Road , South"
+bengaluru,164048206,way,hospital,Isolation Hospital,12.9858278,77.6429649,no,,
+bengaluru,166769940,way,police,Central Police Station,12.9601316,77.5720622,yes,,
+bengaluru,169801514,way,hospital,Sarvodaya Hospital,12.9803669,77.5390159,yes,,"#11/2, Magadi Main Road ,Agrahara , Dasarahalli,Next To Raheja Park"
+bengaluru,169801520,way,hospital,Dasarahalli Referral Hospital,12.9773598,77.5428202,unknown,,"5th Main Road, 7th Cross Road, MC Layout, Vijaynagar"
+bengaluru,175880547,way,hospital,Nethra Eye Hospital,13.0271503,77.5768623,unknown,,"8, Poojary Layout, 80Ft. Road, Rmv Iind Stage,Sanjaynagar"
+bengaluru,188320000,way,hospital,Narayana Hrudayalaya,12.8077543,77.6950585,unknown,,258/A Bommasandra Industrial Area Taluk Bommasandra
+bengaluru,208827398,way,police,Halasuru Gate Traffic Police Station,12.9665425,77.5870156,yes,080 2294 2660,"Cubbon Park Road, Opposite-BBMP Office, Cubbonpet,"
+bengaluru,208827412,way,police,CID Office,12.9814206,77.5855355,yes,,
+bengaluru,239738408,way,hospital,Kidwai Memorial Institute of Oncology,12.936526,77.5981388,yes,,Dr.M.H Marigowda Road
+bengaluru,256703169,way,hospital,P.D. Hinduja Sindhi Hospital,12.9644407,77.5926745,yes,,"1215 A Cross Sindhi Hospital Road, Sampangiramnagar"
+bengaluru,256940540,way,hospital,Nmpc Hospital,13.0224158,77.6580401,yes,,"No. 66, 9Th Main , Horamavu Post Horamavu Main Road Banaswadi"
+bengaluru,259487871,way,hospital,Shri Krishna Sevashrama Hospital,12.9173301,77.5851028,unknown,+918022441631,"#523, 10th Main,45th Cross, 5th Block, Jayanagar"
+bengaluru,262198741,way,hospital,Lions Seva Hospital,12.9555017,77.7053198,unknown,,
+bengaluru,264294673,way,hospital,Sacred Oak,12.8433084,77.6754789,unknown,,ELECTRONI CITY MAIN ROAD
+bengaluru,271785239,way,police,Srirampura Police Station,12.9900504,77.5649365,yes,,
+bengaluru,271786067,way,hospital,Sreerampura Referal Hospital,12.9907432,77.5649082,unknown,,"Bhashyam Circle,Rajajinagar 5Th Block"
+bengaluru,290187542,way,hospital,HAL Hospital,12.9623685,77.6664034,yes,,
+bengaluru,306826547,way,hospital,Pro MED Hospital,12.9294355,77.564005,unknown,,"Banashankari, Bengaluru"
+bengaluru,306861065,way,hospital,Apollo Speciality Hospital,12.9363683,77.5843165,unknown,,"21/2, 14th Cross, 3rd Block, Jayanagar"
+bengaluru,307097150,way,hospital,"Sevakshetra Hospital, Bengaluru Urban",12.9216723,77.5721649,yes,,27th Cross
+bengaluru,307098232,way,hospital,Netradhama Hospital,12.9253024,77.5774064,yes,,Kanakapura Road
+bengaluru,312368010,way,hospital,Subbaiah Hospital,13.0302068,77.560704,yes,,MS Ramaiah Road
+bengaluru,325436710,way,hospital,"Fortis Hospitals Limited, Bengaluru Urban",12.9884932,77.5945504,yes,,Cunningham Road
+bengaluru,327551781,way,police,Cubbon Park Police Station,12.9762185,77.5982315,yes,,
+bengaluru,328758432,way,hospital,ESI Hospital,12.9952459,77.6524378,unknown,,
+bengaluru,330196978,way,hospital,Institute of Ayurveda and Integrative Medicine (I-AIM),13.1256158,77.5468556,unknown,,
+bengaluru,331365081,way,hospital,Milann Fertility Center,12.9788013,77.6380849,unknown,,12th Cross
+bengaluru,332071569,way,hospital,Sanjeevani Hospital,13.0116917,77.5438731,unknown,,"#761, 7th Main, Last Bus Stop, Near Swimming pool, Mahalakshmi Layout"
+bengaluru,332907587,way,police,Additional Director General of Police,12.9779226,77.6010276,yes,,
+bengaluru,333052556,way,hospital,Dr. Agarwal's Eye Hospital,12.9103373,77.6004789,unknown,,
+bengaluru,334493050,way,hospital,Sanjay Gandhi Accident and Trauma Hospital,12.9356389,77.5935945,yes,,
+bengaluru,334493056,way,hospital,Sanjay Gandhi Accident and Trauma Hospital,12.9357711,77.5939433,yes,,
+bengaluru,337987686,way,hospital,Leprosy Hospital,12.9744546,77.5640222,unknown,,
+bengaluru,339095607,way,hospital,Ravi Kirloskar Memorial Hospital,13.0384676,77.527802,yes,,"19, 2nd Main Road, 1st Phase Peenya Industrial Area"
+bengaluru,345926542,way,hospital,Dr. Agarwal Eye Hospital,13.0943148,77.58071,unknown,,
+bengaluru,345954862,way,hospital,Annasawmy Mudaliar General Hospital,12.9999803,77.6144986,unknown,,"No 1 Moore Market Square, Bourdillon Road, Fraser Town"
+bengaluru,345964025,way,hospital,Arth Ayurveda World,12.9685282,77.6457748,unknown,,13th Main Road
+bengaluru,346156811,way,hospital,"Neha Prakash Hospital, Bengaluru Urban",13.1077314,77.5717299,unknown,,"# 8, V Phase, 6th Cross, New Town"
+bengaluru,346190765,way,hospital,Sri Lakshmi Venkateshwara Hospital,13.1056278,77.5772997,unknown,,
+bengaluru,346195951,way,hospital,Prolife Hospital,13.065084,77.5936343,unknown,,"Byatarayanapura, Bengaluru"
+bengaluru,346449367,way,hospital,Amrik Hospital,12.9828993,77.7478126,no,,
+bengaluru,346481825,way,police,Amrutahalli Police Station,13.0569304,77.5985304,yes,,
+bengaluru,346521829,way,hospital,Indicus,13.0146094,77.6464563,unknown,,2nd Cross Road
+bengaluru,346711854,way,hospital,Shyamala Hospital,12.9714272,77.627494,no,,Cambridge Road
+bengaluru,346714039,way,hospital,Ways2Guide Speech Therapy Center,12.9599619,77.7126304,unknown,,"3rd Cross Road, Vaikuntam Layout"
+bengaluru,346722362,way,hospital,Government Primary Health Centre,12.9718119,77.693776,unknown,,"Vibhutipura Extension, Doddanekundi"
+bengaluru,346842857,way,hospital,Kinder Women's Hospital & Fertility Center,12.9920515,77.7064747,yes,+91 80 2888 8880,
+bengaluru,346857854,way,police,HAL Police Station,12.955069,77.6828084,yes,,
+bengaluru,347071790,way,hospital,Medicare Diagnostics,13.0285228,77.5587301,unknown,,
+bengaluru,347074890,way,hospital,Abhaya Hospital,12.9462857,77.5947772,unknown,,"17, Dr.M.H.Mari Gowda Road, Opp Wilson Garden"
+bengaluru,347113528,way,hospital,Tirumalai Eye Clinic,12.9194536,77.5838939,unknown,,
+bengaluru,347120731,way,hospital,MS Diabetes Speciality Center,12.9807106,77.646011,unknown,,
+bengaluru,347120748,way,hospital,Shashank Clinic,12.9265095,77.5808392,unknown,,5th Main Road
+bengaluru,347167749,way,hospital,BBMP Maternity Hospital,12.9491888,77.5968148,unknown,,
+bengaluru,347175871,way,hospital,Ramakrishna Clinic,12.978694,77.5744614,no,,4th Cross
+bengaluru,347187836,way,hospital,ESI Hospital,12.9279948,77.5894064,unknown,,
+bengaluru,347236390,way,hospital,Unnamed Hospital,12.9346732,77.6287815,unknown,,
+bengaluru,347236620,way,police,JP Nagar Police Station,12.9118515,77.5875409,yes,,
+bengaluru,347425037,way,police,S.J. Park Police,12.9609483,77.5831297,yes,,
+bengaluru,347485349,way,hospital,Apollo Hospital,12.9883419,77.5726976,unknown,,
+bengaluru,347497660,way,hospital,Supra Hospital,12.9928137,77.5386455,unknown,,"334, 3rd Stage, 4th Block, Basaveshwaranagar"
+bengaluru,347497848,way,hospital,GM Hospital,12.9929463,77.5386927,yes,,"8th Main, 3rd Stage"
+bengaluru,348159485,way,police,Soladevanahalli Police Station,13.0937944,77.4907575,yes,,
+bengaluru,348229715,way,hospital,Sakhi Hospital (A Unit Of Prasad Healthcare Services),12.9052747,77.6031945,unknown,,"123, 7 Th Cross Dollas Colony,Billekhalli,Off Bannerghatta Road,Btm Stage Ii"
+bengaluru,348287598,way,hospital,Prashanth Hospitals,12.9391883,77.5513126,unknown,,"SBM Colony, Banashankari, Bengaluru"
+bengaluru,348457970,way,police,Madiwala Traffic Police Station,12.9210124,77.6206703,yes,+91 80 2294 2568,"Madiwala Road, Santhosapuram, 1st Block Koramangala, Koramangala"
+bengaluru,348827364,way,hospital,Vagus Super Speciality Hospital,13.0084773,77.5684217,unknown,080-23569970,18th Cross Road
+bengaluru,349794011,way,police,Mico Layout Police Station,12.908585,77.6106985,yes,,
+bengaluru,350750824,way,hospital,Ovum Hospitals,13.0171298,77.6432944,unknown,,8th Main Road (west)
+bengaluru,351121389,way,hospital,Unnamed Hospital,13.0546111,77.5915016,unknown,,
+bengaluru,351326759,way,hospital,Deepak Hospital,12.9262236,77.5775108,unknown,,
+bengaluru,354557914,way,hospital,Gopala Eye Care Centre,12.9883622,77.5343261,unknown,,
+bengaluru,360342803,way,hospital,Manipal Hospitals,12.9583372,77.7454453,yes,,
+bengaluru,360347699,way,hospital,Jeevika Hospital,12.9659074,77.7025531,yes,,
+bengaluru,363870191,way,hospital,Sharada Medicals,13.0152635,77.6467105,unknown,,8th E Main Road
+bengaluru,367578285,way,hospital,SDM Institute of Ayurveda & Hospital,12.8938602,77.4572342,unknown,,
+bengaluru,369295552,way,hospital,Halasuru Referal Hospital,12.973692,77.6266773,unknown,,"Kembridge Road, Near Police Station"
+bengaluru,369295553,way,police,Halasuru Police Station,12.9747811,77.6252778,yes,,
+bengaluru,371602983,way,hospital,Manipal Hospital,12.9882084,77.5921572,unknown,,"No.71/1, Millers Road, Opp. St. Anne's College, Bengaluru"
+bengaluru,372545827,way,hospital,BBMP Primary Health Center,12.9591543,77.6464476,unknown,,
+bengaluru,398113412,way,hospital,The Fracture and Orthopaedic Clinic,13.0081737,77.5634644,unknown,,
+bengaluru,400480962,way,hospital,CSI Hospital,12.991305,77.6011314,unknown,080 22861103,"Post Bag No.4, No.2, Hazarat Kambal Posh Road"
+bengaluru,401993917,way,hospital,Government Hospital,12.9490229,77.6199247,unknown,,
+bengaluru,403473919,way,police,Ashok Nagar Police Station,12.9716319,77.6102037,yes,,
+bengaluru,442048030,way,hospital,Sagar Hospitals,12.9278986,77.599855,yes,08042888888,"#44, 54, 30th Cross Rd, Bannerughatta Approach Road Layout, 4th T Block East, Tilak Nagar, Jayanagar,"
+bengaluru,442048031,way,hospital,Sagar Hospital,12.9078674,77.5651623,unknown,,
+bengaluru,478206073,way,hospital,Command Hospital (Air Force),12.9638769,77.627935,unknown,,Air Force
+bengaluru,487591672,way,hospital,Yelahanka Government Hospital,13.0995716,77.5962927,unknown,,"Bagaluru Cross, Yelahanka, Armed Police Training School"
+bengaluru,487956103,way,hospital,St. Philomena's Hospital,12.9649568,77.6111852,unknown,080 4016 4433,"Mother Theresa Rd, Vivek Nagar Post, Near Life Style, Xavier Layout, Victoria Layout"
+bengaluru,496821816,way,hospital,Government Maternity Hospital,12.9377267,77.5697859,unknown,,
+bengaluru,509638758,way,hospital,HCG Cancer Hospital,12.9637737,77.5896796,unknown,+918040206000,P. Kalinga Rao Road
+bengaluru,512626192,way,hospital,Al-Ameen Hospital,12.9898869,77.5942601,unknown,,"Cunnigham Road, 2nd Cross No:3"
+bengaluru,513532062,way,hospital,St. Theresa's Hospital,13.0067504,77.5529389,unknown,,Dr Rajkumar Road
+bengaluru,525508983,way,hospital,Shirdi Sai Hospital,13.0668492,77.6394164,yes,,
+bengaluru,535587224,way,hospital,Life Hospital,12.9756177,77.6470614,unknown,,
+bengaluru,537716165,way,police,Kothanur Police Station,13.0555139,77.6463263,yes,,
+bengaluru,549373054,way,hospital,South City Hospital,12.9496516,77.5803074,unknown,,
+bengaluru,598030834,way,hospital,Manipal Hospitals Whitefield,12.9880712,77.7286414,yes,1800 3001 4000,Whitefield Main Road
+bengaluru,608640663,way,hospital,"Sparsh Hospital, Bengaluru Urban",12.8069097,77.6957524,unknown,,"29/P2, The Health City Bommanasandra Industrial Area, Hosur Road Bommasandra"
+bengaluru,608640669,way,hospital,Mazumdar Shaw Medical Center,12.8066737,77.6946919,unknown,,"258/A, Bommasandra Industrial Area, Anekal Taluk"
+bengaluru,610388969,way,police,HSR Police station,12.9201775,77.6513034,yes,,
+bengaluru,610389734,way,police,Bellanduru Police Station,12.9190149,77.6679644,yes,+91 80 2574 7771,"Sarjapur Road, PWD quarters, 1st sector, Bellandur"
+bengaluru,610471335,way,hospital,Motherhood,12.9179135,77.6722553,unknown,,
+bengaluru,611385979,way,hospital,Manipal Hospitals,12.9199685,77.6652549,yes,,
+bengaluru,611698410,way,hospital,touchwood,12.9059995,77.6511229,unknown,,
+bengaluru,613474107,way,hospital,Suvarnamukhi,12.9135595,77.6795552,yes,+91 98451 26869,"Kaikondrahalli, Sarjapur Road"
+bengaluru,628639504,way,police,Gangammagudi Police Station,13.0720972,77.5301925,yes,,
+bengaluru,631580848,way,hospital,Sakra World,12.9322182,77.6853258,yes,080 4962 4962,Kariammana Agrahara Road
+bengaluru,632111019,way,hospital,Rainbow Children's Hospital,12.9753078,77.697834,yes,,
+bengaluru,639010019,way,hospital,Agadi Hospital,12.9492019,77.5977936,unknown,,"35, Siddiah Road, Wilson Garden"
+bengaluru,655045245,way,hospital,Punarjani Ayurvedic Multispeciality Hospital,12.8964133,77.6950639,unknown,,"14/2,Chikkanayakanahalli Village, Off Sarjapur Road"
+bengaluru,668074515,way,hospital,Sri Sri Ayurveda hospital,12.8222,77.5217734,unknown,,"Ved Vignan Maha Vidya Peeth, 21st Km, Kanakpura Road, Udayapura P.O"
+bengaluru,668612952,way,police,Unnamed Police,12.8766721,77.6000885,yes,,
+bengaluru,674106057,way,hospital,Svastha Hospital,12.9659169,77.749386,yes,,Whitefield Main Road
+bengaluru,674362377,way,hospital,Sparsh Hospital,13.0277509,77.5429924,unknown,00919019108108,Tumkur Road
+bengaluru,678066777,way,hospital,Unnamed Hospital,12.8980981,77.6338265,unknown,,
+bengaluru,687319732,way,hospital,BMS Hospital,12.9413364,77.5674679,unknown,,"618, Sri Mallikarjuna Swamy Temple St, N.R. Colony"
+bengaluru,695545711,way,hospital,Medical Centre,12.9246391,77.5006239,unknown,,
+bengaluru,697081723,way,hospital,M C Modi Eye Hospital,12.9980069,77.5459005,unknown,,"Modi Hospital Road, Mahalakshmipuram"
+bengaluru,704936395,way,hospital,Pushpa Nursing Home,12.9689004,77.7494952,unknown,+917676548532,Whitefield Main road
+bengaluru,726095464,way,hospital,Unnamed Hospital,13.0177672,77.5417058,unknown,,
+bengaluru,726119799,way,hospital,Nrr Hospital,13.0725243,77.5035875,unknown,,"No.3 & 3A, Hesarghatta Main Road,Chikkasandra,Next To Janapriya Apartment,Near Chikkabanavara Railway Station"
+bengaluru,726190880,way,hospital,Arunodaya Hospitals,13.057066,77.508511,unknown,,"#18-23, Maliasandra Main Road,4Th & 5Th Cross, Bagalagunte,Hesaraghatta Road"
+bengaluru,726342145,way,hospital,Dr Ramachandra Hospital,13.048319,77.5080361,unknown,,"No.30 Hesaraghatta Road , T Dasarahalli"
+bengaluru,726497370,way,hospital,Government Hospital,13.0991845,77.5968656,unknown,,
+bengaluru,726506664,way,hospital,Deeksha Hospital,13.0982401,77.5970471,unknown,,"387/347, Next To Post Office, B.B.Road Nehru Nagar, Yehlanka Old Town"
+bengaluru,742634558,way,hospital,Puneeth Rajkumar Multispeciality Hospital,12.9414292,77.5226387,unknown,,
+bengaluru,766720021,way,hospital,CRPF Hospital,13.1247842,77.5764128,unknown,,
+bengaluru,772203209,way,hospital,"HOSMAT Hospital, Kalyan Nagar",13.028489,77.6325562,unknown,,Hennur Main Road
+bengaluru,772835104,way,police,Sadhashivanagar Police Station,13.0149658,77.5724873,yes,,
+bengaluru,773577275,way,hospital,Navachethana Hospital,13.1036126,77.5837987,unknown,,3rd B Cross Road
+bengaluru,774716173,way,police,Yelahanka Police Station,13.095358,77.5938103,yes,,
+bengaluru,774947265,way,hospital,Natus Woman and Children Hospital,12.9427199,77.525514,unknown,,
+bengaluru,775169696,way,police,High Grounds Police Station,12.9900595,77.5927243,yes,,
+bengaluru,781541656,way,police,Mahalakshmipuram Police Station,13.0028414,77.547416,yes,,
+bengaluru,782014099,way,police,Cyber Crime Police Station,12.9840887,77.5947229,yes,,
+bengaluru,782014100,way,police,Commisioner of Police,12.9844786,77.5946399,yes,,
+bengaluru,785273431,way,hospital,Jindal Naturecure Institute hospital,13.0489534,77.4830031,unknown,,Jindal Nagar Tumkur Road
+bengaluru,796370470,way,hospital,ITI General Hospital,13.0046358,77.6823567,unknown,,
+bengaluru,796374051,way,hospital,JC Nagar Municipal Hospital,13.0099309,77.5941222,unknown,,"Munireddypalya, J.C.Nagar, Bengaluru"
+bengaluru,963352879,way,police,R T Nagar Traffic Police station,13.0333764,77.5886106,yes,,
+bengaluru,963357010,way,hospital,NIKISA Dementia Village,13.1114469,77.5550611,unknown,,
+bengaluru,991531036,way,hospital,Government Homeopathic Hospital,12.9830546,77.536518,unknown,,"Stage 1, KHB Colony, Basaveshwar Nagar, Bengaluru, Karnataka"
+bengaluru,997867402,way,police,KR Puram Police Station,13.0086326,77.6932057,yes,,New Police Station Road
+bengaluru,997923996,way,hospital,Dr. P.R. Desai Hospital Pvt Ltd,12.9863583,77.5792111,unknown,,"6/6 Kumarakrupa Road OppositeShivananda Circle , High Grounds"
+bengaluru,1013443903,way,hospital,Manipal Hospital Yeshwantpur,13.0142942,77.5560784,yes,080 3989 8969,"Brigade Gateway, Beside Metro Cash and Carry West, Malleshwaram"
+bengaluru,1030050639,way,police,Upparpet Traffic Police Station,12.9745187,77.5749342,yes,,
+bengaluru,1039668732,way,hospital,"Shifa Hospital, Bengaluru Urban",12.9900045,77.5989675,unknown,,Queen's Road
+bengaluru,1039760096,way,hospital,Diacon Hospital,13.0037443,77.5498305,unknown,,"359 / 360, 19Th Main 1 St Block Rajajinagar Near Indian Bank"
+bengaluru,1040899005,way,hospital,Aster CMI Hospital,13.0545318,77.5918707,unknown,,
+bengaluru,1040899015,way,hospital,Rainbow Children's Hospital,13.0655647,77.5937383,unknown,,
+bengaluru,1050574678,way,police,Kumbalagodu Police Station,12.8842174,77.4498569,yes,,
+bengaluru,1064840032,way,hospital,Vikram Aura Hospitals,12.9656576,77.6097218,unknown,,
+bengaluru,1065763447,way,police,Unnamed Police,12.885446,77.671825,yes,,
+bengaluru,1071044455,way,hospital,Cloudnine,12.9244197,77.6724971,unknown,,
+bengaluru,1071057533,way,hospital,Spandana,12.8670052,77.7671289,unknown,,
+bengaluru,1071257248,way,hospital,BN Specialty Hospital,12.9124863,77.6765573,unknown,,
+bengaluru,1072674743,way,hospital,Aster Women and Children Hospital,12.9883438,77.7339468,unknown,,Sadarmangala Road
+bengaluru,1073073120,way,hospital,Prakriya Hospital,13.0463371,77.5065296,unknown,,
+bengaluru,1075362335,way,hospital,Motherhood Whitefield,12.9589657,77.7467194,unknown,18002585727,
+bengaluru,1076398555,way,police,Police Headquarters,12.9695587,77.587855,yes,,
+bengaluru,1081215245,way,police,Department of Prisons & Correctional Services,12.9802646,77.5815071,yes,,
+bengaluru,1081463156,way,hospital,People Tree Hospitals,13.0282887,77.5391464,unknown,+9180 4959 9999,"Tumkur Road, Opp. Taj Vivanta, Goraguntepalya"
+bengaluru,1082139631,way,hospital,Apollo Cradle,12.9667468,77.7172779,unknown,,
+bengaluru,1083566607,way,hospital,Charaka Super Speciality Hospital,12.9896386,77.60226,unknown,,
+bengaluru,1084220447,way,hospital,Unnamed Hospital,13.0058093,77.5694388,unknown,,
+bengaluru,1084382246,way,police,Adugodi Traffic Police Station,12.9415666,77.6087598,yes,080 2294 3119,"Corporation Complex,1st Floor, Hosur-Lashkar Road, Near-Vijaya Bank, Adugodi"
+bengaluru,1084382251,way,police,Adugodi Police Station,12.9392272,77.6101711,yes,,
+bengaluru,1084735142,way,police,City Armed Reserve North,13.0753016,77.6356014,yes,,
+bengaluru,1087700050,way,police,Yeshwantpura Police Station,13.0178863,77.5584179,yes,,
+bengaluru,1088209015,way,hospital,Karunalayam Hospital,12.9112661,77.7075837,unknown,,
+bengaluru,1088209026,way,police,Whitefield Police Station -Office of the Deputy Commisionner,12.9754425,77.7511459,yes,080 22434 72,Whitefield Main Road
+bengaluru,1089884368,way,hospital,Phoenix Hospital,12.9166101,77.6450517,yes,,
+bengaluru,1091543251,way,police,Superintendent of Police,12.9895821,77.5920271,yes,,
+bengaluru,1095561501,way,hospital,ESI Hospital Malleshwaram Branch,13.0151199,77.5600013,unknown,,
+bengaluru,1097519307,way,hospital,Bhoomi Diagnostics,12.9116986,77.6495441,unknown,,
+bengaluru,1099665412,way,hospital,Narayana Multispeciality Hospital,12.9081745,77.643511,unknown,,"Ca Site No 1, Basant Health Centre Building, 18th Main, Opposite Hsr Club"
+bengaluru,1099882755,way,police,Koramangala Police Station,12.9410977,77.6214106,yes,,
+bengaluru,1107016495,way,police,Pulakeshi Nagar Police Station,12.9993467,77.619613,yes,,
+bengaluru,1108934944,way,hospital,Rainbow Children's Hospital,12.9033828,77.6007409,yes,,Bannerghatta Road
+bengaluru,1110808778,way,hospital,Sparsh Hospital,13.0949654,77.5986449,unknown,,
+bengaluru,1111108766,way,police,Rajaji Nagar Police Station,12.99461,77.5543664,yes,,
+bengaluru,1119204858,way,hospital,Oxford Medical College Hospital,12.7870581,77.7573413,unknown,,
+bengaluru,1124828967,way,police,High Grounds Traffic Police Station,12.9847727,77.5829241,yes,,
+bengaluru,1127413532,way,hospital,Miracle Hospital,13.0091404,77.7590705,unknown,,
+bengaluru,1141353122,way,hospital,Suguna Hospital,12.9882302,77.5600393,yes,,Dr Rajkumar Road
+bengaluru,1148268346,way,police,Kumaraswamy Layout Police Station,12.9050939,77.5629547,yes,,
+bengaluru,1148876100,way,hospital,"Sparsh Hospital, Hennur",13.040171,77.6406846,unknown,,
+bengaluru,1149213001,way,hospital,Dr Agarwal's Eye Hospital,12.9569001,77.6047605,no,,"15, Eagle Street Langford Town Shanti Nagar"
+bengaluru,1153736764,way,police,Viveknagar Police Station,12.9518683,77.622351,yes,,
+bengaluru,1157218004,way,police,Shivajinagar Traffic Police Station,12.9879685,77.6035505,yes,,
+bengaluru,1168448945,way,hospital,Government Primary Health Centre,13.097274,77.6477522,unknown,,"Kannuru Main Road, Mitganahalli, Bellahalli"
+bengaluru,1176579523,way,police,Konanakunte Police Station,12.8838351,77.5663627,yes,,
+bengaluru,1178505994,way,hospital,Snehadaan Hospital,12.9017283,77.7155216,unknown,,
+bengaluru,1182315656,way,hospital,SS Sparsh Hospital,12.9264187,77.5216783,unknown,,
+bengaluru,1182880586,way,hospital,KPTCL Hospital Yelahanka,13.1166792,77.5800714,unknown,,
+bengaluru,1187884325,way,police,Bagaluru Police Station,13.1401026,77.6704343,yes,,
+bengaluru,1189287978,way,police,Old Marathahalli Police Station,12.945572,77.6978864,yes,,
+bengaluru,1193177992,way,hospital,Cloud Nine,12.9156928,77.6752029,yes,+91 99728 99728,
+bengaluru,1195581196,way,hospital,BBMP Hospital,12.9949885,77.5937862,unknown,,
+bengaluru,1202598212,way,police,DJ Halli Police Station,13.0114152,77.6130934,yes,,
+bengaluru,1205832181,way,hospital,Unnamed Hospital,12.9609083,77.5611598,unknown,,
+bengaluru,1209132340,way,hospital,Manipal Hospital North,13.1076284,77.6033814,unknown,,
+bengaluru,1217247634,way,police,Unnamed Police,12.9654109,77.5100015,yes,,
+bengaluru,1217375998,way,hospital,Jnana Sanjeevini,12.9162232,77.5890247,unknown,,"JP Nagar, Bengaluru"
+bengaluru,1233498703,way,hospital,Anupamaa Hospital,13.0937967,77.5893672,unknown,,
+bengaluru,1233754516,way,police,Office of the Assisstant Commisioner of the Police,13.1001374,77.5839619,yes,,
+bengaluru,1238631225,way,police,Vijayanagara Traffic Police Station,12.9606478,77.5408201,yes,,
+bengaluru,1244123389,way,hospital,HCG Hebbal,13.0658864,77.5939666,unknown,,
+bengaluru,1257327546,way,hospital,Brains Super Speciality Hospital,12.9478274,77.5924806,unknown,,
+bengaluru,1267842328,way,hospital,PESU HOSPITAL,12.8627925,77.6662881,yes,,
+bengaluru,1270817507,way,hospital,Vasavi Hospital,12.9031532,77.5603082,unknown,,
+bengaluru,1272767220,way,hospital,Brains Hospital,13.1183866,77.6082057,unknown,,"BSF Campus, Yelahanka, Bengaluru"
+bengaluru,1280619026,way,hospital,ESI Hospital Peenya,13.0249864,77.530936,unknown,,
+bengaluru,1290198690,way,hospital,Rainbow Childrens Hospital,12.9202359,77.6674739,yes,+91 08062261218,Sarjapura Road
+bengaluru,1298074067,way,hospital,Safa Medicure Hospital,12.9447394,77.5964164,unknown,,
+bengaluru,1298823129,way,hospital,Chaitanya Medical Centre Maternity and Surgical Care,13.0924907,77.5863327,unknown,,15th A Cross
+bengaluru,1307025478,way,police,Wilson Garden Police Station,12.9501836,77.5961204,yes,,
+bengaluru,1307949928,way,hospital,Rangadore Memorial Hospital,12.9538911,77.5711462,yes,,DV Gundappa Road
+bengaluru,1311064558,way,hospital,Trustwell Hospitals,12.9606538,77.5840403,unknown,,Jayachamaraja Wodeyar Road
+bengaluru,1314992053,way,hospital,St. John's Health Centre,12.8137466,77.5104134,unknown,+91 080 26274301,Kanakapura Road
+bengaluru,1320013891,way,hospital,BEML Hospital,12.971172,77.6651791,unknown,,
+bengaluru,1330344687,way,police,Basavangudi Police Station,12.9421865,77.5743328,yes,,
+bengaluru,1347724899,way,hospital,Sri Vishveshathirtha Memorial Hospital,12.9566836,77.712382,yes,,
+bengaluru,1351244014,way,police,Hennur Traffic Police Station,13.0706327,77.6363671,yes,,
+bengaluru,1352267564,way,hospital,Government Maternity Hospital,13.0214793,77.55361,unknown,,
+bengaluru,1353870716,way,police,Mahadevpura Police Station,12.9968133,77.6928379,yes,,Whitefield Road
+bengaluru,1354126975,way,police,Baiyyapannahalli Police Station,12.9917352,77.6573426,yes,,
+bengaluru,1360644157,way,hospital,Government Multi-Speciality Hospital,12.9510658,77.4810597,unknown,,
+bengaluru,1362578786,way,hospital,Klinik Guhen - Dental Clinic,12.9090409,77.66389,yes,+916366800859,Haralur Main Road
+bengaluru,1366035450,way,hospital,Cadambam's Psychiatric Hospital,12.7964954,77.5274237,unknown,,
+bengaluru,1366656620,way,police,Banaswadi Police Station,13.0196732,77.6401561,yes,,
+bengaluru,1370050102,way,police,Subramanyanagar Police Station,13.0033745,77.5537585,yes,,
+bengaluru,1377007431,way,police,Bharthinagar Police Station,12.9911983,77.6120845,yes,080 2294 2548,"Frazer Town Police Station, Near-Mark Circle, Frazer Town"
+bengaluru,1386042651,way,police,RT Nagar Police Station,13.0246853,77.5931961,yes,,
+bengaluru,1395462349,way,hospital,Yadiyuru Maternity Hospital,12.9271061,77.576658,unknown,,"7Th Main, 4Th Cross, Kanakpura Main Road , Bangalore North"
+bengaluru,1395462350,way,hospital,Ayurveda Prathisthana Hospital,12.9267938,77.5772972,unknown,,
+bengaluru,1414809361,way,hospital,East Point Hospital and Medical College,13.0529326,77.7172701,unknown,,
+bengaluru,1416675134,way,police,Kadugondanahalli Traffic Police Station,13.0198144,77.619254,yes,,
+bengaluru,1416675135,way,police,Kadugondanahalli Police Station,13.0194119,77.6192385,yes,,
+bengaluru,1419688646,way,hospital,Vimalaya Hospital,12.8348606,77.6807681,unknown,,Hosur Road
+bengaluru,1421739175,way,hospital,Shanthinilaya Hospital,13.0207585,77.7016687,unknown,,"K.R.Puram, Battarahalli, Bengaluru"
+bengaluru,1427144679,way,hospital,Apex Hospital,13.115139,77.6339212,unknown,,
+bengaluru,1432018658,way,hospital,Vignan Hospital,12.9438635,77.5969221,unknown,,
+bengaluru,1432357757,way,hospital,Mahanandi,12.967036,77.717977,unknown,,
+bengaluru,1433363981,way,hospital,Aarogya Hastha Hospital,12.9005656,77.6757868,unknown,,
+bengaluru,1442330288,way,hospital,Life Care Hospital,12.9239736,77.6133232,yes,080 2684 6677,Maruthi Nagar Main Road
+bengaluru,1443188659,way,police,Rajarajeshwari Nagar Police Station,12.9128125,77.520516,yes,080 2294 2559,"Mysore Road, Rajarajeshwari Nagar, Sachidananda Nagar, RR Nagar"
+bengaluru,1443406415,way,police,KR Puram Traffic Police Station,13.0078716,77.6938172,yes,,Old Madras Road
+bengaluru,1450036308,way,police,Varthur Police Station,12.9380254,77.7469329,yes,,Varthur Main Road
+bengaluru,1456924436,way,hospital,Unnamed Hospital,13.0564574,77.7156811,unknown,,
+bengaluru,1458729111,way,police,Basaveshwaranagar Police Station,12.9854169,77.5426024,yes,,
+bengaluru,1495637250,way,hospital,BGS Medical College Hospital,13.0912518,77.4262226,unknown,,
+bengaluru,1498008160,way,hospital,Netradhama Eye Hospital,13.0947708,77.5832502,unknown,,
+bengaluru,1511814372,way,hospital,Aster Whitefield Hospital,12.9890029,77.7338372,unknown,,"Plot No.3 and 4, Sadaramangala Industrial Area, Near Itpl"
+bengaluru,1540946659,way,hospital,Kaggalipura Government Hospital,12.8050377,77.5121793,unknown,8277515873,"MAIN ROAD, KANAKAPURA MAIN ROAD"
+bengaluru,1544830710,way,hospital,SPS Surgicals,12.9541576,77.6608368,unknown,,
+bengaluru,1559251643,way,hospital,HMT Hospital,13.0495632,77.5509192,unknown,,
+bengaluru,1564413565,way,hospital,Miracle Hospital,12.9298029,77.7398726,unknown,,
+bengaluru,1570552542,way,police,Marathahalli Police Station,12.9444048,77.6973781,yes,,
+bengaluru,2025893,relation,hospital,Vanivilas Women and Children Hospital,12.9614692,77.5736889,yes,,
+bengaluru,2025895,relation,hospital,Minto Eye Hospital,12.9610731,77.572289,yes,,
+bengaluru,2187206,relation,hospital,M S Ramaiah Hospital,13.0297293,77.5685912,yes,,
+bengaluru,2215604,relation,hospital,Faculty Of Dental Sciences,13.0292222,77.5693751,yes,,
+bengaluru,3397490,relation,hospital,Rajarajeshwari Medical College and Hospital,12.8951439,77.461988,unknown,,
+bengaluru,4497967,relation,hospital,Vydehi Institute Of Medical Sciences And Research Centre,12.9754934,77.7293535,yes,,"82, Epip Area Nellurahalli White Field Road"
+bengaluru,5397008,relation,hospital,Sapthagiri Hospital,13.0705768,77.5023526,unknown,,"#15, Chikkasandra, Hesaraghatta Main Road"
+bengaluru,17069662,relation,hospital,St.John's Medical College Hospital,12.929648,77.6185932,yes,,Sarjapur Road
+bengaluru,curated_fs_01,node,fire_station,Bengaluru Secretariat Fire Station,12.977766,77.589087,yes,101,"Vidhana Soudha, Bengaluru"
+bengaluru,curated_fs_02,node,fire_station,High Grounds Fire Station,12.980723,77.580304,yes,101,"Millers Road, High Grounds, Bengaluru"
+bengaluru,curated_fs_03,node,fire_station,Ulsoor / Sivanchetti Fire Station,12.9812,77.6185,yes,101,"Annaswamy Mudaliar Road, Halasuru, Bengaluru"
+bengaluru,curated_fs_04,node,fire_station,Bengaluru South Fire Station (HQ),12.972409,77.61086,yes,101,"Field Marshal Cariappa Rd, Ashok Nagar, Bengaluru"
+bengaluru,curated_fs_05,node,fire_station,Bengaluru North Fire Station,12.962526,77.563082,yes,101,"Sirsi Circle, Mysore Road, Chamarajpet, Bengaluru"
+bengaluru,curated_fs_06,node,fire_station,Rajajinagar Fire Station,12.980473,77.548617,yes,101,"1st Main Rd, Industrial Town, Rajajinagar, Bengaluru"
+bengaluru,curated_fs_07,node,fire_station,Hebbal Fire Station,13.048455,77.618139,yes,101,"Bellary Road, Hebbal, Bengaluru"
+bengaluru,curated_fs_08,node,fire_station,Thanisandra Fire Station,13.0512,77.6254,yes,101,"Manyata Tech Park / Thanisandra Main Rd, Bengaluru"
+bengaluru,curated_fs_09,node,fire_station,Yelahanka Fire Station,13.125133,77.600948,yes,101,"BBMP Complex, Yelahanka, Bengaluru"
+bengaluru,curated_fs_10,node,fire_station,Banaswadi Fire Station,13.011564,77.64592,yes,101,"Dodda Banaswadi Main Rd, Bengaluru"
+bengaluru,curated_fs_11,node,fire_station,ITI Fire Station,13.003798,77.67864,yes,101,"Old Madras Road, Dooravani Nagar, Bengaluru"
+bengaluru,curated_fs_12,node,fire_station,Hoskote Fire Station,13.06605,77.779,yes,101,"National Highway 75, Hoskote, Bengaluru"
+bengaluru,curated_fs_13,node,fire_station,Mahadevapura Fire Station,12.99859,77.702669,yes,101,"Outer Ring Road, Mahadevapura, Bengaluru"
+bengaluru,curated_fs_14,node,fire_station,Whitefield Fire Station,12.987356,77.73264,yes,101,"EPIP Zone, Whitefield, Bengaluru"
+bengaluru,curated_fs_15,node,fire_station,Sarjapur Road Fire Station,12.916863,77.673745,yes,101,"Sarjapur Main Road, Bellandur / Kaikondrahalli, Bengaluru"
+bengaluru,curated_fs_16,node,fire_station,Electronics City Fire Station,12.835533,77.662695,yes,101,"Phase 1, Electronic City, Hosur Road, Bengaluru"
+bengaluru,curated_fs_17,node,fire_station,Jayanagara Fire Station,12.935181,77.600854,yes,101,"Bannerghatta Road / 9th Block Jayanagar, Bengaluru"
+bengaluru,curated_fs_18,node,fire_station,Banashankari Fire Station,12.922952,77.561995,yes,101,"100 Feet Ring Road, Banashankari, Bengaluru"
+bengaluru,curated_fs_19,node,fire_station,Hulimavu Fire Station,12.872264,77.598791,yes,101,"Bannerghatta Main Road, Hulimavu, Bengaluru"
+bengaluru,curated_fs_20,node,fire_station,Anjanapura Fire Station,12.859067,77.563267,yes,101,"Anjanapura 80 Feet Road, Bengaluru"
+bengaluru,curated_fs_21,node,fire_station,Nagarbhavi Fire Station,12.935527,77.509925,yes,101,"Bangalore University Campus, Mysore Rd, Nagarbhavi, Bengaluru"
+bengaluru,curated_fs_22,node,fire_station,Sunkadakatte Fire Station,12.974212,77.421651,yes,101,"Magadi Main Road, Sunkadakatte, Bengaluru"
+bengaluru,curated_fs_23,node,fire_station,Peenya Fire Station,13.028053,77.520669,yes,101,"Peenya 1st Stage, Industrial Area, Bengaluru"
+bengaluru,curated_fs_24,node,fire_station,Yeshwantpur Fire Station,13.022558,77.549758,yes,101,"Tumkur Road, Yeshwantpur, Bengaluru"
+bengaluru,curated_fs_25,node,fire_station,Nelamangala Fire Station,13.0998,77.3893,yes,101,"Tumkur Road Bypass, Nelamangala, Bengaluru"

@@ -1,0 +1,17 @@
+QUANTIFICATION OF EMERGENCY FACILITY LAYOUT DIFFERENCES
+============================================================
+Bengaluru (Radial Inland) vs Chennai (Linear Coastal)
+
+POLICE STATIONS:
+  Count:                    BLR = 128, CHN = 108
+  Clark-Evans R:            BLR = 1.089, CHN = 1.213
+  Mean NN Spacing:          BLR = 1.31 km, CHN = 1.20 km
+  Catchment Gini:           BLR = 0.527, CHN = 0.585
+  Worst Response Distance:  BLR = 8.75 km, CHN = 11.11 km
+
+FIRE STATIONS:
+  Count:                    BLR = 25, CHN = 39
+  Clark-Evans R:            BLR = 1.657 (Dispersed/Regular), CHN = 1.710 (Dispersed/Regular)
+  Mean NN Spacing:          BLR = 4.51 km, CHN = 2.83 km
+  Catchment Gini:           BLR = 0.277 (Balanced), CHN = 0.457 (Highly Skewed)
+  Worst Response Distance:  BLR = 12.67 km, CHN = 9.74 km

@@ -1,0 +1,10 @@
+metric,bengaluru_full,bengaluru_backbone,bengaluru_pct_retained,chennai_full,chennai_backbone,chennai_pct_retained
+nodes,155779,34022,21.84%,69386,15624,22.52%
+edges,394401,61314,15.55%,175689,27394,15.59%
+total_length_km,24261.3,4168.5,17.18%,12410.3,2223.8,17.92%
+giant_component_nodes,155779,33933,99.74%,69386,15522,99.35%
+giant_component_pct_of_active,100.00%,99.74%,-,100.00%,99.35%,-
+strongly_connected_nodes,155416,33753,99.21%,68868,15131,96.84%
+dead_ends_degree_1,38327,378,0.99%,15777,214,1.36%
+dead_ends_pct_of_total_nodes,24.60%,1.11%,-,22.74%,1.37%,-
+

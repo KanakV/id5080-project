@@ -1,0 +1,6 @@
+intersection_type,blr_count,blr_share,chn_count,chn_share
+T-Junction (Deg 3),96348,61.85%,45600,65.72%
+Dead End / Cul-de-sac (Deg 1),38262,24.56%,15729,22.67%
+4-Way Crossroad (Deg 4),20894,13.41%,7980,11.50%
+5-Way Intersection (Deg 5),121,0.08%,22,0.03%
+6-Way Intersection (Deg 6),5,0.00%,2,0.00%

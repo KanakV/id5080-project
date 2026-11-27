@@ -1,0 +1,7 @@
+metric,category,edge_count,length_km,pct_edges,pct_length
+oneway,one_way,8485,951.36,4.83%,7.67%
+oneway,bidirectional,167204,11458.93,95.17%,92.33%
+naming,named,68007,5336.31,38.71%,43.00%
+naming,unnamed,107682,7073.99,61.29%,57.00%
+structures,bridge_or_flyover,814,212.05,0.46%,1.71%
+structures,tunnel_or_underpass,46,14.11,0.03%,0.11%

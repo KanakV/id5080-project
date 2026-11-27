@@ -1,0 +1,9 @@
+highway_class,blr_length_km,blr_share,chn_length_km,chn_share
+residential,19798.85,81.61%,9744.07,78.52%
+tertiary,2322.67,9.57%,1027.97,8.28%
+secondary,875.77,3.61%,488.0,3.93%
+primary,464.81,1.92%,511.29,4.12%
+living_street,276.44,1.14%,439.14,3.54%
+trunk,252.96,1.04%,50.87,0.41%
+motorway,55.99,0.23%,0.0,0.0%
+unclassified,129.9,0.54%,105.36,0.85%
