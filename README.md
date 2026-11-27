@@ -4,14 +4,14 @@ ID5080 Complex Networks course project. Each member's work is in its own folder,
 README that says what it does, how to run it and what it found. Every folder runs on its own:
 `cd` into it and follow its README.
 
-| Folder | Member | What it does | Report section |
-|---|---|---|---|
-| [`omkar/`](omkar/README.md) | Omkar Atkuri | Robustness under random failure and targeted attack; path structure, spatial layout and growth over time | *(Omkar to fill)* |
-| [`sathyanand/`](sathyanand/README.md) | S Sathyanand | Betweenness, closeness, PageRank and eigenvector centrality, normalised for comparison across the two cities | Centrality normalisation and comparison |
-| [`aakash/`](aakash/README.md) | Aakash Rajan | Degree assortativity (global and local) and hub-to-hub bottlenecks | Degree mixing and hub-to-hub bottlenecks |
-| `kanak/` | Kanak Varma | *Pending:* data pipeline, data profiles, emergency-service coverage | Data, network construction, emergency-service coverage |
-| `jayvardhan/` | Jayvardhan More | *Pending:* Scotland Yard pursuit–evasion simulation | Scotland Yard simulation |
-| `shubhkarman/` | Shubhkarman | *Pending* | |
+| Folder | Member | What it does |
+|---|---|---|
+| [`kanak/`](kanak/README.md) | Kanak Varma | OSM download pipeline, data cleaning and profiling, degree-2 root causes, arterial backbone, emergency-service (police, fire) network-Voronoi coverage |
+| [`omkar/`](omkar/README.md) | Omkar Atkuri | Robustness under random failure and targeted attack; path structure, spatial layout and growth over time |
+| [`sathyanand/`](sathyanand/README.md) | S Sathyanand | Betweenness, closeness, PageRank and eigenvector centrality, normalised for comparison across the two cities |
+| [`aakash/`](aakash/README.md) | Aakash Rajan | Degree assortativity (global and local) and hub-to-hub bottlenecks |
+| [`jayvardhan/`](jayvardhan/README.md) | Jayvardhan More | Scotland Yard pursuit–evasion simulation on the game board, model networks and both cities |
+| [`shubhkarman/`](shubhkarman/README.md) | Shubhkarman Singh Sandhu | Modularity communities and detours; thermal-conduction influence of junctions |
 
 ## Setup
 
@@ -19,6 +19,6 @@ README that says what it does, how to run it and what it found. Every folder run
 pip install -r requirements.txt
 ```
 
-The road graphs are downloaded from OpenStreetMap by each folder's scripts (`data/` and
-`*.graphml` are git-ignored because they are large and regenerable). Map data © OpenStreetMap
-contributors (ODbL).
+`jayvardhan/` also needs `flask` (see its `requirements.txt`). The road graphs are downloaded
+from OpenStreetMap by `kanak/tools/fetch_namma.py` (`data/` and `*.graphml` are git-ignored
+because they are large and regenerable). Map data © OpenStreetMap contributors (ODbL).
