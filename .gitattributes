@@ -1,0 +1,2 @@
+comparison_outputs/bengaluru_chennai_detour_comparison.svg filter=lfs diff=lfs merge=lfs -text
+thermal_road_network_output/bengaluru/data/edge_thermal_flux.csv filter=lfs diff=lfs merge=lfs -text

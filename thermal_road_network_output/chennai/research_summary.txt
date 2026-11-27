@@ -1,0 +1,61 @@
+==================================================================================================
+THERMAL-NETWORK ANALYSIS OF THE ROAD NETWORK — CHENNAI_ROADS.GRAPHML
+Automated research summary (theoretical analogy; not traffic flow, not real temperatures)
+==================================================================================================
+Network   : 68,664 intersections, 91,144 undirected road segments, 6,609.9 km, median segment 51 m; 82,698 reciprocal duplicates merged, 368 distinct parallel roads kept; 372 crossings without intersections preserved.
+Model     : g = 1/L (relative), h = beta * median(g), beta = 0.01 (screening length ~ 10 segments), T_source = 1000 K, T_ambient = 293.15 K.  Validation: 17/19 checks passed.
+
+1. WHAT THE THERMAL INFLUENCE MATRIX REPRESENTS
+  [MATH] K_is = P_is / P_ss with P = (L_g + H)^-1 is the steady-state normalised temperature of node i when node s is held at the source
+         temperature. Column s is a complete equilibrium temperature field; row i collects node i's response to every possible source.
+         0 <= K_is <= 1, K_ss = 1. Because P is symmetric, K_ij / K_ji = P_ii / P_jj exactly (verified, max relative error 4.2e-15); the asymmetry is a source-normalisation artefact.
+  [PHYS] K_is says how much of a source's temperature excess survives at node i after leaking away along the way. Mean off-diagonal influence = 0.0008.
+         Heat conduction itself is perfectly reciprocal; 86% of sampled pairs differ by >10% between K_ij and K_ji only because hub-like nodes (small P_ss) are 'stiffer' sources than weakly coupled ones.
+
+2. NETWORK STRUCTURES THAT ENCOURAGE THERMAL PROPAGATION
+  [MATH] Spearman correlation of C_in with node descriptors: 3-hop neighbourhood size +0.32 (moderate); distance to hull +0.28 (weak); conductance strength Σg +0.23 (weak); mean neighbour degree +0.20 (weak); degree +0.20 (weak).
+         Position: rho(C_in, distance from centroid) = -0.27, rho(C_in, mean network distance to other nodes) = -0.33.
+         Rank R^2 for C_in: topology only 0.11, geometry only 0.13, both 0.23.
+  [PHYS] Within the analogy: higher 3-hop neighbourhood size goes with larger C_in.
+
+3. NODES WITH THE GREATEST INCOMING INFLUENCE (C_in)
+  - node 66706 (OSM id 12062459062, x 417582 m, y 1429222 m; degree 3, mean incident segment 28 m): C_in = 0.0015
+  - node 66705 (OSM id 12062459061, x 417592 m, y 1429247 m; degree 3, mean incident segment 28 m): C_in = 0.0015
+  - node 66704 (OSM id 12062459060, x 417606 m, y 1429214 m; degree 3, mean incident segment 28 m): C_in = 0.0015
+  [MATH] C_in ranges from 0.0002 to 0.0015 (median 0.0008).
+  [PHYS] These nodes respond strongly to almost any source; their mean incident segment length is 29 m on average versus 71 m network-wide.
+
+4. NODES WITH THE GREATEST OUTGOING INFLUENCE (C_out)
+  - node 27565 (OSM id 2190745512, x 417571 m, y 1429290 m; degree 4, mean incident segment 43 m): C_out = 0.0023, reaches 1% of nodes at theta >= 0.05
+  - node 43902 (OSM id 7793813325, x 417491 m, y 1429318 m; degree 4, mean incident segment 29 m): C_out = 0.0023, reaches 1% of nodes at theta >= 0.05
+  - node 27568 (OSM id 2190745515, x 417578 m, y 1429305 m; degree 4, mean incident segment 42 m): C_out = 0.0023, reaches 1% of nodes at theta >= 0.05
+  [MATH] rho(C_in, C_out) = +0.67; both share the mean 0.0008, but C_out is more unequal (Gini 0.229 vs 0.114) because C_out(s) = sum_i P_is / ((N-1) P_ss) is divided by the source's own self-response.
+         Low-reach example: node 53950 (OSM id 9694457862, x 415621 m, y 1432316 m; degree 1, mean incident segment 1611 m): C_out = 0.0000; the best source reaches 481x as many nodes.
+
+5. IS THERMAL INFLUENCE SPATIALLY UNIFORM?
+  [MATH] No — influence is clearly non-uniform. Coefficient of variation of C_in = 0.36, Gini = 0.20, Moran's I (k=8 nearest neighbours) = 0.94 (strong positive spatial autocorrelation means neighbouring nodes have similar C_in).
+         Periphery-to-core ratio of mean C_in = 0.74 (outer 15% vs inner 15% of nodes by distance to the network hull).
+  [PHYS] Influence is organised in smooth spatial gradients and regional blocks (see Figures 1 and 4), not scattered randomly.
+
+6. THERMALLY ISOLATED AREAS
+  [MATH] The lowest 10% of C_in (6,867 nodes, C_in <= 0.0006) form 237 connected clusters, largest 625 nodes; 97% lie in clusters of >= 5 nodes.
+         Strongest separators from the rest (rank-biserial, + means larger among isolated nodes): P_ss +0.76 (median 172 vs 82.4); radial_dist +0.44 (median 1.22e+04 vs 7.77e+03); boundary_dist -0.41 (median 2.23e+03 vs 3.78e+03).
+         Dead ends: 37% of isolated vs 21% of other nodes; articulation points: 36% vs 21%. Connected components in the analysed network: 1.
+  [PHYS] Isolated nodes cluster into connected regions, so isolation reflects the surrounding neighbourhood rather than single nodes.
+
+7. EFFECT OF ENVIRONMENTAL HEAT LOSS (beta)
+  [MATH] From beta = 0.0001 to 1: mean influence 0.0316 -> 2.8e-05; reach fraction 0.16 -> 0.000; CV of C_in 0.20 -> 1.72; periphery/core ratio 0.66 -> 0.83; Moran's I 1.00 -> 0.44.
+         Rank stability: Spearman rho of C_in versus beta_main ranges from 0.40 to 1; top-1% overlap falls to 0.05.
+         As beta -> 0 the solution converges to a uniform temperature over the source's component (verified; exact beta = 0 gives a spread of 4.6e-09 K), and (1 - theta) scales linearly with beta.
+  [PHYS] Weak loss lets heat equalise across the whole network (position hardly matters); strong loss confines influence to a few segments, so centrality tracks local conductance.
+
+8. GEOMETRY VERSUS TOPOLOGY
+  [MATH] Degree and mean incident segment length are coupled (rho = +0.15); degree and centrality of position are coupled (rho with distance to hull = +0.03), so topological and geometric descriptors are not independent.
+         Decay of theta is better described along the road network (mean R^2 of ln theta = 0.95) than in straight lines (0.74); median detour ratios 1.26, 1.19, 1.39 (high, mid, low reach sources).
+  [PHYS] Heat follows roads: along-road distance explains the decay better than straight-line distance, so Euclidean proximity matters only insofar as it implies short, well-connected road paths.
+         Variance split above: geometry-only R^2 = 0.13 vs topology-only R^2 = 0.11, so geometry carries more explanatory power here (the two are correlated, so this is not a causal split).
+
+CAVEATS
+  * Conductances are relative (g = 1/L, identical material and cross-section); leakage is uniform; results are not calibrated physical quantities.
+  * Spearman correlations describe association, not causation; betweenness may be sampled (see run_config.json) for large networks.
+  * Based on the OSM network as downloaded: tagging errors, missing links, bridges mapped as intersections and the chosen network type affect the result.
