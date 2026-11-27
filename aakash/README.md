@@ -5,13 +5,13 @@ Each has its scripts in `tools/`, its results in `results/` and its figures in `
 
 | Analysis | Question | Scripts | Write-up |
 |---|---|---|---|
-| Degree assortativity | Do busy junctions connect to busy junctions, and where in the city? | `degree_correlations.py`, `assortativity_compare.py`, `cluster_landuse.py` | [METHODS.md §2](METHODS.md) |
-| Hub-to-hub bottlenecks | How well are the city's main activity centres connected to each other? | `hub_bottlenecks.py`, `hub_compare.py` | [METHODS.md §3](METHODS.md) |
+| Degree assortativity | Do busy junctions connect to busy junctions, and where in the city? | `degree_correlations.py`, `assortativity_compare.py`, `cluster_landuse.py` | [METHODS.md §2](docs/METHODS.md) |
+| Hub-to-hub bottlenecks | How well are the city's main activity centres connected to each other? | `hub_bottlenecks.py`, `hub_compare.py` | [METHODS.md §3](docs/METHODS.md) |
 
 **Read with care.** The two cities are compared directly, with no reference city. Chennai is
 coastal and cut by rivers; Bengaluru is inland. They also differ in size and boundary. So a
 difference can come from geography as well as from planning; see
-[METHODS.md §4](METHODS.md). Dropped attempts are listed in [TRIED.md](TRIED.md).
+[METHODS.md §4](docs/METHODS.md). Dropped attempts are listed in [TRIED.md](docs/TRIED.md).
 
 ## Results
 
@@ -53,6 +53,7 @@ Figure: `figures/compare_hubs_dark.png`.
 ## How to run
 
 ```bash
+cd aakash                                        # run everything from this folder
 pip install osmnx networkx numpy scipy matplotlib
 python tools/fetch_namma.py bengaluru city      # and: chennai city  -> data/*.graphml
 python tools/analyze_network.py data/bengaluru_city_bengaluru_drive.graphml 300   # top-betweenness CSV (defines the CBD); slow
@@ -68,4 +69,4 @@ The `results/<city>_top_betweenness.csv` files are included, so the slow `analyz
 step can be skipped.
 
 `tools/fetch_namma.py` and `tools/analyze_network.py` are copies of Kanak Varma's team
-pipeline scripts, included only so this branch runs on its own.
+pipeline scripts, included only so this folder runs on its own.
