@@ -1,0 +1,46 @@
+================= Hub-to-hub bottlenecks: bengaluru_city_bengaluru_drive =================
+Graph: giant component, simple undirected, n = 155,779, m = 205,064
+Hubs (8): MG Road, Whitefield, Electronic City, Koramangala, Hebbal, Peenya, Yeshwanthpur, Jayanagar
+
+Road segments leaving each hub's 1 km area (an upper limit on every min cut involving it):
+  MG Road 57, Whitefield 34, Electronic City 19, Koramangala 84, Hebbal 94, Peenya 63, Yeshwanthpur 89, Jayanagar 105
+
+pair                                    km  R_unit   R_len    n·λ₂         φ splits min cut  limited by
+MG Road – Electronic City             14.1   12.04    1.39    0.92  1.09e-03    yes       4  near Electronic City
+Whitefield – Electronic City          16.3   17.38    2.12    0.29  2.89e-04    yes       4  near Electronic City
+Electronic City – Koramangala          9.3   11.78    1.30    0.86  1.35e-03    yes       4  near Electronic City
+Electronic City – Hebbal              20.9   14.58    1.52    1.09  7.23e-04    yes       4  near Electronic City
+Electronic City – Peenya              24.1   13.54    1.52    1.35  5.01e-04    yes       4  near Electronic City
+Electronic City – Yeshwanthpur        21.7   13.28    1.52    1.23  6.30e-04    yes       4  near Electronic City
+Electronic City – Jayanagar           10.0   11.94    1.31    1.13  1.50e-03    yes       4  near Electronic City
+MG Road – Whitefield                  15.4    8.18    1.02    0.87  7.61e-04    yes       7  near Whitefield
+Whitefield – Koramangala              14.1    8.67    1.06    0.60  5.63e-04    yes       7  near Whitefield
+Whitefield – Hebbal                   18.1   10.35    1.10    0.71  7.17e-04    yes       7  near Whitefield
+Whitefield – Peenya                   25.8    9.89    1.19    1.13  7.79e-04    yes       7  near Whitefield
+Whitefield – Yeshwanthpur             22.4    9.59    1.20    1.03  7.01e-04    yes       7  near Whitefield
+Whitefield – Jayanagar                17.6    9.26    1.10    0.69  4.94e-04    yes       7  near Whitefield
+MG Road – Koramangala                  4.8    3.00    0.29    1.09  1.99e-03    yes      21  between hubs
+Koramangala – Hebbal                  11.6    5.72    0.44    1.05  8.82e-04    yes      21  between hubs
+Koramangala – Peenya                  15.4    4.81    0.45    1.29  6.26e-04    yes      21  between hubs
+Koramangala – Yeshwanthpur            12.6    4.52    0.46    1.32  9.77e-04    yes      21  between hubs
+Koramangala – Jayanagar                3.5    3.47    0.27    0.95  1.92e-03    yes      21  between hubs
+MG Road – Peenya                      11.3    3.84    0.40    1.13  1.17e-03    yes      24  between hubs
+Hebbal – Peenya                        8.4    5.50    0.45    0.85  8.72e-04    yes      24  between hubs
+Peenya – Yeshwanthpur                  3.4    3.09    0.34    0.76  1.17e-03     no      24  between hubs
+Peenya – Jayanagar                    14.1    4.89    0.43    1.20  5.90e-04    yes      24  between hubs
+MG Road – Hebbal                       6.8    4.54    0.35    1.13  1.22e-03    yes      25  between hubs
+Hebbal – Yeshwanthpur                  5.3    5.15    0.46    0.81  1.40e-03    yes      25  between hubs
+Hebbal – Jayanagar                    12.4    6.02    0.44    1.03  8.14e-04    yes      25  between hubs
+MG Road – Yeshwanthpur                 8.2    3.51    0.40    1.05  1.30e-03    yes      36  between hubs
+Yeshwanthpur – Jayanagar              11.9    4.63    0.43    1.37  7.71e-04    yes      36  between hubs
+MG Road – Jayanagar                    5.8    3.44    0.31    1.15  2.28e-03    yes      40  between hubs
+
+R_unit vs distance: R ≈ -4.11 + 4.87·ln(d km)  (a 2-D grid gives R ∝ ln d)
+Median R_unit 5.87, median min cut 21 segments, median corridor φ 8.43e-04
+Pairs whose corridor bottleneck lies between the hubs (splits = yes): 27/28
+Where the min cut sits: in one hub's own catchment (same cut to nearly every other hub) 13/28, in the corridor between the hubs 15/28, at a hub's 1 km access roads 0/28
+Choked hubs: Electronic City, Whitefield
+Most constricted pairs for their distance (largest R above the trend):
+  Whitefield – Electronic City: R = 17.38 (+7.92 over trend), min cut 4
+  Electronic City – Koramangala: R = 11.78 (+5.03 over trend), min cut 4
+  Electronic City – Jayanagar: R = 11.94 (+4.84 over trend), min cut 4
