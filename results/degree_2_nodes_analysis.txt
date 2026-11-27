@@ -1,0 +1,24 @@
+==================================================================
+ANALYSIS OF DEGREE-2 NODES (street_count = 2) IN STREET NETWORKS
+==================================================================
+
+WHY DO DEGREE-2 NODES EXIST IN SIMPLIFIED ROAD GRAPHS?
+OSMnx simplification algorithm removes all intermediate nodes along
+a street EXCEPT where simplification would destroy network topology
+or critical spatial/attribute boundaries. Specifically:
+
+1. BENGALURU (149 degree-2 nodes out of 155,779 nodes - 0.10%):
+   • Attribute Change / Non-simplifiable Edge Geometry: 82 nodes (55.0%)
+   • One-way to Two-way Transition: 35 nodes (23.5%)
+   • Bridge / Tunnel Ramp Boundary: 14 nodes (9.4%)
+   • Road Hierarchy Boundary (e.g. primary -> secondary): 13 nodes (8.7%)
+   • Direction Reversal / Cul-de-Sac Convergence: 4 nodes (2.7%)
+   • Special Node Tag (crossing): 1 nodes (0.7%)
+
+2. CHENNAI (53 degree-2 nodes out of 69,386 nodes - 0.08%):
+   • One-way to Two-way Transition: 14 nodes (26.4%)
+   • Road Hierarchy Boundary (e.g. primary -> secondary): 13 nodes (24.5%)
+   • Bridge / Tunnel Ramp Boundary: 13 nodes (24.5%)
+   • Attribute Change / Non-simplifiable Edge Geometry: 9 nodes (17.0%)
+   • Direction Reversal / Cul-de-Sac Convergence: 3 nodes (5.7%)
+   • Special Node Tag (traffic_signals): 1 nodes (1.9%)

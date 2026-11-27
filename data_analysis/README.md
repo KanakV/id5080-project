@@ -13,13 +13,15 @@ data_analysis/
 │   ├── bengaluru_city_bengaluru_drive_attribute_completeness_dark.png
 │   ├── bengaluru_city_bengaluru_drive_road_hierarchy_distribution_dark.png
 │   ├── bengaluru_city_bengaluru_drive_node_features_and_junctions_dark.png
-│   └── bengaluru_city_bengaluru_drive_road_attributes_profile_dark.png
+│   ├── bengaluru_city_bengaluru_drive_road_attributes_profile_dark.png
+│   └── bengaluru_transit_network_dark.png
 └── results/                 # Detailed text reports & raw tabular CSVs
     ├── bengaluru_city_bengaluru_drive_data_profile_report.txt
     ├── bengaluru_city_bengaluru_drive_attribute_completeness.csv
     ├── bengaluru_city_bengaluru_drive_road_hierarchy.csv
     ├── bengaluru_city_bengaluru_drive_node_features.csv
-    └── bengaluru_city_bengaluru_drive_road_attributes_summary.csv
+    ├── bengaluru_city_bengaluru_drive_road_attributes_summary.csv
+    └── bengaluru_transit_report.txt
 ```
 
 ---
@@ -79,7 +81,17 @@ data_analysis/
 
 ---
 
-## 4. How to Run
+## 4. Rail & Rapid Transit Network (Metros and Train Stations)
+
+The transit network analysis is generated via `tools/fetch_transit.py`:
+- **Namma Metro (BMRCL)**: 88 stations across Purple Line, Green Line, and upcoming extensions.
+- **Indian Railways (SWR)**: 28 mainline & suburban railway terminals/stations (KSR Bengaluru, Yesvantpur, Bengaluru Cantonment, Sir M. Visvesvaraya Terminal SMVB, KR Puram, Baiyappanahalli, Whitefield, Yelahanka, etc.).
+- **Map Visualization**: [`bengaluru_transit_network_dark.png`](figures/bengaluru_transit_network_dark.png) maps all metro lines (Purple, Green, Yellow) and mainline railway corridors overlaid on top of the drivable city street grid.
+- **Data Export**: Complete list with coordinates and operators in `data/bengaluru_transit_stations.csv` and [`bengaluru_transit_report.txt`](results/bengaluru_transit_report.txt).
+
+---
+
+## 5. How to Run
 
 ```bash
 # Analyze Bengaluru (default)
@@ -88,3 +100,4 @@ data_analysis/
 # Analyze any other city graphml
 .venv/bin/python data_analysis/analyze_data.py data/chennai_city_chennai_drive.graphml
 ```
+

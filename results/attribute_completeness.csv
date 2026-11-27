@@ -1,0 +1,9 @@
+attribute,blr_completeness,chn_completeness
+name,29.91%,38.71%
+geometry,28.69%,32.13%
+lanes,6.09%,3.22%
+maxspeed,2.24%,1.66%
+bridge,0.57%,0.46%
+ref,0.43%,2.88%
+access,1.28%,0.51%
+tunnel,0.05%,0.03%

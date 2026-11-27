@@ -1,0 +1,69 @@
+================================================================================
+OSM ROAD NETWORK DATA PROFILE: Chennai (chennai_city_chennai_drive)
+================================================================================
+Total Nodes (Intersections & Dead Ends) : 69,386
+Total Directed Edges (Street Segments)  : 175,689
+Total Street Length (Directed)          : 12,410.3 km
+
+1. ATTRIBUTE COMPLETENESS SUMMARY
+--------------------------------------------------------------------------------
+Node Attributes (n = 69,386):
+  • Coordinates (x, y)          : 69,386 / 69,386 (100.0%)
+  • Physical Degree (street_cnt): 69,386 / 69,386 (100.0%)
+  • Traffic Infrastructure      : 320 / 69,386 (0.46%)
+  • Roundabout/Junction Tagged  : 14 / 69,386 (0.020%)
+
+Edge Attributes (m = 175,689, total length = 12,410.3 km):
+  • Essential Topology (osmid, highway, oneway, reversed, length): 100.0% complete
+  • Street Name                 : 68,007 (38.7% edges, 5,336.3 km)
+    └─ Unnamed Streets           : 107,682 (61.3% edges, 7,074.0 km)
+  • Curved Centerline Geometry  : 56,450 (32.1%) — remainder are straight links
+  • Lane Count (lanes)          : 5,654 (3.2%)
+  • Speed Limit (maxspeed)      : 2,911 (1.7%)
+  • Access Control              : 903 (0.5%)
+  • Elevated Bridge / Flyover   : 814 (0.46%, 212.0 km)
+  • Highway Route Code (ref)    : 5,064 (2.88%)
+  • Width                       : 439 (0.25%)
+  • Tunnel / Underpass          : 46 (0.026%, 14.1 km)
+
+2. ROAD HIERARCHY BREAKDOWN
+--------------------------------------------------------------------------------
+  • residential           : 141,213 edges (80.4%) |   9744.1 km (78.5%)
+  • tertiary              :  14,861 edges ( 8.5%) |   1028.0 km ( 8.3%)
+  • living_street         :   7,071 edges ( 4.0%) |    439.1 km ( 3.5%)
+  • secondary             :   6,576 edges ( 3.7%) |    488.0 km ( 3.9%)
+  • primary               :   4,197 edges ( 2.4%) |    511.3 km ( 4.1%)
+  • unclassified          :     748 edges ( 0.4%) |    105.4 km ( 0.8%)
+  • primary_link          :     476 edges ( 0.3%) |     22.6 km ( 0.2%)
+  • trunk                 :     201 edges ( 0.1%) |     50.9 km ( 0.4%)
+  • secondary_link        :     160 edges ( 0.1%) |      6.7 km ( 0.1%)
+  • tertiary_link         :      95 edges ( 0.1%) |      2.7 km ( 0.0%)
+  • trunk_link            :      90 edges ( 0.1%) |     11.5 km ( 0.1%)
+  • busway                :       1 edges ( 0.0%) |      0.1 km ( 0.0%)
+
+3. JUNCTION DEGREES & TRAFFIC SIGNALS
+--------------------------------------------------------------------------------
+Intersection Types (by incident street count):
+  • 3-way T-junctions (deg 3)   : 45,600 (65.7%)
+  • Dead ends / Cul-de-sacs (1) : 15,729 (22.7%)
+  • 4-way Crossroads (deg 4)    : 7,980 (11.5%)
+  • 5-way+ Complex junctions    : 24 (0.03%)
+  • Interstitial / Simpl. (2)   : 53 (0.08%)
+
+Specialized Intersection Infrastructure:
+  • traffic_signals           :   304 nodes
+  • crossing                  :     8 nodes
+  • motorway_junction         :     3 nodes
+  • bus_stop                  :     3 nodes
+  • turning_circle            :     1 nodes
+  • mini_roundabout           :     1 nodes
+  • junction=yes              :    14 nodes
+
+4. TRAFFIC FLOW & PHYSICAL CHARACTERISTICS
+--------------------------------------------------------------------------------
+  • One-Way Street Segments     : 8,485 (4.8%) | 951.4 km (7.7%)
+  • Two-Way Street Segments     : 167,204 (95.2%) | 11,458.9 km (92.3%)
+  • Bridges / Flyovers / Viaducts: 814 (212.0 km)
+  • Tunnels / Underpasses       : 46 (14.1 km)
+  • Named Streets               : 68,007 (5,336.3 km)
+  • Unnamed (Local/Gully) Streets: 107,682 (7,074.0 km)

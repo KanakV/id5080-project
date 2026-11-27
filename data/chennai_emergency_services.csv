@@ -1,0 +1,1032 @@
+city,osm_id,osm_type,category,name,lat,lon,emergency,phone,address
+chennai,248420920,node,hospital,Kalaignar Karunanidhi Nagar,13.0386493,80.2052158,unknown,,
+chennai,248560797,node,hospital,Kasimedu,13.122775,80.2960584,unknown,,
+chennai,250363729,node,police,Mambalam Police Station,13.0349573,80.22946,yes,,
+chennai,258978416,node,hospital,Amrit Hospital,13.0922007,80.2792912,unknown,,"New No.310, Mint Street, Sowcarpet"
+chennai,258978417,node,hospital,Vikram Hospital,13.0985007,80.2796178,unknown,,
+chennai,259773441,node,police,Royapettah PS,13.0520106,80.2637348,yes,,
+chennai,262452334,node,hospital,City Tower Hospitals,13.08438,80.2160862,unknown,,"Old No AA-10, New No AA - 85, 2ND-Avenue, Near Roundtana Bus Stop"
+chennai,264481213,node,police,Unnamed Police,13.0596173,80.2427681,yes,,
+chennai,289486820,node,hospital,"Apollo Hospitals, Tondiarpet",13.1289367,80.2905623,unknown,,"No.645, TH Road, Tondiarpet"
+chennai,295544111,node,hospital,K.H.M. Hospital,13.0844992,80.2130591,unknown,,"AB-14/4907, Balasubramanian Building, Opposite Sri Ayyappa Temple, 6th Main Road"
+chennai,295552091,node,hospital,Sundaram Medical Foundation,13.08217,80.2069819,unknown,,"9-C, Shanthi Colony Iv Avenue, Anna Nagar"
+chennai,295552092,node,hospital,Sri Devi Speciality Hospial,13.0887983,80.1994692,unknown,,"New No.4, Old No.1620-A, 16Th Main Road, Anna Nagar"
+chennai,300468066,node,police,S-8 Adambakkam Police Station,12.9893957,80.2019683,yes,,
+chennai,301949978,node,police,Teynampet E3 PS,13.048651,80.2494881,yes,,
+chennai,303590777,node,hospital,Corporation Hospital,13.0336624,80.2572467,unknown,,
+chennai,308811614,node,hospital,"Hindu Mission Health Services, Kanchipuram",12.9787682,80.1846471,unknown,,"Near By Ranga Theatre, Chennai, 100 Feet Road, Hinducolony, Nanagnanllur"
+chennai,310015097,node,hospital,Military Hospital,13.0194622,80.1972947,unknown,,
+chennai,310504820,node,hospital,"Tamil Nadu Government Dental College & Hospital, Chennai",13.084889,80.2826483,unknown,,
+chennai,310732936,node,hospital,Kilpauk Medical College,13.0785984,80.2433369,unknown,,
+chennai,310909754,node,hospital,Hariharan Hospital,12.9847145,80.1905906,unknown,,"24 and 26, 'Swathi', 29 Th Street"
+chennai,310910945,node,hospital,BM Hospital,12.9887616,80.1904116,unknown,044-22670277,5th Main Road
+chennai,311429396,node,hospital,K.F. Hospital,12.973463,80.1841397,unknown,,"5, Sarwamangala Nagar, Nanganallur"
+chennai,312000326,node,hospital,Cancer Institute,13.0061338,80.239884,unknown,,
+chennai,312025133,node,police,Adyar J2,12.997814,80.2557176,yes,,
+chennai,313027868,node,hospital,Sri Ramachandra Medical Centre and Hospital,13.0380979,80.1428047,unknown,,
+chennai,313951548,node,police,Unnamed Police,12.9814685,80.192063,yes,,
+chennai,320275820,node,hospital,Govt Maternity Hospital,13.0720996,80.2589871,unknown,,
+chennai,320275824,node,hospital,Institute of Child Health,13.0735496,80.257025,unknown,,
+chennai,320275839,node,hospital,Institute of Obstetrics and Gynaecology dd,13.0735431,80.2591463,unknown,,
+chennai,320968223,node,police,Central Station PS,13.0818276,80.2755071,yes,,
+chennai,320968578,node,police,Chennai Central RPF,13.0830613,80.2732996,yes,,
+chennai,339282419,node,police,B1 Saint Thomas Mount PS,12.9991212,80.200262,yes,,
+chennai,364650995,node,hospital,MIOT International,13.0211808,80.1858412,unknown,044 4200 2288,"4/112, Mount Poonamalle High Rd, Sathya Nagar, Manapakkam, Chennai, Tamil Nadu 600089"
+chennai,366075241,node,police,Koyambedu Police Station,13.0696407,80.2004587,yes,,
+chennai,367795605,node,hospital,St. Thomas Hospital,13.0122733,80.196428,unknown,,"No. 5, 105, Defence Colony 1st Ave, Seven Wells, St.Thomas Mount"
+chennai,370481197,node,police,"Office, Police Commissioner",13.0100865,80.1990931,yes,,
+chennai,370967673,node,hospital,Unnamed Hospital,13.009781,80.1949734,unknown,,
+chennai,370969674,node,police,T15 SRMC PS,13.0341993,80.1602489,yes,,
+chennai,375668400,node,hospital,Venkataeswara Hospitals,13.0293624,80.2440921,unknown,,"121-A(New No-36A), Chamiers Road, Nandanam"
+chennai,389948945,node,police,KK Nagar PS,13.0415108,80.2054415,yes,,
+chennai,390852677,node,police,N4 PS,13.1345408,80.2974596,yes,,
+chennai,411318042,node,police,Virugambakkam Police Station,13.0491123,80.1992562,yes,,
+chennai,416412274,node,police,Unnamed Police,13.03694,80.2674177,yes,,
+chennai,442508332,node,hospital,Sarswathi Hospital,12.9653846,80.2067733,unknown,,
+chennai,459635161,node,hospital,Apollo Clinic & Pharmacy,13.05244,80.2041657,unknown,,
+chennai,459648701,node,hospital,Vijaya Heart Centre,13.0483819,80.2070144,unknown,,
+chennai,540658116,node,hospital,B.M.Orthopaedic Hospital,13.1181104,80.1499411,unknown,,"# 3/157, M.T.H.Road, ,Ambattur"
+chennai,591555028,node,hospital,skandan nursing home,12.9447938,80.1405596,unknown,,
+chennai,595706154,node,hospital,"Vasan Eye Care Hospital, Vadapalani",13.0495316,80.211027,unknown,,"D No 154/2, Aroot Road, Vadapalani"
+chennai,597590621,node,hospital,JJ Hospital,13.0571293,80.1942138,unknown,,
+chennai,687175330,node,police,Police Booth,13.0737484,80.1923421,yes,,
+chennai,687177364,node,police,Police Booth,13.0656907,80.1935705,yes,,
+chennai,747616884,node,police,Velachery,12.9850126,80.2208713,yes,,
+chennai,934859086,node,police,Police Booth,13.0447322,80.1862162,yes,,
+chennai,941471945,node,hospital,Appasamy Hospital,13.0750445,80.2151198,unknown,,
+chennai,941611681,node,hospital,Appasamy Hospital,13.073239,80.2148826,unknown,,
+chennai,941621037,node,hospital,Appolo Clinic,13.0892073,80.2178866,unknown,,
+chennai,966556101,node,police,Chintadripet,13.0749088,80.2725042,yes,,
+chennai,983957837,node,hospital,"Sankara Eye Hospital, Kanchipuram",12.965059,80.128212,unknown,,"No.1, 3Road Cross St. Sankar Nagar, Pammal"
+chennai,983961147,node,police,S6 Shankar Nagar Police Station,12.9692797,80.1257959,yes,,
+chennai,984217571,node,police,Vadapalani Police station,13.0496955,80.2117161,yes,,
+chennai,1015569835,node,police,Ramapuram Police Station,13.0317737,80.1790069,yes,,
+chennai,1015571498,node,hospital,Srm Speciality Hospital,13.0331325,80.1810857,unknown,,"50 Bharathi Street, Ramapuram"
+chennai,1015571601,node,hospital,SRM Dental Hospital,13.0321291,80.1801201,unknown,,
+chennai,1127285905,node,hospital,Aakash Fertility Centre & Hospital,13.0554597,80.2118365,unknown,,"No:10, 100 Feet Road, Opp. Hotel Ambika Empire, Vadapalani"
+chennai,1129195836,node,hospital,Unnamed Hospital,12.9445695,80.1210689,unknown,,
+chennai,1152858038,node,hospital,Rajan Eye Care Hospital,13.0508335,80.2434416,unknown,2834 0500/0300,Vidyodaya 2nd Cross Street
+chennai,1315141190,node,police,Police booth,12.9651635,80.2060352,yes,,
+chennai,1315895438,node,hospital,sree dhanalakshmi family clinic,13.0583046,80.211745,unknown,,
+chennai,1391252125,node,police,Unnamed Police,13.1244932,80.2771688,yes,,
+chennai,1446415367,node,hospital,Bhadra Homeo,12.9663879,80.2474724,unknown,,PERUNGUDI
+chennai,1451946829,node,police,Porur Police Station,13.0343074,80.1601292,yes,,
+chennai,1472969165,node,hospital,Amma Hospital,13.0626045,80.2305209,yes,,"7th street, Choolaimedu high road"
+chennai,1474055555,node,hospital,Right Hospitals,13.0787952,80.2405731,yes,,"1, Prof. Subramaniam Street (Behind Ega Theatre) , Kllpauk"
+chennai,1560720462,node,hospital,Vasan Eye Care Hospital,13.0015307,80.2552541,no,,
+chennai,1597151538,node,hospital,Unnamed Hospital,13.0584072,80.2011738,unknown,,
+chennai,1597178645,node,police,Unnamed Police,13.0576855,80.2041548,yes,,
+chennai,1621246558,node,hospital,Ashwini Eye Care,13.1187083,80.1572422,no,,"No.G4, Srivatsa Apartments, Plot No:196, Old Mth Road,Ambattur, Chennai"
+chennai,1711627907,node,police,Shastri Nagar Police Station,13.0006116,80.2659307,yes,,
+chennai,1789987574,node,hospital,Prime Care Nursing Home,12.9799192,80.2044922,unknown,,"44, Shakti Nagar Main Road, Adambakkam, Balaji Nagar, Adambakkam, Chennai, Tamil Nadu 600088"
+chennai,1833926660,node,hospital,ACS Medical College And Hospital,13.0575206,80.127824,yes,,
+chennai,1865961947,node,police,Police Outpost,13.2156173,80.1694388,yes,,
+chennai,1896330827,node,hospital,Unnamed Hospital,13.1333249,80.1033668,unknown,,
+chennai,1896342668,node,police,HVF,13.1291456,80.1073794,yes,,
+chennai,1948616260,node,hospital,Apollo Free Emergency Clinic,13.0677233,80.2050055,unknown,,
+chennai,1948632616,node,police,K11 CMBT Police Station,13.0687012,80.2046669,yes,,
+chennai,1955943159,node,hospital,Agarwal Hospital,13.0385656,80.2165845,unknown,,
+chennai,1957903721,node,hospital,Senthil Nursing Home,13.0849671,80.2004752,unknown,,
+chennai,1957904106,node,hospital,I K Hospital,13.0868667,80.1991661,unknown,,"2/1911, J-Block, 15 Th Main Road, Anna Nagar"
+chennai,1979247767,node,hospital,B.P. Jain Hospital (Sri Sankara Health Centre),12.9730642,80.1339663,yes,,"Plot No.6, Gokulam Colony, Anna Salai, Pammal, Kanchepuram"
+chennai,1993266486,node,hospital,Ortho clinic,12.9800456,80.2286587,unknown,,
+chennai,2061123092,node,police,J9 Police Station,12.947613,80.2416251,yes,,
+chennai,2072479943,node,hospital,JK Hospital,13.0358564,80.1644897,no,,
+chennai,2086712180,node,police,Madipakkam Police Station,12.9559858,80.1853072,yes,,
+chennai,2086712439,node,hospital,Unnamed Hospital,12.9559409,80.1855637,unknown,,
+chennai,2120763195,node,hospital,SP Hospital,12.9933638,80.2009134,yes,,"No 11, Vellalar 1st Street, Adambakkam"
+chennai,2124734395,node,hospital,Fourtts India Laboratories,12.9321684,80.2337388,unknown,,
+chennai,2126461371,node,hospital,Rotary Central Margaret Sidney Hospital,12.9837958,80.1932105,unknown,,"No. 13, 7Th Street,Nanganallur"
+chennai,2139742510,node,police,Unnamed Police,13.0229741,80.1999165,yes,,
+chennai,2145405955,node,hospital,Sri Chakra Hospital,12.9786524,80.1850278,unknown,,
+chennai,2210021510,node,police,Police Booth,12.8975662,80.1823209,yes,,
+chennai,2210056220,node,hospital,Rajan Hospital,12.8928496,80.1835976,no,,
+chennai,2221603034,node,police,Police Assistance Booth Mugalivakam,13.0207162,80.1663239,yes,,
+chennai,2253361647,node,hospital,Dr. Janardhanan Multispeciality Dental Clinic,12.9842586,80.1886083,unknown,,
+chennai,2296731456,node,hospital,Dr Venugopals' Sundaram Clini,13.076782,80.268345,unknown,,
+chennai,2296731781,node,hospital,Dr Kabir's Clinic,13.0768734,80.2678381,unknown,,
+chennai,2296732187,node,hospital,Dr Sridhars'Clinic,13.0764345,80.2672427,unknown,,
+chennai,2485567524,node,hospital,Vepery Hospital,13.0921812,80.2594411,unknown,,
+chennai,2517035814,node,hospital,Vasan Eye care,12.9658002,80.191882,unknown,,"No: 683/5, Mahalingam Street ( Near Sbi ) Madipakkam"
+chennai,2559180846,node,hospital,Jaws Dental Foundation,13.0929667,80.2236256,yes,,30th Street
+chennai,2587520257,node,police,J6 Police Station,12.9874599,80.2559315,yes,,
+chennai,2587530810,node,hospital,Chennai Skin Foundation,13.0205681,80.2594702,unknown,,
+chennai,2669702938,node,hospital,Sukrthi Nursing Home,12.9710287,80.2082964,yes,,Mullai Street
+chennai,2794348661,node,hospital,A.N.N Hospital,13.0405941,80.1784622,yes,,"81-85, Near Indian Bank & Andhra Meals Hotel, Valasaravakkam"
+chennai,2966142809,node,hospital,Appolo Speciality Hospital Vanagram,13.0705042,80.150612,unknown,,"Plot No 64, Vanagaram-Ambattur Rd, Ayanambakkam"
+chennai,3097014588,node,police,S-10 Police Station (Pallikaranai),12.9173825,80.1950805,yes,,
+chennai,3118864398,node,hospital,Kauvery Hospital,13.0381705,80.2573008,yes,+914440006000,Luz Church Road
+chennai,3157617785,node,hospital,Dr Mohan's Diabetes Hospital,12.9255743,80.1281333,unknown,,Kalidasar Street
+chennai,3195423909,node,police,Chetpet,13.0706907,80.2421194,yes,,
+chennai,3372786283,node,hospital,Velachery SABA Hospital,12.9862735,80.2298924,unknown,,
+chennai,3664004950,node,hospital,Chellam Hospital,12.9012946,80.1583761,unknown,,Madambakkam Main Road
+chennai,3687711447,node,hospital,Kaya Skin clinic,12.9767775,80.2223505,unknown,,
+chennai,3702797921,node,hospital,Madras Medical Mission Hospital - Institute of Cardio Vascular Diseases,13.0859961,80.1870589,yes,044 2656 5991,Mogappair East
+chennai,3982078512,node,hospital,Pavithra Hospital,13.1260907,80.2488406,unknown,,Ethiraj Samy Salai
+chennai,4221573903,node,hospital,JKCN Complex (Sankara Nethralaya),13.0642564,80.2497746,unknown,,Pycrofts Garden Road
+chennai,4308319495,node,police,R6 KUMARAN NAGAR POLICE STATION ,13.0283677,80.2163105,yes,044 2345 2629,"3rd St, Ragavan Colony, Mettuppalayam, Ashok Nagar, Chennai, Tamil Nadu 600083"
+chennai,4329387869,node,hospital,Srinivasan Rajalakshmi Memorial Hospital,12.9733792,80.187599,yes,"+91 98401 17136, +91 44 4504 6010","6th street,voltas colony"
+chennai,4411855589,node,hospital,Unnamed Hospital,13.026489,80.1829882,unknown,,
+chennai,4445488162,node,police,Otteri Police Station,13.0874523,80.2458786,yes,044 – 22750987,Kancheepuram
+chennai,4446984572,node,police,police station s11,12.9254171,80.1128984,yes,044 2345 2769,"Muthulinga Street, New Market, Tambaram West,5"
+chennai,4449967759,node,police,J.J Nagar Police Booth (V3),13.0876952,80.1878894,yes,N/A,"ambattur Industrial Estate Road, Anna Nagar, J J Nagar, Mogappair East,"
+chennai,4486583996,node,hospital,Chennai Medical Centre Hospital,13.0380047,80.1889685,unknown,,
+chennai,4488082604,node,hospital,SRM Institutes For Medical Science,13.0515961,80.2114304,unknown,+91 44 2000 2001,Jawaharlal Nehru Road (100 Feet Road)
+chennai,4554279725,node,hospital,Vivekanandha,13.1108976,80.0952836,unknown,,
+chennai,4740298624,node,hospital,government child health center,12.9241666,80.1274453,yes,,
+chennai,4740298625,node,hospital,Christdas hospital,12.9229715,80.1298204,yes,,
+chennai,4764302980,node,hospital,HEALTH,13.0135999,80.2395364,unknown,,
+chennai,4813324323,node,hospital,Unnamed Hospital,13.1133021,80.2905249,unknown,+914425980998,SOMU STREET 6th LANE
+chennai,4911075821,node,hospital,Unnamed Hospital,12.9261223,80.1265186,unknown,,
+chennai,5079397364,node,police,Police Assistance Booth,13.0699263,80.2714181,yes,,
+chennai,5087493136,node,hospital,Sugam homeopathic hospital,12.9230989,80.130824,unknown,,
+chennai,5087493227,node,hospital,Dr. KK eye care center,12.9220657,80.1381329,unknown,,
+chennai,5087493324,node,hospital,Be Well Hospital,12.9220102,80.1417788,yes,,"Camp Road, Selayur, Kannan Avenue"
+chennai,5090924224,node,hospital,Chellam Super Speciality Center,12.9237851,80.1589529,unknown,,
+chennai,5090926024,node,hospital,New Life Hospital,12.9225168,80.1522357,yes,,"Madambakkam Signal, Selayur, Appar Street"
+chennai,5225824334,node,hospital,Sri Ramachandra Hospital,13.0852758,80.0674867,unknown,,
+chennai,5226071789,node,police,Police Booth,13.1037724,80.0585425,yes,,
+chennai,5226197960,node,police,T9 Police Station Pattabiram,13.1222511,80.0624155,yes,,
+chennai,5226262920,node,police,J-10 Semmenchery Police Station,12.9008558,80.2280156,yes,,
+chennai,5227833113,node,hospital,Grace Hospital,13.1232827,80.0591826,unknown,,"Cth Road,Pattabiram"
+chennai,5227836679,node,hospital,Abirami Nursing Home,13.1217696,80.0634217,unknown,,
+chennai,5229996823,node,hospital,Gov Sub Urban Health Center,13.1155685,80.0632561,unknown,,
+chennai,5258976324,node,hospital,Government Health Center,12.885562,80.151595,unknown,,
+chennai,5259008321,node,hospital,Annai Therasa Hospital,12.8917407,80.1412614,unknown,,
+chennai,5259088422,node,hospital,Government Veterinary Hospital,12.8855161,80.1522823,unknown,,
+chennai,5259129922,node,hospital,Unnamed Hospital,12.9207467,80.1437903,unknown,,
+chennai,5259141323,node,hospital,Unnamed Hospital,12.9201133,80.1443788,unknown,,
+chennai,5263563022,node,hospital,Unnamed Hospital,13.1131363,80.2429369,unknown,,"Siruvallur, Perambur, Chennai"
+chennai,5302938624,node,hospital,Kottakkal Arya Vaidhyasala,12.9203722,80.1443905,no,04464553525,
+chennai,5336542921,node,hospital,The Cresent Hospital,13.0527235,80.2727336,unknown,,"New No:91, Old No: 46, Royapettah, Dr. Besant Road"
+chennai,5367536437,node,police,Police Booth,13.0149758,80.1816427,yes,,
+chennai,5367950021,node,hospital,Biocosmo Healthcare,13.0590329,80.2375326,unknown,7200080075,Mahalingapuram Main Road
+chennai,5492573024,node,hospital,VSR Hospital,13.0799682,80.1805593,unknown,,Church road
+chennai,5492577281,node,hospital,New Life Family Hospitals,13.0800478,80.1804976,unknown,044 26566823,Church road
+chennai,5500158687,node,hospital,Vijaya Group of Hospital,13.0497391,80.2083222,unknown,044 6664 6600,"New No:434, Old No:180, NSK Salai Rd, Vadapalani, Chennai, Tamil Nadu 600026"
+chennai,5547728024,node,hospital,ஹிபா சிறப்பு மருத்துவமனை,13.0615207,80.275747,unknown,,Veeraraghava Street (Big St)
+chennai,5570522545,node,hospital,ARK Hospital,12.9856999,80.2293536,unknown,,Gandhi Road
+chennai,5631872266,node,hospital,Annamalai Hospital,13.031147,80.2228983,unknown,,Govindan Road
+chennai,5631872277,node,hospital,Ezhil Hospital,13.0319539,80.2207913,yes,,Govindan Road
+chennai,5792664046,node,hospital,"Qure Ortho Clinic, Physiotherapy, X Ray & Pharmacy",12.9794,80.2043658,unknown,095000 06644,"68, 18th St, Balaji Nagar Extn-II, Vanuvampet, Madipakkam, Chennai, Tamil Nadu 600088"
+chennai,6138546488,node,hospital,"Dr.Agarwal's Eye Hospital Ltd, Tambaram",12.929761,80.1200478,unknown,094449 64237,Duraisami Reddy Street
+chennai,6185882385,node,hospital,Nivas Skin Clinic,13.0289663,80.2085951,unknown,,
+chennai,6780251054,node,police,Railway Police,13.0341367,80.2664405,yes,,
+chennai,6854765885,node,police,Unnamed Police,12.9931857,80.2674928,yes,,
+chennai,6886285320,node,hospital,Apollo Cancer Centres,13.0337515,80.2451004,unknown,04424347288;04424331741;04424336119,"Anna Salai, Teynampet,"
+chennai,6914280086,node,hospital,Raju Hospitals,13.0329888,80.230346,unknown,,"No:43, Near Bus Terminus, T. Nagar, South Usman Road"
+chennai,6914280093,node,hospital,Rakshith Hospitals,13.042307,80.177473,unknown,,"153, Arcot Road, Sai Square Complex Valasaravakkam Chennai Chennai"
+chennai,6914764645,node,hospital,Dr. A. L. Annamalais Ent Care Centre,12.9439622,80.1388438,unknown,,"No.13/6,Patel Street,Nehru Nagar, (OppositeVarasidhi Vinayagar Koli), Chromepet Chennai"
+chennai,6914764653,node,hospital,Sri Kalyan Hospital,13.0063976,80.2507134,unknown,,"12, First Main Road Kasturba Nagar Adyar"
+chennai,6914767985,node,hospital,A G Chrompet Health And Maternity Centre,12.9504411,80.1438314,unknown,,"A.G Trust, No. 2, Bharathi Street,Radha Nagar,Chrompet,Chennai"
+chennai,6914768001,node,hospital,Sen Hospital,13.1105649,80.2418775,unknown,,"New No. 51, 18,Bunder Garden Street,Perambur,Opposite Lourdes Girls School"
+chennai,6914768046,node,hospital,Billroth Hospitals,13.0757435,80.2272588,unknown,,"43, Lakshmi Talkies Road, Shenoy Nagar"
+chennai,6914768062,node,hospital,Mano Hospital,12.9223261,80.0961417,unknown,,"Andhra Bank, West Tambaram, Krishna Nagar Main Road"
+chennai,6914768063,node,hospital,Cauvery Trust Hospital,13.1026603,80.2112943,unknown,,"No.36, Ponnankinaru Street, Villivakkam"
+chennai,6914768069,node,hospital,Kedar Hospital,13.0229098,80.1670808,unknown,,Mugalivakkam Main Road
+chennai,6914768085,node,hospital,Srinivas Eye Hospital,13.0829726,80.1796965,unknown,,"335, Thirucalluvar Salai Panneer Nagar, Mugapair Chennai"
+chennai,6914768086,node,hospital,Soundarapandian Bone and Joint Hospital Research Institute Pvt. Ltd.,13.0838202,80.2156412,unknown,,"Aa 16, 3Road Main Road, Anna Nagar"
+chennai,6914768088,node,hospital,Dr. U. Mohan Rau Memorial Hospital - Chennai,13.079494,80.2572808,unknown,,"962, Poonamallee High Road, Near Egmore Over Bridge"
+chennai,6914880538,node,hospital,Chennai Cancer Care,13.0762935,80.234026,unknown,,"# 55,New Avadi Road,Kilpauk"
+chennai,6914880539,node,hospital,Chennai Eye Care Hospital,12.9789449,80.2246302,unknown,,No 6 12Th Cross Steet Dhandeeswaram Nagar Velachery
+chennai,6914880540,node,hospital,Chennai Heart Centre,13.0917939,80.2410534,unknown,,"64, Medavakkam Tank Road, Kilpauk"
+chennai,6914880546,node,hospital,Chennai Kaliappa Hospital,13.0268492,80.2558082,unknown,,"#52, Raja Annamalai Puram"
+chennai,6914880552,node,hospital,Mots Hospital,13.0833606,80.2341561,unknown,,"264/125, Kilpauk Garden Road, Kilpauk"
+chennai,6914880584,node,hospital,Vasanthi Orthopaedic Hospital,13.0723588,80.2157642,unknown,,"Cp-50, Razack Garden Main Road, Arumbakkam"
+chennai,6914896212,node,hospital,R.K. Gynaec And Maternity Hospital,13.0788127,80.2481786,unknown,,"866, Poonamallee High Road, Kilpauk"
+chennai,6914896214,node,hospital,R.G. Stone Urological Research Institute,13.0240792,80.2278288,unknown,,"391/392, Anna Salai, 1st Floor, Miv Complex., Opposite New Bus Stand, Saidapet"
+chennai,6914896215,node,hospital,R. K. Eye Centre,13.0485912,80.2311788,unknown,,"No. 14/20, Chari Street, T. Nagar"
+chennai,6914896269,node,hospital,Psymed Hospiyal,13.0714757,80.2317998,unknown,,"49/2,Harrington Road,Chetput"
+chennai,6914911759,node,hospital,Vanaja Hospital,13.1990395,80.1760313,unknown,,"#4/198 & 199, M.A.Koil St,M.A.Nagar,Redhills"
+chennai,6914911764,node,hospital,"Vasanthram Hospital (P) Ltd.,",13.0433091,80.2187696,unknown,,"No.7, Varadappan Street,West Mambalam"
+chennai,6914927162,node,hospital,Vadapalani Multispeciality Hospital,13.0516559,80.2133146,unknown,,"Near Murugan Temple, Vadapalani, Palaniandavar Koil St"
+chennai,6914937617,node,hospital,Sri Ramachandra Hospital,13.0378713,80.1402023,unknown,,"No.1, Ramchandra Nagar"
+chennai,6915117046,node,hospital,"M N Eye Hospital Private Limited, Tondiarpet",13.1232306,80.2876528,unknown,,"No.781, T H Road, Opposite Tondiarpet Police Station"
+chennai,6915134068,node,hospital,Doctor Rexs Hospitals,13.0838812,80.2502386,unknown,,"(Old No.19), New No.37, Millers Road, Kilpauk"
+chennai,6915201226,node,hospital,Helios Hospital Pvt Ltd,12.9855882,80.2189144,unknown,,"No.39, Rajalakhsmi Nagar"
+chennai,6915218991,node,hospital,Deepam Muthu Hospital,13.0995855,80.2605303,unknown,,"#105, Pulianthope High Road,Pulianthope"
+chennai,6915219120,node,hospital,LK Hospitals,12.9701347,80.1480083,unknown,,
+chennai,6915231638,node,hospital,Devibala Maternity,12.971439,80.1378152,unknown,,"No.19, 4Th Cross Street, Krishna Nagar, Pammal, Chennai"
+chennai,6915413133,node,hospital,S K Nursing Home Pvt Ltd,12.9289316,80.1170864,unknown,,"No. 1, Duraiswamy Road, Near Vadapalani Temple"
+chennai,6915463333,node,hospital,Malligai Hospital,13.1238765,80.2899749,unknown,,"Old No 10, New No 33, Agastya Theatre Back Side, Tondiarpet, Kannka Pillai Street"
+chennai,6915520031,node,hospital,D.R.R. Eye Hospital,13.0459064,80.1136042,unknown,,"399, Trunk Road, Karayanchavadi, Poonamallee"
+chennai,6915563707,node,hospital,Deepam Hospital,12.9294095,80.1174378,unknown,,"Muthuranga Mudali St, Tambaram West, Tambaram, Chennai"
+chennai,6915836812,node,hospital,Huma Specialists Hospital and Research Centre Pvt Ltd,13.0282655,80.235353,unknown,,"786 Anna Salai, CIT Nagar West"
+chennai,6916036803,node,hospital,Divya Hospital,12.9644392,80.187601,unknown,,Mount - Medavakkam Road
+chennai,6916178396,node,hospital,Noor`S Hospital,13.1418442,80.2485046,unknown,,"No.13, Seetharam Nagar, Vii Street, Munsif Garden,Chinnakodungaiyur"
+chennai,6916205172,node,hospital,"Vasan Eye Care Hospital, Perambur",13.1177888,80.2287099,unknown,,"#289/149, D.No.149, ,Paper Mills Road, Opp To 70 Feet Road,Perambur"
+chennai,6926045326,node,hospital,Sri Sai Krs Hospital,13.0379757,80.2162984,unknown,,"No.39, Ashok Nagar, 7Th Avenue"
+chennai,6926049961,node,hospital,"Gowri Nursing Home, Kanchipuram",12.9779713,80.1883923,unknown,,"18, 6Th Street Lakshmi Nagar, Nanganallur Chennai"
+chennai,6926055599,node,hospital,Christudas Orthopaedic Speciality Hospital,12.9214137,80.127482,unknown,,"No.9, Duraiswamy Nagar, IAF Road, Near Madras Christian College"
+chennai,6926055600,node,hospital,Satish Eye Hospital,13.0813959,80.2469972,unknown,,"No. 15, Ormes Road, Kilpauk"
+chennai,6926055920,node,hospital,"A.K. Hospital, Chennai",13.0741442,80.220515,unknown,,"P.H. Road,Jn Of P.H. Road And, Nelson Manickam Road, Aminjikarai"
+chennai,6926055921,node,hospital,Gajanan Hospitals Pvt Ltd,12.9264396,80.1117714,unknown,,"No.29, Kakkan Street, West Tambaryam, Kancheepuram"
+chennai,6926055922,node,hospital,Ammayi Eye Hospital,13.0331935,80.2159045,unknown,,"New No 80, 7Th Avenue Ashok Nagar"
+chennai,6926055923,node,hospital,K.M. Speciality Hospital,13.0379671,80.2013517,unknown,,"453 And 454, R.K. Shanmugam Salai , K.K. Nagar"
+chennai,6926060954,node,hospital,Subha Hospital,13.1113868,80.2923493,unknown,,"87/38, M.S. Koil Street, Royapuram"
+chennai,6926082101,node,hospital,I Care Eye Care Eye Institute,12.943659,80.1437791,unknown,,"29/20, Hanumar Koil Street, Radha Nagar, Chromepet, Chennai"
+chennai,6926107781,node,hospital,Radhatri Nethralaya,13.0339283,80.2394965,unknown,,"12, Hindi Prachara Sabha Street, T Nagar"
+chennai,6926118208,node,hospital,"S M Hospital, Chennai",13.0400969,80.2044211,unknown,,"B-49B, Dr.Ramasamy Salai, Near Pillayar Koil Bus Stop, K.K Nagar"
+chennai,6926173267,node,hospital,Cu Shah Sankara Netralaya,13.0012687,80.2001283,unknown,,"Ii Gst Road, St. Thomas Mount"
+chennai,6926280322,node,hospital,Aashiana Hospital,13.0924039,80.2090184,unknown,,"1201, 6th Avenue"
+chennai,6926411928,node,hospital,"Ayesha Hospital, Kilpauk",13.0847009,80.2498054,unknown,,"91-A Millers Road, Kilpauk"
+chennai,6926437405,node,hospital,Frontline Eye Hospital,13.0323531,80.2517212,unknown,,123 T.T.K. Rood Alwarpet
+chennai,6926437416,node,hospital,Fousiya Hospital,13.0477722,80.2744473,unknown,,"New No: 119, Old No: 56, Ice House Police Station, Triplicane, Dr. Natesan St;Sudandira Nagar"
+chennai,6926437428,node,hospital,Hande Hospital,13.0764653,80.2274586,unknown,,"45, Lakshmi Talkies Road"
+chennai,6926437454,node,hospital,Dr Gurusekaran Hospital Pvt Ltd,13.0374924,80.2381137,unknown,,"N0-01, Crescent Park Street, T Nagar"
+chennai,6926437476,node,hospital,Grace Multipeciality Hospital,12.9569773,80.1867561,unknown,,No.56 Medavaakkam Main Raod Keelkattalai
+chennai,6926494055,node,hospital,G. R. Hospital & Fertility Centre,12.9952982,80.2068955,unknown,,"#12/6, City Link Road, Near NGO Colony Bus Stand"
+chennai,6926494067,node,hospital,G K M Hospital Pvt Ltd,13.0899919,80.2585199,unknown,,"120/113, Perambur Barracks Road, Purasawalkam"
+chennai,6926808792,node,hospital,Starlight Hospitals Pvt Ltd,12.9864526,80.2601581,unknown,,"Old No 3, New 11, North Mada Street, Near Marundeeswarar Temple, Near Thiruvanmiyur Bus Terminus"
+chennai,6926953017,node,hospital,Kaliappa Renal Center,13.0274616,80.2566481,unknown,,"No.43,Second Main Road,R A Puram"
+chennai,6926953024,node,hospital,K P Childrens Hospital And Neuro Centre,12.9911179,80.1986745,unknown,,"No 3, Near Jayalakshmi Cinema Hall & St Thomas Mount Railway Station, Medavakkam Main Road, Adambakkam, Chennai - 600088"
+chennai,6927054448,node,hospital,"Mangalam Hospital, Tiruvallur",13.050709,80.0960022,unknown,,"No.1, J.C.N. Street, Poonamallee"
+chennai,6927267098,node,hospital,Ayur Kshetra ( A Unit Of Institute Of Ayurvedic Research Pvt Ltd),13.0760812,80.2107431,unknown,,"No 5, Panchaliamman Koil Street, Arumbakkam"
+chennai,6927292449,node,hospital,Krishna Eye And Ent Hospitals,13.0343985,80.2339764,unknown,,"No.39, Burkit Road, T. Nagar"
+chennai,6927308315,node,hospital,Vishnu Eye Clinic and Laser Foundation,13.0842894,80.2230605,unknown,,"No C 46, Near Chintamani, 2nd Avenue, Anna Nagar East"
+chennai,6927359623,node,hospital,Kanaga Hospital,13.0099884,80.1223294,unknown,,No:3/225 Kundrathur Main Road Kovur
+chennai,6927380447,node,hospital,"Santhigiri Ayurveda and Siddha Hospital, Chennai",13.0476871,80.2646568,unknown,,"No.159 Lloyds Road , Siva .Ent Hospital Building"
+chennai,6927647007,node,hospital,Vijaya Heart Foundation - Vijaya Hospital,13.054729,80.2110462,unknown,,"180, Nsk Salai, Vadapalani"
+chennai,6927769046,node,hospital,Santosh Hospital Pvt Ltd,12.995229,80.2691898,unknown,,"No. 1, 7Th Avenue, Besant Nagar. Near Velankanni Church"
+chennai,6928030150,node,hospital,Dr. Agarwal's Eye Hospital,13.1162231,80.0967247,unknown,,"No:3,1st Floor, Main Road,Kamaraj Nagar, Avadi,Chennai"
+chennai,6928042666,node,hospital,"Dr.Agarwal's Eye Hospital Ltd., Anna Nagar",13.0847414,80.2219681,unknown,,"No.107, A Block, 3rd Avenue, Anna Nagar Roundana"
+chennai,6928094720,node,hospital,Athipathi Hospital and Research Centre,12.9762711,80.2222002,unknown,,"No.-4, 100 Feet Road, Tansi Nagar, Velachery"
+chennai,6928167787,node,hospital,Girishwari Hospital Pvt Ltd,13.0349787,80.2519137,unknown,,"19, K.B Dasan Road (SIET College Road), Alwarpet"
+chennai,6928327073,node,hospital,Sri Kumaran Multi Speciality Hospital,13.1152895,80.2923614,unknown,,"N0:532, Suriya Narayana Street, Royapuram"
+chennai,6928330765,node,hospital,Sri Kumaran Hospital,12.9278474,80.1118621,unknown,,"3-A-3B, Market, West Tambaram, Kakkan Street"
+chennai,6928330859,node,hospital,Dr. Arvind Vision Care,13.0840124,80.1691809,unknown,,"Old No.61New No.3,Reddy Palayam Road,Mugappair West"
+chennai,6928384708,node,hospital,Dr. K Ravi Eye Care,13.0407013,80.2618016,unknown,,No. 03 2nd Link Street. Cit Colony
+chennai,6928444701,node,hospital,"SKS Hospital, Chennai",13.0896987,80.1877418,unknown,,"959, Tvs Colony Annanagar West Extension"
+chennai,6928481484,node,hospital,Dr. K.K. Surgical and Paediatric Centre Pvt Ltd,12.9220372,80.1382443,unknown,,"Door No.238/310, Plot No.33, Velachery Main Road, Selaiyur, East Tambaram, Chennai"
+chennai,6928727073,node,hospital,Madras Ent Research Foundation,13.0268688,80.2541439,unknown,,"15, P.S.Sivasamy Salai, Off Dr.Radhakrishnan Raod) Mylapore"
+chennai,6928752799,node,hospital,Dr. Mohans Mv Diabetes Specialities Centre - Chennai,13.0541946,80.257671,unknown,,"6B, Conran Smith Road, Gopalapuram"
+chennai,6928779096,node,hospital,Chettinad Super Speciality Hospital,12.9109406,80.228211,unknown,,"Rajiv Gandhi Salai, Old Mahabalipuram Road"
+chennai,6928800365,node,hospital,Dr.Bhats Eye Hospital,13.1185204,80.1523131,unknown,,"Vijoya Complex,No.1.M.J.H.Road,Ambattur,Chennai"
+chennai,6928878284,node,hospital,Lifeline Rigid Hospital,13.0780204,80.2336988,unknown,,"47/3, New Avadi Road,Near Kilpauk Post Office"
+chennai,6928899364,node,hospital,Dr. Seshiah Diabetes Research Institute and Dr. Balaji Diabetes Care Centre,13.0748591,80.2299839,unknown,,"#729, P.H. Road, ,Near Pachaiappa's College,Aminjikarai"
+chennai,6928920472,node,hospital,Dr.Kamakshi Memorial Hospital,13.0022187,80.2520867,unknown,,"6/13, 3rd Cross Street, Kasthuribai Nagar, Adyar"
+chennai,6928920473,node,hospital,Dr.Duraiswami Eye Hospital,13.034051,80.2279374,unknown,,"No.10/11, Madley Road, T.Nagar"
+chennai,6928936148,node,hospital,Dr.Agarwals Eye Hospital,12.9832681,80.2176077,unknown,,"27, 100 Feet Road, Taramani Link Road, Velacherry"
+chennai,6928936149,node,hospital,"Dr.Agarwal's Eye Hospital Ltd, Nanganallur",12.9827844,80.1891661,unknown,,"Ophthalmology Department, Margaret Sydney Hospital, 13,2nd Street, Nanganallur"
+chennai,6928936160,node,hospital,Dr. Udhaya Rajas Dental Centre,13.0465492,80.2422899,unknown,,"56,(Old No.105), G.N. Chetty Road, First Floor, T.Nagar"
+chennai,6929229178,node,hospital,National Institute Of Siddha Department Of Ayush,12.9393262,80.1279768,unknown,,"Ministry Of Health & Family Welfare ,Goverment Of India"
+chennai,6929250392,node,hospital,Dhanvantari Eye Care,13.0973284,80.1942193,unknown,,"W-27, Old No.18, North Main Road,Anna Nagar West Extn"
+chennai,6929255218,node,hospital,Sri Bala Nursing Home,13.1183119,80.2318051,unknown,,"46, S.R.P. Kil Street(North) T.V.K.Nagar"
+chennai,6929257550,node,hospital,"Anand Hospital, Chennai",13.1638346,80.2581659,unknown,,"201, Kamarajar Salai Manali Chennai"
+chennai,6929259906,node,hospital,Lakshmi Hospital,13.0314888,80.2218689,unknown,,"Near Srinivasa Theatre, West Mambalam, Govindan Road"
+chennai,6929266356,node,hospital,நந்தினி மருத்துவமனை,12.9327959,80.2315475,yes,+919445627717,"168, Chandrasekaran Avenue, O.M.R, Thoraipakkam , Opposite To P.T.C Bus Stop"
+chennai,6929359056,node,hospital,B.M. Silver Jubilee Multi Speciality Hospital,12.9646856,80.1522294,unknown,,"No.41, Dharga Road,Pallavaram"
+chennai,6929359057,node,hospital,Bharathirajaa Hospital and Research centre,13.0480981,80.245015,unknown,,"Gopathi Narayanaswami Chetty Rd, Satyamurthy Nagar, T. Nagar"
+chennai,6929359073,node,hospital,Bethany Health Care Centre,13.0699812,80.2444142,unknown,,"72, Spur Tank Road,Chetpet"
+chennai,6929359074,node,hospital,Bethesda Hospital and Child Care Centre,12.9217796,80.1450997,unknown,,"Camp Road, Selayur, Bharathi Nagar"
+chennai,6929359084,node,hospital,Bhagwan Mahaveer Eye Hospital,13.1105084,80.2917197,unknown,,"No.142, M.S. Koil Street, Royapuram"
+chennai,6929372896,node,hospital,Bharath Hospital,12.9823277,80.1937835,unknown,+91 44 2224 6481;+91 44 2224 6789;+91 98419 72378,Nanganallur 1st Main Road
+chennai,6929398895,node,hospital,Trinity Acute Care Hospital - Chennai,13.0382607,80.2582785,unknown,,"No:33, Near Alwarpet Signal, Mylapore, Desikan Road"
+chennai,6929592168,node,hospital,Balakrishna Eye Hospital,13.0274436,80.2269866,unknown,,"11, Sastri 1st Cross Street, Kaveri Nagar Saidapet"
+chennai,6929599461,node,hospital,Dr Rabindran's Health Care Center,13.1190773,80.1504859,unknown,,"212 Mth Road, Ambattur"
+chennai,6929625889,node,hospital,Babu's Maternity Hospital,12.9294917,80.1194769,unknown,,"33, Duraiswamy Reddy St, Tambaram West, Tambaram"
+chennai,6929625895,node,hospital,B.S.S. Hospital,13.026013,80.2655232,yes,,"200, Ramakrishnan Mutt Road, Mandaveli"
+chennai,6929625900,node,hospital,B.S. Hospital,12.9343227,80.1384374,unknown,,"Chitlapakkam 3Rd Main Rd, State Bank Of India Colony, Chitlapakkam"
+chennai,6929625901,node,hospital,B.R.S. Hospital Pvt. Ltd.,13.0519442,80.2454831,unknown,,"No: 28, Cathedral Gardens Road, Next Hotel Palm Grove, Nungambakkam"
+chennai,6929731466,node,hospital,Harvey Healthcare Limited,13.037303,80.2558136,unknown,,"Old No 32, New No 12, Conran Smith Road, Gopalapuram"
+chennai,6929737121,node,hospital,Chitra's Ent Laser Hospital,13.0518247,80.2476483,unknown,,"No.30C, Cathedral Garden Road, Nungambakkam"
+chennai,6929969774,node,hospital,Kottakkal Arya Vaidya Sala,13.0395483,80.2313016,unknown,,"Mangesh Street, T Nagar"
+chennai,6930080547,node,hospital,"Rohit Hospital, Tiruvallur",13.1512288,80.2998984,unknown,,"#98/1031, T H Road Kaladipet Chennai Chennai"
+chennai,6930163091,node,hospital,Je Nesam Hospital,13.0405732,80.2146873,unknown,,"Door No.1, 40Th Street, 1St Floor, Opposite To Jfa, Near Ashok Nagar"
+chennai,6930163175,node,hospital,Chennai Meenakshi Multispeciality Hospital Ltd,13.0376198,80.2619625,unknown,,"148, Luz Church Road Mylapore"
+chennai,6930188138,node,hospital,Chennai Skin Foundation and Yesudian Research Institute,13.0210394,80.2592924,unknown,,"No:12/2, Bagirathi Ammal Street, C P Ramasamy Road, R.A.Puram"
+chennai,6930464973,node,hospital,Chinnammal Ent Hospital,13.0459338,80.1131429,unknown,,"No 387 Drr Complex 1st Floor,Opposite Indian Oil Petrol Pump,Trunk Road,Karaiyanchavadi,Chennai"
+chennai,6930467954,node,hospital,Dr.Mu.Va.Hospital,13.0743327,80.228278,unknown,,"6,Kanniamman,Koil Street,Shenoy Nagar"
+chennai,6930489015,node,hospital,Cholayil Sanjeevanam Ayurveda,13.0844527,80.1798642,unknown,,"50, Block 1 1st Flr Amm Towers"
+chennai,6931010523,node,hospital,"Vandana Hospital, Tiruvallur",13.1456863,80.2927141,unknown,,"No.96, Village Street, Tollgate, Sathuma Nagar"
+chennai,6931566251,node,hospital,Mysaan Hospital,13.0641326,80.2705644,unknown,,"19/10, Thayar Street, Mount Road"
+chennai,6931658649,node,hospital,V H M Hospitals Pvt Ltd,13.0462892,80.1979979,unknown,,"No-4, Lal Bahadur Sastry Street Sathya Garden, Saligramam"
+chennai,6931772941,node,hospital,Robin and Robin Health Care,13.0807741,80.1989025,unknown,,162/16 Mangalam Colony 7Th Avennue Anna Nagar
+chennai,6932068862,node,hospital,West Madras Medical Centre,13.0850496,80.215956,unknown,,"W-98, Second Avenue Anna Nagar"
+chennai,6932103990,node,hospital,"Kauvery Hospital, Chennai",13.0390564,80.2568208,unknown,,"#81, Ttk Road,Alwarpet"
+chennai,6932138889,node,hospital,Rathi Med Speciality Hospital,13.0916495,80.2179844,unknown,,"63, Old No. 102, Q Block, 3Road Avenue , Annanagar"
+chennai,6932203729,node,hospital,Santhi Hospital,12.9507835,80.255186,yes,,East Coast Road SH49
+chennai,6932938089,node,hospital,Laksha Hospital,13.0435469,80.2636349,unknown,,"No.15, P.S.Sivasamy Salai Road, P.S.Sivasamy Salai"
+chennai,6932938090,node,hospital,"Lake View Hospital, Tiruvallur",13.1368213,80.2087516,unknown,,"#100 A, Perambur -Redhills Road ,Near Secretariat Colony Bus Stop,Lakshmipuram"
+chennai,6932966221,node,hospital,Narayanaa Hospital,13.0893773,80.2547595,unknown,,"No.18, Tana Street, Purasawalkam"
+chennai,6932999583,node,hospital,NN Hospital,12.9300969,80.1188466,unknown,,"West Tambaram, Gandhi Road"
+chennai,6933010451,node,hospital,Janamma Hospital,13.0269457,80.2623196,unknown,,"38/56, Near Bank Of Baroda, Venkata Krishna Road, Jeth Nagar, Mandaveli"
+chennai,6933016136,node,hospital,"Noble Hospital, Chennai",13.0821536,80.253244,unknown,,"4 Adiappa Mudali Street,Purasaiwalkam Flowers Road"
+chennai,6933038486,node,hospital,"J.K. Hospital, Chennai",13.1354513,80.2934799,unknown,,"New No.303,Old No.99, T.H.Road"
+chennai,6933038566,node,hospital,Indira Eye Hospital,13.0222055,80.2622388,unknown,,No 5 School View Road R K Nagar
+chennai,6933038567,node,hospital,Indian Hospitals,13.0766658,80.2057502,unknown,,"No. 1051, P.H.Road, Arumbakkam"
+chennai,6933130958,node,hospital,Diabetes Research Centre and M.V.Hospital For Diabetes,13.1119458,80.2952072,unknown,,"No.4, West Mada Church Street"
+chennai,6933279103,node,hospital,"Vasan Eye Care Hospital, Neelankarai",12.9504267,80.2551001,unknown,,"No 20, Thamirabarani Towers, Ecr Road, Kabaliswarer Nagar, Neelankarai"
+chennai,6933370913,node,hospital,Apollo First Medical Foundation,13.0776912,80.2459216,unknown,,"154, Poonta Nala High. Road,Kilpauk, Near , K.Mc. Hospital"
+chennai,6933510851,node,hospital,Josephs Nursing Home,13.0739408,80.2357346,unknown,,"10-A, Dr. Guruswamy Road, Chetpet"
+chennai,6933510862,node,hospital,Jip Diabetic and Heart Care Centre,12.9548325,80.141636,unknown,,"No-26, Pammal Mn Road ,Muthamizh Ngr,Pammal , Chennai"
+chennai,6933510877,node,hospital,Jayam Polyclinc,12.9958562,80.2603345,unknown,,"No-58, M G Road, Thiruvanmiyur"
+chennai,6933514287,node,hospital,Jayadev Polyclinic Hospital,13.0778545,80.2415295,unknown,,"No : 814, Poonamallee High Road ., Kilpauk"
+chennai,6933514313,node,hospital,"Jawahar Hospital, Kanchipuram",12.9335502,80.123004,unknown,,"1, Lutheran Church Cross Street, Kadaperi, Tambaram"
+chennai,6933522070,node,hospital,Kummaran Eye Speciality Centre,13.0600349,80.2302911,unknown,,"67/79, Choolaimedu High Road"
+chennai,6933523232,node,hospital,Kvt Health Centre,13.1282303,80.2421558,unknown,,"Moolakadai Junction, Moolkadai, Gnt Road, Moolakadai"
+chennai,6933737012,node,hospital,Ezhil Hospital,13.1302259,80.2916855,unknown,,"583, Thiruvottiyur High Road, Near Apollo, Tondiarpet"
+chennai,6933757130,node,hospital,Premier Health Center,13.0842489,80.220851,unknown,,"B-Block,1/2 Second Avenue,Anna Nagar"
+chennai,6933794368,node,hospital,Vasantha Subramanian Hospitals Pvt Ltd,13.0731975,80.2527237,unknown,,"13, East Spurtank Road, Chetpet"
+chennai,6933797537,node,hospital,"Vasan Eye Care Hospital, Tiruvallur",13.0498729,80.0922444,unknown,,"No.780, Trunk Road, Poonamalle"
+chennai,6933802716,node,hospital,"Vasan Eye Care Hospital, Tondiarpet",13.1109009,80.2812195,unknown,,"New No 976, Old No 447, T H Road,Old Washermenpet, Opp To Nirmala Silks,Tondiarpet"
+chennai,6933828333,node,hospital,Madras Poly Clinic and R.R. Scan,13.0461063,80.2220044,unknown,,5 Kannadasan St.Ranga Rajapuram
+chennai,6933831617,node,hospital,"Vasan Eye Care Hospital, Valasaravakkam",13.0411063,80.1747546,unknown,,"No 50, Arcot Road, Valasaravakkam"
+chennai,6933833923,node,hospital,Life Medhospital,13.0535505,80.2576911,unknown,,"32/12, Next To Gopalapuram Boys High School Play Ground, Gopalapuram, Conran Smith Road"
+chennai,6933869777,node,hospital,"K.M. Hospitals, Chennai",13.0884107,80.2421169,unknown,,"No.167,E.H.Road,Vyasarpadi,Sharma Nagar,Chennai"
+chennai,6933875088,node,hospital,Zubeda Hospitals Ltd.,13.0741955,80.2357775,unknown,,"# 10, Dr. Guruswamy Road"
+chennai,6933910999,node,hospital,RR Multispeciality Hospital,13.0584745,80.2740124,unknown,,"Near Rathna Cafe Hotel, Triplicane, T.H. Road"
+chennai,6933998001,node,hospital,Dr.Manju Kulkarni Hospital,13.0743836,80.2367672,unknown,,"No,18,Nowroji Road"
+chennai,6934018868,node,hospital,S.V. Bone And Joint Hospital,13.0473239,80.2241461,unknown,,"New No: 177, Old No:77, Rangarajapuram Road, Kodambakkam"
+chennai,6934031649,node,hospital,Sri G.M. Hospital,12.9652266,80.1927643,unknown,,"#.39, Sabari Salai,Madipakkam"
+chennai,6934036697,node,hospital,Sri Eshodha Hospital,13.0981213,80.2362643,unknown,,"No.46, Konnur High Road Ayanavaram"
+chennai,6934061609,node,hospital,Srichakara Multispeciality Hospital,12.97853,80.1851381,unknown,,"Chennai, No 1 Civil Aviation Colony, 100 Feet Road, Nanganallur"
+chennai,6934098007,node,hospital,Abhijay Hospital,13.1160177,80.2328438,unknown,,"No.22/2, E.S.I.Hospital Road"
+chennai,6934139598,node,hospital,Arvind Sai Eye Hospital,12.9731392,80.1371252,unknown,,"No. 1, Ganesan Street, (Pammal Main Road) Krishna Nagar, Pammal"
+chennai,6934146446,node,hospital,"Sinus And Nose Hospital - Mylapore, Chennai",13.0350623,80.2778479,unknown,,"35 A, Santhome High Road, Marina Beach"
+chennai,6934155951,node,hospital,Sindu Hospital,12.9206582,80.1434009,unknown,,"203, Velachery Main Road, Camp Road Junction, Selaiyur"
+chennai,6934163318,node,hospital,Sibi Hospital,12.9697917,80.1904562,unknown,,"Plot No. 5, Medavakkam Main Road, , Madipakkam,Near Madipakkam Koot Oad"
+chennai,6934186203,node,hospital,Sri Venkateshwara`s C.M. Hospital,12.9857914,80.185987,unknown,,"No.1, 47th Street, 5th Main Road"
+chennai,6934246102,node,hospital,Srinivas Priya Hospital (P) Ltd,13.1100467,80.2466847,unknown,,"Old No.89,& New No.106 Pate Road Perambur, (Near Perambur Railway Station), Patel Road"
+chennai,6934270989,node,hospital,Anjakha Hospital,12.9637407,80.1880047,unknown,+91 44 2247 0405;+91 44 2247 0406,Mount - Medavakkam Road
+chennai,6934271042,node,hospital,M.S.M. Skin and Hair Care Clinic,12.9521441,80.1438126,unknown,,8/26 Sarathy Kalyana Mandapam
+chennai,6934271069,node,hospital,"M.R. Hospital, Chennai",13.0725279,80.2195783,unknown,,"New No. 12 Old No.20, Govindan Street Ayyavoo, Naidu Colony, Aminjikarai"
+chennai,6934271075,node,hospital,M. N. Orthopaedic Hospital,13.0810328,80.2336653,yes,+914426442279,"No. 14, Bank Street Off New Avadi Road, Kilpauk"
+chennai,6934271106,node,hospital,M V Hospital For Diabetes Pvt Ltd,13.1121574,80.2956927,unknown,,"No-4, West Mada Church Street, Royapuram"
+chennai,6934271111,node,hospital,M N Eye Hospital,12.996767,80.2603599,unknown,,"33, Mahatma Gandhi Road, Sastri Nagar, 2nd Avenue, Adyar"
+chennai,6934301423,node,hospital,"A.V. Hospital, Chennai",13.1170802,80.2864189,unknown,,"# 172, Solaiappan Stree, Near Maharani Theatre"
+chennai,6934325848,node,hospital,N.R. Hospital,13.1122162,80.2309737,unknown,,7(1/1A)1st Main Road Jawahar Nagar
+chennai,6934325849,node,hospital,N.R. Medical Home Private Limited,13.0965878,80.2597135,unknown,,"No 1, Binny Colony, Perambur Barracks Road, Behind Binny Cloth Show Room"
+chennai,6934325866,node,hospital,Nagamani Hospitals Private Limited,13.117412,80.289427,unknown,,"# 116,118, Rajarathinam Saalai, (G.A. Road)"
+chennai,6934325876,node,hospital,Nalamm Hospital Pvt Ltd,13.1184216,80.2610184,unknown,,"10A/3 I Cross Street, M K B Nagar"
+chennai,6934325882,node,hospital,Nandalala Medical Foundation,13.0328516,80.2615173,unknown,,"Thoppu New No.2,(Old No.64),Dr.Ranga Road, Abiramapuram"
+chennai,6934326572,node,hospital,Sri Kumaran Health Centre,13.1308907,80.2138799,unknown,,"No:1419, Chennai, 200 Feet,Retteri Junction,Kolathur"
+chennai,6934340601,node,hospital,Nandhini Hospital,12.9784706,80.2247932,unknown,,"40B, Tansi Nagar Vii St, Velachery"
+chennai,6934340623,node,hospital,Navasuja Sankara Nethralaya,13.0265108,80.2607878,unknown,,"73 Venkatakrishna Road, Ra Puram"
+chennai,6934340638,node,hospital,Neomed Hospital - Chennai,13.083452,80.2030747,unknown,,"2181 L Block 12Th Main Road, Anna Nagar"
+chennai,6934340658,node,hospital,"New Balaji Hospital, Chennai",13.0316469,80.2311185,unknown,,"49 Srinivasa Reddu Street,T Nagar"
+chennai,6934340659,node,hospital,New Hope Indian Specilaity Hospital,13.0777579,80.2414826,unknown,,"No 1051, Poonamallee High Road, Arumbakkam"
+chennai,6934340664,node,hospital,New Hope Medical Centre Pvt. Ltd,13.0776821,80.2415201,unknown,,"No. 814, Poonamallee High Road, Kilpauk"
+chennai,6934340665,node,hospital,Nichani Health Centre,13.111251,80.2940284,unknown,,"10, Arthoon Road Royapuram"
+chennai,6934340710,node,hospital,Om Shakthi Hospital,13.1184222,80.1507749,unknown,,"No. 11, Old B.O.B. St. Secretariate Colony"
+chennai,6934340749,node,hospital,Orthopedic and Specialities Hospital,13.0390564,80.2086724,unknown,,"No. 25, 10Th Avenue, Ashoknagar"
+chennai,6934340766,node,hospital,Padmapriya Hospital Pvt. Ltd.,12.9996223,80.2537027,unknown,,"No. -28, 1st Avenue, Indira Nagar, Adyar"
+chennai,6934340781,node,hospital,Palani Balaji Fertility Centre,13.0122123,80.2235084,unknown,,"4/12A, Anna Nagar,Palani"
+chennai,6934340782,node,hospital,Pallava Hospital,13.0420391,80.2126005,unknown,,"No.19A, Next To Bhuari Hotel, Ashok Nagar, First Avenue"
+chennai,6934340789,node,hospital,Pankajam Memorial Hospital,12.9801472,80.1835965,unknown,,"C3, Hindu Colony, Nanganallur"
+chennai,6934347087,node,hospital,Apollo Childrens Hospital,13.060131,80.2523656,unknown,,"No.15, Thousand Lights, Shafee Mohammed Road"
+chennai,6934347093,node,hospital,Anuradha Maternity Centre,13.0356881,80.2337551,unknown,,"31,Dhandapani Street,T.Nagar"
+chennai,6934407803,node,hospital,Shri Balaji Hospital - Chennai,13.0919709,80.2511633,unknown,,"No-36, Brickkiln Road Near Abirani Theatre"
+chennai,6934897845,node,hospital,Tamil Nadu Urological Research Centre,13.0710341,80.222632,unknown,,"No.76,Nelson Manickam Road, Aminjikaral"
+chennai,6934903332,node,hospital,Sss Hospital,13.1577727,80.3018933,unknown,,"No: 924, T H Road Near Ellaiamman Koil"
+chennai,6935159758,node,hospital,Thirimoorthys Heart Care Hospital,12.9673347,80.1867983,unknown,,"2/93, 2nd Main Rod, Ragavanagar, Madipakkam"
+chennai,6935224404,node,hospital,"Thulasi Krishna Nursing Home, Kodambakkam",13.0517176,80.2300054,unknown,,"# 5, First Street, Taylors Estate, Kodambakkam"
+chennai,6935224405,node,hospital,"Sugam Hospital, Tiruvallur",13.1652175,80.3032967,unknown,,"#349, ,Thiruvottiyur High Road,Thiruvottiyur"
+chennai,6935272552,node,hospital,Dr. Agarwal's Eye Hospital,13.074266,80.2382156,unknown,,"No. 11, M C. Nichols Road, 4Th Lane, Opposite To Chetpet Police Station Chetpet"
+chennai,6935274089,node,hospital,Selvarangam Hospital,13.0850183,80.2244673,unknown,,"C-54, 1 St Main Road, Anna Nagar East, Near Chinthamani Supermarket"
+chennai,6936134766,node,hospital,Unnamed Hospital,12.9498348,80.1690781,unknown,,"No: 2, Iii Main Road, New Colony, Chrompet,Chennai"
+chennai,6936134771,node,hospital,"Sankara Nethralaya, Chennai",13.0670837,80.2505444,unknown,,"(A Unit Of Medical Research Foundation)41/18, College Road, Nungambakkam"
+chennai,6936244762,node,hospital,Royal Hospital - Chennai,13.0449677,80.1846506,unknown,,"1, Jawaharlal Nehru Street, Valasarawakkam, Alwarthirunagar"
+chennai,6936264375,node,hospital,Viganesh Hospital,13.0309126,80.1715896,unknown,,"36, Poothapedu Main Road, Vengadeswar Nagar, Perur"
+chennai,6936271569,node,hospital,Sri Lakshmi Multi Speciality Hospital Pvt Ltd,12.9640779,80.2461429,unknown,,"5/91, Church Road, Perungudi, Near Andrew Yulex Colony, Chengalpattu"
+chennai,6936275517,node,hospital,Dr Agarwal Eye Hospital Ltd,13.1135903,80.2270764,unknown,,"B-63, Siva Elango Salai (70 Feet Road), Periyar Nagar"
+chennai,6936294078,node,hospital,Karthik Hospital,13.1665521,80.3043053,unknown,,"No 727 To 730, T H Road, T S R Nagar,Thiruvottiyur Chennai"
+chennai,6936315219,node,hospital,Spandana Surgical Centre,13.0834455,80.1749497,unknown,,"Swarnapuri-Ground Floor, 6/13, J.J.Nagar West"
+chennai,6936316468,node,hospital,Tosh Hospitals Private Limited,13.0827016,80.2424652,unknown,,"No.34/72, Ormes Road, Kilpauk"
+chennai,6936339695,node,hospital,Sundaram Cancer Centre,13.07604,80.2366224,unknown,,"Flat1/B,Ii Floor,Old#No191,New#297,Precision Diagnostics Complex,Periyar Evr Salai(P.H.Road)Kilpauk"
+chennai,6936339711,node,hospital,R.R. Eye Instutute and Laser Foundation,13.0483992,80.2040416,unknown,,"37, Arunachalam Road"
+chennai,6936339822,node,hospital,Avm Medical Ent Research Foundation Pvt Ltd,13.0441485,80.2637114,unknown,,"3, P S Sivasami Salai Mylapore"
+chennai,6936356289,node,hospital,"Aditya Hospital, Chennai",13.0806801,80.2486159,unknown,,"7, Barnaby Road"
+chennai,6936359923,node,hospital,Laser and Laparascopic Hospital,13.0430125,80.2371521,unknown,,No.121 G.N.Chetty Road
+chennai,6936359940,node,hospital,Lakshmi Maternity Hospital,12.9938673,80.2528444,unknown,,"New No.10, Old No.20, 3Road Avenue, Indira Nagar, Adyar"
+chennai,6936359972,node,hospital,Kumaran Hospital Pvt.Ltd.,13.0790289,80.2490893,unknown,,"214, E.V.R.Periyar Salai, Poonamalee High Road, Periyar Salai"
+chennai,6936369001,node,hospital,D R J Hospital P. Ltd.,13.1217887,80.1996361,unknown,,"No: 9, 100 Feet Road, Nehru National Highway, Kolathur"
+chennai,6936386662,node,hospital,"Dr Agarwals Eye Hospital Ltd, Chennai",13.0381353,80.1619336,unknown,,"No 49, Aruot Road Porur Porur Chennai"
+chennai,6936391765,node,hospital,Apollo Specialty Hospitals Private Limited,13.0177957,80.2711008,unknown,,"No.41/42, 53/54, Sathyadev Avenue, Mrc Nagar"
+chennai,6936411410,node,hospital,Amalya Eye Hospital,13.0877615,80.2423476,unknown,+9194449 14914,"72, Medavakkam Tank Road, Near Jamai Mosque"
+chennai,6936415699,node,hospital,Dr. A. Ramachandran's Diabetes Hospital,13.0685338,80.2579902,unknown,,"28, Marshalls Road Egmore"
+chennai,6936434314,node,hospital,"Srushti Hospital, Ramapuram",13.0353484,80.1822808,unknown,,"No.1, Padmavathy Street, Thirumalai, Ramapuram"
+chennai,6936469837,node,hospital,Veecare Eye Hospital,13.0843952,80.2182426,unknown,,"4/579, Chennai, 4/579 Rajiv Gandhi Salai"
+chennai,6936663153,node,hospital,Velachery K S Hospital,12.9763914,80.2114016,unknown,,"No.14, 10Th Cross Street , A.G.S.Colony, Velachery"
+chennai,6936669886,node,hospital,K.J. Hospital,13.0790015,80.25267,unknown,,"New-182, Old-927, Poonamalee High Road, Flower Road"
+chennai,6936681265,node,hospital,Sathya Physiotherapy Centre,13.0440365,80.2336198,unknown,,"24,Coats Road, T.Nagar"
+chennai,6936684311,node,hospital,Kensington Hospital,13.0788382,80.2469368,unknown,,"856,Poonamallee High Road, Kilpauk"
+chennai,6936684328,node,hospital,Ponmalligai Hospital Pvt Ltd,12.9925116,80.2061465,unknown,,"#1, Kakkan Nagar 1st Main Road, Adambakkam"
+chennai,6936684391,node,hospital,Pdr Othopaedic Hospital,13.0389519,80.2290894,unknown,,"35, Rangan Street, Behind Grt, T.Nagar"
+chennai,6936695126,node,hospital,E V Kalyani Medical Centre,13.0427786,80.2706811,unknown,,4Second Street Dr Radhakrishnan Road Mylapore
+chennai,6936695172,node,hospital,Yogi Vedha Kumari Hospital,13.0269877,80.2631588,unknown,,"Near Central Bank (Bus Stop), Mandaveli, Devanathan St"
+chennai,6936695177,node,hospital,Xcellent Care Superspeciality Hospital,12.9833895,80.2181782,unknown,,"7/14, 7Th Cross Street, Rajalakshmi Nagar, Velachery"
+chennai,6936695178,node,hospital,Women and Children Foundation,13.0478465,80.2329075,unknown,,"4 / 1 & 4/2 , Porur Somasundaram, North Usman Road T Nagar"
+chennai,6936695215,node,hospital,சுபிக்ஷா மருத்துவமனை,12.9740991,80.1387607,unknown,,"Krishna Nagar, Pammal, Pilliyar Koil Street"
+chennai,6936695226,node,hospital,"Sudha Hospital, Chennai",13.0791504,80.2541493,unknown,,"51/18, Adam Sahib Street, Pumping Station Road, Roya Puram"
+chennai,6936696196,node,hospital,V.K. Hospital,13.0816938,80.2522811,unknown,,"No.77, Dr. Alagappa Road, Purasawalkam"
+chennai,6936696229,node,hospital,U.K. Hospitals Pvt. Ltd.,13.0838857,80.2252632,unknown,,"103/112, D- Block,1st Main Road, Annanagar East"
+chennai,6936696239,node,hospital,"Trust Hospital, Chennai",13.0892193,80.2415402,unknown,,"N0 122,Medavakkam Tank Road,Ayanavaram"
+chennai,6936696240,node,hospital,Titan Eye,13.082343,80.2076291,unknown,,"Road s Enterprises Pvt Limited, Franchisee Of Titan Eye Rbn Tower,Ak-2,4Th Avenue,Shanthi Colony,Annanagar"
+chennai,6936708005,node,hospital,Sai Ortho Care Hospital,13.0332775,80.2371645,unknown,,"55, Sadulla Street, T.Nagar"
+chennai,6936708989,node,hospital,Sooriya Hospital,13.0481888,80.2035199,unknown,,"No.1, Near By Avm Studio, Saligramam, Arunachalam St"
+chennai,6936709086,node,hospital,Centre For Blood Disorders,13.0496502,80.2410582,unknown,+91 44 2834 0668;+91 44 2834 5161,Habibullah Road
+chennai,6936738654,node,hospital,Roselin Gandhi Hospital,13.1166714,80.2803303,unknown,,"10/18, Arumugam Street, Old Washermenpet"
+chennai,6936874933,node,hospital,Paterson Cancer Center / Vijaya Health Centre Premises,13.0475826,80.2069719,unknown,,"175, N.S.K. Salai, Vadapalani"
+chennai,6936953154,node,hospital,Fertility Research Centre,13.0558855,80.2481343,unknown,,"6E, Nungambakkam High Road"
+chennai,6936976871,node,hospital,Spot Hospital,13.047269,80.2187347,unknown,,"No.36, Dr. Ambedkar Road, Kodambakkam"
+chennai,6936994823,node,hospital,B B Hospital,13.1184203,80.204346,unknown,,"No.52, Dayalunagar, Kolathur, Near Villirakham Railway Station"
+chennai,6937055902,node,hospital,Appasamy Krishna Hospital and Medical Research Centre,12.9758647,80.2205016,unknown,,"Plot No. 191, 100 Feet By-Pass Road, Velacherry"
+chennai,6937067452,node,hospital,"Medindia Hospitals, Chennai",13.0606718,80.2432201,unknown,,"83, Valluvarkottam High Road ( Village Road)"
+chennai,6937109075,node,hospital,"Aakash Hospital, Tiruvallur",13.1694824,80.304324,unknown,,T H Road
+chennai,6937111102,node,hospital,K.M. Multi Speciality Hospital,13.1450072,80.2398249,unknown,,"# 8 & 9 Annai Velakanni Nagar,Madhavaram Milk Colony"
+chennai,6937320470,node,hospital,Rudhra-Chella Clinicare`N`Cure Services,13.1228878,80.293498,unknown,,"599,T.H.Road, Tondiarpet"
+chennai,6937351599,node,hospital,K.K.R. ENT Hospital and Research Institute(P) Ltd,13.0781955,80.2452886,unknown,+91 44 2641 1444,Poonamalee High Road
+chennai,6937398987,node,hospital,Roy's Heart Foundation,13.0345893,80.1836944,unknown,,"No: 3/49, Valluvar Salai, Ramapuram"
+chennai,6937434309,node,hospital,"Srinivasa Hospital P P N, Chennai",13.0503377,80.2299377,unknown,,"47, Railway Station Road, Near Post Office, Kodambakkam"
+chennai,6937467152,node,hospital,Gastro Cre Hospital,13.0394065,80.2507684,unknown,,"C,57 11Th Cross Thillai Nagar"
+chennai,6937497904,node,hospital,Aaditya Kamaraja Eye Hospital,13.0463676,80.1865241,unknown,,"No.36, Ist Main Road, Alwarthirunagar Annexe, Alwarthirunagar, Chennai"
+chennai,6937630622,node,hospital,"Kasthuri Hospital, Chennai",12.9269402,80.1146503,unknown,,"119, Shanmugam Road, West Tambaram"
+chennai,6950288001,node,hospital,Sahishnatha Indtitute Of Maternal And Child Health,12.9531897,80.2541614,unknown,,"No.2/614A,Philios Street,Neelangarai"
+chennai,6950427127,node,hospital,Immanuel Hosptal,13.1162117,80.1065513,unknown,,"221, Nehru Bazaar Road, Avadi"
+chennai,7060019586,node,police,Unnamed Police,13.1188229,80.2974617,yes,,OM Pettai Rd
+chennai,7060026186,node,police,Unnamed Police,13.0757377,80.2775929,yes,,
+chennai,7181684162,node,hospital,Siva E N T Hospital,13.0619796,80.2741693,unknown,,"136 (295), Triplicane High Road"
+chennai,7181711080,node,hospital,"Vinayagam Laser Hospital, Chennai",13.0476113,80.2650954,unknown,,"194, Old No 289, Lloyd's Road, Avvai Sanmugam Salai, Royapettah"
+chennai,7181721033,node,hospital,"Dr Agarwals Eye Hospital, Triplicane",13.0524884,80.2736449,unknown,,"No: 290, Triplicane High Road, Triplicane"
+chennai,7181722911,node,hospital,"Dr.Agarwal's Eye Hospital Ltd., Gopala Puram",13.0432085,80.259169,unknown,,"No-19, Cathedral Road"
+chennai,7181748147,node,hospital,Bharani Hospital,13.0380111,80.2013205,unknown,,"No 22, Arcot Road, Saligramam"
+chennai,7181795816,node,hospital,Vasantha Hospital,13.1738112,80.294082,unknown,,"No-04, Annai Gangammal Nagar, Satiamurhu Nagar, Thiruvattiyur"
+chennai,7210895386,node,hospital,Tamil Nadu Urological Research Centre Best Kidney Stone Clinic,13.0748708,80.2147555,unknown,,"Poonamallee High Road,Arumbakkam LandMark : Next to Chennai Ford LandMark"
+chennai,7210899888,node,hospital,Sree Sanjeevi Rayan Hospital,13.1992282,80.1786155,unknown,,"MA Nagar, Padiyanallur, Thiruvallur, NH-5, Great Northern Trunk Road, Thiruvallu"
+chennai,7210911300,node,hospital,Sri Ranga Hospitals,13.0290525,80.2636265,unknown,,"No.06, Chokkalingam St, Jeth Nagar, Mandaveli"
+chennai,7210948177,node,hospital,Chamiers Day Care Center,13.0297278,80.2446245,unknown,,"23, Pasumpon Muthuramalinga Thevar Rd, Rathna Nagar, Nandanam"
+chennai,7213394742,node,hospital,London Harley Street Women And Fertility Centre,12.9609724,80.2421492,unknown,,"12/8, Phase-1, Thirumalai Nagar, Tirumalai Nagar, Perungudi"
+chennai,7213449202,node,hospital,Gas Hospital,13.003026,80.2540981,unknown,,"3/2, 3/2, Adyar 3rd St, Bakthavatchalam Nagar, Baktavatsalm Nagar, Adyar, Chennai"
+chennai,7213492568,node,hospital,Dr.Bala Subramanian,13.0465056,80.2423799,unknown,,"56,(Old No.105), G.N. Chetty Road, First Floor, T.Nagar"
+chennai,7252256167,node,hospital,"Govt Hospital, Alamathi",13.2097678,80.1121208,unknown,,"Near Alamthi Padavattamman Kovil, Alamathi"
+chennai,7252256177,node,hospital,Swasthik Health Care center,13.1297134,80.2506039,unknown,,"Near M.R. Nagar, Bus Stop, Moolakadai, Perambur, Ist Main Road"
+chennai,7252256184,node,hospital,NRV Hospital,13.13468,80.243196,unknown,,"86/A, Pandian Cinema Theatre, Kodungaiyur, Kamarajar Salai"
+chennai,7252256194,node,hospital,Sugam Hospital,13.1685958,80.3042862,unknown,,"Thiruvotriyur Market, Chennai, No.349,Thiruvotriyur High Road, Thiruvotriyur, Chennai- 600 019"
+chennai,7252256215,node,hospital,Government Hospital Kadhavoor,13.1783047,80.0612608,unknown,,"Kadhavoor, Ambattur, Main Raod"
+chennai,7252333314,node,hospital,Govt Kilpauk Medical College Hospital,13.07832,80.243753,unknown,,"822, Poonamallee High Rd, Near Ega Theatre, Kilpauk, Chennai"
+chennai,7252333318,node,hospital,Rasi Hospital,13.12038,80.285818,unknown,,"Near Washermanpet Post Office, Oldwashermanpet, Thiruvottiyur High Road"
+chennai,7252333320,node,hospital,Government Maternity And Child Hospital,13.0991743,80.2301988,unknown,,"United India Nagar, Ayanavaram"
+chennai,7252333321,node,hospital,Cloudnine Hospital - Chennai,13.0433937,80.2461174,unknown,,"Near Hyatt Resigency Hotel, T. Nagar, Vijayaraghava Road"
+chennai,7252333330,node,hospital,Shifa Hospital And Reasearch Centre,13.061988,80.2745135,unknown,,"Near Star Theatre, Triplicane, Quaide-Millah High Road"
+chennai,7252333337,node,hospital,Govt. Stanley Hospital,13.10618,80.286804,unknown,,"Mint, Royapuram, Osh Road"
+chennai,7252333341,node,hospital,Subam Specialities Hospitals,13.0469783,80.1895003,unknown,,"No. 46, (Opp) Vembulliammal Koil, Virugambakkam, Avm Avenue"
+chennai,7252333346,node,hospital,Srisaihospital With Matrinity Facility,13.0692631,80.1799109,unknown,,"No: 36, Near Dayasadan Agarwal Vidyalaya, Maduravoyal, V.G.P Amudha Nagar"
+chennai,7252333347,node,hospital,Govt Peripheral Hospital Periyar Nagar,13.1153048,80.2233851,unknown,,"Govt.Peripheral Hospital, Periyar Nagar, Shiva Vishnu Koil, Periyar Nagar, Jaganadhan Salai"
+chennai,7252333349,node,hospital,Be Well Hospital,13.0431134,80.2453103,unknown,,"5A, (Opp) Anjuman Hr.Sec. School, T. Nagar, Vijayaraghava Road"
+chennai,7252333352,node,hospital,Hera Hospital,13.0508643,80.1922458,unknown,,"No.1, (Opp) To Akr Mahal, Virugambakkam, Soranmbigai Nagar"
+chennai,7252333354,node,hospital,Government Unani Hospital,13.1129012,80.2957982,unknown,,"E Kal Mandapam Rd, Panaimarathotti, Pudumani Kuppam, Royapuram, Chennai"
+chennai,7252333356,node,hospital,Meenakshi Hospital & Childrens Hospital,13.0586646,80.2428501,unknown,,"103-109, Near Valluvarkottam, Nungambakkam, Valluvarkottam High Road"
+chennai,7252333369,node,hospital,Tanker Dialysis Foundation Unit,13.09041,80.175293,unknown,,"Next To Kamarajar Illam, T. Nagar ,Chennai, Tamil Nadu, Ellora Apartments, Flat , 4D, 4Th Floor, 20 Tirumurthy Street"
+chennai,7252333371,node,hospital,Hiba Hospital,13.0616195,80.275793,unknown,,"New No: 53/25, Near L.V. Bank, Triplicane, Big Street"
+chennai,7252333372,node,hospital,A.R.A Hospital For Women,13.0508818,80.2735131,unknown,,"Muthiah Street, Dr. Natesan Road, Ice House, Mirsahibpet, Royapettah"
+chennai,7252333375,node,hospital,Priyas Medical Centre,13.0594024,80.1954415,unknown,,"No.849, Near Parvathi Bhavan, Elango Nagar, Kaliamman Koil St"
+chennai,7252333378,node,hospital,Dr. Rai Memorial Medical Centre,13.044837,80.2475507,unknown,,"No. 562, Century Plaza, Anna Salai, Teynampet, Opp.Hyatt Regency, Chennai;Century Plaza Anna Salai Teynampet"
+chennai,7252333380,node,hospital,Medway Hospitals,13.0535971,80.2275376,unknown,,"Near Corporation Ground, Kodambakkam, Trustpuram 4Th Cross St"
+chennai,7252333381,node,hospital,Seven Wells Hospital,13.0993782,80.2825418,unknown,,"Near Seven Wells Police Station, Seven Wells, Amman Koil Street,Chennai-1"
+chennai,7252333383,node,hospital,Government Hospital,13.068807,80.2672078,unknown,,"Pudupet, Komaleeswaranpet, Egmore, Chennai"
+chennai,7252333388,node,hospital,Standard Hospital,13.0524675,80.1898468,unknown,,"No.55, Virugambakkam, Elango Nagar Main Road"
+chennai,7252333389,node,hospital,Chennai Corporation Hospital,13.1142928,80.2844517,unknown,,"Near old washermanpet post office, Royapuram, Solaiappar Street"
+chennai,7252333390,node,hospital,Guru Raghavendra Hospital,13.0410091,80.1964532,unknown,,"Sector 11, K. K. Nagar, Chennai"
+chennai,7252333394,node,hospital,Seethapathy clinic & Hospital,13.0487028,80.2645448,unknown,,"128/241, (Opp) To Provident Fund Office, Royapettah"
+chennai,7252333396,node,hospital,Kvt Health Speciality Hospital,13.1267531,80.2489796,unknown,,"Near Pavithra Hospital, Chennai, Plot No 1,2,3 , Ethirajaswamy Salai, Erukkanchery"
+chennai,7252333397,node,hospital,Sakthi Hospital &Reasearch Centre Helath Care Organization,13.0572714,80.2757357,unknown,,"No: 175, Near Indian Bank, Triplicane, Big Street"
+chennai,7252333398,node,hospital,Women And Children Foundation Hospitals T-Nagar,13.0480821,80.2329957,unknown,,"No:20, Near North Usman Road Head Post Office, T. Nagar, North Usman Road"
+chennai,7252333399,node,hospital,Dr.Rai Cbcc Centre,13.05562,80.124419,unknown,,"Saveetha Dental College, Chennai, 162,Saveetha Dental College Campus Velappanchavadi, Poonamallee High Road"
+chennai,7252333402,node,hospital,Annai multispeciality hospital,13.0538856,80.1927125,unknown,,"121/60, Kaliamman Koil Street, Ganapathy Raj Nagar, Virugambakkam"
+chennai,7252333403,node,hospital,Firm Hospital,13.0916464,80.2139939,unknown,,"No.65, Near K4 Police Station, Anna Nagar Chennai, R- Block, 12Th Street"
+chennai,7252333406,node,hospital,The Best Hospital Private Ltd,13.0535089,80.2195494,unknown,,"Near Power House, Kodambakkam, Vellala Street"
+chennai,7252333407,node,hospital,Chennai Corporation Hospital,13.0887,80.256712,unknown,,"Purasaiwalkaam, Kariyappa Street"
+chennai,7252333409,node,hospital,Triplicane Government Hospital,13.060986,80.2747981,unknown,,"Near V.House Bus Stop, Icce Hpuse, Dr.Bescent Road"
+chennai,7252333416,node,hospital,Government Hospital For Ladies And Children,13.0590564,80.1928218,unknown,,"Koyambedu Market, Virugambakkam, Natesa Nagar,5Th Main Road"
+chennai,7255706468,node,hospital,SIMS Hospital,13.0561828,80.2478331,unknown,,"Tirumurthy Nagar, Nungambakkam, Chennai"
+chennai,7257289020,node,hospital,Samyuktaa Maternity Hospital,12.9174209,80.0801055,unknown,,"Parvathi Nagar Bus Stand, Old Perunkalathur, Parvathi Nagar, Mudichur Road"
+chennai,7257289034,node,hospital,Christhudass Hospital,12.8515647,80.0666869,unknown,,"Guduvancherry, Ntr Nagar"
+chennai,7257289060,node,hospital,Tagore Medical College Hospital,12.8601332,80.1358744,unknown,,"Melakottayur, Rathnamangalam"
+chennai,7257289121,node,hospital,Vn Allergy & Asthma Research Centre,12.9275229,80.1125421,unknown,,"West Tambaram, Kattabomman Street"
+chennai,7257289123,node,hospital,Suraj Hospital,12.9107782,80.1967559,unknown,,"Arani Road, Chetpet, Dharmaraja Kovil Street"
+chennai,7257289126,node,hospital,Bethesda Medical Mission Hospital,12.92622,80.102998,unknown,,"Beemeswaran Koil St, Mullai Nagar, Tambaram,"
+chennai,7257421533,node,hospital,Sri Muthukumaran Medical College Hospital & Research Institute,13.01822,80.108873,unknown,,"Chikkarayapuram, Mangadu, Kundrathur Road"
+chennai,7257421540,node,hospital,Sunrays Laproscopic Centre,13.0319129,80.2099892,unknown,,"Next To Ashok Nagar Bus Statnd, Ashok Nagar, 2Nd Avenue"
+chennai,7257421544,node,hospital,Sriramachandra Hospital,13.0374439,80.1444537,unknown,,"Near Porur Lake, Porur, Ramachandra Nagar"
+chennai,7257421549,node,hospital,Chinna Porur Government Hospital,13.0369528,80.169935,unknown,,"Hospital Rd, Sairam Avenue, Valasaravakkam, Chennai"
+chennai,7257421555,node,hospital,Arun Hospital,12.9408644,80.1828683,unknown,,"Near Kvb Bank, Medavakkam Main Rd, Rose Nagar, Kovilambakkam"
+chennai,7257421557,node,hospital,Motherhood Hospital,13.0312006,80.2511993,unknown,,"Alwarpet Signal, Alwerpet, T.T..K Road"
+chennai,7257421559,node,hospital,"Government Hospital, Adyar",12.9979497,80.2562121,unknown,,"Near Adiyar Police Station, Shastri Nagar, Adyar"
+chennai,7257421563,node,hospital,Shree Eye & Maternity Hospital,12.9521921,80.1442251,unknown,,"Canara Bank, Chrompet, Radha Nagar Main Road"
+chennai,7257421569,node,hospital,Gunasekaran Hospitals Pvt.Ltd,13.0374624,80.2389389,unknown,,"No:1, Raj Palace Hotel (Opp), T. Nagar, Crescent Park St"
+chennai,7257421573,node,hospital,"Government Hospital, Tambaram",12.94505,80.13456,unknown,,"No 17, Near Mit Gate Bus Stop, Chrompet, Gst Road"
+chennai,7257421582,node,hospital,Vijayam Hospital & Fertility Centre,12.95866,80.187198,unknown,,"No. 70, Medavakkam Main Road, Next To Subiksha Super Market, Keelkattalai, Chennai"
+chennai,7257421583,node,hospital,Kumaran Specialities Hospital,13.03968,80.21204,unknown,,"No: 46, 1St Avenue, Opp To Canara Bank & Andhra Bank, Ashok Nagar, Chennai"
+chennai,7257421586,node,hospital,Arokiya hospital,13.0374234,80.190944,unknown,,"32, Pillayar Koil St, Kk Nagar West, Nesapakkam"
+chennai,7257421589,node,hospital,Parvathy Hospital,13.036525,80.1567342,unknown,,"Back Side Of Hotel Grand Residence, Karapakkam"
+chennai,7257421593,node,hospital,Genesis Womens Hospital,13.034922,80.2465468,unknown,,"Suthamal Extension, Teynampet, First Main Road"
+chennai,7257421596,node,hospital,Radhatri Nethralaya,13.0342203,80.2398192,unknown,,"New No: 12, Old No:29, Behind Dakshina Hindi Prachara Sabha, T. Nagar, Hindi Prachara Sabha St"
+chennai,7257421601,node,hospital,Kavery Hospital,13.038362,80.2572398,unknown,,"Cit Colony, Alwarpet"
+chennai,7257421602,node,hospital,Kanamapet Government Hospital,13.0298989,80.2261208,unknown,,"Kannammapet, Cit Nagar, Chennai"
+chennai,7257421613,node,hospital,Government Hospital Alandur,13.0048164,80.2025432,unknown,,"Near Rto Office, Alandhur, Sowri Street"
+chennai,7257421615,node,hospital,Janani Hospital,13.0313233,80.1909256,unknown,,"No.7, Mgr Statue, Amman Street, Ramapuram Main Road, Nehru Nagar, Nesapakkam"
+chennai,7257421619,node,hospital,T.K.R. Hospital,12.9342227,80.1807557,unknown,,"Vijayaraja Kalyana Mandapam, Kovilambakkam, Dhinakaran Street"
+chennai,7320948885,node,hospital,Unnamed Hospital,13.0753606,80.21879,unknown,,
+chennai,7652446229,node,hospital,Taj Hospital,13.0239396,80.116819,unknown,,
+chennai,7652449746,node,hospital,Malar Clinic,12.9645886,80.1958518,no,,
+chennai,7818702357,node,hospital,Prasad Multispeciality Hospital,13.156154,80.301391,unknown,,"Kaladipet, Tondiarpet, Chennai"
+chennai,7818702358,node,hospital,Uma Hospital,13.1345397,80.2058879,unknown,,"Bharathi Nagar, Lakshmipuram"
+chennai,7818702367,node,hospital,Suman Hospital,13.1503301,80.2984201,unknown,,"Rajakadai, Tiruvottiyur"
+chennai,7818702393,node,hospital,Sankara Eye Hospital,13.165259,80.25871,unknown,,"Vimlapuram, Chinnasekkadu, Manali"
+chennai,7818702395,node,hospital,G S Hospital,13.1537616,80.3006482,unknown,,"Kaladipet, Tiruvottiyur, Chennai"
+chennai,7818702399,node,hospital,Md Hussain Hospital,13.1702776,80.193567,unknown,,"Kannappasamy Nagar, Puzhal"
+chennai,7818702406,node,hospital,Esha Hospital,13.1521728,80.3002146,unknown,,"Thyagarajapuram, Tiruvottiyur"
+chennai,7818702409,node,hospital,Annai Hospital,13.1486276,80.2982812,unknown,,"Vasantha Nagar, Rajakadai"
+chennai,7818702419,node,hospital,Sekar Hospital,13.1523333,80.2998808,unknown,,"Rajakadai, Tiruvottiyur"
+chennai,7818702420,node,hospital,St. Anthony's Hospital,13.161861,80.204431,unknown,,Puzhal
+chennai,7819840741,node,hospital,DPS Hospital,13.0509177,80.0994192,unknown,,"Nambi Nagar, Poonamallee"
+chennai,7819840743,node,hospital,Cure Well Hospital,13.044839,80.078007,unknown,,Nazarathpettai
+chennai,7819840745,node,hospital,Kannimaram Hospital,13.0471845,80.184358,unknown,,"Alwartirunagar, Valasaravakkam, Chennai"
+chennai,7819840748,node,hospital,Vasanthi Dental Hospital,13.0401817,80.1803453,unknown,,Valasaravakkam
+chennai,7819840767,node,hospital,Aravind Eye Hospital,13.0532913,80.1249542,yes,+91 44 4095 6100,Mount Poonamallee Highway
+chennai,7819840775,node,hospital,Be Well Hospital,13.0506409,80.0986929,unknown,,"Mahalakshmi Nagar, Poonamallee"
+chennai,7819840785,node,hospital,Sri Jayendra Saraswati Ayurveda Hospital,13.0426113,80.0723617,unknown,,Nazarathpettai
+chennai,7819840797,node,hospital,Meenakshi Mission Hospital,13.0472622,80.1815603,unknown,,Madurai
+chennai,7819840803,node,hospital,Ramdas Hospital,13.0502479,80.0910986,unknown,,"Ettima Nagar, Poonamallee"
+chennai,7819840806,node,hospital,Shanthi Hospital,13.0470409,80.1841129,unknown,,"Alwarthirunagar, Chennai"
+chennai,7820874217,node,hospital,Sri Meenachi Hospital,12.850128,80.140347,unknown,,Kandigai
+chennai,7820874220,node,hospital,Nithya Gurru Hospital,12.867641,80.0760446,unknown,,"Ambika Nagar, Urapakkam, Perungalathur"
+chennai,7820874227,node,hospital,Suriya Ayurveda Hospital,12.8588635,80.0560942,unknown,,"TTC Nagar, Urapakkam West, Guduvanchery"
+chennai,7820874240,node,hospital,Sri Kamatchi Hospital,12.9050035,80.0929742,unknown,,"Balaji Nagar, Perungalathur"
+chennai,7820874248,node,hospital,Magna Open Health Service,12.8576412,80.0694728,unknown,,"Abnirami Nagar, Urapakkam"
+chennai,7820874249,node,hospital,Mahesh Hospital,12.9178607,80.0590957,unknown,,Royappa Nagar
+chennai,7820874260,node,hospital,Saradha Hospital,12.9080949,80.0926779,unknown,,"Balaji Nagar, Perungalathur"
+chennai,7820874263,node,hospital,Arokia Annai Hospital,12.8678478,80.0648625,unknown,,Urapakkam
+chennai,7820874285,node,hospital,Sri Multi Speciality Homeopathy Clinic,12.8820866,80.0765632,unknown,,"Otteri, Peerakankaranai"
+chennai,7820874287,node,hospital,Sri Raghav Child Care Centre,12.911081,80.0964005,unknown,,"Srinivasa Nagar, Peerkankaranai"
+chennai,7820874288,node,hospital,Thalir Hospital,12.8662405,80.0780594,unknown,,"Ganesh Nagar, Urapakkam"
+chennai,7820874289,node,hospital,Hosanna Hospital,12.8694008,80.0829085,unknown,,"Ganesh Nagar, Urapakkam"
+chennai,7821906812,node,hospital,Sanjeevi's Ayush Hospital,12.9285127,80.1139064,unknown,,"Sivagami Nagar, Tambaram, Medavakkam"
+chennai,7821906814,node,hospital,AG Multi Speciality Hospital,12.9252184,80.1125391,unknown,,Tambaram
+chennai,7821906817,node,hospital,N S Hospital,12.9274606,80.1143405,unknown,,Tambaram
+chennai,7821906820,node,hospital,Dr. Sathish Kumar Institute Of Child Health and Hospital for Children,12.937277,80.1390208,unknown,,Tambaram
+chennai,7821906825,node,hospital,Peeram Hospital Private Limited,12.9349952,80.1257351,unknown,,
+chennai,7821906832,node,hospital,Saaol Heart Centre,12.9361226,80.1238348,unknown,,Tambaram
+chennai,7821906834,node,hospital,PK Multi Speciality Hospital,12.929311,80.118892,unknown,,Tambaram
+chennai,7821906836,node,hospital,Jyothi Siddha Ayurveda Hospital,12.9305296,80.1185855,unknown,,"Ranganathapuram, Tambaram"
+chennai,7821906837,node,hospital,LPR Hospital,12.923229,80.097237,unknown,,"Vishnu Nagar, Tambaram"
+chennai,7821906842,node,hospital,Sarjana Hospital,12.9264853,80.1026633,unknown,,"Mullai Nagar, Tambaram"
+chennai,7821906853,node,hospital,Sree Devi Hospital,12.9293353,80.1131889,unknown,,Tambaram
+chennai,7821906855,node,hospital,Jawahar Hospital,12.9227892,80.1281937,unknown,,"Jayasamy Nagar, Tambaram"
+chennai,7821906857,node,hospital,Ramana Child Hospital,12.9340178,80.1236737,unknown,,Tambaram
+chennai,7821906858,node,hospital,Arya Vaidya Shala,12.9239283,80.1280388,unknown,,Tambaram
+chennai,7821906859,node,hospital,Dr. Mehta Hospital,12.9323992,80.1195168,unknown,,"Ranganathapuram, Tambaram"
+chennai,7821906860,node,hospital,Seshagiri Hospital,12.9301271,80.1195747,unknown,,"Ranganathapuram, Tambaram"
+chennai,7821906861,node,hospital,Udhayam Maternity and General Hospital,12.9292541,80.117767,unknown,,Tambaram
+chennai,7821906862,node,hospital,Children Care Centre,12.9261301,80.1059731,unknown,,Tambaram
+chennai,7821906863,node,hospital,Madhu Hospital,12.9253206,80.1270372,unknown,,Tambaram
+chennai,7821906864,node,hospital,Vithagan Health Care Hospital,12.9234022,80.1292693,unknown,,Tambaram
+chennai,7821906866,node,hospital,Arul Hospital,12.925426,80.10622,unknown,,"Kalyana Nagar, Tambaram"
+chennai,7821906868,node,hospital,A.G Hospital,12.9264826,80.1117834,unknown,,Tambaram
+chennai,7821906869,node,hospital,Apollo Hospital,12.9243823,80.1061223,unknown,,"Kalyana Nagar, Tambaram"
+chennai,7821906871,node,hospital,Parvathy Ortho Hospital,12.9264209,80.1078215,unknown,,"Ethirajpuram, Tambaram"
+chennai,7821906876,node,hospital,Rainbow Women and Children's Hospital,12.9255619,80.1141393,unknown,,"Muthulingam, Tambaram"
+chennai,7821906879,node,hospital,Elmer Kidney Care,12.927288,80.112985,unknown,,Tambaram
+chennai,7821906887,node,hospital,Sri Jayam Hospital,12.9279511,80.1152234,unknown,,"Tambaram West, Tambaram"
+chennai,7821906889,node,hospital,Raindew Hospital,12.9249694,80.1121876,unknown,,"Tambaram Flyover, Tambaram"
+chennai,7821906892,node,hospital,M.J. Hospital,12.9225987,80.1280627,unknown,,"Jayasamy Nagar, Tambaram"
+chennai,7821906894,node,hospital,Sudar Hospital,12.9302816,80.1175824,unknown,,Tambaram
+chennai,7821906895,node,hospital,Sai Vijay Ayurvedic Herbal Health Care,12.9233238,80.1270401,unknown,,Tambaram
+chennai,7821906903,node,hospital,Manimegalai Hospital,12.9370716,80.1394473,unknown,,Tambaram
+chennai,7821906906,node,hospital,Rajarajan Venkateshan Hospital,12.9261078,80.1060872,unknown,,Tambaram
+chennai,7821906907,node,hospital,Dhanwanthralaya Ayurveda Speciality Hospital,12.9309721,80.1071121,unknown,,Tambaram
+chennai,7821906908,node,hospital,Dhanwantralaya,12.926297,80.11211,unknown,,Tambaram
+chennai,7822259984,node,hospital,Deepam Rehabilitation Centre,12.9163865,80.1789307,unknown,,"Vijayanagaram, Medavakkam"
+chennai,7822259986,node,hospital,HCL Health Care,12.9044723,80.216804,unknown,,"Elcot Sez, Sholinganallur"
+chennai,7822259987,node,hospital,Ganesh Hospital,12.9082585,80.1570082,unknown,,"Yeswanth Nagar, Madambakkam"
+chennai,7822259988,node,hospital,Subasree Hospital,12.916822,80.1940932,unknown,,Medavakkam
+chennai,7822259992,node,hospital,Centre For Vision and Eye Surgery,12.8948311,80.2233057,unknown,,Sholinganallur
+chennai,7822259995,node,hospital,Shri Sai Children's Hospital and Dental Clinic,12.912214,80.229384,unknown,,Karappakam
+chennai,7822260001,node,hospital,Sri Balaji Hospital,12.9178242,80.190331,unknown,,"Vengaivasal, Medavakkam"
+chennai,7822260004,node,hospital,S.V. Hospital,12.9069075,80.2026845,unknown,,"Kailash Nagar, Medavakkam"
+chennai,7822260005,node,hospital,Bethel Hospital,12.9114303,80.1563114,unknown,,Madambakkam
+chennai,7822260007,node,hospital,Sai Babaji's Accupuncture Centre,12.9186472,80.1712083,unknown,,"Santhosapuram, Medavakkam"
+chennai,7822260009,node,hospital,SV Hospital,12.9319677,80.2326252,unknown,,Bhagat Singh Nagar
+chennai,7822260011,node,hospital,Shanthi General Hospital,12.9233066,80.153003,unknown,,"Ranga Colony, Sembakkam, Rajakilpakkam"
+chennai,7822260016,node,hospital,Karthick Children's Hospital,12.9123221,80.192466,unknown,,Medavakkam
+chennai,7822260017,node,hospital,Arun Hospital,12.9149784,80.1948032,unknown,,"Perumbakkam, Medavakkam"
+chennai,7822260018,node,hospital,Radial Ortho Speciality Hospital,12.9131978,80.1915965,unknown,,Medavakkam
+chennai,7822260021,node,hospital,Jayam Hospital,12.9498749,80.2381651,unknown,,Thoraipakkam
+chennai,7822260025,node,hospital,Maternity and Child Care Hospital,12.9164866,80.1896622,unknown,,"Munusamy Nagar, Vimala Nagar, Medavakkam"
+chennai,7822260027,node,hospital,Sanjeevi's Ayurveda Therapy Centre,12.9087161,80.1571623,unknown,,"Balaji Nagar, Madambakkam"
+chennai,7822260032,node,hospital,Shri Balaji Diabetes Hospital,12.9150069,80.1929516,unknown,,Medavakkam
+chennai,7822260033,node,hospital,Dhanvantri Multi Speciality,12.9402236,80.2412342,unknown,,Oggiyamduraipakkam
+chennai,7822260038,node,hospital,Annai Teresa Hospital,12.9184999,80.1892056,unknown,,Medavakkam
+chennai,7822260040,node,hospital,Government Hospital,12.9073656,80.1571273,unknown,,Madambakkam
+chennai,7822260043,node,hospital,Prayoga Hospital,12.918236,80.1525123,unknown,,"Madambakkam, Rajakilpakkam"
+chennai,7822260044,node,hospital,Swaram Hospital and Speciality Clinic,12.9011793,80.2286,unknown,,Sholinganallur
+chennai,7822260051,node,hospital,C-Dot Hospital,12.9072738,80.2027359,unknown,,"Kailash Nagar, Medavakkam"
+chennai,7822260055,node,hospital,Mugavari Eye Hospital and Research Institute,12.9167105,80.1921463,unknown,,"Munusamy Nagar, Vimala Nagar, Medavakkam"
+chennai,7822260056,node,hospital,Global Hospital,12.9060064,80.2072713,unknown,,"Kailash Nagar, Medavakkam"
+chennai,7822543395,node,hospital,Avinash Ortho Hospital,12.9383762,80.1725401,unknown,,Nanmangalam
+chennai,7822543399,node,hospital,Kavitha Ortho and Multi Speciality Hospital,12.9502691,80.1513316,unknown,,"Jamin Rayapettah, Chromepet"
+chennai,7822543402,node,hospital,Dr. Gomathi Hospital,12.955108,80.131944,unknown,,"Madhuvappar Nagar, Chromepet"
+chennai,7822543406,node,hospital,"Ray's Head, Neck Care Centre-ENT and Dental Clinic",12.9549234,80.1340441,unknown,,"Nagappa Nagar, Chromepet"
+chennai,7822543416,node,hospital,Sri Santhanakrishna Padmavati Health Care and Research Centre,12.9462077,80.1399766,unknown,,Nehru Nagar
+chennai,7822543423,node,hospital,Sri Venkateshwara Hospital,12.9540623,80.1339845,unknown,,"Chandran Nagar, Chromepet"
+chennai,7822543424,node,hospital,Dr. Velmurugan Hospital,12.9296419,80.2029589,unknown,,Pallikaranai
+chennai,7822543426,node,hospital,Sri Ram Hospital,12.9499064,80.1349811,unknown,,Chromepet
+chennai,7822543429,node,hospital,Kidney Hospital and Diagnostic Centre,12.952496,80.137893,unknown,,"Pallavapuram, Chromepet"
+chennai,7822543430,node,hospital,AM Hospital,12.9344546,80.1819961,unknown,,"Medavakkam, Nanmangalam"
+chennai,7822543432,node,hospital,TB Hospital,12.9448167,80.1303935,unknown,,Tambaram Sanatoruim
+chennai,7822543433,node,hospital,HCG Cancer Centre,12.9575434,80.143138,unknown,,"Kothandam Nagar, Chromepet"
+chennai,7822543434,node,hospital,Sayee Hospitals,12.9521949,80.1432074,unknown,,Chromepet
+chennai,7822543438,node,hospital,Inbam Hospital,12.9339688,80.2041509,unknown,,"Selvam Nagar, Pallikaranai"
+chennai,7822543444,node,hospital,Hindusthan Hospital,12.9393514,80.1806898,unknown,,Nanmangalam
+chennai,7822543448,node,hospital,Puthur Kattu,12.9478556,80.1370503,unknown,,Chromepet
+chennai,7822543452,node,hospital,RKP Hospital,12.9379829,80.1799993,unknown,,"Vaithiyalingam Nagar, Nanmangalam"
+chennai,7822543455,node,hospital,Muthu Multi Speciality Hospital and Pharmacy,12.928263,80.200805,unknown,,"Devi Karumariamman Nagar, Pallikaranai"
+chennai,7822543459,node,hospital,Kokila Siddha Hospital,12.960669,80.139703,unknown,,Chromepet
+chennai,7822543469,node,hospital,Thomas Health Care Centre,12.9544931,80.1439701,unknown,,
+chennai,7822543471,node,hospital,Raj Joty Eye Hospital,12.935221,80.181802,unknown,,"Nehru Nagar, Nanmangalam"
+chennai,7822543477,node,hospital,Sun Hospital,12.9537198,80.143246,unknown,,"Lakshmi Nagar, Rajaji Nagar, Chromepet"
+chennai,7822543484,node,hospital,Apollo Hospitals,12.9520555,80.1372784,unknown,,"Pallavapuram, Chromepet"
+chennai,7822543489,node,hospital,Shailaja Hospital,12.9531004,80.1440661,unknown,,Chromepet
+chennai,7822543490,node,hospital,Dhanwantari Hospital,12.9452437,80.140022,unknown,,Chromepet
+chennai,7822543491,node,hospital,Dr. Ashok Kumar Children's Hospital,12.954659,80.134998,unknown,,"Nagappa Nagar, Chromepet"
+chennai,7822543498,node,hospital,Venus Accupoint,12.9422406,80.1381022,unknown,,"Nehru Nagar, Chromepet"
+chennai,7822543500,node,hospital,Saraswathy Hospital,12.9425452,80.1405737,unknown,,"Nehru Nagar, Chromepet"
+chennai,7822543501,node,hospital,V Cure Hospital,12.9280452,80.199546,unknown,,Pallikaranai
+chennai,7822543502,node,hospital,Al Elaj Accupressure and Health Centre,12.9569609,80.1424509,unknown,,"Chambers Colony, Chromepet"
+chennai,7822543505,node,hospital,V.S. Hospital,12.933726,80.1811973,unknown,,Vellakkal
+chennai,7822543510,node,hospital,Daisy Hospitals,12.9576893,80.1429026,unknown,,"Kothandam Nagar, Chromepet"
+chennai,7823212559,node,hospital,Shakthi Hospital,12.9753651,80.2543198,unknown,,"Valmiki Nagar, Kannappa Nagar, Thiruvanmiyur"
+chennai,7823212561,node,hospital,Chennai Emergency Care Centre,12.9712805,80.132333,unknown,,Pammal
+chennai,7823212562,node,hospital,JIP Hospital,12.9719872,80.1407516,unknown,,"Muthamizh Nagar, Pallavaram"
+chennai,7823212567,node,hospital,Dr. Habeb Child Care Hospital,12.9668133,80.144778,unknown,,"Abdul Kalam Nagar, Periyar Nagar, Pallavaram"
+chennai,7823212569,node,hospital,Sri Jaya Hospital,12.9981038,80.0955575,unknown,,Kundrathur
+chennai,7823212570,node,hospital,Hale and Healthy Hospitals,12.9757686,80.2590077,unknown,,Thiruvanmiyur
+chennai,7823212573,node,hospital,Rathna Hospital,13.0087475,80.1937172,unknown,,
+chennai,7823212575,node,hospital,Deen Hospital,13.034339,80.1104925,unknown,,"Sriram Nagar, Poonamallee"
+chennai,7823212576,node,hospital,S.S. Hospital,13.0036449,80.2030844,unknown,,Alandur
+chennai,7823212577,node,hospital,Sivanthi Heart Care,12.997158,80.0965483,unknown,,"Kundrathur, Sikkarayapuram"
+chennai,7823212578,node,hospital,Gunam Hospital,12.9789547,80.0536595,unknown,,Kanchipuram
+chennai,7823212579,node,hospital,Dhanraj Hospital,13.0017797,80.2033269,unknown,,Alandu
+chennai,7823212581,node,hospital,Nalam Hospital,13.0164671,80.1772853,unknown,,"Ambedkar Nagar, Manapakkam"
+chennai,7823212587,node,hospital,Chennai Hospital,12.973474,80.1307991,unknown,,Pammal
+chennai,7823212603,node,hospital,Deenan Health Care,12.9738819,80.1315486,unknown,,"Lakshmi Narayana Nagar, Pammal"
+chennai,7823212607,node,hospital,Promed Hospital,12.9751423,80.2582571,unknown,,"Kottivakkam, Near Tiruvanmiyur"
+chennai,7823212608,node,hospital,Dr. JRK Hospital,12.9971757,80.0978782,unknown,,Kundrathur
+chennai,7823212610,node,hospital,Happy Clinic Hospital,12.9693629,80.2566138,unknown,,Kottivakkam
+chennai,7823212616,node,hospital,Shadithya Hospital,12.9718921,80.1445381,unknown,,Pallavaram
+chennai,7823212623,node,hospital,Jaya Sri Hospital,13.0027883,80.207025,unknown,,Alandur
+chennai,7823212624,node,hospital,Kedar Hospital,13.0441663,80.1364773,unknown,,"Subbiah Nagar, Iyyappanthangal"
+chennai,7823212630,node,hospital,Sai Nursing Home and Maternity Hospital,13.0372175,80.1136836,unknown,,"Kamatchiamman Nagar, Poonamallee"
+chennai,7823212631,node,hospital,Kaanthi Makapperu Hospital,13.003406,80.2063632,unknown,,Alandur
+chennai,7823212633,node,hospital,Medforte Health Care,12.9700475,80.1499015,unknown,,Pallavaram
+chennai,7823212640,node,hospital,Contonment Board General Hospital,12.97059,80.148318,unknown,,Pallavaram
+chennai,7823415020,node,hospital,Corporation Hospital,12.9915347,80.2615046,unknown,,"Radhakrishnan Nagar, Thiruvanmiyur"
+chennai,7823415021,node,hospital,Relief Dental Hospitals,12.978253,80.258947,unknown,,Thiruvanmiyur
+chennai,7823415033,node,hospital,Accu Hospital,13.041251,80.267354,unknown,,"Mylapore, Chennai"
+chennai,7823415037,node,hospital,Kalyani Hospital,13.0512111,80.273209,unknown,,"Sudandira Nagar, Royapettah"
+chennai,7823415048,node,hospital,Triveni Hospital,13.0385371,80.2581929,unknown,,"Mylapore, Chennai"
+chennai,7823415049,node,hospital,SMK Hospital,12.986383,80.260187,unknown,,"Kamaraj Nagar, Thiruvanmiyur"
+chennai,7823415056,node,hospital,Uma Sankaran Siddha Hospital,12.9916719,80.2624479,unknown,,"Radhakrishnan Nagar, Thiruvanmiyur"
+chennai,7823415059,node,hospital,Vasantha Hospital,13.0490602,80.2747953,unknown,,
+chennai,7823415061,node,hospital,Orthomed Hospital,13.0454703,80.2668731,unknown,,"Royapettah, Chennai"
+chennai,7823415065,node,hospital,Mint Hospitals,13.0013494,80.258796,unknown,,"Shastri Nagar, Adyar"
+chennai,7823415083,node,hospital,Saanvi Fertility Centre Urology and Stone Centre,13.0436591,80.2639406,unknown,,
+chennai,7823415084,node,hospital,The Crescent Hospital,13.0528771,80.2727865,unknown,,"Mirsahibpet, Royapettah"
+chennai,7823415087,node,hospital,Syma Hospital,13.0546321,80.2774772,unknown,,Narayana Krishnaraja Puram
+chennai,7823415088,node,hospital,Sri Parthasarathy Hospital,13.0547617,80.2756509,unknown,,"Narayana Krishnaraja Puram, Triplicane"
+chennai,7823415091,node,hospital,Ashwini Hospital,12.9890173,80.2599586,unknown,,"Kamaraj Nagar, Thiruvanmiyur"
+chennai,7823776196,node,hospital,R.S. Hospital,13.0549375,80.2068588,unknown,,"Vadapalani, Chennai"
+chennai,7823776197,node,hospital,Arun Vijaya Hospitals,13.038873,80.192755,unknown,,"KK Nagar West, K. K. Nagar"
+chennai,7823776209,node,hospital,C.M. Hospital,13.0553167,80.2012868,unknown,,"Shanthi Nagar, Annamalai Colony, Chennai"
+chennai,7823776213,node,hospital,Shali Day & Night Hospital,13.051996,80.204702,unknown,,"Vadapalani, Chennai"
+chennai,7823776215,node,hospital,Koncept Hospitals,13.051051,80.243818,unknown,,
+chennai,7823776217,node,hospital,Diawin Multi Speciality Siddha Hospital,13.0520108,80.2076585,unknown,,"Vadapalani, Chennai"
+chennai,7823776221,node,hospital,G G Hospital,13.0554543,80.2477343,unknown,,"Tirumurthy Nagar, Nungambakkam, Chennai"
+chennai,7823776223,node,hospital,K R S Hospitals,13.0616711,80.2434943,unknown,,"Tirumurthy Nagar, Nungambakkam, Chennai"
+chennai,7823776225,node,hospital,Sterling Hospitals,13.0616367,80.243704,unknown,,"Seetha Nagar, Nungambakkam, Chennai"
+chennai,7823776227,node,hospital,Lily Shantha Hospital,13.0516365,80.1939117,unknown,,"Swarnambigai Nagar, Virugambakkam, Chennai"
+chennai,7823776231,node,hospital,Dr. Maibbar Hospital,13.0594426,80.2459459,unknown,,"Tirumurthy Nagar, Nungambakkam, Chennai"
+chennai,7823776233,node,hospital,Swastik Hospital,13.0539266,80.1991968,unknown,,"Annamalai Colony, Chennai"
+chennai,7823776246,node,hospital,Standard Hospital,13.0526943,80.1899425,unknown,,"Virugambakkam, Chennai"
+chennai,7823776250,node,hospital,MM Hospital,13.0527721,80.191781,unknown,,"Virugambakkam, Chennai"
+chennai,7823776253,node,hospital,Arun Hospital,13.0514652,80.2031882,unknown,,"Bharathi Nagar, Taramani, Chennai"
+chennai,7823776254,node,hospital,Krishna Geetham Vaidyasala,13.0538214,80.1989274,unknown,,"Virugambakkam, Chennai"
+chennai,7824965206,node,hospital,Agm Hospital,13.0802093,80.2522439,unknown,,Chennai
+chennai,7824965209,node,hospital,Dr. Sambandam Eye Hospital,13.0886474,80.2416011,unknown,,"Sanyasipuram, Kilpauk, Chennai"
+chennai,7824965211,node,hospital,Sugumar Hospital,13.0828855,80.2709938,unknown,,
+chennai,7824965213,node,hospital,Ranjith Hospital,13.0888843,80.2418555,unknown,,"Kilpauk, Chennai"
+chennai,7824965216,node,hospital,Mythili Hospitals,13.0704319,80.2421491,unknown,,"Chetpet, Chennai"
+chennai,7824965221,node,hospital,Santosham Chest Hospital,13.0746638,80.2537976,unknown,,"Egmore, Chennai"
+chennai,7824965222,node,hospital,Tune 32 Hospital,13.0715459,80.2622655,unknown,,"Komaleeswaranpet, Egmore, Chennai"
+chennai,7824965223,node,hospital,Pandalai Hospital,13.0771575,80.2450769,unknown,,"Chetpet, Chennai"
+chennai,7824965225,node,hospital,Centre For Gastro Esophageal Disorders,13.0786423,80.2540859,unknown,,Chennai
+chennai,7824965227,node,hospital,Be Well Hospital,13.0807479,80.2340062,unknown,,"Kilpauk, Chennai"
+chennai,7824965229,node,hospital,Puttur Kattu Hospital,13.0812406,80.2506114,unknown,,"Purasaiwakkam, Chennai"
+chennai,7824965232,node,hospital,An-Noor Eye Hospital,13.0849581,80.2669979,unknown,,"Periyamet, Chennai"
+chennai,7824965237,node,hospital,Herbzalive Ayurveda Hospital,13.0793874,80.2473996,unknown,,"Kilpauk, Chennai"
+chennai,7824965238,node,hospital,Meta Hospital,13.0826737,80.2705905,unknown,,Chennai
+chennai,7824965240,node,hospital,Dr. H. Yogish Hospital,13.0737332,80.2268354,unknown,,"Shenoy Nagar, Aminjikarai, Chennai"
+chennai,7824965241,node,hospital,Neuro Hospital,13.0713435,80.2625981,unknown,,"Egmore, Chennai"
+chennai,7824965243,node,hospital,Murugan Hospitals,13.0833684,80.234299,unknown,,"Kilpauk, Chennai"
+chennai,7824965244,node,hospital,Amrit Hospital,13.0811868,80.2520834,unknown,,"Purasaiwakkam, Chennai"
+chennai,7824965245,node,hospital,Mercury Hospital,13.071832,80.260048,unknown,,"Egmore, Chennai"
+chennai,7824965246,node,hospital,Naz Unani Hospital,13.0850158,80.2699983,unknown,,"Poongavanapuram, Chennai"
+chennai,7824965249,node,hospital,S.K. Selvam Hospital,13.0761303,80.2694819,unknown,,"Chintadripet, Chennai"
+chennai,7824965252,node,hospital,Apollo Hospital,13.0825738,80.2710331,unknown,,"Periyamet, Chennai"
+chennai,7824965254,node,hospital,Kola Saraswathi Agarwal Samaj Health Centre,13.0813334,80.2553965,unknown,,"Purasaiwakkam, Chennai"
+chennai,7824965258,node,hospital,Demo Hospital,13.0844036,80.2454945,unknown,,"Kilpauk, Chennai"
+chennai,7824965259,node,hospital,Gremaltes Hospital,13.0793157,80.2290477,unknown,,"Venkatasamy Nagar, Shenoy Nagar, Chennai"
+chennai,7824965260,node,hospital,Srl Hospital,13.0814203,80.2333756,unknown,,"Thandavaraya, Kilpauk, Chennai"
+chennai,7824965262,node,hospital,Periyar Maniammai Hospital,13.0811497,80.2620778,unknown,,"Vepery, Chennai"
+chennai,7824965264,node,hospital,Red Cross Hospital,13.074301,80.267569,unknown,,"Chintadripet, Chennai"
+chennai,7824965266,node,hospital,Ponmalligai Hospitals,13.0768584,80.2339377,unknown,,"Alagappa Nagar, Adambakkam, Chennai"
+chennai,7825002779,node,hospital,V S Hospital,13.1216771,80.2236766,unknown,,"Santhi Nagar, Kolathur, Chennai"
+chennai,7825002781,node,hospital,Iyyappa Multi Speciality Hospitals,13.1160443,80.2454243,unknown,,"Perambur, Chennai"
+chennai,7825002782,node,hospital,GK Hospital,13.113594,80.2394367,unknown,,"Perambur, Chennai"
+chennai,7825009786,node,hospital,Dr. Kleela Hospital,13.1155627,80.2457851,unknown,,"Chinnaiyan Colony, Perambur, Chennai"
+chennai,7825009787,node,hospital,Bluemed Healthcare,13.1297562,80.2172747,unknown,,Kolathur
+chennai,7825009790,node,hospital,St. Joseph Cluny Hospital,13.1204837,80.2243993,unknown,,"Perambur, Chennai"
+chennai,7825009792,node,hospital,Dr. A C Aruldas Hospital,13.1102652,80.2418486,unknown,,"Perambur, Chennai"
+chennai,7825009797,node,hospital,Bharathiraja Hospitals,13.1300779,80.216941,unknown,,Ponniammanmedu
+chennai,7825009798,node,hospital,Kolathur Multi Speciality and Research Centre,13.1222839,80.2160951,unknown,,"Kaveri Nagar, Kolathur, Chennai"
+chennai,7825009799,node,hospital,Arul Childs Hospital,13.1185,80.2258076,unknown,,"Perambur, Chennai"
+chennai,7825009803,node,hospital,KCK Hospital,13.129071,80.2159086,unknown,,Ponniammanmedu
+chennai,7825009805,node,hospital,Sugar Hospital,13.121994,80.2236309,unknown,,"Kolathur, Chennai"
+chennai,7825009807,node,hospital,Retteri Kumaran Hospital,13.129869,80.214109,unknown,,Kolathur
+chennai,7825009815,node,hospital,Government Hospital,13.1093369,80.2312849,unknown,,"Perambur, Chennai"
+chennai,7825009816,node,hospital,K.H.M. Hospital,13.129327,80.2152624,unknown,,"Kolathur, Villivakkam"
+chennai,7825009817,node,hospital,Sankar Eye Hospital,13.1131038,80.2404022,unknown,,"Perambur, Chennai"
+chennai,7825009819,node,hospital,Niranjana Hospital,13.1101477,80.2244516,unknown,,"Perambur, Chennai"
+chennai,7825009820,node,hospital,Parvatham Hospital,13.1148422,80.2441515,unknown,,"Perambur, Chennai"
+chennai,7825009823,node,hospital,U.S. Hospital,13.1263043,80.2192658,unknown,,"Balakumaran Nagar, Kolathur"
+chennai,7825009824,node,hospital,Bharani Hospital,13.1106227,80.2374461,unknown,,"Amrithammal Colony, Perambur, Chennai"
+chennai,7843239851,node,hospital,Sir Ivan Stedford Hospital,13.1247933,80.1435476,unknown,,
+chennai,7953367285,node,hospital,Unnamed Hospital,13.1183857,80.2606286,unknown,,
+chennai,7994867411,node,police,Unnamed Police,12.9738305,80.186835,yes,,
+chennai,8096280337,node,police,R10 MGR Nagar Police Station,13.0310886,80.2017034,yes,,"Guru Siva St, Sapthagiri Colony, West Jafferkhanpet, Chennai, Tamil Nadu 600083"
+chennai,8099947735,node,hospital,K.M. Nursing Home,13.0371216,80.2013389,unknown,044 4353 0015,"1/459, 31st St, Sector 6, K. K. Nagar, Chennai, Tamil Nadu 600078"
+chennai,8105683179,node,hospital,Military Hospital,13.0117736,80.1941708,unknown,,"Mount Poonamalle High Rd, Seven Wells, St.Thomas Mount, Tamil Nadu 600016"
+chennai,8108467017,node,hospital,உழைப்பாளி மருத்துவமனை,13.0487242,80.2036274,unknown,,Arunachalam St
+chennai,8108591031,node,hospital,KS Bone and Joint Clinic - Ortho,13.026029,80.212368,unknown,98842 83582,"B 50, Gangai Amman Koil St, Jawahar Nagar, West Jafferkhanpet, Chennai, Tamil Nadu 600083"
+chennai,8108600154,node,police,R6 Police Booth,13.026501,80.2116238,yes,,"14A, Gangai Amman Koil St, VSM Garden, West Jafferkhanpet, Chennai, Tamil Nadu 600083"
+chennai,8111861614,node,hospital,Shens Multi-Speciality Hospital,13.0318828,80.2103124,unknown,044 2471 5000,"40, 11th Ave, Mettuppalayam, Ashok Nagar, Chennai, Tamil Nadu 600083"
+chennai,8197934476,node,hospital,Sanjeevani Ayurvedic Hospital,12.9120483,80.2489789,unknown,9500071332,Gangai Amman Kovil Street
+chennai,8495842126,node,police,Unnamed Police,13.0504496,80.1828617,yes,,
+chennai,8639896900,node,hospital,Prashanth Hospitals,12.9784544,80.2214698,unknown,+91 44 2243 9494;+91 44 4680 5544;+91 82962 63415,Velachery Main Road
+chennai,8645780209,node,police,Velachery Police Station,12.9809435,80.2209233,yes,+91 44 2345 2605;+91 44 2345 2606,
+chennai,8935514615,node,hospital,Geri care hospital,13.0439323,80.2407095,unknown,,
+chennai,9444720904,node,hospital,4 Squares Dentistry,12.9214652,80.1651302,no,044 4859 2044,"New Kunagkurichi, Gowriwakkam, Sembakkam"
+chennai,9717766098,node,hospital,Chamdhi Netralayam Eye Hospital,13.2086279,80.1698455,unknown,,
+chennai,9980280804,node,hospital,Shreyas hospital,13.1266701,80.2014392,unknown,,
+chennai,9994034342,node,police,Unnamed Police,13.0414828,80.1331364,yes,,
+chennai,10261422409,node,hospital,Women And Children Foundation Hospital,13.1180276,80.2126037,unknown,"04425508210, 8939957777, 8939917777",Poompuhar Nagar 1st Main Road
+chennai,10271805421,node,hospital,Frame of Mind - SCARF Psychiatric Hospital,13.0972767,80.1982422,unknown,+919150587361;04426151073; 04426153971,"N Main Rd, Kailash Colony, Sector A, Anna Nagar West Extension, Chennai, Tamil Nadu 600101"
+chennai,10294576078,node,hospital,Vasantha Memorial Cancer Centre,13.040756,80.2146876,unknown,+91 9791048379,"35th Street, Opp JFA Showroom, Ashok Nagar"
+chennai,10741550765,node,police,mangadu police station,13.0352881,80.114521,yes,44 – 27178126,"mangadu, Chennai"
+chennai,11081786797,node,hospital,L Rapha Life Care Hospital,12.9580448,80.1280036,unknown,,
+chennai,11162390408,node,hospital,Dr. Vijay's Hospital,13.0856699,80.1797716,unknown,,
+chennai,11468740371,node,hospital,SMF,13.0868727,80.1697458,unknown,,1st Avenue
+chennai,11679595256,node,hospital,Jananam Fertility Centre,12.9569147,80.2513405,unknown,+91 44 4359 0330,"Kazura Garden, 1st Street"
+chennai,11782793599,node,hospital,Sugam Hospital,12.9622155,80.159938,unknown,,
+chennai,11804254199,node,hospital,Dental College & Hospital,12.8705153,80.2233736,no,,
+chennai,11834587522,node,hospital,Max Hair Clinic,13.0579691,80.2457435,unknown,,
+chennai,11865553974,node,hospital,Unnamed Hospital,12.89188,80.1770557,unknown,,
+chennai,12146055740,node,hospital,"Commissioner of Police office, Greater chennai Police",13.081276,80.2631177,unknown,,
+chennai,12169790434,node,police,Control Room,13.0848694,80.2182466,yes,,
+chennai,12367559381,node,hospital,Unnamed Hospital,13.0920988,80.2588062,unknown,,
+chennai,12378706312,node,hospital,Dr Bala's Skin clinic,12.9831959,80.2013573,unknown,,Vanalar Street
+chennai,12459049285,node,police,M5 Ennore Police Booth,13.1864179,80.3076057,yes,,
+chennai,12560767886,node,hospital,Unnamed Hospital,12.9809491,80.1871116,unknown,,
+chennai,12581525295,node,hospital,Meridian Hospitals,13.1363242,80.2157688,unknown,,
+chennai,12581658601,node,hospital,St Anthony's Hospital,13.1396018,80.2377389,unknown,,
+chennai,12619467462,node,hospital,Vadivelu Hospital,13.1002212,80.2400853,unknown,,
+chennai,13096237915,node,hospital,Iswarya Fertility Center,13.0064894,80.2504829,unknown,,
+chennai,13127975757,node,police,Srinagar colony police booth,13.0125062,80.2272456,yes,,
+chennai,13155026101,node,hospital,Good Shepard hospital,12.9810842,80.2343492,unknown,,Taramani Link Road
+chennai,13456132677,node,hospital,RMS Ropheka Multi Speciality Hospitals,13.2035123,80.2661437,yes,,Vichoor - Echanguli Road
+chennai,13694295601,node,hospital,Palaniappa Hospital,13.0275517,80.1832531,unknown,,Valluvar Salai
+chennai,13870488102,node,hospital,Bethesda Hospital & Child Care Centre,12.9196657,80.1443175,yes,"(+044) 2229 4565 / 66 / 67, (+044) 4359 4568 / 69,  (+91) 91599 77700","IOB Colony, Bharathi Nagar, Camp Road, Selaiyur"
+chennai,13994416401,node,hospital,Deepam Medfirst Hospital,12.9316216,80.2033854,unknown,,
+chennai,14057634446,node,police,Selaiyur Beat Post,12.9339134,80.1295679,yes,,
+chennai,14059867401,node,hospital,Sri Raghavendra Hospital (sidha),13.1241668,80.2873329,unknown,,
+chennai,14059898301,node,hospital,Ayanavaram 24 hours hospital,13.0986843,80.2336168,unknown,+9198843 09028,Konnur High Road
+chennai,14066727702,node,police,"K2 Police Station, Ayanavaram",13.093795,80.2409682,yes,044 2345 2714,
+chennai,14067751968,node,police,R-5 Virugambakkam Police Station,13.0571823,80.1995238,yes,,
+chennai,14100068902,node,police,Kilambakkam Bus Terminus Police Booth,12.8744391,80.0781668,yes,,Grand Southern Trunk Road
+chennai,14105458201,node,hospital,Helios Advanced Skin Hair & Laser Clinic Pvt Ltd,13.0347504,80.2547353,unknown,099400 58215,Ananda Street
+chennai,14121893948,node,police,E-3 Teynampet Police Help Station,13.0412543,80.2503552,yes,,
+chennai,27618339,way,hospital,Rajiv Gandhi Government General Hospital,13.0808972,80.2773284,unknown,04425305711;04425305000,"General Hospital Road, Central Railway Station, Park Town"
+chennai,28345285,way,hospital,Stanley Medical College and Hospital,13.1063871,80.2841452,unknown,,
+chennai,28404807,way,hospital,Unnamed Hospital,13.005416,80.2396935,unknown,,
+chennai,28493363,way,hospital,Sri Ramachandra Institute of Higher Education and Research,13.0410329,80.1425261,yes,,
+chennai,29046387,way,hospital,Tt Ranganathan Clinical Research Foundation,12.9923667,80.2550102,unknown,,"17,Iv Main Road,Indira Nagar"
+chennai,29046742,way,hospital,IMPCOPS Traditional Hospital,12.9930805,80.2572794,unknown,,"34-37, Kalki Krishnamurthy Salai"
+chennai,29116157,way,hospital,Egmore Eye Hospital,13.0702235,80.2599829,unknown,,
+chennai,30973308,way,hospital,ESI Hospital,13.0950575,80.2397713,unknown,,
+chennai,31240956,way,hospital,Government Hospital of Thoracic Medicine,12.9418907,80.1293774,unknown,,
+chennai,32686766,way,hospital,King's Institute of Preventive Medicine & Research,13.0143958,80.2172865,unknown,,
+chennai,32896904,way,hospital,Cantonment General Hospital,13.0095756,80.1950144,unknown,,
+chennai,33630155,way,hospital,"Government Hospital, Poonamallee",13.0504416,80.099468,unknown,,"Government Taluk Hospital, Poonamallee Bus Stand, Poonamallee, Trunk Road"
+chennai,34097016,way,hospital,Communicable Diseases Hospital,13.1287163,80.2925206,unknown,,"Tiruvottiyur Road, Tondiarpet, Chennai"
+chennai,35312695,way,hospital,புனித இஸ்பேல் மருத்துவமனை,13.0384509,80.2622475,unknown,,Mylapore
+chennai,44034276,way,hospital,Parvathy Hospital,12.946075,80.1367453,unknown,+91-98412-98412,Grand Southern Trunk Road
+chennai,44034282,way,hospital,Chennai Krishna Hospital,12.9463677,80.1369815,unknown,,"297, Gst Road, Near Mit Gate, Chrompet"
+chennai,47416302,way,hospital,Stanley Medical College and Hospital,13.1042167,80.283195,unknown,,
+chennai,48737654,way,hospital,Unnamed Hospital,13.0978041,80.2457004,unknown,,
+chennai,48741356,way,hospital,ICF Hospital,13.0998913,80.2138748,unknown,,
+chennai,48753841,way,hospital,Anna Nagar Government Hospital,13.0954447,80.2197148,unknown,,"3rd Avenue Anna Nagar, Kilpauk"
+chennai,59359967,way,hospital,Unnamed Hospital,13.0933659,80.2403777,unknown,,
+chennai,100857284,way,hospital,"அறிஞர் அண்ணா அரசு இந்திய,மருத்துவமனை,அரும்பாக்கம்,சென்னை-106",13.0772596,80.2187728,unknown,,Anna Arch Road
+chennai,125180726,way,hospital,Govt Peripheral Hospital KK Nagar,13.034006,80.2078405,unknown,,"Anna Main Rd, Bharathidasan Colony, West Jafferkhanpet, Chennai"
+chennai,131961841,way,hospital,Ayurveda Hospital,12.9705162,80.2601162,unknown,,
+chennai,132073184,way,hospital,Apollo Hospital,12.9630574,80.2457399,yes,,
+chennai,133862451,way,hospital,Prashanth Hospitals,13.0695736,80.2363218,yes,,"Chetpet, No.77, Harrington Road"
+chennai,138307630,way,hospital,Sir Ivan Stedford Hospital,13.1253777,80.1438996,unknown,,
+chennai,156240637,way,hospital,Udhi Eye Hospitals,13.0391602,80.2571596,unknown,,"No. 9, Murrays Gate Road, Alwarpet,Next To Jevnampet Post Office"
+chennai,156250603,way,hospital,Agarwal Eye Hospital,13.0460706,80.2557204,unknown,,
+chennai,156250608,way,hospital,Aswene Soundarya Hospital,13.044707,80.256162,unknown,,"24, Kasturi Rangan Road,Near Hotel Citola Sheraton, Teynampet"
+chennai,170104584,way,hospital,Global Hospitals,13.0098114,80.2515183,unknown,,
+chennai,178747899,way,hospital,Government Rsrm Lying Hospital,13.1090673,80.288719,unknown,,"Near Virax Textile, East Cementry Road, East Cementry Road,Ch-21"
+chennai,180145742,way,hospital,Sree Balaji Medical College And Hospital,12.9549137,80.1381689,unknown,,"Works, Road, Chromepet"
+chennai,181579506,way,hospital,Health Centre,13.0136347,80.2393232,unknown,,
+chennai,188445646,way,hospital,Apollo Clinic & Pharmacy,13.0360972,80.2572646,unknown,,"12, C P Ramasamy Road, Alwarpet"
+chennai,208569725,way,police,Mylapore E1 PS,13.0359873,80.2701421,yes,,
+chennai,209413524,way,hospital,Trinity Acute Care,13.0385579,80.2578675,unknown,,
+chennai,209546207,way,hospital,Sankara Nethralaya,13.0667961,80.2493986,unknown,,
+chennai,211260239,way,hospital,Apollo Hospital,13.0631198,80.2515186,unknown,,
+chennai,211274279,way,hospital,CSI Kalyani Hospital,13.0433307,80.2724017,unknown,,Dr Radhakrishnan Salai
+chennai,211423255,way,hospital,EV Kalyani Hospital,13.0423476,80.2709401,unknown,,
+chennai,211423281,way,hospital,Kasturibai Gandhi Hospital,13.0594053,80.2784271,unknown,,"Triplicane, Victoria Hostel Road"
+chennai,211435479,way,police,Periamet PS,13.0831121,80.2709138,yes,,
+chennai,211436948,way,hospital,Unnamed Hospital,13.0527537,80.280639,unknown,,
+chennai,211864592,way,police,Unnamed Police,13.0590491,80.2706569,yes,,
+chennai,211900029,way,hospital,Cancer Hospital,13.0090564,80.2484946,unknown,,"No.18, East Canal Bank Road, Gandhi Nagar"
+chennai,214188197,way,hospital,சைதாப்பேட்டை அரசு மருத்துவமனை,13.0204577,80.2240451,yes,,Jeenis Road
+chennai,214356712,way,police,R1 Police Station,13.0347642,80.2294897,yes,044 2345 2608,Madley Road
+chennai,217637688,way,police,Esplanade PS,13.0864715,80.2853702,yes,,
+chennai,217726810,way,hospital,ஆந்திர மாநில சபா,13.0176759,80.2598878,unknown,,"No 11, 12, Dr Durgabai Deshmukh Road,R. A .Puram"
+chennai,217767201,way,police,F4 Greams Road PS,13.0598386,80.2547972,yes,,
+chennai,217797428,way,hospital,Mehta Hospital,13.0719905,80.2408853,unknown,,"No.2 (E), Mcnichols Road, 3 Lane, Chetpet"
+chennai,217846762,way,hospital,Corporation Baby Hospital,13.0971804,80.2754276,unknown,,
+chennai,217864765,way,hospital,C.S.I. Rainy Multi Speciality Hospital,13.1179059,80.2910031,unknown,,"NO 45, GA Road, Old Washermanpet"
+chennai,217864794,way,police,Unnamed Police,13.1231943,80.2873206,yes,,
+chennai,217864797,way,hospital,Government Peripheral Hospital,13.1260276,80.2866925,unknown,,"Tondiarpet, New Washermenpet, Tondiarpet, Kailasam"
+chennai,217868140,way,hospital,ESI,13.1269596,80.2912215,unknown,,
+chennai,217878794,way,police,Unnamed Police,13.1000303,80.2601445,yes,,
+chennai,217920494,way,police,Peravallur Police Station,13.1113985,80.2263784,yes,,
+chennai,217921152,way,police,Unnamed Police,13.0934393,80.2434556,yes,,
+chennai,217960574,way,hospital,Tamil Nadu Government Multi Super Speciality Hospital,13.0693752,80.2741496,yes,,
+chennai,217960575,way,police,D1 Triplicane Police Station,13.0672549,80.2736489,yes,,
+chennai,218149507,way,hospital,Billroth Hospital,13.0273509,80.2567528,yes,,"52, 2Nd Main Road, R.A. Puram, Trustpakkam, Raja Annamalai Puram"
+chennai,218163938,way,hospital,Fortis Malar Hospital,13.0101605,80.2585641,unknown,,
+chennai,220821765,way,hospital,Gowri Nursing Home,12.9773885,80.1883328,unknown,,100ft Road
+chennai,231052535,way,police,K4 Police Station,13.0925447,80.21797,yes,,
+chennai,231052536,way,hospital,Vasan Dental Care,13.0920868,80.218563,unknown,,
+chennai,240385003,way,hospital,Unnamed Hospital,13.0847775,80.282677,unknown,,
+chennai,240472123,way,hospital,Police Hospital,13.0744047,80.2592982,unknown,,"Egmore, Chennai"
+chennai,240501607,way,hospital,Kanchi Kamakoti Childs Trust Hospital,13.0573425,80.2458975,unknown,,"12-A, Nageswara Road, Nungambakkam"
+chennai,240511203,way,police,R3 Ashok Nagar Police Station,13.0440809,80.2173045,yes,044 2345 2617,"2nd Avenue, Ashok Nagar, Raghavan Colony, Kodambakkam, Chennai, Tamil Nadu 600024"
+chennai,240869141,way,hospital,Unnamed Hospital,13.0922878,80.2593357,unknown,,
+chennai,241007895,way,police,Abhiramapuram,13.0332562,80.2559671,yes,,
+chennai,241027985,way,police,F2 Egmore Police Station,13.0750725,80.257014,yes,044 2345 2678,Egmore High Road
+chennai,262012749,way,hospital,Chennai Corporation 24 Hours Maternity Hospital,13.0208732,80.2241344,yes,,Jeenis Road
+chennai,297495780,way,police,Selaiyur Police Station,12.9229459,80.1352359,yes,,Velachery - Tambaram Main Road
+chennai,315499682,way,hospital,Apollo Speciality Hospital - Block A,13.0336469,80.2451684,yes,,Anna Salai (Mount Road)
+chennai,315499747,way,hospital,Apollo Speciality Hospital - Block B,13.0336169,80.2456392,no,,
+chennai,315499965,way,hospital,Apollo Speciality Hospital - Block C,13.0339285,80.245666,no,,
+chennai,328706398,way,hospital,Chennai Clinical Centres,12.9941997,80.2516271,unknown,+919841910001,16th Cross Street
+chennai,332525434,way,hospital,Public Health Centre (In Patient Block),13.0359986,80.2218494,yes,044 2489 3172/7008/3101,Lake View Road
+chennai,332525519,way,hospital,Public Health Centre (Out Patient Block),13.0363842,80.2219385,unknown,,Ramakrishnapuram 1st Street
+chennai,337923794,way,hospital,Chitra Maternity andSurgival Centre,13.0234391,80.2229133,unknown,,Karaneeswar Koil Street
+chennai,337929079,way,hospital,Bora Hospital,13.0223109,80.2222779,unknown,,Subramania Mudali Street
+chennai,343141649,way,hospital,Vasan,13.0217319,80.2257691,unknown,,Anna Salai (Mount Road)
+chennai,343141650,way,police,Police Station - J1 - Saidapet,13.0224076,80.226078,yes,,Anna Salai (Mount Road)
+chennai,350538223,way,hospital,SRM Hospital,13.0418111,80.2246322,yes,044 2474 4727,"Thambiah Road, Duraiswamy Subway, West Mambalam, Chennai, Tamil Nadu 600033"
+chennai,354243595,way,hospital,Guest Hospital,13.0772245,80.2387532,unknown,,EVR Periyar Salai (Poonamallee High Road)
+chennai,354278944,way,hospital,Frontier Lifeline Hospital,13.0875919,80.1856974,unknown,044 4201 7575,Ambattur Industrial Estate Road
+chennai,354290251,way,hospital,Essvee Hospital,13.1232317,80.1460602,yes,,
+chennai,354293689,way,hospital,Hande Medical Centre,13.0611783,80.2466206,unknown,,Uttamar Gandhi Salai
+chennai,354452683,way,hospital,Mahalakshmi Multi-Speciality Hospital,13.1227176,80.1468899,yes,,Chennai - Tiruttani - Renigunta Road
+chennai,354460032,way,hospital,Kauvery Hospital,13.0474765,80.2041464,unknown,,
+chennai,354469200,way,police,E5 Foreshore Estate Police Station,13.0245553,80.2748155,yes,,
+chennai,354540004,way,hospital,Balaji Hospital (P) Ltd,13.0074019,80.2060853,unknown,,Anna Salai (Mount Road)
+chennai,354547008,way,hospital,Madras Heart Centre and Super Speciality Hospitals Pvt Ltd,12.9831529,80.189162,yes,,Nanganallur 1st Main Road
+chennai,354562297,way,hospital,Sugam Hospitals,12.9617858,80.1467001,unknown,,Grand Southern Trunk Road
+chennai,354572408,way,hospital,Chennai Medical Centre,13.0381039,80.1890642,unknown,,
+chennai,354810486,way,hospital,Unnamed Hospital,12.9856604,80.228913,unknown,,
+chennai,354814307,way,hospital,Chennai Fertility Center,13.0690367,80.2257614,unknown,,
+chennai,354839873,way,hospital,J.V. Hospitals Llp,13.0505664,80.2299034,yes,,Tailor Estate 1st Street
+chennai,354840226,way,hospital,R.R Dental Hospital,13.0519005,80.2292607,unknown,,Tailor Estate 2nd Street
+chennai,354840384,way,hospital,JV Hospital,13.0505634,80.2297492,yes,,Tailor Estate 1st Street
+chennai,355052484,way,hospital,Viganesh Hospital,13.0308661,80.1717417,unknown,,"36, Poothapedu Main Road, Vengadeswar Nagar, Perur"
+chennai,355067576,way,hospital,Chennai Heritage Hospital,13.0653715,80.2119909,unknown,,
+chennai,355074781,way,hospital,Xcellent Care Hospital,12.9856288,80.2183869,yes,,"7th Cross Street, Rajalaksmi nagar"
+chennai,355658593,way,hospital,Be Well Hospitals,13.0794481,80.1983283,unknown,,"No. 106, Jawaharlal Nehru Salai, Thirumangalam, Anna Nagar West, Near VR Mall , Koyambedu Junction, Chennai"
+chennai,355954822,way,hospital,HomeoCare International Hospital,12.924879,80.1126812,unknown,,Tambaram
+chennai,361224706,way,hospital,MN Eye Hospital,13.1229398,80.2875069,yes,,Thiruvottriyur High Road
+chennai,363930311,way,hospital,Chennai National Hospital,13.0963673,80.2914373,unknown,,"No.12 Jaffer Serang St. Ii Line Beach,"
+chennai,364483211,way,hospital,Nirmal Eye Hospital,12.929765,80.1161656,unknown,,"108, Ayyasamy Street,West Tambaram"
+chennai,364721502,way,hospital,Athipathy Hospitals,12.976434,80.2221909,unknown,,
+chennai,371970672,way,hospital,Dr.Kamakshi Memorial Hospital,12.9492371,80.2091585,yes,,"1,Radial Road , Pallikaranai Chennai-100"
+chennai,374048313,way,hospital,Shivasundar Hospital,12.9977694,80.2574762,yes,,Shastri Nagar 1st Cross Street
+chennai,451681464,way,hospital,CMC Hospital,13.0380763,80.1889033,unknown,,"#51-52, Thiruvalluvar Salai,Nesapakkam"
+chennai,462740006,way,hospital,corporation hospital,12.9846941,80.2573424,unknown,,
+chennai,469672997,way,hospital,Annai Arul Hospital,12.9207052,80.0880949,unknown,,"Opp. Vinayar Temple, Mudichur Road, Old Perungalathur"
+chennai,469945922,way,hospital,Unnamed Hospital,13.1235594,80.2662176,unknown,,
+chennai,677255714,way,police,Unnamed Police,12.9845863,80.2611458,yes,,
+chennai,765605778,way,hospital,Gleneagles Global Heath City,12.8981219,80.2061579,yes,044 4477 7000,"439, Cheran Nagar, Perumbakkam"
+chennai,835251736,way,police,Ambattur T1 Police Station,13.1073143,80.1525569,yes,,
+chennai,907941478,way,hospital,Tiruvottiyur Government Hospital,13.1576042,80.3012556,unknown,,"Thiruvottiyur Government Hospital, Thiruvottiyur, Thiruvotriyur High Road"
+chennai,907941484,way,hospital,Unnamed Hospital,13.1485646,80.2994665,unknown,,
+chennai,940932459,way,hospital,Unnamed Hospital,12.9694332,80.1851055,unknown,,
+chennai,1038741390,way,police,Guindy J3 Police station,13.0093531,80.2106918,yes,,
+chennai,1076586613,way,police,B1 North Beach Police Station,13.0899215,80.2904578,yes,,
+chennai,1089835073,way,police,C3 Seven Wells Police Station,13.0988879,80.2816945,yes,,
+chennai,1089863482,way,police,C5 Kothavalchavadi Police Station,13.0940347,80.2854602,yes,,
+chennai,1090653955,way,police,C1 Flower Bazaar Police Station,13.0884077,80.2817032,yes,,
+chennai,1090653956,way,police,C1 Flower Bazaar Police Booth,13.0883718,80.2823944,yes,,
+chennai,1090950056,way,police,H1 Washermanpet Police Station,13.1086614,80.2809199,yes,,
+chennai,1091003580,way,police,P2 Otteri Police Station,13.1003326,80.2515633,yes,,
+chennai,1095915240,way,police,E3 Teynampet Police Assistance Booth,13.0313112,80.2398324,yes,,
+chennai,1095915254,way,police,Office of the Director General of Police Civil Supplies CID Chennai,13.0300516,80.2432354,yes,,
+chennai,1104433136,way,hospital,Chennai National Hospital Speciality Clinics,13.094813,80.2914574,unknown,,
+chennai,1105971900,way,police,C2 Elephant Gate Police Station,13.0926307,80.2750124,yes,,
+chennai,1107911282,way,police,"Office of the Deputy Commissioner of Police, Pudupet",13.0686386,80.2620582,yes,,
+chennai,1110191293,way,police,N3 Muthialpet Police Station,13.0998376,80.2870248,yes,,
+chennai,1110191307,way,hospital,SA Hospital,13.0991366,80.2868807,unknown,,
+chennai,1112851437,way,police,D5 Marina Police Station,13.0391513,80.2793207,yes,,
+chennai,1116154383,way,police,B1 North Beach Police Station,13.0966217,80.2915125,yes,,
+chennai,1122926992,way,police,G7 Chetpet Police Station,13.0725347,80.2520681,yes,,
+chennai,1123051523,way,police,D2 Anna Salai (Mount Road) Poice Station,13.061062,80.262232,yes,,
+chennai,1131693908,way,police,Tamil Nadu Police Computer Communication Centre,13.0225066,80.271388,yes,,
+chennai,1131693910,way,police,Tamil Nadu State Crime Records Bureau,13.022806,80.2716339,yes,,
+chennai,1132145713,way,police,Elliots Beach Police Outpost,13.0007139,80.2712201,yes,,
+chennai,1155182281,way,hospital,Prashanth Superspeciality Hospital Kolathur,13.1400478,80.2176872,unknown,+914469177777,
+chennai,1176848837,way,police,C5 Kothavalchavadi Police Station,13.0953439,80.2807237,yes,,
+chennai,1176875169,way,hospital,Shaarave Hospital,13.0983937,80.2798773,unknown,,Mint Street
+chennai,1180926082,way,hospital,The Arya Vysya Meternity Home and Child Welfare Centre,13.0910905,80.2813876,unknown,04425381525,Govindappa Naicken Street
+chennai,1234813078,way,hospital,Cherish Hospital,13.1297067,80.1309846,unknown,,
+chennai,1236765220,way,police,T13 Kundrathur Police Station,12.9974051,80.0918523,yes,,
+chennai,1241298308,way,hospital,Mint Hospital,13.100229,80.2837595,unknown,,
+chennai,1264854948,way,hospital,Vinitha Multi Speciality Hospital,13.0544844,80.2453874,yes,,"Josier Street, Tirumurthy Nagar, Nungambakkam"
+chennai,1289802426,way,hospital,Dr. Mehta's Hospitals - Global Campus,13.0617739,80.1356616,unknown,,
+chennai,1314584114,way,hospital,Government child birth Hospital,13.0765495,80.2245565,unknown,,"Pulla Avenue Corporation School, Shenoy Nagar, Pulla Avenue"
+chennai,1330398918,way,police,T-1 Police Station,13.1306625,80.1587027,yes,,
+chennai,1373636356,way,hospital,Chennai Urology & Robotics Institute,12.9520249,80.2412332,unknown,,
+chennai,1410036059,way,hospital,Govt. Kilpauk Hospital,13.0766394,80.2430155,unknown,,
+chennai,1428318904,way,hospital,Gynmc PG Block,13.0769748,80.2174878,unknown,,
+chennai,1531132888,way,police,T-13 Chitlapakkam Police Station,12.9395399,80.1380005,yes,,
+chennai,1533501161,way,hospital,Dr. Agarwal's Eye Hospital - Ambattur,13.1218701,80.1472701,yes,,Chennai - Tiruttani - Renigunta Road
+chennai,1533546775,way,hospital,Mother's Speciality Hospital,13.1210134,80.14985,unknown,,
+chennai,1533546776,way,hospital,Mother's Hospital - General & Laparoscopic center,13.1209479,80.1495211,unknown,,
+chennai,1533595574,way,hospital,Rakki Hospital,13.1216415,80.1512869,unknown,,
+chennai,1540976874,way,hospital,MMC Government Hospital,13.1635612,80.2438376,unknown,,
+chennai,1541182154,way,hospital,Unnamed Hospital,12.9414692,80.1303299,unknown,,
+chennai,1544073582,way,police,டி-16 செம்மஞ்சேரி காவல் நிலையம்,12.8996998,80.2275581,yes,,
+chennai,1544916625,way,police,டி-3 பல்லாவரம் காவல் நிலையம்,12.9715664,80.1485692,yes,,
+chennai,1545967238,way,police,எஸ்4 நந்தம்பாக்கம் காவல் நிலையம்,13.0182243,80.1865645,yes,+914423452765,
+chennai,1546917949,way,hospital,Kauvery Hospitals,12.9480968,80.1895707,unknown,,
+chennai,1567143411,way,hospital,"Government Hospital, Avadi",13.1173946,80.0978967,unknown,,
+chennai,5419955,relation,hospital,Hindu Mission Hospital,12.9239369,80.1138071,unknown,,"Tambaram Bridge, West Tambaram, Gst Road"
+chennai,7357637,relation,hospital,Madha Medical College Hospital,13.0040654,80.1119084,unknown,,"Kovoor, Kundrathur Main Road"
+chennai,14377391,relation,hospital,Royapettah Government Hospital,13.0541723,80.2649264,unknown,,"Royapettah Police Station, Royapettah, Ammaiappan Lane"
+chennai,curated_fs_01,node,fire_station,Esplanade Fire Station,13.086478,80.286064,yes,101,"Esplanade, Rajaji Salai, Chennai"
+chennai,curated_fs_02,node,fire_station,Korukkupet Fire Station,13.1118,80.2721,yes,101,"Kathbada, Korukkupet, Chennai"
+chennai,curated_fs_03,node,fire_station,Royapuram Fire Station,13.1092,80.2946,yes,101,"East Kalmandapam Road, Royapuram, Chennai"
+chennai,curated_fs_04,node,fire_station,Secretariat Fire Station,13.0798,80.2871,yes,101,"Fort St. George Complex, Chennai"
+chennai,curated_fs_05,node,fire_station,Sembium Fire Station,13.1249,80.2391,yes,101,"Madurai Sami Madam St, Sembiyam, Perambur, Chennai"
+chennai,curated_fs_06,node,fire_station,Tondiarpet Fire Station,13.1245,80.2882,yes,101,"Thiruvottiyur High Road, Tondiarpet, Chennai"
+chennai,curated_fs_07,node,fire_station,V.O.C. Nagar Fire Station,13.1165,80.2642,yes,101,"V.O.C. Nagar, Tondiarpet, Chennai"
+chennai,curated_fs_08,node,fire_station,Vyasarpadi Fire Station,13.1184,80.2594,yes,101,"Sathyamoorthy Nagar Main Rd, Vyasarpadi, Chennai"
+chennai,curated_fs_09,node,fire_station,Washermanpet Fire Station,13.10244,80.274401,yes,101,"Maniyakaran St, Old Washermanpet, Chennai"
+chennai,curated_fs_10,node,fire_station,Moolakothalam Fire Station,13.105508,80.278214,yes,101,"Moolakothalam, Old Washermanpet, Chennai"
+chennai,curated_fs_11,node,fire_station,Ashok Nagar Fire Station,13.0336,80.2104,yes,101,"Ashok Pillar Main Rd, Zaffarkhanpet, Chennai"
+chennai,curated_fs_12,node,fire_station,Guindy Fire Station,13.0094,80.2125,yes,101,"SIDCO Industrial Estate, Alandur Rd, Guindy, Chennai"
+chennai,curated_fs_13,node,fire_station,Mylapore Fire Station,13.0358,80.2673,yes,101,"Kutchery Road, Mylapore, Chennai"
+chennai,curated_fs_14,node,fire_station,Rajbhavan Fire Station,13.0112,80.2228,yes,101,"Sardar Patel Road, Raj Bhavan, Guindy, Chennai"
+chennai,curated_fs_15,node,fire_station,Saidapet Fire Station,13.0211,80.2225,yes,101,"Anna Salai, Little Mount / Saidapet, Chennai"
+chennai,curated_fs_16,node,fire_station,Teynampet Fire Station,13.047447,80.249119,yes,101,"Anna Salai, Teynampet, Chennai"
+chennai,curated_fs_17,node,fire_station,T. Nagar Fire Station,13.0385,80.2312,yes,101,"South Usman Road / Bus Terminus, T. Nagar, Chennai"
+chennai,curated_fs_18,node,fire_station,Thiruvanmiyur Fire Station,12.9831,80.2594,yes,101,"East Coast Road (ECR), Thiruvanmiyur, Chennai"
+chennai,curated_fs_19,node,fire_station,Velachery Fire Station,12.9772,80.2221,yes,101,"Tiruvalluvar St, Annai Indira Nagar, Velachery, Chennai"
+chennai,curated_fs_20,node,fire_station,Tambaram Fire Station,12.9254,80.1172,yes,101,"GST Road, State Training Centre, Tambaram, Chennai"
+chennai,curated_fs_21,node,fire_station,Tambaram Sanatorium Fire Station,12.943636,80.133596,yes,101,"GST Road, Tambaram Sanatorium, Chennai"
+chennai,curated_fs_22,node,fire_station,Kilpauk Fire Station,13.0782,80.2425,yes,101,"Kilpauk Garden Road, Kilpauk, Chennai"
+chennai,curated_fs_23,node,fire_station,Vepery Fire Station,13.0835,80.2647,yes,101,"EVK Sampath Salai, Vepery, Chennai"
+chennai,curated_fs_24,node,fire_station,Egmore Fire Station (Directorate),13.068633,80.261333,yes,101,"Pantheon Road, Egmore, Chennai"
+chennai,curated_fs_25,node,fire_station,Triplicane Fire Station,13.0645,80.2785,yes,101,"Wallajah Road / Anna Salai, Triplicane, Chennai"
+chennai,curated_fs_26,node,fire_station,Koyambedu Fire Station,13.0689,80.1918,yes,101,"Market A Road, Wholesale Market Complex, Koyambedu, Chennai"
+chennai,curated_fs_27,node,fire_station,J.J. Nagar Fire Station,13.0841,80.1762,yes,101,"Valayapathi Salai, Mogappair East, Chennai"
+chennai,curated_fs_28,node,fire_station,Villivakkam Fire Station,13.1072,80.2054,yes,101,"4th Main Road, SIDCO Nagar, Villivakkam, Chennai"
+chennai,curated_fs_29,node,fire_station,Ambattur Fire Station,13.1021,80.1582,yes,101,"3rd Main Rd, Ambattur Industrial Estate, Chennai"
+chennai,curated_fs_30,node,fire_station,Avadi Fire Station,13.111394,80.106389,yes,101,"TNHB, Avadi, Chennai"
+chennai,curated_fs_31,node,fire_station,Madhavaram Fire Station,13.155,80.2412,yes,101,"Milk Colony Road, Madhavaram, Chennai"
+chennai,curated_fs_32,node,fire_station,Manali Fire Station,13.1636,80.2586,yes,101,"CPCL Industrial Belt, Manali, Chennai"
+chennai,curated_fs_33,node,fire_station,Thiruvottiyur Fire Station,13.1602,80.3015,yes,101,"Rajakadai, T.H. Road, Thiruvottiyur, Chennai"
+chennai,curated_fs_34,node,fire_station,Ennore Fire Station,13.2085,80.3218,yes,101,"Kathivakkam High Road, Ennore, Chennai"
+chennai,curated_fs_35,node,fire_station,Poonamallee Fire Station,13.0492,80.0941,yes,101,"Trunk Road, Poonamallee, Chennai"
+chennai,curated_fs_36,node,fire_station,Redhills Fire Station,13.1902,80.1874,yes,101,"Sothupakkam Rd / GNT Rd, Red Hills, Chennai"
+chennai,curated_fs_37,node,fire_station,Sholinganallur Fire Station,12.9015,80.2285,yes,101,"Rajiv Gandhi Salai (OMR), Sholinganallur, Chennai"
+chennai,curated_fs_38,node,fire_station,Siruseri SIPCOT Fire Station,12.8308,80.2223,yes,101,"SIPCOT IT Park, OMR, Siruseri, Chennai"
+chennai,curated_fs_39,node,fire_station,Chennai Airport Fire Station,12.992503,80.166022,yes,101,"Airports Authority of India, Meenambakkam, Chennai"

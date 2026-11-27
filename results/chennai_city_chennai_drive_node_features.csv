@@ -1,0 +1,14 @@
+feature_category,feature_name,count,pct_of_nodes
+street_count,degree_3,45600,65.72%
+street_count,degree_1,15729,22.67%
+street_count,degree_4,7980,11.50%
+street_count,degree_2,53,0.08%
+street_count,degree_5,22,0.03%
+street_count,degree_6,2,0.00%
+node_highway,traffic_signals,304,0.4381%
+node_highway,crossing,8,0.0115%
+node_highway,motorway_junction,3,0.0043%
+node_highway,bus_stop,3,0.0043%
+node_highway,turning_circle,1,0.0014%
+node_highway,mini_roundabout,1,0.0014%
+node_junction,yes,14,0.0202%

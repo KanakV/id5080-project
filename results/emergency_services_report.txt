@@ -1,0 +1,14 @@
+EMERGENCY INFRASTRUCTURE DATA SUMMARY (OpenStreetMap Overpass API)
+=================================================================
+
+City: BENGALURU
+  Total Facilities Tagged: 1305
+  - Police Stations:     143
+  - Hospitals:           1137
+  - Fire Stations:       25
+
+City: CHENNAI
+  Total Facilities Tagged: 1031
+  - Police Stations:     116
+  - Hospitals:           876
+  - Fire Stations:       39
