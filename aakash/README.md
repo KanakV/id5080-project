@@ -55,7 +55,7 @@ Figure: `figures/compare_hubs_dark.png`.
 ```bash
 cd aakash                                        # run everything from this folder
 pip install osmnx networkx numpy scipy matplotlib
-python tools/fetch_namma.py bengaluru city      # and: chennai city  -> data/*.graphml
+python ../kanak/tools/fetch_namma.py bengaluru city   # and: chennai city  -> data/*.graphml
 python tools/analyze_network.py data/bengaluru_city_bengaluru_drive.graphml 300   # top-betweenness CSV (defines the CBD); slow
 python tools/degree_correlations.py data/bengaluru_city_bengaluru_drive.graphml
 python tools/cluster_landuse.py data/bengaluru_city_bengaluru_drive.graphml
@@ -68,5 +68,5 @@ python tools/hub_compare.py
 The `results/<city>_top_betweenness.csv` files are included, so the slow `analyze_network.py`
 step can be skipped.
 
-`tools/fetch_namma.py` and `tools/analyze_network.py` are copies of Kanak Varma's team
-pipeline scripts, included only so this folder runs on its own.
+The graphs come from Kanak Varma's `kanak/tools/fetch_namma.py`. `tools/analyze_network.py` is a copy
+of Kanak's earlier team pipeline script (not in `kanak/`), included so this folder runs on its own.
