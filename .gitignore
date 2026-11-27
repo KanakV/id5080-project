@@ -13,3 +13,7 @@ share*/
 
 # course handouts
 *.pdf
+
+# road graphs and slides are large and regenerable / not code
+*.graphml
+*.pptx

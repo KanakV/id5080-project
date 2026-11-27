@@ -1,5 +1,11 @@
-osmnx>=2.0
-scipy
-matplotlib
-geopy
-pandas
+# Union of every member folder's imports. Versions are the ones the aakash/ analyses ran with
+# (Python 3.14.5); the other folders need the same packages and no exact pin.
+osmnx==2.1.1
+networkx==3.7
+numpy==2.5.4
+scipy==1.18.1
+matplotlib==3.11.2
+pandas==3.1.0
+geopandas==1.2.0
+shapely==2.2.0
+requests==2.34.2
